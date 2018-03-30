@@ -3,6 +3,8 @@ Atualização: IObit Advanced SystemCare 11.2 + Serial</br>
 Atualização: IObit Driver Booster 5.3 + Serial </br>
 Atualização: IObit Malware Fighter 5.6 + Serial</br>
 Atualização: IObit Unistaller 7.3 + Serial</br>
+Removido: RAD Studio XE10</br>
+Removido: RAD Studio XE8
 
 <b>1.5.3 (03 de Março)</b></br>
 Corrigido: Softwares com URLs trocadas
