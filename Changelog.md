@@ -1,8 +1,8 @@
 <b>1.5.4 (29 de Março)</b></br>
-Atualização: IObit Advanced SystemCare 11.2 + Serial
-Atualização: IObit Driver Booster 5.3 + Serial 
-Atualização: IObit Malware Fighter 5.6 + Serial
-Atualização: IObit Unistaller 7.3 + Serial
+Atualização: IObit Advanced SystemCare 11.2 + Serial</br>
+Atualização: IObit Driver Booster 5.3 + Serial </br>
+Atualização: IObit Malware Fighter 5.6 + Serial</br>
+Atualização: IObit Unistaller 7.3 + Serial</br>
 
 <b>1.5.3 (03 de Março)</b></br>
 Corrigido: Softwares com URLs trocadas
