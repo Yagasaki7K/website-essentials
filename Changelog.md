@@ -1,6 +1,6 @@
 <b>1.5.4 (03 de Abril)</b></br>
 Alteração de Nome: Microsoft - W10 (Instalador) -> Microsoft Windows 10 Pro</br>
-Adicionado: Microsoft - Windows 10 LTSB 64 Bits
+Adicionado: Microsoft - Windows 10 LTSB 64 Bits</br>
 Adicionado: Microsoft - Windows 10 LTSB 32 Bits
 
 <b>1.5.4 (29 de Março)</b></br>
