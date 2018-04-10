@@ -1,5 +1,6 @@
 <b>1.5.4 (10 de Abril)</b></br>
 Alteração de Nome: ReLoader (Office Activator) -> Reloader (Office/Win Activator)</br>
+Correção de URL: Reloader</br>
 Adicionado: Adobe Photoshop CS6 Portable
 
 <b>1.5.4 (03 de Abril)</b></br>
