@@ -1,3 +1,7 @@
+<b>1.5.4 (10 de Abril)</b></br>
+Alteração de Nome: ReLoader (Office Activator) -> Reloader (Office/Win Activator)</br>
+Adicionado: Adobe Photoshop CS6 Portable
+
 <b>1.5.4 (03 de Abril)</b></br>
 Alteração de Nome: Microsoft - W10 (Instalador) -> Microsoft Windows 10 Pro</br>
 Adicionado: Microsoft - Windows 10 LTSB 64 Bits</br>
