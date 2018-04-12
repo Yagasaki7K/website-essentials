@@ -1,3 +1,16 @@
+<b>1.5.5 (12 de Abril)</b></br>
+Removido: Reloader (Office/Win Activator)</br>
+Alteração de Nome: Microsoft - Windows 10 Pro -> Windows 10 Pro (x86/x64)</br>
+Alteração de Nome: Microsoft - Windows 10 LTSB 64 Bits -> Windows 10 LTSB x64</br>
+Alteração de Nome: Microsoft - Windows 10 LTSB 32 Bits -> Windows 10 LTSB x86</br>
+Adicionado: LibreOffice</br>
+Adicionado: KMSPico -> CRACK LINK do Office e versões do Windows</br>
+Adicionado: Windows 7 Ultimate x64</br>
+Adicionado: Windows 7 Ultimate x86</br>
+Mudança de Necessidade: Google Drive (Necessário -> Opcional)</br>
+Mudança de Necessidade: Google Chromium (Opcional -> Necessário)</br>
+Mudança de Necessidade: Tor Browser (Opcional -> Necessário)
+
 <b>1.5.4 (10 de Abril)</b></br>
 Alteração de Nome: ReLoader (Office Activator) -> Reloader (Office/Win Activator)</br>
 Correção de URL: Reloader</br>
