@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://4.bp.blogspot.com/-DWRIme7SRQ8/Wkxkz-IgPgI/AAAAAAAAH00/qDonMLTD59QCCudb48IeNUkOAV2qgw2SgCLcBGAs/s1600/Logo%2B%2528Website%2529%2B-%2BStudios%2BVersion.png" alt="The Essentials Web"/></a><br>
   
-<b>v1.5.4 - 10 de Abril</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
+<b>v1.5.5 - 12 de Abril</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
 </div>
 
 Internautas do mundo inteiro após formatarem seus computadores ou até mesmo estarem em busca de um software que precisam, acabam não encontrando por falta de guias nesse vasto mundo cibernético que utilizamos nos dias de hoje. É por isso que a Antech Productions lançou o Essentials Studios, um projeto que ajudará a redirecionar você ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
