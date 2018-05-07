@@ -1,7 +1,7 @@
 <b>1.5.6 (07 de Maio)</b></br>
-Adicionado: Origin
-Adicionado: Amazon Kindle - Microsoft Store
-Google Analytics: Agora nosso código possui o Google Analytics para analisarmos melhor os acessos.
+Adicionado: Origin</br>
+Adicionado: Amazon Kindle - Microsoft Store</br>
+Google Analytics: Agora nosso código possui o Google Analytics para analisarmos melhor os acessos.</br>
 Description: Corrigimos um problema na descrição do nosso código, mas nada que precise se preocupar.
 
 <b>1.5.5 (12 de Abril)</b></br>
