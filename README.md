@@ -10,7 +10,7 @@ O The Essentials é puramente open source, já que eles carregam tudo consigo, s
 
 Acesse o projeto: <a href="https://yagasakii.github.io/webessentials/" target="_blank">The Essentials (Web)</a>
 
-Confira o que mudou nas últimas atualizações - <a href="https://github.com/Yagasakii/Essentials/blob/master/Changelog.md">Changelog</a>
+Confira o que mudou nas últimas atualizações - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md">Changelog</a>
 
 # Antech Productions
 A Antech Productions é uma empresa de serviços online e software do Brasil, fundada em Campinas no Estado de São Paulo, a Antech desenvolve uma série de serviços e produtos baseados na internet com ajuda de uma equipe remota que trabalha no meio de evolução tecnológica.
