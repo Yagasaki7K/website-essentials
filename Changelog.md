@@ -1,4 +1,10 @@
-<b>1.5.7 (18 de Junho)</b></br>
+<b>1.5.8 (20 de Julho)</b><br>
+Correção de URL: All in One Runtimes<br>
+Correção de URL: Cracks - Windows 7 e 10 (Todas suas versões)<br>
+Removido: Auto Shutdown<br>
+Removido: Re-Loader (Office/Win Activator)
+
+<b>1.5.7 (18 de Junho)</b><br>
 Adicionado: Opera Neon<br>
 Adicionado: Spotify - Microsoft Store<br>
 Adicionado: Teamviewer - Microsoft Store
