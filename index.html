@@ -18,7 +18,7 @@ Github         : https://github.com/Yagasakii/webessentials
 <meta name="keywords" content="Antech, Developers, Software, Essentials, Web">
 <meta name="author" content="Anderson Marlon">
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118819410-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118819410-1"></script> <!-- GOOGLE ANALYTICS -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -26,6 +26,8 @@ Github         : https://github.com/Yagasakii/webessentials
 
   gtag('config', 'UA-118819410-1');
 </script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script> <!-- HEART CSS -->
 </head>
 
 <!-- ESTILO CSS DA ESTRUTURA -->
@@ -90,11 +92,32 @@ span.Need {
 span.dont {
     color: gray;
     }
+
+.heart {
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  background: url(heart.png) no-repeat;  
+  cursor: pointer;
+  
+}
+.heart-blast {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
 </style>
 
 
 <!-- JAVASCRIPT DO MODO NOTURNO -->
 <script>
+$(function() {
+ 
+  $(".heart").on("click", function() {
+    $(this).toggleClass("heart-blast");
+  });
+}); 
+
 function myFunction() {
     document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
     document.getElementsByTagName("div")[0].style.color = "white";
@@ -111,12 +134,11 @@ function myFunction() {
 <!-- FIM DO JAVASCRIPT -->
 
 <body leftmargin="60px" topmargin="15px">
-    <a href="http://www.AntechProductions.blogspot.com"><img src="https://4.bp.blogspot.com/-DWRIme7SRQ8/Wkxkz-IgPgI/AAAAAAAAH00/qDonMLTD59QCCudb48IeNUkOAV2qgw2SgCLcBGAs/s1600/Logo%2B%2528Website%2529%2B-%2BStudios%2BVersion.png"><br/></a>
+    <a href="http://www.AntechProductions.blogspot.com"><img src="https://4.bp.blogspot.com/-DWRIme7SRQ8/Wkxkz-IgPgI/AAAAAAAAH00/qDonMLTD59QCCudb48IeNUkOAV2qgw2SgCLcBGAs/s1600/Logo%2B%2528Website%2529%2B-%2BStudios%2BVersion.png"><br></a>
     <div dir="ltr" lang="pt-BR"><div class="header"><font color="black">Aplicativos essenciais para seu computador |
-        <input type="radio" onclick="myFunction()">Modo Noturno</font></font> <a href="https://yagasakii.github.io/webessentials/"><span onClick="document.location.reload(true)"><img src="https://cdn2.iconfinder.com/data/icons/social-media-8/128/reload.png" width="20px"></a></span></br>
+        <input type="radio" onclick="myFunction()">Modo Noturno</font></font> <a href="https://yagasakii.github.io/webessentials/"><span onClick="document.location.reload(true)"><img src="https://cdn2.iconfinder.com/data/icons/social-media-8/128/reload.png" width="20px"></a></span><br>
 
-<font size="2" color="black">Softwares necessários para um bom funcionamento e úteis para seu computador - Versão 1.5.8 (20 de Julho)
-<br>Perdeu alguma atualização? Não se preocupe, confira as <a href="https://github.com/Yagasakii/webessentials" target="_blank">Notas de Atualizações</a></div>
+<font size="2" color="black">Softwares necessários para um bom funcionamento e úteis para seu computador — Essentials <i>(Build 1.5.9)</i> de 12 de Agosto — <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md" target="_blank">Changelog</a></div>
 
 <!-- INICIO DA TABELA DE PROGRAMAS -->
 
@@ -128,7 +150,6 @@ function myFunction() {
 
     </tr>
     <tbody>
-
     <tr><td colspan="3"/></tr>
     <td class="Regular">µTorrent</td>
     <td class="Secondary"><font color="green">Necessário</font></td>
@@ -161,14 +182,19 @@ function myFunction() {
     <td class="Regular"><a href="https://www.computerbase.de/downloads/systemtools/all-in-one-runtimes/?url=108453" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
+    <td class="Regular">Amazon Kindle</td>
+    <td class="Secondary"><font color="gray">Opcional</font></td>
+    <td class="Regular"><a href="http://www.amazon.com.br/kindlepcdownload/ref=klp_win" target='_blank'>LINK</a></td>
+
+    <tr><td colspan="3"/></tr>
     <td class="Regular">Amazon Kindle - Microsoft Store</td>
     <td class="Secondary"><font color="gray">Opcional</font></td>
     <td class="Regular"><a href="https://www.microsoft.com/pt-br/store/p/kindle/9wzdncrfj3vn?rtc=1" target='_blank'>LINK</a></td>
 
     <tr><td colspan="3"/></tr>
-    <td class="Regular">Apache OpenOffice</td>
+    <td class="Regular">ArchiSteamFarm (Idle Steam)</td>
     <td class="Secondary"><font color="gray">Opcional</font></td>
-    <td class="Regular"><a href="http://www.openoffice.org/pt/download/" target="_blank">LINK</a></td>
+    <td class="Regular"><a href="https://github.com/JustArchi/ArchiSteamFarm" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
     <td class="Regular">Atube Catcher</td>
@@ -301,33 +327,29 @@ function myFunction() {
     <td class="Regular"><a href="http://www8.hp.com/br/pt/campaigns/hpsupportassistant/hpsupport.html" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
-    <td class="Regular">IdleMaster</td>
+    <td class="Regular">IdleMaster (Idle Steam)</td>
     <td class="Secondary"><font color="gray">Opcional</font></td>
     <td class="Regular"><a href="http://www.steamidlemaster.com/idle_master.zip" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
     <td class="Regular">IObit Advanced SystemCare</td>
     <td class="Secondary"><font color="green">Necessário</font></td>
-    <td class="Regular"><a href="http://www.mediafire.com/file/hu93myvyupbh4ja/advanced-systemcare-setup.exe" target="_blank">LINK</a></td>
-    <td class="Regular">66890-3CC29-1D29E-DDA64</td>
+    <td class="Regular"><a href="https://www.iobit.com/downloadcenter.php?product=pt-advanced-systemcare-free" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
     <td class="Regular">IObit Driver Booster</td>
     <td class="Secondary"><font color="green">Necessário</font></td>
-    <td class="Regular"><a href="http://www.mediafire.com/file/x84zwa7xo170nom/driver_booster_setup.exe" target="_blank">LINK</a></td>
-    <td class="Regular">74D8E-0128A-8B01A-F29B5</td>
+    <td class="Regular"><a href="https://www.iobit.com/downloadcenter.php?product=pt-driver-booster-free" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
     <td class="Regular">IObit Malware Fighter</td>
     <td class="Secondary"><font color="green">Necessário</font></td>
-    <td class="Regular"><a href="http://www.mediafire.com/file/gwpsnlyhc8sqgof/iobit-malware-fighter-5-6-0.exe" target="_blank">LINK</a></td>
-    <td class="Regular">38691-1AA05-4AE43-A0074</td>
+    <td class="Regular"><a href="https://www.iobit.com/downloadcenter.php?product=pt-malware-fighter-free" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
     <td class="Regular">IObit Unistaller</td>
     <td class="Secondary"><font color="green">Necessário</font></td>
-    <td class="Regular"><a href="http://www.mediafire.com/file/s2gfnji5i2zictg/iobituninstaller.exe" target="_blank">LINK</a></td>
-    <td class="Regular">1A66C-70843-ECCB1-1F9B7</td>
+    <td class="Regular"><a href="https://www.iobit.com/downloadcenter.php?product=pt-advanced-uninstaller" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
     <td class="Regular">Irfanview</td>
@@ -335,7 +357,7 @@ function myFunction() {
     <td class="Regular"><a href="http://download.cnet.com/IrfanView/?part=dl-&subj=dl&tag=button" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
-    <td class="Regular">Iso2God Xbox Utility</td>
+    <td class="Regular">ISO2GOD Xbox Utility</td>
     <td class="Secondary"><font color="gray">Opcional</font></td>
     <td class="Regular"><a href="https://mega.nz/#!NQ0nxZwb!BQVB9Bcewa5T600wDpo35zxA6qoDfTZFKxO93EsECEc" target="_blank">LINK</a></td>
 
@@ -477,7 +499,7 @@ function myFunction() {
     <td class="Regular"><a href="https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
-    <td class="Regular">Sublime Text 3 - Editor de Texto</td>
+    <td class="Regular">Sublime Text - Editor de Texto</td>
     <td class="Secondary"><font color="gray">Opcional</font></td>
     <td class="Regular"><a href="https://www.sublimetext.com/3" target="_blank">LINK</a></td>
     <td class="Regular"><a href="https://gist.github.com/cprakashagr/86d4f8b29f8d54330349875abc6d9cf9" target="_blank">SERIAL LINK</a></td>
@@ -550,7 +572,7 @@ function myFunction() {
     <tr><td colspan="3"/></tr>
     <td class="Regular">Windows Movie Maker</td>
     <td class="Secondary"><font color="green">Necessário</font></td>
-    <td class="Regular"><a href="http://www.windows-movie-maker.org/" target="_blank">LINK</a></td>
+    <td class="Regular"><a href="https://www.topwin-movie-maker.com/download/lang/windows-movie-maker-2016-multi.exe" target="_blank">LINK</a></td>
 
     <tr><td colspan="3"/></tr>
     <td class="Regular">Windows 7 Ultimate x86</td>
@@ -602,11 +624,10 @@ function myFunction() {
 
 <!-- DISCORD -->
 <a href="https://discord.gg/3wr5zTU" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-32.png"></a>
-<br/>
+<br>
 
-<div dir="ltr" lang="pt-BR"><span id="copyright"><div class="header"><font size="2">O software desejado não está na lista? Informe-nos através do contato.
-<br/>
-
+<div dir="ltr" lang="pt-BR"><span id="copyright"><div class="header"><font size="2">O software desejado não está na lista? Informe-nos através do contato — <b>Feito com <font color="red">❤</font> pela Antech Productions</b> </b>
+<br>
 <!-- AREA DE COPYRIGHT / RODAPÉ -->
 
     © Copyright 2018 | <a href="http://www.AntechProductions.blogspot.com" target='_blank'>Antech Productions</a> | Desenvolvido por <a href="https://www.facebook.com/AndersonMarlonDesign/" target='_blank'>Anderson Marlon</a> | Contato - <a href="http://form.jotformz.com/form/40725867693670" target='_blank'>Antech Productions</a>

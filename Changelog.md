@@ -1,3 +1,17 @@
+<b>1.5.9 (12 de Agosto)</b><br>
+Atualização: IOBit Advanced SystemCare (Removido Serial/Crack)<br>
+Atualização: IOBit Driver Booster (Removido Serial/Crack)<br>
+Atualização: IOBit Malware Fighter (Removido Serial/Crack)<br>
+Atualização: IOBit Unistaller (Removido Serial/Crack)<br>
+Atualização de URL: Windows Movie Maker<br>
+Adicionado: ArchiSteamFarm (Idle Steam)<br>
+Alteração de nome: IdleMaster -> IdleMaster (Idle Steam)<br>
+Alteração de nome: Iso2God Xbox Utility -> ISO2GOD Xbox Utility<br>
+Alteração de nome: Sublime Text 3 - Editor de Texto -> Sublime Text - Editor de Texto<br>
+Alteração de nome: Notas de Atualização -> Changelog<br>
+Adicionado: Feito com ❤ pela Antech Productions ao rodapé<br>
+Estrutura: Mudamos um pouco o cabeçalho do site, mas nada muito sério.
+
 <b>1.5.8 (20 de Julho)</b><br>
 Correção de URL: All in One Runtimes<br>
 Correção de URL: Cracks - Windows 7 e 10 (Todas suas versões)<br>
