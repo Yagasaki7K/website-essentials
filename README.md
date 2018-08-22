@@ -1,14 +1,14 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://4.bp.blogspot.com/-DWRIme7SRQ8/Wkxkz-IgPgI/AAAAAAAAH00/qDonMLTD59QCCudb48IeNUkOAV2qgw2SgCLcBGAs/s1600/Logo%2B%2528Website%2529%2B-%2BStudios%2BVersion.png" alt="The Essentials Web"/></a><br>
 
-<b>v1.5.9 - 12 de Agosto</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
+<b>v1.6.0 - 22 de Agosto</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
 </div>
 
-Internautas do mundo inteiro após formatarem seus computadores ou até mesmo estarem em busca de um software que precisam, acabam não encontrando o que buscam por falta de guias nesse vasto mundo cibernético que utilizamos nos dias de hoje. É por isso que a <b>Antech Productions</b> lançou o <b>Essentials Studios</b>, um projeto que ajudará a redirecionar você ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
+Internautas do mundo inteiro após formatarem seus computadores ou até mesmo estarem em busca de um software que precisam, acabam não encontrando o que buscam por falta de guias nesse vasto mundo cibernético que utilizamos nos dias de hoje. É por isso que a <b>Antech Productions</b> lançou o <b>Essentials</b>, um projeto que ajudará a redirecionar você ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
 
 O Essentials é puramente open source, já que eles carregam tudo consigo, seu Javascript, seu HTML e CSS estão inclusos na própria raíz, o que evita confusões, sobrecarregamento e arquivos perdidos sobre o limbo da internet.
 
-Acesse o projeto: <a href="https://yagasakii.github.io/webessentials/" target="_blank">The Essentials (Web)</a>
+Acesse o projeto: <a href="https://yagasakii.github.io/webessentials/" target="_blank">Essentials (Web)</a>
 
 Confira o que mudou nas últimas atualizações - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md">Changelog</a>
 

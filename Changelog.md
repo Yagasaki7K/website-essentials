@@ -1,3 +1,24 @@
+<b>1.6.0 (22 de Agosto)</b><br>
+Alteração de Nome: Studio Essentials -> Essentials<br>
+Alteração de Nome: Visual Studio Code -> Visual Studio - Editor de Código<br>
+Alteração de Nome: Brackets -> Brackets - Editor de Código<br>
+Alteração de Nome: Sublime Text - Editor de Texto -> Sublime Text - Editor de Código<br>
+Alteração de Nome: Notepad++ - Editor de Texto -> Notepad++ - Editor de Código<br>
+Alteração de Nome: Serial/Key -> Serial/Crack (MENU)<br>
+Alteração de Nome: Softwares -> Programas (MENU)<br>
+Alteração de Nome: K-Lite Codec Pack -> K-Lite Codec Media Player<br>
+Estrutura: Retiramos URL do logo, agora é possível atualizar a página ao clicar nele.<br>
+Estrutura: Mudança no logotipo - Diferente em Bright/Dark Mode (Modo Noturno)<br>
+Mudança de Necessidade: DAEMON Tools Lite (Necessário -> Opcional)<br>
+Mudança de Necessidade: Tor Browser (Necessário -> Opcional)<br>
+Mudança de Necessidade: K-Lite Codec Media Player (Necessário -> Opcional)<br>
+Adicionado: VLC Media Player<br>
+Adicionado: Sistemas - Linux<br>
+Adicionado: UPlay - Ubisoft<br>
+Removido: Adobe AIR<br>
+Removido: Raidcall<br>
+Removido: Curse
+
 <b>1.5.9 (12 de Agosto)</b><br>
 Atualização: IOBit Advanced SystemCare (Removido Serial/Crack)<br>
 Atualização: IOBit Driver Booster (Removido Serial/Crack)<br>
