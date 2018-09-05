@@ -1,3 +1,17 @@
+<b>1.6.1 (05 de Setembro)</b><br>
+Adicionado: Audioswitch<br>
+Adicionado: LastPass<br>
+Adicionado: SHAREit<br>
+Adicionado: SHAREit - Microsoft Store<br>
+Adicionado: Safari Browser<br>
+Adicionado: Wunderlist<br>
+Adicionado: Netflix - Microsoft Store<br>
+Adicionado: iCloud Drive<br>
+Adicionado: Serial (IObit Advanced SystemCare 11.5)<br>
+Adicionado: Serial (IObit Malware Fighter 6.2)<br>
+Adicionado: Serial (IObit Driver Booster 5.5)<br>
+Atualização de URL: WinRAR
+
 <b>1.6.0 (22 de Agosto)</b><br>
 Alteração de Nome: Studio Essentials -> Essentials<br>
 Alteração de Nome: Visual Studio Code -> Visual Studio - Editor de Código<br>
