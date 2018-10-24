@@ -1,6 +1,24 @@
+<b>1.6.2 (24 de Outubro)</b><br>
+Atualização de URL: Mirillis Action<br>
+Adicionado: Chrome OS<br>
+Adicionado: APowerMirror - Espelhamento Android<br>
+Adicionado: AirDroid - Android Remoto<br>
+Atualização de URL: Serial em Windows (Todas as versões)<br>
+Mudança de Necessidade: Windows Movie Maker (Necessário -> Opcional)<br>
+Removido: SHAREit<br>
+Removido: SHAREit - Microsoft Store<br>
+Removido: Catzilla<br>
+Removido: ISO2GOD Xbox Utility<br>
+Removido: Horizon Xbox Utility<br>
+Código: Agora mais limpo e retiramos coisas que não usamos mais<br>
+Código: Arrumamos um problema de várias versões anteriores, maldita sintaxe<br>
+Estilo: Agora temos um icone ao lado do título, legal né?
+
+
 <b>1.6.1 (05 de Setembro)</b><br>
 Adicionado: Audioswitch<br>
 Adicionado: LastPass<br>
+Adicionado: GitHub
 Adicionado: SHAREit<br>
 Adicionado: SHAREit - Microsoft Store<br>
 Adicionado: Safari Browser<br>
