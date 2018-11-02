@@ -1,3 +1,12 @@
+<b>1.6.3 (01 de Novembro)</b><br>
+Removido: Divisão de Necessidades — É um item que varia de cada pessoa, então retiramos<br>
+Estilo: Mudamos o icone, aquele era apenas um provisório<br>
+Estilo: Mais simples, dinâmico e mais organizado<br>
+Estilo: Organizamos tudo por categorias<br>
+Categorias: Backup / Nuvem, Comunicações, Desenvolvimento, Entretenimento<br>
+Categorias: Navegadores (Browser), Sistemas Operacionais e Utilitários<br>
+JavaScript: Retiramos uma função que estava acumulando caracteres
+
 <b>1.6.2 (24 de Outubro)</b><br>
 Atualização de URL: Mirillis Action<br>
 Adicionado: Chrome OS<br>
