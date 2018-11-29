@@ -20,6 +20,7 @@ Github         : https://github.com/Yagasakii/webessentials
 <meta name="robots" content="index, follow">
 <link rel=”canonical” href=”https://yagasakii.github.io/webessentials/”/>
 <link rel="icon" href="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-20-512.png">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118819410-1"></script> <!-- GOOGLE ANALYTICS -->
 <script>
@@ -86,33 +87,38 @@ div.NoList {
     }
 
 </style>
-
-
-<!-- JAVASCRIPT DO MODO NOTURNO -->
 <script>
-function myFunction() {
-    document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
-    document.getElementsByTagName("div")[0].style.color = "white";
-    document.getElementsByTagName("div")[3].style.color = "white";
-    document.getElementsByTagName("font")[0].style.color = "white";
-    document.getElementsByTagName("font")[1].style.color = "white";
-    document.getElementsByTagName("font")[2].style.color = "white";
-    document.getElementsByTagName("hr")[1].style.color = "white";
-    document.getElementsById("copyright")[1].style.color = "white";
+function changeImage() {
 
-}
-</script>
-
+    if (document.getElementById("imgClickAndChange").src == "https://i.imgur.com/AbzUitZ.png") 
+    {
+        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/BwAPQdH.png";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
+        document.getElementsByTagName("div")[0].style.color = "white";
+        document.getElementsByTagName("div")[3].style.color = "white";
+        document.getElementsByTagName("font")[0].style.color = "white";
+        document.getElementsByTagName("font")[1].style.color = "white";
+        document.getElementsByTagName("font")[2].style.color = "white";
+        document.getElementsByTagName("hr")[1].style.color = "white";
+        document.getElementsById("copyright")[1].style.color = "white";
+    }
+    else 
+    {
+        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/AbzUitZ.png";
+        document.location.reload(true);
+    }
+    
+}</script>
 <!-- FIM DO JAVASCRIPT -->
 
 <body leftmargin="60px" topmargin="15px">
-    <span onClick="document.location.reload(true)"><img src="https://2.bp.blogspot.com/-mBetPH7Gr24/W3ztH42cThI/AAAAAAAAIDg/TgMsqhmXRUAAN2PveRy2fTdveWuA2CJswCLcBGAs/s1600/Logo%2B%2528Website%2529%2B-%2BStudios%2BVersion.png"></span><br></a>
-    <div dir="ltr" lang="pt-BR"><div class="header"><font color="black">Aplicativos essenciais para seu computador |
-        <input type="radio" onclick="myFunction()">Modo Noturno </font></font><span onClick="document.location.reload(true)"><img src="https://cdn2.iconfinder.com/data/icons/social-media-8/128/reload.png" width="20px"></a></span><br>
-
+<span onClick="document.location.reload(true)"><img src="https://2.bp.blogspot.com/-mBetPH7Gr24/W3ztH42cThI/AAAAAAAAIDg/TgMsqhmXRUAAN2PveRy2fTdveWuA2CJswCLcBGAs/s1600/Logo%2B%2528Website%2529%2B-%2BStudios%2BVersion.png"></span><br></a>
+    <div dir="ltr" lang="pt-BR"><div class="header"><font color="black">Aplicativos essenciais para seu computador | </font>
+        <img alt="" src="https://i.imgur.com/AbzUitZ.png" 
+            style="width: 20px" id="imgClickAndChange" onclick="changeImage()"  /><br>
 <font size="2" color="black">
-    Softwares necessários para um bom funcionamento e úteis para seu computador — Essentials 
-    <i>(Build 1.6.3)</i> de 01 de Novembro — 
+    Softwares para um bom funcionamento e úteis para seu computador — 
+    <i>Build 1.6.4</i> de 29 de Novembro — 
     <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md" target="_blank">Changelog</a></div>
 
 <!-- INICIO DOS PROGRAMAS -->
@@ -269,7 +275,7 @@ function myFunction() {
         
         <tr><td colspan="3"/></tr>
         <td class="Regular">ArchiSteamFarm (Idle Steam)</td>
-        <td class="Regular"><a href="https://github.com/JustArchi/ArchiSteamFarm" target="_blank">LINK</a></td>
+        <td class="Regular"><a href="https://github.com/JustArchiNET/ArchiSteamFarm/releases/tag/3.4.0.7" target="_blank">LINK</a></td>
 
         <tr><td colspan="3"/></tr>
         <td class="Regular">Battle.net</td>
@@ -482,8 +488,11 @@ function myFunction() {
             <tr><td colspan="3"/></tr>
             <td class="Regular">CDBurnerXP</td>
             <td class="Regular"><a href="https://download.cdburnerxp.se/cdbxp_setup_4.5.7.6452.exe" target="_blank">LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">Citra - Nintendo 3DS</td>
+            <td class="Regular"><a href="https://citra-emu.org" target="_blank">LINK</a></td>
         
-            
             <tr><td colspan="3"/></tr>
             <td class="Regular">CPU-Z</td>
             <td class="Regular"><a href="http://download.cpuid.com/cpu-z/cpu-z_1.77-en.exe" target="_blank">LINK</a></td>
@@ -491,7 +500,11 @@ function myFunction() {
             <tr><td colspan="3"/></tr>
             <td class="Regular">DAEMON Tools Lite</td>
             <td class="Regular"><a href="http://dw.uptodown.com/dwn/i_QehErfXBLfAbWDubWEjvHdPzRC19mr_joDnZ-KmFLdJMZvaKB2c61nCVvpz8V07xh1FUCYBraD7EYYzCkyWQinjLZwpALg_g4KB4e25bhbwI37sVDTev9hOhE5G9CO/fGpAdjCkON5wbFw6JI7ZOn5lk9Si8WBgcTnEvxBKViThAVt-VmgA9vIcuQXgHfBW6MLB8OhrTvITNmmGPycL0WHD300vbHvBRbVY1wUSvB2q4NhE-LwkZnv6i0TzscD1/Qv_1EI2ogKqzyQu_WZT2pexYhuPx4Sd6jaXpu1D0h9iSMF8nG7HCDUmRtoYVeg2YjVEg6hKt983WNXzCtMfsWSDDAzy6qgU909R5xwd790NGm4vuBtEKQGkdTuPPM4xe/s_7sKHCLJn3nBkW3AUqmiw==/" target="_blank">LINK</a></td>
-        
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">Dolphin - GameCube e Wii</td>
+            <td class="Regular"><a href="http://www.nvidia.comhttps://br.dolphin-emu.org" target="_blank">LINK</a></td>
+
             <tr><td colspan="3"/></tr>
             <td class="Regular">Geforce Experience</td>
             <td class="Regular"><a href="http://www.nvidia.com.br/object/geforce-experience-br.html" target="_blank">LINK</a></td>
@@ -527,7 +540,6 @@ function myFunction() {
             <td class="Regular">Irfanview</td>
             <td class="Regular"><a href="http://download.cnet.com/IrfanView/?part=dl-&subj=dl&tag=button" target="_blank">LINK</a></td>
         
-            
             <tr><td colspan="3"/></tr>
             <td class="Regular">K-Lite Codec Media Player</td>
             <td class="Regular"><a href="https://www.codecguide.com/download_kl.htm" target='_blank'>LINK</a></td>
@@ -543,20 +555,44 @@ function myFunction() {
             <tr><td colspan="3"/></tr>
             <td class="Regular">Lightshot</td>
             <td class="Regular"><a href="https://app.prntscr.com/build/setup-lightshot.exe" target="_blank">LINK</a></td>
-        
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">Mailbird</td>
+            <td class="Regular"><a href="https://www.getmailbird.com/" target="_blank">LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">mGBA - Gameboy Color + Advanced</td>
+            <td class="Regular"><a href="https://mgba.io" target="_blank">LINK</a></td>
+
             <tr><td colspan="3"/></tr>
             <td class="Regular">Microsoft Office 2016</td>
             <td class="Regular"><a href="magnet:?xt=urn:btih:2b79ce29d90909b2103aa78536277068e1977219&dn=Office+2016+Professional+Plus+RTM+MSDN+x86+x64+pt-BR&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969" target='_blank'>MAGNET</a></td>
-            <td class="Regular"><a href="https://www.officialkmspico.com/download" target="_blank">CRACK LINK</a></td>
-        
-            
+            <td class="Regular"><a href="http://www.mediafire.com/file/n54arkpaibpdp50/Re-Loader.rar/file" target="_blank">CRACK LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">Microsoft Office 2019</td>
+            <td class="Regular"><a href="magnet:?xt=urn:btih:b08c001d5a6a581605f989bb105bb4de78830822&dn=Office+Professional+Plus+2019+BR&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969" target='_blank'>MAGNET</a></td>
+            <td class="Regular"><a href="https://www.sendspace.com/file/8nrssh" target="_blank">CRACK LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">Mozilla Thuderbird</td>
+            <td class="Regular"><a href="https://www.mozilla.org/pt-BR/thunderbird/" target="_blank">LINK</a></td>
+
             <tr><td colspan="3"/></tr>
             <td class="Regular">NET Framework</td>
             <td class="Regular"><a href="https://www.microsoft.com/pt-br/download/details.aspx?id=17851" target='_blank'>LINK</a></td>
             
             <tr><td colspan="3"/></tr>
+            <td class="Regular">Opera Mail</td>
+            <td class="Regular"><a href="http://www.opera.com/pt-br/computer/mail" target="_blank">LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
             <td class="Regular">Photoscape</td>
             <td class="Regular"><a href="https://photoscape.br.uptodown.com/windows" target='_blank'>LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">PCSX2 - Playstation 2</td>
+            <td class="Regular"><a href="https://pcsx2.net/download.html" target='_blank'>LINK</a></td>
         
             <tr><td colspan="3"/></tr>
             <td class="Regular">Razer Cortex</td>
@@ -573,6 +609,14 @@ function myFunction() {
             <tr><td colspan="3"/></tr>
             <td class="Regular">Remote Mouse</td>
             <td class="Regular"><a href="http://www.remotemouse.net/#" target='_blank'>LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">Revo Unistaller</td>
+            <td class="Regular"><a href="https://www.revouninstaller.com/revo_uninstaller_free_download.html" target='_blank'>LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">RPCS3 - Playstation 3</td>
+            <td class="Regular"><a href="https://rpcs3.net/download" target='_blank'>LINK</a></td>
         
             <tr><td colspan="3"/></tr>
             <td class="Regular">UNetbootin</td>
@@ -597,6 +641,14 @@ function myFunction() {
             <tr><td colspan="3"/></tr>
             <td class="Regular">WinRAR</td>
             <td class="Regular"><a href="https://www.win-rar.com/download.html?&L=0" target="_blank">LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">Yuku - Nintendo Switch</td>
+            <td class="Regular"><a href="https://yuzu-emu.org" target="_blank">LINK</a></td>
+
+            <tr><td colspan="3"/></tr>
+            <td class="Regular">zSNES - Super Nintendo</td>
+            <td class="Regular"><a href="https://zsnes.br.uptodown.com/windows" target="_blank">LINK</a></td>
     </tbody>
 </table>            
             

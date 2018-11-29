@@ -1,3 +1,21 @@
+<b>1.6.4 (29 de Novembro)</b><br> 
+Adicionado: Revo Unistaller<br>
+Adicionado: Yuku - Nintendo Switch<br>
+Adicionado: Dolphin - GabeCube e Wii<br>
+Adicionado: mGBA - Gameboy Color + Advanced<br>
+Adicionado: zSNES - Super Nintendo<br>
+Adicionado: Mozilla Thunderbird<br>
+Adicionado: Opera Mail<br>
+Adicionado: Mailbird<br>
+Adicionado: Microsoft Office 2019<br>
+Adicionado: Citra - Nintendo 3DS<br>
+Adicionado: PCSX2 - Playstation 2<br>
+Adicionado: RPCS3 - Playstation 3<br>
+Atualização de URL: ArchiSteamFarm (Idle Steam)<br>
+Removido: Botão de Refresh<br>
+Adicionado: Lua cinza/azul para ativar/desativar Modo Noturno<br>
+Estilo: Mudamos a descrição do "Softwares necessários..."
+
 <b>1.6.3 (01 de Novembro)</b><br>
 Removido: Divisão de Necessidades — É um item que varia de cada pessoa, então retiramos<br>
 Estilo: Mudamos o icone, aquele era apenas um provisório<br>
