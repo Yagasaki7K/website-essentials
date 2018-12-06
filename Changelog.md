@@ -11,6 +11,10 @@ Adicionado: Microsoft Office 2019<br>
 Adicionado: Citra - Nintendo 3DS<br>
 Adicionado: PCSX2 - Playstation 2<br>
 Adicionado: RPCS3 - Playstation 3<br>
+Atualizado: IObit Advanced SystemCare 12.0
+Atualizado: IObit Driver Booster 6.1
+Atualizado: IObit Malware Fighter 6.3
+Atualizado: IObit Unistaller 8.1
 Atualização de URL: ArchiSteamFarm (Idle Steam)<br>
 Removido: Botão de Refresh<br>
 Adicionado: Lua cinza/azul para ativar/desativar Modo Noturno<br>
