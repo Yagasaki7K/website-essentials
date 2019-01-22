@@ -1,3 +1,24 @@
+<b>1.6.5 (22 de Janeiro)</b><br>
+Adicionado: IObit Unlocker 1.2<br>
+Adicionado: Mozilla Firefox Beta<br>
+Adicionado: Mozilla Firefox Developer Edition<br>
+Adicionado: Mozilla Firefox Nightly<br>
+Adicionado: Microsoft OneDrive<br>
+Atualização de Nome: Mozilla Firefox -> Mozilla Firefox Classic<br>
+Atualização de URL: PCSX2 - Playstation 2<br>
+Movido de Categoria: Citra - Nintendo 3DS | Dolphin - GameCube e Wii<br>
+Movido de Categoria: mGBA - Gameboy Color + Advanced | PCSX2 - Playstation 2<br>
+Movido de Categoria: RPCS3 - Playstation 3<br>
+Movido de Categoria: Yuku - Nintendo Switch | zSNES - Super Nintendo<br>
+<i>Observação: Acidentalmente colocamos nos Utilitários ao invés de Entretenimento, já corrigimos :)</i><br>
+Removido: Teamviewer - Microsoft Store<br>
+Removido: Telegram - Microsoft Store<br>
+Removido: Whatsapp - Microsoft Store<br>
+Removido: Amazon Kindle - Microsoft Store<br>
+Removido: Spotify - Microsoft Store<br>
+<i>Observação: Colocamos tudo junto. Agora é LINK / MStore (Microsoft Store)</i><br>
+
+
 <b>1.6.4 (29 de Novembro)</b><br> 
 Adicionado: Revo Unistaller<br>
 Adicionado: Yuku - Nintendo Switch<br>
