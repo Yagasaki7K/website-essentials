@@ -1,3 +1,11 @@
+<b>1.6.6 (11 de Fevereiro)</b>
+Adicionado: VirtualBox Oracle VM<br>
+Adicionado: Streamlabs<br>
+Correção de URL: Dropbox<br>
+Removido: Crack do Microsoft Office 2016<br>
+Removido: Crack do Microsoft Office 2019<br>
+Alteração: CSS e JS em arquivos externos<br>
+
 <b>1.6.5 (22 de Janeiro)</b><br>
 Adicionado: IObit Unlocker 1.2<br>
 Adicionado: Mozilla Firefox Beta<br>
@@ -17,7 +25,6 @@ Removido: Whatsapp - Microsoft Store<br>
 Removido: Amazon Kindle - Microsoft Store<br>
 Removido: Spotify - Microsoft Store<br>
 <i>Observação: Colocamos tudo junto. Agora é LINK / MStore (Microsoft Store)</i><br>
-
 
 <b>1.6.4 (29 de Novembro)</b><br> 
 Adicionado: Revo Unistaller<br>
@@ -65,7 +72,6 @@ Removido: Horizon Xbox Utility<br>
 Código: Agora mais limpo e retiramos coisas que não usamos mais<br>
 Código: Arrumamos um problema de várias versões anteriores, maldita sintaxe<br>
 Estilo: Agora temos um icone ao lado do título, legal né?
-
 
 <b>1.6.1 (05 de Setembro)</b><br>
 Adicionado: Audioswitch<br>

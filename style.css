@@ -1,0 +1,50 @@
+div.header {
+    font-family: "Segoe UI Light","sans-serif";
+    font-size: 20.0pt;
+    color:#2A2A2A;
+    padding-bottom:34px;
+    }
+
+a {
+    font-family: "Segoe UI SemiLight","sans-serif";
+    font-size:11.0pt;
+    color:#3366ff;
+
+    }
+
+table tr.Header {
+    font-family: "Segoe UI Semibold","sans-serif";
+    font-size:11.0pt;
+    text-decoration:none;
+    }
+
+table tr td.Regular {
+    height:20px;
+    vertical-align:text-top;
+    font-family: "Segoe UI SemiLight","sans-serif";
+    font-size:11.0pt;
+    text-decoration:none;
+    }
+
+table tr td.Secondary {
+    height:20px;
+    vertical-align:text-top;
+    font-family: "Segoe UI SemiLight","sans-serif";
+    font-size:11.0pt;
+    color:#707070;
+    text-decoration:none;
+    }
+
+div.Copyright {
+    padding-top:60px;
+    font-family: "Segoe UI SemiLight","sans-serif";
+    font-size: 11.0pt;
+    color:#2A2A2A;
+    }
+
+div.NoList {
+    font-family: "Segoe UI Semibold","sans-serif";
+    font-size:11.0pt;
+    color:#000;
+    text-decoration:none;
+    }
