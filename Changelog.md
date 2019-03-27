@@ -1,3 +1,9 @@
+<b>1.6.7 (27 de Março)</b>
+Alteração: Netflix - Microsoft Store (LINK > MStore)<br>
+Alteração: Chrome OS > CloudReady: Home Edition<br>
+Removido: Discord do Rodapé<br>
+Removido: Blogger do Rodapé<br>
+
 <b>1.6.6 (11 de Fevereiro)</b>
 Adicionado: VirtualBox Oracle VM<br>
 Adicionado: Streamlabs<br>
