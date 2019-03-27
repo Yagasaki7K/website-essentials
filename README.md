@@ -6,8 +6,6 @@
 
 Internautas do mundo inteiro após formatarem seus computadores ou até mesmo estarem em busca de um software que precisam, acabam não encontrando o que buscam por falta de guias nesse vasto mundo cibernético que utilizamos nos dias de hoje. É por isso que o <b>Anderson "Yagasaki" Marlon</b> lançou o <b>Essentials</b>, um projeto que ajudará a redirecionar você a ir ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
 
-O Essentials é puramente open source, já que eles carregam tudo consigo, seu Javascript, seu HTML e CSS estão inclusos na própria raíz, o que evita confusões, sobrecarregamento e arquivos perdidos sobre o limbo da internet.
-
 Acesse o projeto: <a href="https://yagasakii.github.io/webessentials/" target="_blank">Essentials (Web)</a>
 
 Confira o que mudou nas últimas atualizações - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md">Changelog</a>
