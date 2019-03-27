@@ -4,7 +4,9 @@
 <b>v1.6.7 (27 de Março)</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
 </div>
 
-Internautas do mundo inteiro após formatarem seus computadores ou até mesmo estarem em busca de um software que precisam, acabam não encontrando o que buscam por falta de guias nesse vasto mundo cibernético que utilizamos nos dias de hoje. É por isso que o <b>Anderson "Yagasaki" Marlon</b> lançou o <b>Essentials</b>, um projeto que ajudará a redirecionar você a ir ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
+Internautas do mundo inteiro após formatarem seus computadores ou até mesmo estarem em busca de um software que precisam, acabam não encontrando o que buscam por falta de guias nesse vasto mundo cibernético que utilizamos nos dias de hoje. 
+
+É por isso que o <b>Anderson "Yagasaki" Marlon</b> lançou o <b>Essentials</b>, um projeto que ajudará a redirecionar você a ir ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
 
 Acesse o projeto: <a href="https://yagasakii.github.io/webessentials/" target="_blank">Essentials (Web)</a>
 
