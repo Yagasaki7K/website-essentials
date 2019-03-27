@@ -1,10 +1,10 @@
-<b>1.6.7 (27 de Março)</b>
+<b>1.6.7 (27 de Março)</b><br>
 Alteração: Netflix - Microsoft Store (LINK > MStore)<br>
 Alteração: Chrome OS > CloudReady: Home Edition<br>
 Removido: Discord do Rodapé<br>
 Removido: Blogger do Rodapé<br>
 
-<b>1.6.6 (11 de Fevereiro)</b>
+<b>1.6.6 (11 de Fevereiro)</b><br>
 Adicionado: VirtualBox Oracle VM<br>
 Adicionado: Streamlabs<br>
 Correção de URL: Dropbox<br>
