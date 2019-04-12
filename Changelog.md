@@ -1,3 +1,18 @@
+<b>1.6.8 (12 de Abril / April 12th)</b><br>
+<b>[EN-US]</b><br>
+Added: American language to changelogs and system<br>
+Added: Mailspring<br>
+Added: Inkscape<br>
+Added: Scribus<br>
+Added: American Flag and Brazilian Flag<br>
+//-//<br>
+<b>[PT-BR]</b><br>
+Adicionado: Linguagem americana aos changelogs e ao sistema<br>
+Adicionado: Mailspring<br>
+Adicionado: Inkscape<br>
+Adicionado: Scribus<br>
+Adicionado: Bandeira americana e bandeira brasileira<br>
+
 <b>1.6.7 (27 de Março)</b><br>
 Alteração: Netflix - Microsoft Store (LINK > MStore)<br>
 Alteração: Chrome OS > CloudReady: Home Edition<br>
