@@ -25,12 +25,10 @@ Confira o que mudou nas últimas atualizações - <a href="https://github.com/Ya
 # Anderson "Yagasaki" Marlon
 [ENGLISH]<br>
 Thanks to a Web Design & Graphic Design course held in November 2013, I developed my creativity and helped my family with visual identity today, I try to improve my skills and show them to the world that simple problems like visual identity can be solved in the best possible way and in a reliable way, whether in need of Graphic Design or even Front End.
-
 <a href="http://yagasakii.github.io/personal/"> Learn more .. </a>
 
 [PORTUGUÊS]<br>
 Graças a um curso de Web Design & Design Gráfico realizado em Novembro de 2013, aflorei minha criatividade e ajudei a minha família com identidade visual, hoje, tento aprimorar minhas habilidades e mostrá-las ao mundo que os problemas simples como identidade visual podem ser resolvidos da melhor maneira possível e de uma forma confiável, seja em necessidade de Design Gráfico ou até mesmo Front-End.
-
 <a href="http://yagasakii.github.io/personal/ ">Saiba mais..</a>
 
 # Social Medias
