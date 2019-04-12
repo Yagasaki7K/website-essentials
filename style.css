@@ -48,3 +48,10 @@ div.NoList {
     color:#000;
     text-decoration:none;
     }
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    text-decoration: none;
+    }
