@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://4.bp.blogspot.com/-DWRIme7SRQ8/Wkxkz-IgPgI/AAAAAAAAH00/qDonMLTD59QCCudb48IeNUkOAV2qgw2SgCLcBGAs/s1600/Logo%2B%2528Website%2529%2B-%2BStudios%2BVersion.png" alt="The Essentials Web"/></a><br>
 
-<b>v1.6.7 de 27 de Março/March, 27th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
+<b>v1.6.8 de 12 de Abril / April, 12th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
 </div>
 
 [ENGLISH]<br>
