@@ -33,5 +33,5 @@ Graças a um curso de Web Design & Design Gráfico realizado em Novembro de 2013
 
 <a href="http://yagasakii.github.io/personal/ ">Saiba mais..</a>
 
-# Medias Socials
+# Social Medias
 <a href="http://www.facebook.com/AndersonMarlonDesign" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-32.png"></a><a href="http://www.twitter.com/projectYagasaki" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/flat-social-media-icons-set-round-style-1/550/twitter_2-32.png"></a><a href="https://github.com/Yagasakii/webessentials" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-32.png"></a><a href="http://www.instagram.com/AndersonMarlon" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-32.png"></a>
