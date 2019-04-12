@@ -4,23 +4,26 @@ Added: Mailspring<br>
 Added: Inkscape<br>
 Added: American language to changelogs and system<br>
 Added: American Flag and Brazilian Flag<br>
-Name Update: Brackets: Editor de Código -> Brackets: Code Editor
-Name Update: Notepad++ - Editor de Código -> Notepad++ - Code Editor
-Name Update: Sublime Text -Editor de Código -> Sublime Text - Code Editor
-Name Update: Visual Studio - Editor de Código -> Visual Studio - Code Editor
-Name Update: BlueStacks - Emulador Android -> BlueStacks - Emulator Android
-Name Update: NoxPlayer - Emulador Android -> NoxPlayer - Emulator Android
-Name Update: AirDroid - Android Remoto -> AirDroid - Android Remote
+Added: Instagram to footer<br>
+Name Update: Brackets: Editor de Código -> Brackets: Code Editor<br>
+Name Update: Notepad++ - Editor de Código -> Notepad++ - Code Editor<br>
+Name Update: Sublime Text -Editor de Código -> Sublime Text - Code Editor<br>
+Name Update: Visual Studio - Editor de Código -> Visual Studio - Code Editor<br>
+Name Update: BlueStacks - Emulador Android -> BlueStacks - Emulator Android<br>
+Name Update: NoxPlayer - Emulador Android -> NoxPlayer - Emulator Android<br>
+Name Update: AirDroid - Android Remoto -> AirDroid - Android Remote<br>
+
 <b>[PT-BR]</b><br>
 Adicionado: Mailspring<br>
 Adicionado: Inkscape<br>
-Atualização de Nome: Brackets: Editor de Código -> Brackets: Code Editor
-Atualização de Nome: Notepad++ - Editor de Código -> Notepad++ - Code Editor
-Atualização de Nome: Sublime Text -Editor de Código -> Sublime Text - Code Editor
-Atualização de Nome: Visual Studio - Editor de Código -> Visual Studio - Code Editor
-Atualização de Nome: BlueStacks - Emulador Android -> BlueStacks - Emulator Android
-Atualização de Nome: NoxPlayer - Emulador Android -> NoxPlayer - Emulator Android
-Atualização de Nome: AirDroid - Android Remoto -> AirDroid - Android Remote
+Adicionado: Instagram ao rodapé<br>
+Atualização de Nome: Brackets: Editor de Código -> Brackets: Code Editor<br>
+Atualização de Nome: Notepad++ - Editor de Código -> Notepad++ - Code Editor<br>
+Atualização de Nome: Sublime Text -Editor de Código -> Sublime Text - Code Editor<br>
+Atualização de Nome: Visual Studio - Editor de Código -> Visual Studio - Code Editor<br>
+Atualização de Nome: BlueStacks - Emulador Android -> BlueStacks - Emulator Android<br>
+Atualização de Nome: NoxPlayer - Emulador Android -> NoxPlayer - Emulator Android<br>
+Atualização de Nome: AirDroid - Android Remoto -> AirDroid - Android Remote<br>
 Adicionado: Linguagem americana aos changelogs e ao sistema<br>
 Adicionado: Bandeira americana e bandeira brasileira<br>
 
