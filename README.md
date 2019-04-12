@@ -7,7 +7,7 @@
 # [ENGLISH]
 Worldwide netizens after the arrival of their computers or even in a search for a software that needs, we end up not finding what we are looking for the lack of guides in this cyber world that uses today.
 
-That's why Anderson "Yagasaki" Marlon <b> launched <b> Essentials </b>, a project that will help redirect you to the right place to find the software you crave without ads, pop-ups or anything else that gets in the way.
+That's why Anderson "Yagasaki" Marlon launched <b> Essentials </b>, a project that will help redirect you to the right place to find the software you crave without ads, pop-ups or anything else that gets in the way.
 
 Access the project: <a href="https://yagasakii.github.io/webessentials/" target="_blank"> Essentials (Web) </a>
 
