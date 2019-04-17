@@ -9,7 +9,7 @@ Worldwide netizens after the arrival of their computers or even in a search for 
 
 That's why Anderson "Yagasaki" Marlon launched <b> Essentials </b>, a project that will help redirect you to the right place to find the software you crave without ads, pop-ups or anything else that gets in the way.
 
-Access the project: <a href="https://yagasakii.github.io/webessentials/" target="_blank"> Essentials (Web) </a>
+Access the project: <a href="https://webessentials.netlify.com/" target="_blank"> Essentials (Web) </a>
 
 Check out what happens in the latest updates - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md"> Changelog </a>
 
@@ -18,7 +18,7 @@ Internautas do mundo inteiro após formatarem seus computadores ou até mesmo es
 
 É por isso que o <b>Anderson "Yagasaki" Marlon</b> lançou o <b>Essentials</b>, um projeto que ajudará a redirecionar você a ir ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
 
-Acesse o projeto: <a href="https://yagasakii.github.io/webessentials/" target="_blank">Essentials (Web)</a>
+Acesse o projeto: <a href="https://webessentials.netlify.com/" target="_blank">Essentials (Web)</a>
 
 Confira o que mudou nas últimas atualizações - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md">Changelog</a>
 
