@@ -1,6 +1,6 @@
 <b>1.6.9 (25 de Maio / May 25th)</b><br>
 <b>[EN-US]</b><br>
-<b>Added: Adobe Premiere CC Portable</b><br>
+Added: Adobe Premiere CC Portable<br>
 Added: Developers<br>
 Removed: Serial / Crack tab<br>
 Update: Fixed links broken<br>
@@ -11,7 +11,7 @@ Name Update: UPlay - Ubisoft > UPlay<br>
 Name Update: Yuku - Nintendo Switch > Yuzu - Nintendo Switch<br>
 
 <b>[PT-BR]</b><br>
-<b>Adicionado: Adobe Premiere CC Portable</b><br>
+Adicionado: Adobe Premiere CC Portable<br>
 Adicionado: Desenvolvedores<br>
 Removido: Aba de Serial / Crack<br>
 Atualização: Corrigido links quebrados<br>
