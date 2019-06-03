@@ -2,6 +2,7 @@
 <b>[EN-US]</b><br>
 Added: Adobe Premiere CC Portable<br>
 Added: Developers<br>
+Added: SlimDrivers<br>
 Removed: Serial / Crack tab<br>
 Update: Fixed links broken<br>
 Removed for illegality: Adobe Photoshop CS6 Portable<br>
@@ -13,6 +14,7 @@ Name Update: Yuku - Nintendo Switch > Yuzu - Nintendo Switch<br>
 <b>[PT-BR]</b><br>
 Adicionado: Adobe Premiere CC Portable<br>
 Adicionado: Desenvolvedores<br>
+Adicionado: SlimDrivers<br>
 Removido: Aba de Serial / Crack<br>
 Atualização: Corrigido links quebrados<br>
 Removido por ilegalidade: Adobe Photoshop CS6 Portable<br>
