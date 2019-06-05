@@ -39,4 +39,4 @@ E caso você chegou agora, confira algumas mudanças que aconteceram na última 
 <a href="http://www.instagram.com/AndersonMarlon" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-32.png"></a>
 <a href="http://discord.gg/3wr5zTU" target="_blank"><img src="https://cdn2.iconfinder.com/data/icons/social-74/158/discord-32.png"></a>
 <a href="https://github.com/Yagasakii/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-32.png"></a>
-<a href="https://steamcommunity.com/id/yagasaki/" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/steam-32.png"></a>
+<a href="https://steamcommunity.com/id/yagasaki/" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/steam-32.png"></a>
