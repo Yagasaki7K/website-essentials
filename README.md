@@ -6,7 +6,6 @@
 [![Steam donate](https://img.shields.io/badge/Steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=124970009&token=jTv70hat)
 [![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)
 ![GitHub](https://img.shields.io/github/license/yagasakii/webessentials.svg)
-![Discord](https://img.shields.io/discord/3wr5zTU.svg)
 </div>
 
 ## ENGLISH<br>
