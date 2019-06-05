@@ -1,7 +1,12 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="logoreadme.png" alt="The Essentials Web"/></a><br>
 
-<b>v1.6.8 de 12 de Abril / April, 12th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
+<b>v1.6.8 de 12 de Abril / April, 12th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br>
+
+[![Steam donate](https://img.shields.io/badge/Steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=124970009&token=jTv70hat)
+[![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)
+![GitHub](https://img.shields.io/github/license/yagasakii/webessentials.svg)
+![Discord](https://img.shields.io/discord/3wr5zTU.svg)
 </div>
 
 ## ENGLISH<br>
