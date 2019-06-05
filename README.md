@@ -4,34 +4,28 @@
 <b>v1.6.8 de 12 de Abril / April, 12th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px">
 </div>
 
-[ENGLISH]<br>
-Worldwide netizens after the arrival of their computers or even in a search for a software that needs, we end up not finding what we are looking for the lack of guides in this cyber world that uses today.
+#[ENGLISH]<br>
+Many people after formatting the computer forget about which software they have installed, which is the best browser to use, which text editor to encode that program or even which version of the operating system they find to install on another computer. Instead of jumping from site to site in search of this information, I developed Essentials, a web tool that shows through list; Softwares that are useful for your computer and that no longer need to stay in your head, so you can worry about other things.
 
-That's why Anderson "Yagasaki" Marlon launched <b> Essentials </b>, a project that will help redirect you to the right place to find the software you crave without ads, pop-ups or anything else that gets in the way.
+The tool is very easy to use, when accessing the site you can check it in two languages being English and Portuguese, which greatly facilitates for others who are not aware of their local language. In addition to having the night mode installed on it - just click on the moon - which makes it much easier for people who work at night and need that software in a moment of need.
 
-Access the project: <a href="https://webessentials.netlify.com/" target="_blank"> Essentials (Web) </a>
+Any question, suggestion or tip, you can use Github, Discord, Steam, Twitter, Instagram or Facebook to communicate, some of these links are in the footer below.
 
-Check out what happens in the latest updates - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md"> Changelog </a>
+Access my tool: <a href="https://webessentials.netlify.com/" target="_blank">Essentials (Web)</a>
 
-[PORTUGUÊS]<br>
-Internautas do mundo inteiro após formatarem seus computadores ou até mesmo estarem em busca de um software que precisam, acabam não encontrando o que buscam por falta de guias nesse vasto mundo cibernético que utilizamos nos dias de hoje. 
+And if you have arrived now, check out some changes that happened in the last update - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md">Changelog</a>
 
-É por isso que o <b>Anderson "Yagasaki" Marlon</b> lançou o <b>Essentials</b>, um projeto que ajudará a redirecionar você a ir ao lugar correto para encontrar o software que você tanta anseia sem necessitar de anúncios, pop-ups ou qualquer outra coisa que atrapalhe.
+#[PORTUGUÊS]<br>
+Muitas pessoas após formatarem o computador acabam esquecendo que softwares que foram instalados, qual é o melhor navegador a se utilizar, qual editor de texto para codificar aquele programinha ou até mesmo qual outra versão do sistema operacional encontrar para instalar em outro computador. Ao invés de ficar pulando de site em site na busca dessas informações, desenvolvi o Essentials, uma ferramenta web que mostra através de lista; Softwares que são úteis para seu computador e que não tem mais necessidade de ficar na sua cabeça, assim você pode se preocupar com outras coisas.
 
-Acesse o projeto: <a href="https://webessentials.netlify.com/" target="_blank">Essentials (Web)</a>
+A ferramenta é bem fácil de ser utilizada, ao acessar o site você pode conferi-la em duas linguagens sendo Inglês e Português, o que facilita bastante para outras pessoas que não tem conhecimento da sua linguagem local. Além também de termos o modo noturno instalado nele - é só clicar na lua - o que facilita demais para pessoas que trabalham a noite e precisam daquele software em um momento de necessidade.
 
-Confira o que mudou nas últimas atualizações - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md">Changelog</a>
+Qualquer dúvida, sugestão ou dica, você pode utilizar o Github, Discord, Steam, Twitter, Instagram ou Facebook para me comunicar, alguns desses links estão no rodapé mais abaixo.
 
-# Anderson "Yagasaki" Marlon
-[ENGLISH]<br>
-Thanks to a Web Design & Graphic Design course held in November 2013, I developed my creativity and helped my family with visual identity today, I try to improve my skills and show them to the world that simple problems like visual identity can be solved in the best possible way and in a reliable way, whether in need of Graphic Design or even Front End.
+Acesse minha ferramenta: <a href="https://webessentials.netlify.com/" target="_blank">Essentials (Web)</a>
 
-<a href="http://yagasakii.github.io/personal/"> Learn more .. </a>
+E caso você chegou agora, confira algumas mudanças que aconteceram na última atualização - <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md">Changelog</a>
 
-[PORTUGUÊS]<br>
-Graças a um curso de Web Design & Design Gráfico realizado em Novembro de 2013, aflorei minha criatividade e ajudei a minha família com identidade visual, hoje, tento aprimorar minhas habilidades e mostrá-las ao mundo que os problemas simples como identidade visual podem ser resolvidos da melhor maneira possível e de uma forma confiável, seja em necessidade de Design Gráfico ou até mesmo Front-End.
-
-<a href="http://yagasakii.github.io/personal/ ">Saiba mais..</a>
 
 # Social Medias
 <a href="http://www.facebook.com/AndersonMarlonDesign" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-32.png"></a><a href="http://www.twitter.com/projectYagasaki" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/flat-social-media-icons-set-round-style-1/550/twitter_2-32.png"></a><a href="https://github.com/Yagasakii/webessentials" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-32.png"></a><a href="http://www.instagram.com/AndersonMarlon" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-32.png"></a>
