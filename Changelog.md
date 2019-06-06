@@ -1,15 +1,15 @@
 <b>1.7.0 (05 de Junho / June 05th)</b><br>
 <b>[EN-US]</b><br>
-Added: Microsoft Office 2010
-Added: MKVToolNix
-Update: README.md
-Update: Social Midia in footer (Steam and Discord)
+Added: Microsoft Office 2010<br>
+Added: MKVToolNix<br>
+Update: README.md<br>
+Update: Social Midia in footer (Steam and Discord)<br>
 
 <b>[PT-BR]</b><br>
-Adicionado: Microsoft Office 2010
-Adicionado: MKVToolNix
-Atualizado: Readme.md
-Atualizado: Social Midia no rodapé (Steam e Discord)
+Adicionado: Microsoft Office 2010<br>
+Adicionado: MKVToolNix<br>
+Atualizado: Readme.md<br>
+Atualizado: Social Midia no rodapé (Steam e Discord)<br>
 
 <b>1.6.9 (25 de Maio / May 25th)</b><br>
 <b>[EN-US]</b><br>
