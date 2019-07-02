@@ -1,8 +1,6 @@
 window.onload= function ChangeHour() {
     var agora = new Date()
     var hora = agora.getHours()
-    console.log (hora)
-
     if (hora >= 18 && hora <= 23 || hora < 6) {
         document.getElementById("imgClickAndChange").src = "https://i.imgur.com/BwAPQdH.png";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
