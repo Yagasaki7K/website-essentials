@@ -1,3 +1,14 @@
+<b>1.7.1 (01 de Julho / July 01th)</b><br>
+[EN-US]<br>
+Added: Opera GX<br>
+Added: Day/Night System<br>
+
+[PT-BR]<br>
+Adicionado: Opera GX<br>
+Adicionado: Sistema de Dia/Noite<br>
+
+<!-- UPGRADE DE ATUALIZAÇÃO -->
+
 <b>1.7.0 (05 de Junho / June 05th)</b><br>
 <b>[EN-US]</b><br>
 Added: Microsoft Office 2010<br>
@@ -10,6 +21,8 @@ Adicionado: Microsoft Office 2010<br>
 Adicionado: MKVToolNix<br>
 Atualizado: Readme.md<br>
 Atualizado: Social Midia no rodapé (Steam e Discord)<br>
+
+<!-- UPGRADE DE ATUALIZAÇÃO -->
 
 <b>1.6.9 (25 de Maio / May 25th)</b><br>
 <b>[EN-US]</b><br>
