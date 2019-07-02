@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="logoreadme.png" alt="The Essentials Web"/></a><br>
 
-<b>v1.7.0 de 05 de Junho / June, 05th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br><br>
+<b>v1.7.1 de 01 de Julho / July, 01th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br><br>
 
 [![Steam donate](https://img.shields.io/badge/Steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=124970009&token=jTv70hat)
 [![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)
