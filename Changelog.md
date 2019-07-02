@@ -1,9 +1,9 @@
 <b>1.7.1 (01 de Julho / July 01th)</b><br>
-[EN-US]<br>
+<b>[EN-US]</b><br>
 Added: Opera GX<br>
 Added: Day/Night System<br>
 
-[PT-BR]<br>
+<b>[PT-BR]</b><br>
 Adicionado: Opera GX<br>
 Adicionado: Sistema de Dia/Noite<br>
 
