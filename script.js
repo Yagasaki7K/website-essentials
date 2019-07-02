@@ -1,5 +1,32 @@
-function changeImage() {
+window.onload= function ChangeHour() {
+    var agora = new Date()
+    var hora = agora.getHours()
+    console.log (hora)
 
+    if (hora >= 18 && hora <= 23 || hora < 6) {
+        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/BwAPQdH.png";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
+        document.getElementsByTagName("div")[0].style.color = "white";
+        document.getElementsByTagName("div")[3].style.color = "white";
+        document.getElementsByTagName("font")[0].style.color = "white";
+        document.getElementsByTagName("font")[1].style.color = "white";
+        document.getElementsByTagName("font")[2].style.color = "white";
+        document.getElementsByTagName("hr")[1].style.color = "white";
+        document.getElementsById("copyright")[1].style.color = "white";
+    } else if (hora >= 6 && hora <= 17) {
+        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/AbzUitZ.png";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
+        document.getElementsByTagName("div")[0].style.color = "black";
+        document.getElementsByTagName("div")[3].style.color = "black";
+        document.getElementsByTagName("font")[0].style.color = "black";
+        document.getElementsByTagName("font")[1].style.color = "black";
+        document.getElementsByTagName("font")[2].style.color = "black";
+        document.getElementsByTagName("hr")[1].style.color = "black";
+        document.getElementsById("copyright")[1].style.color = "black";
+    }
+}
+
+function changeImage() {
     if (document.getElementById("imgClickAndChange").src == "https://i.imgur.com/AbzUitZ.png") 
     {
         document.getElementById("imgClickAndChange").src = "https://i.imgur.com/BwAPQdH.png";
