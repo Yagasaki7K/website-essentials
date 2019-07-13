@@ -1,8 +1,9 @@
 window.onload= function ChangeHour() {
-    var agora = new Date()
-    var hora = agora.getHours()
+    var agora = new Date();
+    var hora = agora.getHours();
+    var checkbox = myonoffswitch;
     if (hora >= 18 && hora <= 23 || hora < 6) {
-        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/BwAPQdH.png";
+        document.getElementById("myonoffswitch").checked = true;
         document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
         document.getElementsByTagName("div")[0].style.color = "white";
         document.getElementsByTagName("div")[3].style.color = "white";
@@ -12,7 +13,6 @@ window.onload= function ChangeHour() {
         document.getElementsByTagName("hr")[1].style.color = "white";
         document.getElementsById("copyright")[1].style.color = "white";
     } else if (hora >= 6 && hora <= 17) {
-        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/AbzUitZ.png";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
         document.getElementsByTagName("div")[0].style.color = "black";
         document.getElementsByTagName("div")[3].style.color = "black";
@@ -25,9 +25,9 @@ window.onload= function ChangeHour() {
 }
 
 function changeImage() {
-    if (document.getElementById("imgClickAndChange").src == "https://i.imgur.com/AbzUitZ.png") 
+    var checkbox = myonoffswitch;
+    if (checkbox.checked) 
     {
-        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/BwAPQdH.png";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
         document.getElementsByTagName("div")[0].style.color = "white";
         document.getElementsByTagName("div")[3].style.color = "white";
@@ -39,7 +39,6 @@ function changeImage() {
     }
     else 
     {
-        document.getElementById("imgClickAndChange").src = "https://i.imgur.com/AbzUitZ.png";
         document.getElementsByTagName("body")[0].style.backgroundColor = "#fff";
         document.getElementsByTagName("div")[0].style.color = "black";
         document.getElementsByTagName("div")[3].style.color = "black";
@@ -54,7 +53,7 @@ function changeImage() {
 
 function ptbr() {
     document.getElementById('head1').innerHTML = 'Aplicativos essenciais para seu computador';
-    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.1</i> de 01 de Julho —';
+    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.2</i> de 13 de Julho —';
     document.getElementById('backup').innerHTML = 'Programas de Backup / Nuvem';
     document.getElementById('comunication').innerHTML = 'Programas de Comunicações';
     document.getElementById('developer').innerHTML = 'Programas de Desenvolvimento';
@@ -75,7 +74,7 @@ function ptbr() {
 
 function enusa() {
     document.getElementById('head1').innerHTML = 'Essential applications for your computer';
-    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.1 </i> of July 01th -';
+    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.2</i> of July 13th -';
     document.getElementById('backup').innerHTML = 'Backup / Cloud Programs';
     document.getElementById('comunication').innerHTML = 'Communication Programs';
     document.getElementById('developer').innerHTML = 'Development Programs';
