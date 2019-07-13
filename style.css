@@ -2,9 +2,10 @@ div.header {
     font-family: "Segoe UI Light","sans-serif";
     font-size: 20.0pt;
     color:#2A2A2A;
-    padding-bottom:34px;
+    margin-bottom: 25px;
+    margin-top: -12px;
     }
-
+    
 a {
     font-family: "Segoe UI SemiLight","sans-serif";
     font-size:11.0pt;
@@ -39,15 +40,20 @@ div.Copyright {
     padding-top:60px;
     font-family: "Segoe UI SemiLight","sans-serif";
     font-size: 11.0pt;
-    color:#2A2A2A;
+    color:#1b2836;
     }
 
 div.NoList {
     font-family: "Segoe UI Semibold","sans-serif";
     font-size:11.0pt;
-    color:#000;
+    color:#1b2836;
     text-decoration:none;
     }
+
+div.onoffswitch {
+  top: 10px;
+  display: inline-block;
+}
 
 button {
     padding: 0;
@@ -55,3 +61,58 @@ button {
     background: none;
     text-decoration: none;
     }
+
+.onoffswitch {
+  position: relative; width: 75px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #000; border-radius: 50px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 36px; padding: 0; line-height: 36px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #1B2836; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #fff; color: #000;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 23px; margin: 6.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 35px;
+    border: 2px solid #000; border-radius: 50px;
+    transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
