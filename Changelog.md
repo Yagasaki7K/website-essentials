@@ -1,5 +1,5 @@
-<h1>1.7.2 (13 de Julho / July 13th)</h1><br>
-<h2>[EN-US]</h2><br>
+<h2>1.7.2 (13 de Julho / July 13th)</h2><br>
+<b>[EN-US]</b><br>
 Added: Night Mode Button (Adjusts automatically with time)<br>
 Added: Snow system will emerge in Christmas times (December 15th) - not included in current code<br>
 Removed: Moons of Night Mode (Goodbye Ladies!)<br>
@@ -15,7 +15,7 @@ Corrigido: Algumas falhas de sintaxes no Javascript/HTML e CSS (não afetava a u
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.7.1 (01 de Julho / July 01th)</b><br>
+<h2>1.7.1 (01 de Julho / July 01th)</h2><br>
 <b>[EN-US]</b><br>
 Added: Opera GX<br>
 Added: Day/Night System<br>
@@ -26,7 +26,7 @@ Adicionado: Sistema de Dia/Noite<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.7.0 (05 de Junho / June 05th)</b><br>
+<h2>1.7.0 (05 de Junho / June 05th)</h2><br>
 <b>[EN-US]</b><br>
 Added: Microsoft Office 2010<br>
 Added: MKVToolNix<br>
@@ -41,7 +41,7 @@ Atualizado: Social Midia no rodapé (Steam e Discord)<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.9 (25 de Maio / May 25th)</b><br>
+<h2>1.6.9 (25 de Maio / May 25th)</h2><br>
 <b>[EN-US]</b><br>
 Added: Adobe Premiere CC Portable<br>
 Added: Developers<br>
@@ -68,7 +68,7 @@ Atualização de Nome: Yuku - Nintendo Switch > Yuzu - Nintendo Switch<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.8 (12 de Abril / April 12th)</b><br>
+<h2>1.6.8 (12 de Abril / April 12th)</h2><br>
 <b>[EN-US]</b><br>
 Added: Mailspring<br>
 Added: Inkscape<br>
@@ -99,7 +99,7 @@ Adicionado: Bandeira americana e bandeira brasileira<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.7 (27 de Março)</b><br>
+<h2>1.6.7 (27 de Março)</h2><br>
 Alteração: Netflix - Microsoft Store (LINK > MStore)<br>
 Alteração: Chrome OS > CloudReady: Home Edition<br>
 Removido: Discord do Rodapé<br>
@@ -107,7 +107,7 @@ Removido: Blogger do Rodapé<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.6 (11 de Fevereiro)</b><br>
+<h2>1.6.6 (11 de Fevereiro)</h2><br>
 Adicionado: VirtualBox Oracle VM<br>
 Adicionado: Streamlabs<br>
 Correção de URL: Dropbox<br>
@@ -117,7 +117,7 @@ Alteração: CSS e JS em arquivos externos<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.5 (22 de Janeiro)</b><br>
+<h2>1.6.5 (22 de Janeiro)</h2><br>
 Adicionado: IObit Unlocker 1.2<br>
 Adicionado: Mozilla Firefox Beta<br>
 Adicionado: Mozilla Firefox Developer Edition<br>
@@ -139,7 +139,7 @@ Removido: Spotify - Microsoft Store<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.4 (29 de Novembro)</b><br> 
+<h2>1.6.4 (29 de Novembro)</h2><br> 
 Adicionado: Revo Unistaller<br>
 Adicionado: Yuku - Nintendo Switch<br>
 Adicionado: Dolphin - GabeCube e Wii<br>
@@ -163,7 +163,7 @@ Estilo: Mudamos a descrição do "Softwares necessários..."
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.3 (01 de Novembro)</b><br>
+<h2>1.6.3 (01 de Novembro)</h2><br>
 Removido: Divisão de Necessidades — É um item que varia de cada pessoa, então retiramos<br>
 Estilo: Mudamos o icone, aquele era apenas um provisório<br>
 Estilo: Mais simples, dinâmico e mais organizado<br>
@@ -174,7 +174,7 @@ JavaScript: Retiramos uma função que estava acumulando caracteres
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.2 (24 de Outubro)</b><br>
+<h2>1.6.2 (24 de Outubro)</h2><br>
 Atualização de URL: Mirillis Action<br>
 Adicionado: Chrome OS<br>
 Adicionado: APowerMirror - Espelhamento Android<br>
@@ -192,7 +192,7 @@ Estilo: Agora temos um icone ao lado do título, legal né?
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.1 (05 de Setembro)</b><br>
+<h2>1.6.1 (05 de Setembro)</h2><br>
 Adicionado: Audioswitch<br>
 Adicionado: LastPass<br>
 Adicionado: GitHub
@@ -209,7 +209,7 @@ Atualização de URL: WinRAR
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.6.0 (22 de Agosto)</b><br>
+<h2>1.6.0 (22 de Agosto)</h2><br>
 Alteração de Nome: Studio Essentials -> Essentials<br>
 Alteração de Nome: Visual Studio Code -> Visual Studio - Editor de Código<br>
 Alteração de Nome: Brackets -> Brackets - Editor de Código<br>
@@ -232,7 +232,7 @@ Removido: Curse
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.9 (12 de Agosto)</b><br>
+<h2>1.5.9 (12 de Agosto)</h2><br>
 Atualização: IOBit Advanced SystemCare (Removido Serial/Crack)<br>
 Atualização: IOBit Driver Booster (Removido Serial/Crack)<br>
 Atualização: IOBit Malware Fighter (Removido Serial/Crack)<br>
@@ -248,7 +248,7 @@ Estrutura: Mudamos um pouco o cabeçalho do site, mas nada muito sério.
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.8 (20 de Julho)</b><br>
+<h2>1.5.8 (20 de Julho)</h2><br>
 Correção de URL: All in One Runtimes<br>
 Correção de URL: Cracks - Windows 7 e 10 (Todas suas versões)<br>
 Removido: Auto Shutdown<br>
@@ -256,14 +256,14 @@ Removido: Re-Loader (Office/Win Activator)
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.7 (18 de Junho)</b><br>
+<h2>1.5.7 (18 de Junho)</h2><br>
 Adicionado: Opera Neon<br>
 Adicionado: Spotify - Microsoft Store<br>
 Adicionado: Teamviewer - Microsoft Store
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.6 (07 de Maio)</b><br>
+<h2>1.5.6 (07 de Maio)</h2><br>
 Adicionado: Origin<br>
 Adicionado: Amazon Kindle - Microsoft Store<br>
 Google Analytics: Agora nosso código possui o Google Analytics para analisarmos melhor os acessos.<br>
@@ -271,7 +271,7 @@ Description: Corrigimos um problema na descrição do nosso código, mas nada qu
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.5 (12 de Abril)</b><br>
+<h2>1.5.5 (12 de Abril)</h2><br>
 Removido: Reloader (Office/Win Activator)<br>
 Alteração de Nome: Microsoft - Windows 10 Pro -> Windows 10 Pro (x86/x64)<br>
 Alteração de Nome: Microsoft - Windows 10 LTSB 64 Bits -> Windows 10 LTSB x64<br>
@@ -286,21 +286,21 @@ Mudança de Necessidade: Tor Browser (Opcional -> Necessário)
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.4 (10 de Abril)</b><br>
+<h2>1.5.4 (10 de Abril)</h2><br>
 Alteração de Nome: ReLoader (Office Activator) -> Reloader (Office/Win Activator)<br>
 Correção de URL: Reloader<br>
 Adicionado: Adobe Photoshop CS6 Portable
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.4 (03 de Abril)</b><br>
+<h2>1.5.4 (03 de Abril)</h2><br>
 Alteração de Nome: Microsoft - W10 (Instalador) -> Microsoft Windows 10 Pro<br>
 Adicionado: Microsoft - Windows 10 LTSB 64 Bits<br>
 Adicionado: Microsoft - Windows 10 LTSB 32 Bits
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.4 (29 de Março)</b><br>
+<h2>1.5.4 (29 de Março)</h2><br>
 Atualização: IObit Advanced SystemCare 11.2 + Serial<br>
 Atualização: IObit Driver Booster 5.3 + Serial <br>
 Atualização: IObit Malware Fighter 5.6 + Serial<br>
@@ -315,7 +315,7 @@ Corrigido: Softwares com URLs trocadas
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>1.5.3 (17 de Fevereiro)</b><br>
+<h2>1.5.3 (17 de Fevereiro)</h2><br>
 Alteração de Nome: Microsoft - Windows 10 (Instalador) -> Microsoft - W10 (Instalador)<br>
 Alteração de Nome: Re-Loader (Microsoft/Office Activator) -> Re-Loader (Office Activator)<br>
 Adicionado: Brackets - Editor de Texto<br>
@@ -328,7 +328,7 @@ Adicionado: Discord nas Redes Sociais (Rodapé)
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.5.2 (12 de Fevereiro)</b><br>
+<h2>v1.5.2 (12 de Fevereiro)</h2><br>
 Adicionado: Unified Remote<br>
 Adicionado: 7-Zip<br>
 Adicionado: OBS Studio<br>
@@ -347,7 +347,7 @@ Adicionado: Botão de Atualização/Refresh ao lado do Modo Noturno<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.5.1 (03 de Janeiro)</b><br>
+<h2>v1.5.1 (03 de Janeiro)</h2><br>
 Light and Dark - Removido: Opção agora acessível através de botão<br>
 Corrigida falha de espaçamento presente nas versões anteriores<br>
 Atualização de URL: Adobe Creative Cloud<br>
@@ -363,7 +363,7 @@ Alteração de Nome: KMS Autonet > Re-Loader (Microsoft/Office Activator)<br><br
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.5.0 (29 de Outubro)</b><br>
+<h2>v1.5.0 (29 de Outubro)</h2><br>
 Adicionado: NoxPlayer - Emulador Android<br>
 Adicionado: Google Chromium<br>
 Adicionado: Mozilla Quantum<br>
@@ -376,7 +376,7 @@ Atualização Geral: Onih Inc agora será conhecida como Antech Productions.<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.9 (31 de Agosto)</b><br>
+<h2>v1.4.9 (31 de Agosto)</h2><br>
 Atualização de URL: AiO Runtimes (Corretor de DLL)<br>
 Atualização de URL: Filezilla - The FTP Solution<br>
 Atualização de URL: KMSAuto Net (Ativador)<br>
@@ -386,7 +386,7 @@ Mudança de necessidade: Opera Browser (Opcional > Necessário)<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.8 (24 de Agosto)</b><br>
+<h2>v1.4.8 (24 de Agosto)</h2><br>
 Adicionado: Filezilla - The FTP Solution<br>
 Adicionado: Adobe Creative Cloud<br>
 Adicionado: HP Support Assistant<br>
@@ -397,7 +397,7 @@ Removido: Adobe Photoshop CS6<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.7 (27 de Julho)</b><br>
+<h2>v1.4.7 (27 de Julho)</h2><br>
 Adicionado: Remote Mouse<br>
 Adicionado: Mirilis Action<br>
 Adicionado: Photoscape<br>
@@ -405,7 +405,7 @@ Alterado: Logotipo Onih -> Logotipo Essentials<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.6 (06 de Julho)</b><br>
+<h2>v1.4.6 (06 de Julho)</h2><br>
 Adicionado: KMSAuto Net (Ativador)<br>
 Adicionado: Raidcall<br>
 Adicionado: GPU-Z<br>
@@ -424,7 +424,7 @@ Correção de Serial: Rad Studio XE8<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.5 (15 de Junho)</b><br>
+<h2>v1.4.5 (15 de Junho)</h2><br>
 Link adicionado: IObit Unistaller<br>
 Correção de Links (Onih Inc)<br>
 Logotipo da Onih Inc adicionado<br>
@@ -432,7 +432,7 @@ Correção das divisões na lista<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.4 (19 de Maio)</b><br>
+<h2>v1.4.4 (19 de Maio)</h2><br>
 Adicionado: Battle.net<br>
 Adicionado: Whatsapp Web<br>
 Adicionado: AiO Runtimes (Corretor DLL)<br>
@@ -441,7 +441,7 @@ Edição Black Essentials<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.3 (12 de Abril)</b><br>
+<h2>v1.4.3 (12 de Abril)</h2><br>
 Link adicionado: Atube Catcher<br>
 Link adicionado: Irfanview x86<br>
 Link adicionado: Irfanview x64<br>
@@ -450,7 +450,7 @@ Alteração de Nome: Drive Boster > IObit Driver Booster<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.2 (11 de Março)</b><br>
+<h2>v1.4.2 (11 de Março)</h2><br>
 Link adicionado: Geforce Experience<br>
 Link adicionado: Atom x64: Text Editor<br>
 Link adicionado: Visual Studio 2017<br>
@@ -471,12 +471,12 @@ Renomeado: Brackets > Brackets: Text Editor<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.1 (22 de Fevereiro)</b><br>
+<h2>v1.4.1 (22 de Fevereiro)</h2><br>
 Link adicionado - UNetbootin<br><br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-<b>v1.4.0 (30 de Dezembro)</b><br>
+<h2>v1.4.0 (30 de Dezembro)</h2><br>
 Link corrigido - Iso2God<br>
 Link corrigido - IObit Malware Fighter<br>
 Link corrigido - IObit Advanced SystemCare<br>
