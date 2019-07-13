@@ -1,9 +1,8 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="logoreadme.png" alt="The Essentials Web"/></a><br>
 
-<b>v1.7.1 de 01 de Julho / July, 01th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br><br>
+<b>v1.7.2 de 13 de Julho / July, 13th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br><br>
 
-[![Steam donate](https://img.shields.io/badge/Steam-donate-yellow.svg)](https://steamcommunity.com/tradeoffer/new/?partner=124970009&token=jTv70hat)
 [![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)
 [![GitHub](https://img.shields.io/github/license/yagasakii/webessentials.svg)](https://github.com/Yagasakii/webessentials/blob/master/LICENSE)
 </div>
@@ -34,4 +33,4 @@ E caso você chegou agora, confira algumas mudanças que aconteceram na última 
 
 
 # Social Medias
-<a href="http://www.facebook.com/AndersonMarlonDesign" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-32.png"></a><a href="http://www.twitter.com/projectYagasaki" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/flat-social-media-icons-set-round-style-1/550/twitter_2-32.png"></a><a href="http://www.instagram.com/AndersonMarlon" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-32.png"></a><a href="http://discord.gg/3wr5zTU" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-32.png"></a><a href="https://steamcommunity.com/id/yagasaki/" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/social-media-2092/100/social-54-32.png"></a><a href="https://github.com/Yagasakii/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-32.png"></a>
+<a href="http://www.facebook.com/AndersonMarlonDesign" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-32.png"></a><a href="http://www.twitter.com/projectYagasaki" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/flat-social-media-icons-set-round-style-1/550/twitter_2-32.png"></a><a href="http://www.instagram.com/AndersonMarlon" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-32.png"></a><a href="http://discord.gg/3wr5zTU" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-32.png"></a><a href="https://github.com/Yagasakii/" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-32.png"></a>
