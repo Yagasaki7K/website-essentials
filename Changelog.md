@@ -4,7 +4,7 @@ Added: Night Mode Button (Adjusts automatically with time)<br>
 Added: Snow system will emerge in Christmas times (December 15th) - not included in current code<br>
 Removed: Moons of Night Mode (Goodbye Ladies!)<br>
 Adjusted: Spacing between header and tables<br>
-Fixed: Some syntax failures in Javascript / HTML and CSS (did not affect user usability)<br>
+Fixed: Some syntax failures in Javascript / HTML and CSS (did not affect user usability)<br><br>
 
 <b>[PT-BR]</b><br>
 Adicionado: Botão de Modo Noturno (Ajusta automaticamente com horário)<br>
@@ -18,7 +18,7 @@ Corrigido: Algumas falhas de sintaxes no Javascript/HTML e CSS (não afetava a u
 <h2>1.7.1 (01 de Julho / July 01th)</h2><br>
 <b>[EN-US]</b><br>
 Added: Opera GX<br>
-Added: Day/Night System<br>
+Added: Day/Night System<br><br>
 
 <b>[PT-BR]</b><br>
 Adicionado: Opera GX<br>
@@ -31,7 +31,7 @@ Adicionado: Sistema de Dia/Noite<br>
 Added: Microsoft Office 2010<br>
 Added: MKVToolNix<br>
 Update: README.md<br>
-Update: Social Midia in footer (Steam and Discord)<br>
+Update: Social Midia in footer (Steam and Discord)<br><br>
 
 <b>[PT-BR]</b><br>
 Adicionado: Microsoft Office 2010<br>
@@ -52,7 +52,7 @@ Removed for illegality: Adobe Photoshop CS6 Portable<br>
 Removed for illegality: Sony Vegas PRO 14.0<br>
 Removed for illegality: Mirillis Action<br>
 Name Update: UPlay - Ubisoft > UPlay<br>
-Name Update: Yuku - Nintendo Switch > Yuzu - Nintendo Switch<br>
+Name Update: Yuku - Nintendo Switch > Yuzu - Nintendo Switch<br><br>
 
 <b>[PT-BR]</b><br>
 Adicionado: Adobe Premiere CC Portable<br>
@@ -81,7 +81,7 @@ Name Update: Sublime Text -Editor de Código -> Sublime Text - Code Editor<br>
 Name Update: Visual Studio - Editor de Código -> Visual Studio - Code Editor<br>
 Name Update: BlueStacks - Emulador Android -> BlueStacks - Emulator Android<br>
 Name Update: NoxPlayer - Emulador Android -> NoxPlayer - Emulator Android<br>
-Name Update: AirDroid - Android Remoto -> AirDroid - Android Remote<br>
+Name Update: AirDroid - Android Remoto -> AirDroid - Android Remote<br><br>
 
 <b>[PT-BR]</b><br>
 Adicionado: Mailspring<br>
