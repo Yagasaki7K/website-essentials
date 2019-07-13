@@ -1,12 +1,12 @@
 <b>1.7.2 (13 de Julho / July 13th)</b><br>
-<b>[EN-US]</b>
+<b>[EN-US]</b><br>
 Added: Night Mode Button (Adjusts automatically with time)<br>
 Added: Snow system will emerge in Christmas times (December 15th) - not included in current code<br>
 Removed: Moons of Night Mode (Goodbye Ladies!)<br>
 Adjusted: Spacing between header and tables<br>
 Fixed: Some syntax failures in Javascript / HTML and CSS (did not affect user usability)<br>
 
-<b>[PT-BR]</b>
+<b>[PT-BR]</b><br>
 Adicionado: Botão de Modo Noturno (Ajusta automaticamente com horário)<br>
 Adicionado: Sistema de neve surgirá em épocas natalinas (15 de Dezembro) - não incluso no código atual<br>
 Removido: Luas do Modo Noturno (Adeus Senhoras!)<br>
