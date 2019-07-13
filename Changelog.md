@@ -1,4 +1,4 @@
-<b>1.7.2 (13 de Julho / July 13th)</b><br>
+<h1>1.7.2 (13 de Julho / July 13th)</h1><br>
 <b>[EN-US]</b><br>
 Added: Night Mode Button (Adjusts automatically with time)<br>
 Added: Snow system will emerge in Christmas times (December 15th) - not included in current code<br>
