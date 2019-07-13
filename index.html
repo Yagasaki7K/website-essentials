@@ -32,14 +32,20 @@ Github         : https://github.com/Yagasakii/webessentials
 </script>
 </head>
 
-<body leftmargin="60px" topmargin="15px">
+<body ondragstart="return false" onselectstart="return false" leftmargin="60px" topmargin="15px">
 <span onClick="document.location.reload(true)"><img src="logo.png"></span><br></a>
     <div dir="ltr" lang="pt-BR"><div class="header">
         <font color="black"><span id="head1">Aplicativos essenciais para seu computador</span> | </font>
-        <img alt="" src="https://i.imgur.com/AbzUitZ.png" style="width: 20px" id="imgClickAndChange" onclick="changeImage()" /><br>
-
+        
+        <div class="onoffswitch" onclick="changeImage()">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+            <label class="onoffswitch-label" for="myonoffswitch"> 
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div><br>
     <font size="2" color="black">
-    <span id="head2">Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.1</i> de 01 de Julho — </span>
+    <span id="head2">Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.2</i> de 13 de Julho — </span>
     <a href="https://github.com/Yagasakii/webessentials/blob/master/Changelog.md" target="_blank">Changelog</a> |</font>
 
     <button onclick="ptbr()"><img src="https://i.imgur.com/5gE2D63.png" width="25px"></button>
@@ -711,9 +717,6 @@ Github         : https://github.com/Yagasakii/webessentials
 
 <!-- DISCORD -->
 <a href="http://discord.gg/3wr5zTU" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/discord-32.png"></a>
-
-<!-- STEAM -->
-<a href="https://steamcommunity.com/id/yagasaki/" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/social-media-2092/100/social-54-32.png"></a>
       
 <!-- GITHUB -->
 <a href="https://github.com/Yagasakii/webessentials" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/github_circle_black-32.png"></a>
