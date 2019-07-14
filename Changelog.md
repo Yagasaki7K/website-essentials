@@ -3,6 +3,7 @@
 Added: Night Mode Button (Adjusts automatically with time)<br>
 Added: Snow system will emerge in Christmas times (December 15th) - not included in current code<br>
 Removed: Moons of Night Mode (Goodbye Ladies!)<br>
+Removed: Steam donate and Steam links<br>
 Adjusted: Spacing between header and tables<br>
 Fixed: Some syntax failures in Javascript / HTML and CSS (did not affect user usability)<br><br>
 
@@ -10,6 +11,7 @@ Fixed: Some syntax failures in Javascript / HTML and CSS (did not affect user us
 Adicionado: Botão de Modo Noturno (Ajusta automaticamente com horário)<br>
 Adicionado: Sistema de neve surgirá em épocas natalinas (15 de Dezembro) - não incluso no código atual<br>
 Removido: Luas do Modo Noturno (Adeus Senhoras!)<br>
+Removido: Doação pela Steam e links da Steam<br>
 Ajustado: Espaçamento entre o cabeçalho e as tabelas<br>
 Corrigido: Algumas falhas de sintaxes no Javascript/HTML e CSS (não afetava a usabilidade do usuário)<br>
 
