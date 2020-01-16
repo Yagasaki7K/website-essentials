@@ -63,7 +63,7 @@ button {
     }
 
 .onoffswitch {
-  position: relative; width: 75px;
+  position: relative; width: 73px;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
 }
 
@@ -82,7 +82,7 @@ button {
 }
 
 .onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 36px; padding: 0; line-height: 36px;
+    display: block; float: left; width: 50%; height: 32px; padding: 0; line-height: 36px;
     font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     box-sizing: border-box;
 }

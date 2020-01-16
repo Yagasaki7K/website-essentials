@@ -1,3 +1,37 @@
+<h2>1.7.3 (16 de Janeiro / January 16th)</h2><br>
+<b>[EN-US]</b><br>
+Developer Name Updated: IObit > IOBit Softwares
+Developer Name Updated: Microsoft > Microsoft Corporation
+Developer Name Updated: Spotify > Spotify AB
+Added: Microsoft Edge (BETA)
+Added: GitHub Desktop
+Added: Netbeans - Code Editor
+Added: Atom - Code Editor
+Added: Instagram - Microsoft Store
+Name Update: HyperX NGenuity 5.2.4.5 > HyperX NGenuity
+Adjusted: Night button size
+Removed URL: Amazon Kindle - MStore
+Fixed URL: Twitter in footer
+Fixed URL: Avira Anti-Vírus
+Fixed URL: HyperX NGenuity
+
+<b>[PT-BR]</b><br>
+Nome de desenvolvedor atualizado: IObit > IOBit Softwares
+Nome de desenvolvedor atualizado: Microsoft > Microsoft Corporation
+Nome de desenvolvedor atualizado: Spotify > Spotify AB
+Adicionado: Microsoft Edge (BETA)
+Adicionado: GitHub Desktop
+Adicionado: Netbeans - Code Editor
+Adicionado: Atom - Code Editor
+Adicionado: Instagram - Microsoft Store
+Atualização de Nome: HyperX NGenuity 5.2.4.5 > HyperX NGenuity
+Ajustado: Tamanho do botão noturno
+Removida URL: Amazon Kindle - MStore
+Corrigido URL: Twitter no rodapé
+Corrigido URL: Avira Anti-Vírus
+Corrigido URL: HyperX NGenuity
+<!-- UPGRADE DE ATUALIZAÇÃO -->
+
 <h2>1.7.2 (13 de Julho / July 13th)</h2><br>
 <b>[EN-US]</b><br>
 Added: Night Mode Button (Adjusts automatically with time)<br>
