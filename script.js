@@ -48,7 +48,6 @@ function changeImage() {
         document.getElementsByTagName("hr")[1].style.color = "black";
         document.getElementsById("copyright")[1].style.color = "black";
     }
-    
 }
 
 function ptbr() {
@@ -62,7 +61,7 @@ function ptbr() {
     document.getElementById('opsystem').innerHTML = 'Sistema Operacional';
     document.getElementById('utylitys').innerHTML = 'Programas de Utilitários';
     document.getElementById('softwareask').innerHTML = 'O software desejado não está na lista? Informe através das redes sociais — <b>Feito com <font color="red">❤</font> pelo Anderson "Yagasaki" Marlon';
-    document.getElementById('copyright2').innerHTML = '© Copyright 2017-2019 | Esse site é desenvolvido por <a href="https://www.facebook.com/AndersonMarlonDesign/" target="_blank">Anderson Marlon</a> e hospedado em <a href="https://www.netlify.com/" target="_blank">Netlify</a>. O código do site está hospedado no <a href="http://www.github.com/" target="_blank">GitHub</a>';
+    document.getElementById('copyright2').innerHTML = '© Copyright 2017-2020 | Esse site é desenvolvido por <a href="https://www.facebook.com/AndersonMarlonDesign/" target="_blank">Anderson Marlon</a> e hospedado em <a href="https://www.netlify.com/" target="_blank">Netlify</a>. O código do site está hospedado no <a href="http://www.github.com/" target="_blank">GitHub</a>';
     document.getElementById('dev1').innerHTML = 'Desenvolvedores';
     document.getElementById('dev2').innerHTML = 'Desenvolvedores';
     document.getElementById('dev3').innerHTML = 'Desenvolvedores';
@@ -83,7 +82,7 @@ function enusa() {
     document.getElementById('opsystem').innerHTML = 'Operational System';
     document.getElementById('utylitys').innerHTML = 'Utility Programs';
     document.getElementById('softwareask').innerHTML = 'Is the desired software not listed? Report through social networks - <b> Done with <font color = "red"> ❤ </font> by Anderson "Yagasaki" Marlon';
-    document.getElementById('copyright2').innerHTML = '© Copyright 2017-2019 | Thie site is build for <a href="https://www.facebook.com/AndersonMarlonDesign/" target="_blank">Anderson Marlon</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>. The source code is hosted on <a href="http://www.github.com/" target="_blank">GitHub</a>.';
+    document.getElementById('copyright2').innerHTML = '© Copyright 2017-2020 | Thie site is build for <a href="https://www.facebook.com/AndersonMarlonDesign/" target="_blank">Anderson Marlon</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>. The source code is hosted on <a href="http://www.github.com/" target="_blank">GitHub</a>.';
     document.getElementById('dev1').innerHTML = 'Developers';
     document.getElementById('dev2').innerHTML = 'Developers';
     document.getElementById('dev3').innerHTML = 'Developers';
