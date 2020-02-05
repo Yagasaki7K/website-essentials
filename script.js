@@ -53,7 +53,7 @@ function changeImage() {
 
 function ptbr() {
     document.getElementById('head1').innerHTML = 'Aplicativos essenciais para seu computador';
-    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.3</i> de 16 de Janeiro —';
+    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.4</i> de 05 de Fevereiro —';
     document.getElementById('backup').innerHTML = 'Programas de Backup / Nuvem';
     document.getElementById('comunication').innerHTML = 'Programas de Comunicações';
     document.getElementById('developer').innerHTML = 'Programas de Desenvolvimento';
@@ -74,7 +74,7 @@ function ptbr() {
 
 function enusa() {
     document.getElementById('head1').innerHTML = 'Essential applications for your computer';
-    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.3</i> of January 16th -';
+    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.4</i> of February 05th -';
     document.getElementById('backup').innerHTML = 'Backup / Cloud Programs';
     document.getElementById('comunication').innerHTML = 'Communication Programs';
     document.getElementById('developer').innerHTML = 'Development Programs';

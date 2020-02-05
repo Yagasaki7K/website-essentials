@@ -1,35 +1,51 @@
+<!-- UPGRADE DE ATUALIZAÇÃO -->
+
+<h2>1.7.4 (05 de Fevereiro / February 05th)</h2>
+<b>[EN-US]<br>
+Added: Freda - EReader<br>
+Added: Adobe - EReader<br>
+Added: Icecream - EReader<br>
+Added: Cover - EReader<br>
+
+[PT-BR]<br>
+Adicionado: Freda - EReader<br>
+Adicionado: Adobe - EReader<br>
+Adicionado: Icecream - EReader<br>
+Adicionado: Cover - EReader<br>
+
 <h2>1.7.3 (16 de Janeiro / January 16th)</h2><br>
 <b>[EN-US]</b><br>
-Developer Name Updated: IObit > IOBit Softwares
-Developer Name Updated: Microsoft > Microsoft Corporation
-Developer Name Updated: Spotify > Spotify AB
-Added: Microsoft Edge (BETA)
-Added: GitHub Desktop
-Added: Netbeans - Code Editor
-Added: Atom - Code Editor
-Added: Instagram - Microsoft Store
-Name Update: HyperX NGenuity 5.2.4.5 > HyperX NGenuity
-Adjusted: Night button size
-Removed URL: Amazon Kindle - MStore
-Fixed URL: Twitter in footer
-Fixed URL: Avira Anti-Vírus
-Fixed URL: HyperX NGenuity
+Developer Name Updated: IObit > IOBit Softwares<br>
+Developer Name Updated: Microsoft > Microsoft Corporation<br>
+Developer Name Updated: Spotify > Spotify AB<br>
+Added: Microsoft Edge (BETA)<br>
+Added: GitHub Desktop<br>
+Added: Netbeans - Code Editor<br>
+Added: Atom - Code Editor<br>
+Added: Instagram - Microsoft Store<br>
+Name Update: HyperX NGenuity 5.2.4.5 > HyperX NGenuity<br>
+Adjusted: Night button size<br>
+Removed URL: Amazon Kindle - MStore<br>
+Fixed URL: Twitter in footer<br>
+Fixed URL: Avira Anti-Vírus<br>
+Fixed URL: HyperX NGenuity<br>
 
 <b>[PT-BR]</b><br>
-Nome de desenvolvedor atualizado: IObit > IOBit Softwares
-Nome de desenvolvedor atualizado: Microsoft > Microsoft Corporation
-Nome de desenvolvedor atualizado: Spotify > Spotify AB
-Adicionado: Microsoft Edge (BETA)
-Adicionado: GitHub Desktop
-Adicionado: Netbeans - Code Editor
-Adicionado: Atom - Code Editor
-Adicionado: Instagram - Microsoft Store
-Atualização de Nome: HyperX NGenuity 5.2.4.5 > HyperX NGenuity
-Ajustado: Tamanho do botão noturno
-Removida URL: Amazon Kindle - MStore
-Corrigido URL: Twitter no rodapé
-Corrigido URL: Avira Anti-Vírus
+Nome de desenvolvedor atualizado: IObit > IOBit Softwares<br>
+Nome de desenvolvedor atualizado: Microsoft > Microsoft Corporation<br>
+Nome de desenvolvedor atualizado: Spotify > Spotify AB<br>
+Adicionado: Microsoft Edge (BETA)<br>
+Adicionado: GitHub Desktop<br>
+Adicionado: Netbeans - Code Editor<br>
+Adicionado: Atom - Code Editor<br>
+Adicionado: Instagram - Microsoft Store<br>
+Atualização de Nome: HyperX NGenuity 5.2.4.5 > HyperX NGenuity<br>
+Ajustado: Tamanho do botão noturno<br>
+Removida URL: Amazon Kindle - MStore<br>
+Corrigido URL: Twitter no rodapé<br>
+Corrigido URL: Avira Anti-Vírus<br>
 Corrigido URL: HyperX NGenuity
+
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
 <h2>1.7.2 (13 de Julho / July 13th)</h2><br>
