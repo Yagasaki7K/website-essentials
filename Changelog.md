@@ -1,17 +1,32 @@
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
+<h2>1.7.5 (06 de Fevereiro) / February 06th)</h2>
+<b>[EN-US]</b><br>
+Added: New toggle button for dark mode<br>
+Fixed URL: Opera Mail<br>
+Fixed URL: Realtek PCIe GBE (Audio Driver)<br>
+Fixed some bugs and errors not relevants (v1.7.4.1 - v1.7.4.2)<br>
+
+<b>[PT-BR]</b><br>
+Adicionado: Novo botão do modo noturno<br>
+Corrigido URL: Opera Mail<br>
+Corrigido URL: Realtek PCIe GBE (Audio Driver)<br>
+Corrigidos alguns bugs e erros não relevantes (v1.7.4.1 - v1.7.4.2)<br><br>
+
+<!-- UPGRADE DE ATUALIZAÇÃO -->
+
 <h2>1.7.4 (05 de Fevereiro / February 05th)</h2>
-<b>[EN-US]<br>
+<b>[EN-US]</b><br>
 Added: Freda - EReader<br>
 Added: Adobe - EReader<br>
 Added: Icecream - EReader<br>
 Added: Cover - EReader<br>
 
-[PT-BR]<br>
+<b>[PT-BR]</b><br>
 Adicionado: Freda - EReader<br>
 Adicionado: Adobe - EReader<br>
 Adicionado: Icecream - EReader<br>
-Adicionado: Cover - EReader<br>
+Adicionado: Cover - EReader<br><br>
 
 <h2>1.7.3 (16 de Janeiro / January 16th)</h2><br>
 <b>[EN-US]</b><br>
