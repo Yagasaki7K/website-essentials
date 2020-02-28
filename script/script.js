@@ -5,7 +5,7 @@ var checkBox = document.getElementById("myCheck");
 
     if (hora >= 18 && hora <= 23 || hora < 6) {
         checkBox.checked = true;
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#0c1627";
         document.getElementsByTagName("div")[0].style.color = "white";
         document.getElementsByTagName("div")[3].style.color = "white";
         document.getElementsByTagName("font")[0].style.color = "white";
@@ -26,10 +26,51 @@ var checkBox = document.getElementById("myCheck");
     }
 }
 
+AOS.init({
+    duration: 1200,
+  })
+  
+
+function greenFunction() {
+    document.getElementById("logohead").src="img/logogreen.png"
+    var indexColor = 0;
+    while (indexColor < 150) {
+        document.getElementsByTagName("a")[indexColor].style.color = "#17bf69";
+        indexColor++;
+    }
+  }
+
+function blueFunction() {
+    document.getElementById("logohead").src="img/logoblue.png"
+    var indexColor = 0;
+    while (indexColor < 150) {
+        document.getElementsByTagName("a")[indexColor].style.color = "#1da1f2";
+        indexColor++;
+    }
+  }
+
+function pinkFunction() {
+    document.getElementById("logohead").src="img/logopink.png"
+    var indexColor = 0;
+    while (indexColor < 150) {
+        document.getElementsByTagName("a")[indexColor].style.color = "#e0245e";
+        indexColor++;
+    }
+  }
+
+function orangeFunction() {
+    document.getElementById("logohead").src="img/logoorange.png"
+    var indexColor = 0;
+    while (indexColor < 150) {
+        document.getElementsByTagName("a")[indexColor].style.color = "#f45d22";
+        indexColor++;
+    }
+  }
+
 function changeImage() {
     var checkBox = document.getElementById("myCheck");
         if (checkBox.checked == true){
-            document.getElementsByTagName("body")[0].style.backgroundColor = "#1b2836";
+            document.getElementsByTagName("body")[0].style.backgroundColor = "#0c1627";
             document.getElementsByTagName("div")[0].style.color = "white";
             document.getElementsByTagName("div")[3].style.color = "white";
             document.getElementsByTagName("font")[0].style.color = "white";
@@ -52,7 +93,7 @@ function changeImage() {
 
 function ptbr() {
     document.getElementById('head1').innerHTML = 'Aplicativos essenciais para seu computador';
-    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.5</i> de 06 de Fevereiro —';
+    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.6</i> de 28 de Fevereiro —';
     document.getElementById('backup').innerHTML = 'Programas de Backup / Nuvem';
     document.getElementById('comunication').innerHTML = 'Programas de Comunicações';
     document.getElementById('developer').innerHTML = 'Programas de Desenvolvimento';
@@ -73,7 +114,7 @@ function ptbr() {
 
 function enusa() {
     document.getElementById('head1').innerHTML = 'Essential applications for your computer';
-    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.5</i> of February 06th -';
+    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.6</i> of February 28th -';
     document.getElementById('backup').innerHTML = 'Backup / Cloud Programs';
     document.getElementById('comunication').innerHTML = 'Communication Programs';
     document.getElementById('developer').innerHTML = 'Development Programs';

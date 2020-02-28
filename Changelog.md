@@ -1,5 +1,32 @@
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
+1.7.6 (28 de Fevereiro / February 28th)
+<b>[EN-US]</b><br>
+Added: Viewport - Does not change for the user<br>
+Added: Color Buttons (Green, Pink, Blue and Orange)<br>
+Added: Script and Style folders - Question of order, does not change for the user<br>
+Changed: Logo (Green, Pink, Blue and Orange) <br>
+Changed: #17bf69 - #e0245e - #1da1f2 - #f45d22<br>
+Changed: Native Images (Brazil, USA & Logo) <br>
+Changed: Night time background color - We switched to a more relaxing blue for the eyes<br>
+Changed: #1b2836 → #0c1627<br>
+Removed: Logo (Dark Mode / Bright Mode)<br>
+Source code presentation has been improved - Does not change for the user<br>
+
+<b>[PT-BR]</b><br>
+Adicionado: Viewport - Não altera para o usuário<br>
+Adicionado: Botões de Cores (Verde, Rosa, Azul e Laranja)<br>
+Adicionado: Pastas de Script e Style - Questão de ordem, não altera para o usuário<br>
+Alterado: Logo (Verde, Rosa, Azul e Laranja)<br>
+Alterado: #17bf69 - #e0245e - #1da1f2 - #f45d22<br>
+Alterado: Imagens Nativas (Brasil, USA & Logo)<br>
+Alterado: Cor do fundo noturno - Trocamos para um azul mais relaxante aos olhos<br>
+Alterado: #1b2836 → #0c1627<br>
+Removido: Logo (Dark Mode / Bright Mode)<br>
+Apresentação do código fonte foi melhorada - Não altera para o usuário<br>
+
+<!-- UPGRADE DE ATUALIZAÇÃO -->
+
 <h2>1.7.5 (06 de Fevereiro) / February 06th)</h2>
 <b>[EN-US]</b><br>
 Added: New toggle button for dark mode<br>

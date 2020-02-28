@@ -1,18 +1,16 @@
-#greenFunction {
-  background-color: #1b2836;
-  color: #17bf63;
-}
-
 div.header {
     font-family: "Segoe UI Light","sans-serif";
     font-size: 20.0pt;
     color:#2A2A2A;
+    margin-bottom: 25px;
+    margin-top: -12px;
     }
     
 a {
     font-family: "Segoe UI SemiLight","sans-serif";
     font-size:11.0pt;
     color:#3366ff;
+
     }
 
 table tr.Header {
@@ -52,78 +50,71 @@ div.NoList {
     text-decoration:none;
     }
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    text-decoration: none;
     }
 
-.item {
-    width: 200px;
-    height: 200px;
-    margin: 50px auto;
-    padding-top: 75px;
-    background: #ccc;
-    text-align: center;
-    color: #FFF;
-    font-size: 3em;
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
     }
     
-body {
-    font-family: -apple-system,".SFNSText-Regular","Helvetica Neue","Roboto","Segoe UI",sans-serif;
+    body {
+      font-family: -apple-system,".SFNSText-Regular","Helvetica Neue","Roboto","Segoe UI",sans-serif;
     }
     
-.toggle {
-    cursor: pointer;
-    display: inline-block;
+    .toggle {
+      cursor: pointer;
+      display: inline-block;
     }
     
-.toggle-switch {
-    display: inline-block;
-    background: #ccc;
-    border-radius: 16px;
-    width: 58px;
-    height: 32px;
-    position: relative;
-    vertical-align: middle;
-    transition: background 0.25s;
+    .toggle-switch {
+      display: inline-block;
+      background: #ccc;
+      border-radius: 16px;
+      width: 58px;
+      height: 32px;
+      position: relative;
+      vertical-align: middle;
+      transition: background 0.25s;
     }
-
-.toggle-switch:before {
+    .toggle-switch:before {
     content: "";
     background-color: rgb(42, 65, 90); color: #FFFFFF;
     }
 
-.toggle-switch:after {
+    .toggle-switch:after {
     content: "";
     background-color: #fff; color: #000;
     text-align: right;
     }
 
-.toggle-switch:before {
-    display: block;
-    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    transition: left 0.25s;  
+    .toggle-switch:before {
+      display: block;
+      background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      transition: left 0.25s;
+      
     }
-
-.toggle:hover .toggle-switch:before {
-    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+    .toggle:hover .toggle-switch:before {
+      background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
     }
-
-.toggle-checkbox:checked + .toggle-switch {
-    background: rgb(41, 61, 83);
+    .toggle-checkbox:checked + .toggle-switch {
+      background: rgb(41, 61, 83);
     }
-
-.toggle-checkbox:checked + .toggle-switch:before {
-    left: 30px;
+    .toggle-checkbox:checked + .toggle-switch:before {
+      left: 30px;
     }
     
     .toggle-checkbox {
