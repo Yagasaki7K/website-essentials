@@ -32,7 +32,7 @@ AOS.init({
   
 
 function greenFunction() {
-    document.getElementById("logohead").src="img/logogreen.png"
+    document.getElementById("logohead").src="../src/assets/logogreen.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#17bf69";
@@ -41,7 +41,7 @@ function greenFunction() {
   }
 
 function blueFunction() {
-    document.getElementById("logohead").src="img/logoblue.png"
+    document.getElementById("logohead").src="../src/assets/logoblue.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#1da1f2";
@@ -50,7 +50,7 @@ function blueFunction() {
   }
 
 function pinkFunction() {
-    document.getElementById("logohead").src="img/logopink.png"
+    document.getElementById("logohead").src="../src/assets/logopink.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#e0245e";
@@ -59,7 +59,7 @@ function pinkFunction() {
   }
 
 function orangeFunction() {
-    document.getElementById("logohead").src="img/logoorange.png"
+    document.getElementById("logohead").src="../src/assets/logoorange.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#f45d22";
