@@ -1,5 +1,5 @@
 <!-- UPGRADE DE ATUALIZAÇÃO -->
-
+1.7.6.Less (15 de Abril / April 15th)
 <b>[EN-US]</b><br>
 Added: Rocket.Chat<br>
 Added: Apache Guacamole<br>
@@ -22,7 +22,7 @@ Essa atualização se chamará 1.7.6.Less<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-1.7.6 (28 de Fevereiro / February 28th)
+1.7.6 (28 de Fevereiro / February 28th)<br>
 <b>[EN-US]</b><br>
 Added: Viewport - Does not change for the user<br>
 Added: Color Buttons (Green, Pink, Blue and Orange)<br>
