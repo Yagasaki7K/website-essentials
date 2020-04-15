@@ -1,7 +1,7 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://github.com/Yagasakii/webessentials/blob/master/img/logoblue.png?raw=true" alt="The Essentials Web"/></a><br>
 
-<b>v1.7.6 de 28 de Fevereiro / February, 28th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br><br>
+<b>v1.7.6.Less de 15 de Abril / April, 15th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br><br>
 
 [![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)
 [![GitHub](https://img.shields.io/github/license/yagasakii/webessentials.svg)](https://github.com/Yagasakii/webessentials/blob/master/LICENSE)

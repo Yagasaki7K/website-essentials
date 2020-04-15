@@ -93,7 +93,7 @@ function changeImage() {
 
 function ptbr() {
     document.getElementById('head1').innerHTML = 'Aplicativos essenciais para seu computador';
-    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.6</i> de 28 de Fevereiro —';
+    document.getElementById('head2').innerHTML = 'Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.6.Less</i> de 15 de Abril —';
     document.getElementById('backup').innerHTML = 'Programas de Backup / Nuvem';
     document.getElementById('comunication').innerHTML = 'Programas de Comunicações';
     document.getElementById('developer').innerHTML = 'Programas de Desenvolvimento';
@@ -101,7 +101,7 @@ function ptbr() {
     document.getElementById('navegation').innerHTML = 'Programas de Navegadores (Browser)';
     document.getElementById('opsystem').innerHTML = 'Sistema Operacional';
     document.getElementById('utylitys').innerHTML = 'Programas de Utilitários';
-    document.getElementById('softwareask').innerHTML = 'O software desejado não está na lista? Informe através das redes sociais — <b>Feito com <font color="red">❤</font> pelo Anderson "Yagasaki" Marlon';
+    document.getElementById('softwareask').innerHTML = 'O software desejado não está na lista? Informe através das redes sociais — <b>Feito com <font color="red">❤</font> pela Kalify Inc.';
     document.getElementById('copyright2').innerHTML = '© Copyright 2017-2020 | Esse site é desenvolvido por <a href="https://www.facebook.com/AndersonMarlonDesign/" target="_blank">Anderson Marlon</a> e hospedado em <a href="https://www.netlify.com/" target="_blank">Netlify</a>. O código do site está hospedado no <a href="http://www.github.com/" target="_blank">GitHub</a>';
     document.getElementById('dev1').innerHTML = 'Desenvolvedores';
     document.getElementById('dev2').innerHTML = 'Desenvolvedores';
@@ -114,7 +114,7 @@ function ptbr() {
 
 function enusa() {
     document.getElementById('head1').innerHTML = 'Essential applications for your computer';
-    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.6</i> of February 28th -';
+    document.getElementById('head2').innerHTML = 'Softwares for a good functioning and useful for your computer | <i> Build 1.7.6.Less</i> of April 15th -';
     document.getElementById('backup').innerHTML = 'Backup / Cloud Programs';
     document.getElementById('comunication').innerHTML = 'Communication Programs';
     document.getElementById('developer').innerHTML = 'Development Programs';
@@ -122,7 +122,7 @@ function enusa() {
     document.getElementById('navegation').innerHTML = 'Browser Programs';
     document.getElementById('opsystem').innerHTML = 'Operational System';
     document.getElementById('utylitys').innerHTML = 'Utility Programs';
-    document.getElementById('softwareask').innerHTML = 'Is the desired software not listed? Report through social networks - <b> Done with <font color = "red"> ❤ </font> by Anderson "Yagasaki" Marlon';
+    document.getElementById('softwareask').innerHTML = 'Is the desired software not listed? Report through social networks - <b> Done with <font color = "red"> ❤ </font> by Kalify Inc.';
     document.getElementById('copyright2').innerHTML = '© Copyright 2017-2020 | Thie site is build for <a href="https://www.facebook.com/AndersonMarlonDesign/" target="_blank">Anderson Marlon</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a>. The source code is hosted on <a href="http://www.github.com/" target="_blank">GitHub</a>.';
     document.getElementById('dev1').innerHTML = 'Developers';
     document.getElementById('dev2').innerHTML = 'Developers';

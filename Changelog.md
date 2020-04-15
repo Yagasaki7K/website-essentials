@@ -1,5 +1,27 @@
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
+<b>[EN-US]</b><br>
+Added: Rocket.Chat<br>
+Added: Apache Guacamole<br>
+Added: NextCloud<br>
+
+Essentials is now from Kalify.<br>
+This update is smart. Don't worry.<br>
+This update will called 1.7.6.Less<br>
+
+
+<b>[PT-BR]</b><br>
+Adicionado: Rocket.Chat<br>
+Adicionado: Apache Guacamole<br>
+Adicionado: NextCloud<br>
+
+O Essentials agora é da Kalify.<br>
+Essa atualização é pequena. Não se preocupe.<br>
+Essa atualização se chamará 1.7.6.Less<br>
+
+
+<!-- UPGRADE DE ATUALIZAÇÃO -->
+
 1.7.6 (28 de Fevereiro / February 28th)
 <b>[EN-US]</b><br>
 Added: Viewport - Does not change for the user<br>
