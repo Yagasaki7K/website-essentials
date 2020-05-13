@@ -9,7 +9,7 @@ div.header {
 a {
     font-family: "Segoe UI SemiLight","sans-serif";
     font-size:11.0pt;
-    color:#3366ff;
+    color:#1da1f2;
 
     }
 
@@ -84,7 +84,7 @@ button {
     }
     .toggle-switch:before {
     content: "";
-    background-color: rgb(42, 65, 90); color: #FFFFFF;
+    background-color: #1B1C1D; color: #FFFFFF;
     }
 
     .toggle-switch:after {

@@ -5,7 +5,7 @@ var checkBox = document.getElementById("myCheck");
 
     if (hora >= 18 && hora <= 23 || hora < 6) {
         checkBox.checked = true;
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#0c1627";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#181A1B";
         document.getElementsByTagName("div")[0].style.color = "white";
         document.getElementsByTagName("div")[3].style.color = "white";
         document.getElementsByTagName("font")[0].style.color = "white";
@@ -32,7 +32,7 @@ AOS.init({
   
 
 function greenFunction() {
-    document.getElementById("logohead").src="../src/assets/logogreen.png"
+    document.getElementById("logohead").src="../public/image/logogreen.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#17bf69";
@@ -41,7 +41,7 @@ function greenFunction() {
   }
 
 function blueFunction() {
-    document.getElementById("logohead").src="../src/assets/logoblue.png"
+    document.getElementById("logohead").src="../public/image/logoblue.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#1da1f2";
@@ -50,7 +50,7 @@ function blueFunction() {
   }
 
 function pinkFunction() {
-    document.getElementById("logohead").src="../src/assets/logopink.png"
+    document.getElementById("logohead").src="../public/image/logopink.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#e0245e";
@@ -59,7 +59,7 @@ function pinkFunction() {
   }
 
 function orangeFunction() {
-    document.getElementById("logohead").src="../src/assets/logoorange.png"
+    document.getElementById("logohead").src="../public/image/logoorange.png"
     var indexColor = 0;
     while (indexColor < 150) {
         document.getElementsByTagName("a")[indexColor].style.color = "#f45d22";
@@ -70,7 +70,7 @@ function orangeFunction() {
 function changeImage() {
     var checkBox = document.getElementById("myCheck");
         if (checkBox.checked == true){
-            document.getElementsByTagName("body")[0].style.backgroundColor = "#0c1627";
+            document.getElementsByTagName("body")[0].style.backgroundColor = "#181A1B";
             document.getElementsByTagName("div")[0].style.color = "white";
             document.getElementsByTagName("div")[3].style.color = "white";
             document.getElementsByTagName("font")[0].style.color = "white";

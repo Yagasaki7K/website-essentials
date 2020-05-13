@@ -12,7 +12,7 @@ div.header {
 a {
     font-family: "Segoe UI SemiLight","sans-serif";
     font-size:11.0pt;
-    color:#3366ff;
+    color:#1da1f2;
     }
 
 table tr.Header {
@@ -91,7 +91,7 @@ body {
 
 .toggle-switch:before {
     content: "";
-    background-color: rgb(42, 65, 90); color: #FFFFFF;
+    background-color: #1B1C1D; color: #FFFFFF;
     }
 
 .toggle-switch:after {
@@ -119,7 +119,7 @@ body {
     }
 
 .toggle-checkbox:checked + .toggle-switch {
-    background: rgb(41, 61, 83);
+    background: rgb(47, 48, 49);
     }
 
 .toggle-checkbox:checked + .toggle-switch:before {
