@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://raw.githubusercontent.com/Yagasakii/webessentials/master/src/assets/logoblue.png" alt="The Essentials Web"/></a><br>
+  <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://raw.githubusercontent.com/Yagasakii/webessentials/master/public/image/logoblue.png" alt="The Essentials Web"/></a><br>
 
 <b>v1.7.6.Less de 15 de Abril / April, 15th</b> <img src="http://www.clker.com/cliparts/N/G/g/v/d/N/glossy-red-icon-button-md.png" width="10px"><br><br>
 
