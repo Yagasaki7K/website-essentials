@@ -1,4 +1,14 @@
 <!-- UPGRADE DE ATUALIZAÇÃO -->
+1.7.6.Less (02 de Junho / June 02th)
+<b>[EN-US]</b><br>
+Added: MSi Afterburner<br>
+Added: TranslucentTB<br>
+
+[PT-BR]
+Adicionado: MSi Afterburner<br>
+Adicionado: TranslucentTB<br>
+
+<!-- UPGRADE DE ATUALIZAÇÃO -->
 1.7.6.Less (15 de Abril / April 15th)
 <b>[EN-US]</b><br>
 Added: Rocket.Chat<br>
@@ -18,7 +28,6 @@ Adicionado: NextCloud<br>
 O Essentials agora é da Kalify.<br>
 Essa atualização é pequena. Não se preocupe.<br>
 Essa atualização se chamará 1.7.6.Less<br>
-
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
