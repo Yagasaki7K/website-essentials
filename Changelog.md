@@ -1,37 +1,32 @@
 <!-- UPGRADE DE ATUALIZAÇÃO -->
-1.7.6.Less (02 de Junho / June 02th)
-<b>[EN-US]</b><br>
-Added: MSi Afterburner<br>
-Added: TranslucentTB<br>
-
-[PT-BR]
-Adicionado: MSi Afterburner<br>
-Adicionado: TranslucentTB<br>
-
-<!-- UPGRADE DE ATUALIZAÇÃO -->
-1.7.6.Less (15 de Abril / April 15th)
+<h2>1.7.7 (03 de Julho / July 03th)</h2>
 <b>[EN-US]</b><br>
 Added: Rocket.Chat<br>
 Added: Apache Guacamole<br>
 Added: NextCloud<br>
+Added: MSi Afterburner<br>
+Added: TranslucentTB<br>
+Added: Windows XP x86<br>
+Added: Windows XP x64<br>
+Changed: Favicon<br>
+Changed: Windows 10 Pro (x86/x64) -> Windows 10 (x86/x64)<br>
+Essentials is now from Kalify Inc.<br>
 
-Essentials is now from Kalify.<br>
-This update is smart. Don't worry.<br>
-This update will called 1.7.6.Less<br>
-
-
-<b>[PT-BR]</b><br>
+[PT-BR]<br>
 Adicionado: Rocket.Chat<br>
 Adicionado: Apache Guacamole<br>
 Adicionado: NextCloud<br>
-
-O Essentials agora é da Kalify.<br>
-Essa atualização é pequena. Não se preocupe.<br>
-Essa atualização se chamará 1.7.6.Less<br>
+Adicionado: MSi Afterburner<br>
+Adicionado: TranslucentTB<br>
+Adicionado: Windows XP x86<br>
+Adicionado: Windows XP x64<br>
+Alterado: Favicon<br>
+Alterado: Windows 10 Pro (x86/x64) -> Windows 10 (x86/x64)<br>
+O Essentials agora é da Kalify Inc.<br>
 
 <!-- UPGRADE DE ATUALIZAÇÃO -->
 
-1.7.6 (28 de Fevereiro / February 28th)<br>
+<h2>1.7.6 (28 de Fevereiro / February 28th)</h2>
 <b>[EN-US]</b><br>
 Added: Viewport - Does not change for the user<br>
 Added: Color Buttons (Green, Pink, Blue and Orange)<br>
