@@ -93,7 +93,7 @@ function ptbr() {
   document.getElementById("head1").innerHTML =
     "Aplicativos essenciais para seu computador";
   document.getElementById("head2").innerHTML =
-    "Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.7</i> de 0 de Julho —";
+    "Softwares para um bom funcionamento e úteis para seu computador | <i>Build 1.7.7</i> de 03 de Julho —";
   document.getElementById("backup").innerHTML = "Programas de Backup / Nuvem";
   document.getElementById("comunication").innerHTML =
     "Programas de Comunicações";
