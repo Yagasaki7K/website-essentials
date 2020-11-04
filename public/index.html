@@ -1,0 +1,61 @@
+<!-- COPYRIGHT DO DESENVOLVEDOR / NÃO REMOVA!
+
+Template Name  : The Essentials – Complete Version
+Author         : Anderson "Yagasaki" Marlon
+Author URL     : https://www.behance.net/yagasaki
+Github         : https://github.com/Yagasaki7K/webessentials
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Web Essentials</title>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Essential applications for your computer">
+<meta name="keywords" content="Anderson, Marlon, Design, Github, Código Aberto, Open Source, Open, Source, Antech, Developers, Software, Essentials, Web, Formatação, Windows, Serial, Key, Onigiri, Hardcore, Essencial, Programas, Internet, Brasil, Linux, Ubuntu, Telegram, Whatsapp">
+<meta name="author" content="Anderson Marlon">
+<meta name="robots" content="index, follow">
+<link rel=”canonical” href="https://webessentials.netlify.com"/>
+<link rel="icon"type="image/png" href="public/image/favicon.png">
+<style>
+    body {
+        background :#7159c1;
+        color: #fff;
+    }
+
+    img {
+        display: flex;
+        margin: 30vh auto auto auto;
+    }
+
+    .floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 15vw;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+</style>
+</head>
+<body onload="gotoEssentials()">
+    <div class="floating" style="height: 50px; width: 50px;">
+        <img src="public/image/Logo v2 White.png">
+    </div>
+</body>
+<script>
+    function gotoEssentials() {
+        setInterval(() => {
+            window.location.replace("./public/pages/dashboard.html#backup");
+        }, 3000);
+    }
+</script>
+</html>

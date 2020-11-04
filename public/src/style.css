@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --essentials: #7159c1;
+    --writing: #656565;
+    --bgcolor: #fff;
+    --fontcolor: #656565;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: 600;
+    font-family: 'Nunito';
+}
+
+.navigation {
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: var(--bgcolor);
+    box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.25);
+}
+
+.nav-right {
+    display: flex;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    left: 50px;
+    top: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-size: 1vw;
+  }
+
+.nav-right {
+    position: absolute;
+    right: 0;  
+    top: 25px;
+    margin-right: 50px;
+  }
+
+p {
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: var(--fontcolor);
+}
+
+.menulist {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: var(--fontcolor);
+}
+
+input {
+    outline: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: var(--essentials);
+}
+  
+input[type="checkbox"] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    background: var(--bgcolor);
+    -webkit-box-shadow: inset 0 0 8px #7e7e7e7c;
+            box-shadow: inset 0 0 8px #7e7e7e7c;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  
+input[type="checkbox"]::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--essentials);
+    -webkit-box-shadow: 0 0 5px #949494b4;
+            box-shadow: 0 0 5px #949494b4;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  
+input[type="checkbox"]:checked {
+    background: #2F3031;
+  }
+  
+input[type="checkbox"]:checked::before {
+    left: 42px;
+  }
+  
+ @media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+      -webkit-animation-delay: -1ms !important;
+              animation-delay: -1ms !important;
+      -webkit-animation-duration: 1ms !important;
+              animation-duration: 1ms !important;
+      -webkit-animation-iteration-count: 1 !important;
+              animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      -webkit-transition-duration: 0s !important;
+              transition-duration: 0s !important;
+      -webkit-transition-delay: 0s !important;
+              transition-delay: 0s !important;
+    }
+  }
+  /*# sourceMappingURL=main.css.map */
+
+.container {
+    margin-top: 153px;
+    margin-left: 50px;
+    color: var(--fontcolor);
+}
+
+.container p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.line {
+    position: absolute;
+    top: 450px;
+    width: 650px;
+    height: 0px;
+
+    border: 1px solid #BDBDBD;
+    transform: rotate(90deg);
+}
+
+.content img {
+    position: absolute;
+    left: 45px;
+    right: 0%;
+    top: 20px;
+    bottom: 0.89%;
+}
+
+span {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    left: 366px;
+    top: 150px;
+
+    background: var(--bgcolor);
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    transition: 0.5s;
+
+}
+
+span:hover {
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.50);
+    transition: 0.5s;
+}
+
+.title {
+    position: absolute;
+    justify-content: center;
+    width: 100px;
+    height: 21px;
+    left: 25px;
+    top: 90px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+
+    color: var(--fontcolor);
+}
+
+.subtitle {
+    position: absolute;
+    justify-content: center;
+    width: 70px;
+    height: 16px;
+    left: 40px;
+    top: 145px;
+
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: var(--fontcolor);
+
+}
+
+
+div.tab {
+    display: none;
+    height: 600px;
+    width: 1000px;
+    -moz-border-radius: 0px 0px 5px 5px;
+}
+
+div.tab:target {
+    display: block;
+}
+
+:target div.tab {
+    display: block;
+}
+:target div.tab + div.tab{
+    display: none;
+}
+
+.nav-undertabs button {
+    align-items: left;
+}
+
+.nav-undertabs #right {
+    position: absolute;
+    right: 0;
+    margin-top: -23px;
+}
