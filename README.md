@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://github.com/Yagasaki7K/webessentials/blob/master/public/image/Logo%20v2.png?raw=true" alt="The Essentials Web"/></a><br><br>
-
+[![Yagasaki](https://img.shields.io/github/forks/Yagasaki7K/webessentials)](https://img.shields.io/badge/YAGASAKI-Web%20Essentials-7159c1)
 [![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)
 [![GitHub license](https://img.shields.io/github/license/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/blob/master/LICENSE)
 [![GitHub forks](https://img.shields.io/github/forks/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/network)
