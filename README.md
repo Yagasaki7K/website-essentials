@@ -2,8 +2,8 @@
   <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://github.com/Yagasaki7K/webessentials/blob/master/public/image/Logo%20v2.png?raw=true" alt="The Essentials Web"/></a><br><br>
 
 [![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)
-[![GitHub](https://img.shields.io/github/license/yagasakii/webessentials.svg)](https://github.com/Yagasakii/webessentials/blob/master/LICENSE)
 [![GitHub license](https://img.shields.io/github/license/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/blob/master/LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/network)
 [![GitHub stars](https://img.shields.io/github/stars/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/stargazers)
 
 </div>
