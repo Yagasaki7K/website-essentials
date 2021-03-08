@@ -51,6 +51,11 @@ body {
 	margin-right: 50px;
 }
 
+.nav-right p {
+	font-size: 20px;
+	margin-top: 5px;
+}
+
 p {
 	font-weight: 700;
 	font-size: 15px;
@@ -126,7 +131,7 @@ input[type="checkbox"]::before {
 	width: 34px;
 	height: 34px;
 	border-radius: 50%;
-	background: var(--essentials);
+	background: #fff;
 	-webkit-box-shadow: 0 0 5px #949494b4;
 	box-shadow: 0 0 5px #949494b4;
 	-webkit-transition: 0.5s ease;
@@ -134,7 +139,7 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked {
-	background: #2f3031;
+	background: #8ce196;
 }
 
 input[type="checkbox"]:checked::before {

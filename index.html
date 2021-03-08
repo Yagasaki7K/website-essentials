@@ -20,42 +20,90 @@ Github         : https://github.com/Yagasaki7K/webessentials
 <link rel=”canonical” href="https://webessentials.netlify.com"/>
 <link rel="icon"type="image/png" href="public/image/favicon.png">
 <style>
-    body {
-        background :#7159c1;
-        color: #fff;
-    }
-
-    img {
-        display: flex;
-        margin: 30vh auto auto auto;
-    }
-
-    .floating {  
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 15vw;
-    margin-top: 5px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes floating {
-    from { transform: translate(0,  0px); }
-    65%  { transform: translate(0, 15px); }
-    to   { transform: translate(0, -0px); }    
+body {
+    font-family: 'montserrat';
+    background: #fff;
+}
+
+.preloader {
+    color: #fff;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-text {
+    color: #e3e3e3;
+    font-size: 102px;
+    font-weight: 900;
+
+    background-image: linear-gradient(#e3e3e3 50%, #7159c1 50%, #00d4ff);
+    background-size: 200% 200%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: loader 10s linear infinite;
+
+    margin-bottom: 50px;
+}
+
+.bar {
+    display: block;
+    width: 100%;
+    height: 30px;
+
+    background-image: linear-gradient(to right,#e3e3e3 50%, #00d4ff 60%, #7159c1);
+    background-size: 200% 200%;
+
+    animation: loader 10s linear infinite;
+}
+
+h4 {
+    color: #7159c1;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes loader {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: -100% 100%;
+    }
+
+    100%{
+        background-position: 0% 0%;
+    }
 }
 </style>
 </head>
 <body onload="gotoEssentials()">
-    <div class="floating" style="height: 50px; width: 50px;">
-        <img src="public/image/Logo v2 White.png">
-    </div>
+	<div class="preloader">
+		<h2 class="load-text">
+				ESSENTIALS
+		</h2>
+		<a href="http://kalify.netlify.com/" target="_blank"><h4>Version 21.04 — Kalify Inc.</h4></a>
+</div>
 </body>
 <script>
     function gotoEssentials() {
         setInterval(() => {
             window.location.replace("./public/pages/dashboard.html#backup");
-        }, 3000);
+        }, 5000);
     }
 </script>
 </html>
