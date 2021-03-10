@@ -6,6 +6,7 @@
 	--bgcolor: #fff;
 	--fontcolor: #656565;
 	--bgheader: #fff;
+	--lamp: #202020;
 }
 
 .darkmode{
@@ -14,6 +15,7 @@
   --writing: #FFF;
   --fontcolor: #FFF;
 	--bgheader: #202020;
+	--lamp: #FFF;
 }
 
 * {
@@ -117,60 +119,11 @@ a {
 	color: var(--essentials);
 }
 
-input[type="checkbox"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-
-	appearance: none;
-
-	position: relative;
-
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-
-	align-items: center;
-
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-
-	justify-content: center;
-
-	width: 80px;
+.lamp{
+	width: 40px;
 	height: 40px;
-
-	border-radius: 50px;
-	background: var(--bgcolor);
-
-	-webkit-box-shadow: inset 0 0 8px #7e7e7e7c;
-	box-shadow: inset 0 0 8px #7e7e7e7c;
-	-webkit-transition: 0.5s ease;
-	transition: 0.5s ease;
-}
-
-input[type="checkbox"]::before {
-	content: "";
-	position: absolute;
-	left: 4px;
-	width: 34px;
-	height: 34px;
-	border-radius: 50%;
-	background: #fff;
-	-webkit-box-shadow: 0 0 5px #949494b4;
-	box-shadow: 0 0 5px #949494b4;
-	-webkit-transition: 0.5s ease;
-	transition: 0.5s ease;
-}
-
-input[type="checkbox"]:checked {
-	background: var(--essentials);
-}
-
-input[type="checkbox"]:checked::before {
-	left: 42px;
+	cursor: pointer;
+	fill: var(--lamp);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -401,50 +354,17 @@ div.tab:target {
 
 
 @media screen and (max-width: 1024px){
-	.navigation{
-		display: none;
+	body{
+		overflow-x: hidden;
 	}
 
-	.tabs_container{
-		display: none;
+	.tabcontent--firstShow{
+		width: 60vw;
 	}
 
-	.content{
-		display: none;
-	}
-
-	.tabcontent{
-		display: none;
-	}
-
-	.mobile{
-		display: flex;
-		background-color: #FFF;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		width: 100%;
-		height: 100vh;
-		z-index: 100;
-		font-size: 6em;
-		overflow: hidden;
-
-	}
-
-	.desktop_class{
-		font-size: 1em;
-		font-family: Nunito;
-
-	}
-
-	.mensagem_container{
-		font-size: 1em;
-		font-family: Nunito;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		color: var(--essentials);
+	.col{
+		width: 30%;
+		padding-left: 10px;
 	}
 }
 

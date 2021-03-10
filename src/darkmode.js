@@ -1,5 +1,5 @@
 let darkMode = localStorage.getItem('darkMode');
-const darkModeToggle = document.querySelector('#switch-shadow');
+const darkModeToggle = document.querySelector('#lamp');
 
 const enableDarkMode = () => {
     document.body.classList.add("darkmode");
@@ -10,6 +10,7 @@ const disableDarkMode = () => {
     document.body.classList.remove("darkmode");
     localStorage.setItem("darkMode", null);
 }
+
 
 darkModeToggle.addEventListener('click', () =>{
     darkMode = localStorage.getItem("darkMode");
