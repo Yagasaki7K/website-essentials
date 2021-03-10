@@ -5,13 +5,25 @@
 	--writing: #656565;
 	--bgcolor: #fff;
 	--fontcolor: #656565;
+	--bgheader: #fff;
+}
+
+.darkmode{
+	-essentials: #7159c1;
+	--bgcolor: #181818;
+  --writing: #FFF;
+  --fontcolor: #FFF;
+	--bgheader: #202020;
 }
 
 * {
 	margin: 0;
 	padding: 0;
+
 	-webkit-box-sizing: border-box;
+
 	box-sizing: border-box;
+
 	font-family: "Roboto";
 	font-size: 1vw;
 }
@@ -19,6 +31,8 @@
 body {
 	font-weight: 600;
 	font-family: "Nunito";
+
+	background-color: var(--bgcolor);
 }
 
 .navigation {
@@ -28,7 +42,7 @@ body {
 	left: 0px;
 	top: 0px;
 
-	background: var(--bgcolor);
+	background: var(--bgheader);
 	box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.25);
 	z-index: 100;
 }
@@ -67,9 +81,12 @@ p {
 .menulist {
 	font-weight: 700;
 	font-size: 16px;
+
 	margin-top: 10px;
 	margin-right: 10px;
+
 	color: var(--fontcolor);
+
 	transition: 100ms;
 }
 .menulist:hover {
@@ -103,21 +120,31 @@ a {
 input[type="checkbox"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
+
 	appearance: none;
+
 	position: relative;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+
 	-webkit-box-align: center;
 	-ms-flex-align: center;
+
 	align-items: center;
+
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
+
 	justify-content: center;
+
 	width: 80px;
 	height: 40px;
+
 	border-radius: 50px;
 	background: var(--bgcolor);
+
 	-webkit-box-shadow: inset 0 0 8px #7e7e7e7c;
 	box-shadow: inset 0 0 8px #7e7e7e7c;
 	-webkit-transition: 0.5s ease;
@@ -139,7 +166,7 @@ input[type="checkbox"]::before {
 }
 
 input[type="checkbox"]:checked {
-	background: #8ce196;
+	background: var(--essentials);
 }
 
 input[type="checkbox"]:checked::before {
@@ -166,24 +193,33 @@ input[type="checkbox"]:checked::before {
 }
 /*# sourceMappingURL=main.css.map */
 
-.container {
-	position: fixed;
-	margin-top: 153px;
+.nav_container {
 	margin-left: 50px;
 	padding-right: 140px;
+
 	color: var(--fontcolor);
+
 	display: flex;
 	flex-direction: column;
+
 	border-right: 1px solid #bdbdbd;
 }
 
-.container a {
+.nav_container a {
 	font-family: Nunito;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 25px;
 	margin-top: 20px;
+}
+
+.body_container{
+	display: flex;
+
+	height: 40vh;
+	width: 100%;
+	margin-top: 150px;
 }
 
 .active {
@@ -193,74 +229,31 @@ input[type="checkbox"]:checked::before {
 .tabcontent {
 	display: none;
 }
-.tabcontent--firstShow {
-	display: initial;
-}
-
-.content img {
-	position: absolute;
-	left: 45px;
-	right: 0%;
-	top: 20px;
-	bottom: 0.89%;
-}
-
-span {
-	position: absolute;
-	width: 150px;
-	height: 200px;
-	left: 366px;
-	top: 150px;
-
-	background: var(--bgcolor);
-	box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
-	border-radius: 12px;
-	transition: 0.5s;
-	cursor: pointer;
-	transition: 0.3s;
-}
-
-span:hover {
-	transform: scale(1.02);
-	box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.5);
-	transition: 0.3s;
-}
 
 .title {
-	position: absolute;
-	justify-content: center;
-	width: 100px;
-	height: 21px;
-	left: 25px;
-	top: 90px;
-
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
+
+	width: 100px;
 	font-size: 18px;
 	line-height: 21px;
 
-	text-align: center;
-
 	color: var(--fontcolor);
+
+	text-align: center;
 }
 
 .subtitle {
-	position: absolute;
-	justify-content: center;
-	width: 70px;
-	height: 16px;
-	left: 40px;
-	top: 145px;
-
 	font-family: Roboto;
 	font-style: italic;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
-	text-align: center;
 
 	color: var(--fontcolor);
+
+	text-align: center;
 }
 
 div.tab {
@@ -291,3 +284,220 @@ div.tab:target {
 	right: 0;
 	margin-top: -23px;
 }
+
+.tabcontent--firstShow{
+	width: 80vw;
+	flex-wrap: wrap;
+	display: flex;
+	margin-left: 5px;
+}
+
+.col{
+	width: 12%;
+	height: 220px;
+
+	justify-content: center;
+	display: flex;
+
+	color: var(--fontcolor);
+}
+
+.card{
+	width: 150px;
+	height: 200px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	background-color: var(--bgheader);
+	box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.25);
+	border-radius: 12px;
+
+	cursor: pointer;
+
+	transition: 0.5s;
+	transition: 0.3s;
+}
+
+
+.card:hover {
+	box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.5);
+
+	transform: scale(1.02);
+	transition: 0.3s;
+}
+
+
+.mobile{
+	display: none;
+}
+
+
+@media screen and (max-width: 1600px){
+	body{
+		overflow-x: hidden;
+	}
+
+	.tabcontent--firstShow{
+		width: 75vw;
+	}
+
+	.col{
+		width: 20%;
+		padding-left: 10px;
+	}
+}
+
+@media screen and (max-width: 1440px){
+	body{
+		overflow-x: hidden;
+	}
+
+	.tabcontent--firstShow{
+		width: 72vw;
+	}
+
+	.col{
+		width: 20%;
+		padding-left: 10px;
+	}
+}
+
+
+@media screen and (max-width: 1366px){
+
+	body{
+		overflow-x: hidden;
+	}
+
+	.tabcontent--firstShow{
+		width: 70vw;
+	}
+
+	.col{
+		width: 20%;
+		padding-left: 10px;
+	}
+}
+
+
+@media screen and (max-width: 1280px){
+	body{
+		overflow-x: hidden;
+	}
+
+	.tabcontent--firstShow{
+		width: 65vw;
+
+	}
+
+	.col{
+		width: 25%;
+		padding-left: 10px;
+	}
+}
+
+
+@media screen and (max-width: 1024px){
+	.navigation{
+		display: none;
+	}
+
+	.tabs_container{
+		display: none;
+	}
+
+	.content{
+		display: none;
+	}
+
+	.tabcontent{
+		display: none;
+	}
+
+	.mobile{
+		display: flex;
+		background-color: #FFF;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		z-index: 100;
+		font-size: 6em;
+		overflow: hidden;
+
+	}
+
+	.desktop_class{
+		font-size: 1em;
+		font-family: Nunito;
+
+	}
+
+	.mensagem_container{
+		font-size: 1em;
+		font-family: Nunito;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: var(--essentials);
+	}
+}
+
+
+@media screen and (max-width: 768px){
+	.navigation{
+		display: none;
+	}
+
+	.tabs_container{
+		display: none;
+	}
+
+	.content{
+		display: none;
+	}
+
+	.tabcontent{
+		display: none;
+	}
+
+	.mobile{
+		display: flex;
+		background-color: #FFF;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		height: 100vh;
+		z-index: 100;
+		font-size: 6em;
+		overflow: hidden;
+
+	}
+
+	.desktop_class{
+		font-size: 1em;
+		font-family: Nunito;
+
+	}
+
+	.mensagem_container{
+		font-size: 1em;
+		font-family: Nunito;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: var(--essentials);
+	}
+
+}
+
+
+
+

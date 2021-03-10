@@ -27,16 +27,16 @@ Github         : https://github.com/Yagasaki7K/webessentials
         function openPage(link, pageName, elmnt, color) {
             let i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
-						tablinks = document.getElementsByClassName("tablink");
+            tablinks = document.getElementsByClassName("tablink");
 
 
-						for (i = 0; i < tabcontent.length; i++) {
-								tabcontent[i].classList.remove('tabcontent--firstShow')
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove('tabcontent--firstShow')
             }
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove('active')
-						}
-						document.getElementById(pageName).classList.add('tabcontent--firstShow');
+            }
+            document.getElementById(pageName).classList.add('tabcontent--firstShow');
             link.classList.add('active');
         }
 
@@ -47,796 +47,1028 @@ Github         : https://github.com/Yagasaki7K/webessentials
 
 <body>
 
-    <div class="navigation">
-        <a href="/"><img class="logo" src="../image/Logo v2.png"></a>
-        <div class="nav-right">
-            <p>🌞</p>
+    <div class="container_teste">
+        <div class="navigation">
+            <a href="/"><img class="logo" src="../image/Logo v2.png"></a>
+            <div class="nav-right">
+                <p><a href="https://github.com/Yagasaki7K/webessentials/releases" target="_blank" style="font-size: 0.9em">v21.04</a> | 🌞</p>
 
-							<div class="switch__container">
-							<input id="switch-shadow" class="switch switch--shadow" type="checkbox">
-							<label for="switch-shadow"></label>
-							</div>
+                <div class="switch__container">
+                    <input id="switch-shadow" class="switch switch--shadow" type="checkbox" name="theme">
+                    <label for="switch-shadow"></label>
+                </div>
 
-						<p>&nbsp;🌚</p>
-            <div style="display: none;"><input type="checkbox" name="" id=""></div>
+                <p>&nbsp;🌚</p>
+            </div>
+        </div>
+
+
+
+        <div class="tabs_container">
+            <div class="body_container">
+                <div class="nav_container">
+                    <a href="#" onclick="openPage(this, 'backup')" class="active tablink menulist">Backup / Cloud</a>
+                    <a href="#" onclick="openPage(this, 'communication')" class="tablink menulist">Communication</a>
+                    <a href="#" onclick="openPage(this, 'development')" class="tablink menulist">Development</a>
+                    <a href="#" onclick="openPage(this, 'entertainment')" class="tablink menulist">Entertainment</a>
+                    <a href="#" onclick="openPage(this, 'browsers')" class="tablink menulist">Browsers</a>
+                    <a href="#" onclick="openPage(this, 'operation')" class="tablink menulist">Operating System</a>
+                    <a href="#" onclick="openPage(this, 'utility')" class="tablink menulist">Utility</a>
+
+                    <p></p>
+                    <a class="social" href="https://discord.gg/nyTRNSV" target="_blank">Discord</a>
+                    <a class="social" href="http://www.github.com/nerv-opensource" target="_blank">Github</a>
+                    <a class="social" href="http://www.twitter.com/yagasaki7k" target="_blank">Twitter</a>
+
+                </div>
+
+                <div class="content">
+                    <div id="backup" class="tabcontent">
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.dropbox.com/install', '_blank');">
+                                <img src="../image/list/dropbox.png">
+                                <p class="title">Dropbox</p>
+                                <p class="subtitle">Dropbox</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.google.com/intl/pt-BR_ALL/drive/download/', '_blank');">
+                                <img src="../image/list/googledrive.png">
+                                <p class="title">Google Drive</p>
+                                <p class="subtitle">Google Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://support.apple.com/pt_BR/downloads/icloud', '_blank');">
+                                <img src="../image/list/icloud.png">
+                                <p class="title">iCloud Drive</p>
+                                <p class="subtitle">Apple Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://mega.nz/MEGAsyncSetup.exe', '_blank');">
+                                <img src="../image/list/mega.png">
+                                <p class="title">MEGASync</p>
+                                <p class="subtitle">Kim Dotcom</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://onedrive.live.com/about/pt-br/', '_blank');">
+                                <img src="../image/list/onedrive.png">
+                                <p class="title">OneDrive</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------- COMMUNICATION -------------------------------->
+
+                    <div id="communication" class="tabcontent">
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://guacamole.apache.org/releases/', '_blank');">
+                                <img src="../image/list/apache.png">
+                                <p class="title">Apache Guacamole</p>
+                                <p class="subtitle">Apache Software</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://discordapp.com/download', '_blank');">
+                                <img src="../image/list/discord.png">
+                                <p class="title">Discord</p>
+                                <p class="subtitle">Discord</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://meetfranz.com/#download', '_blank');">
+                                <img src="../image/list/franz.png">
+                                <p class="title">Franz</p>
+                                <p class="subtitle">Stefan Malzner</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://secure.logmein.com/hamachi.msi', '_blank');">
+                                <img src="../image/list/hamachi.png">
+                                <p class="title">Hamachi</p>
+                                <p class="subtitle">LogMeIn</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://rocket.chat/', '_blank');">
+                                <img src="../image/list/rocketchat.png">
+                                <p class="title">Rocket Chat</p>
+                                <p class="subtitle">rocket.chat</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.teamspeak.com/en/downloads/', '_blank');">
+                                <img src="../image/list/teamspeak.png">
+                                <p class="title">Teamspeak</p>
+                                <p class="subtitle">TeamSpeak Systems</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://download.teamviewer.com/download/TeamViewer_Setup_pt-tkh.exe', '_blank');">
+                                <img src="../image/list/teamviewer.png">
+                                <p class="title">Teamviewer</p>
+                                <p class="subtitle">Teamviewer</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://telegram.org/apps', '_blank');">
+                                <img src="../image/list/telegram.png">
+                                <p class="title">Telegram</p>
+                                <p class="subtitle">Telegram Messenger</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.whatsapp.com/download/?l=pt_br', '_blank');">
+                                <img src="../image/list/whatsapp.png">
+                                <p class="title">Whatsapp</p>
+                                <p class="subtitle">Facebook Inc</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------- DEVELOPMENT -------------------------------->
+
+                    <div id="development" class="tabcontent">
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://creative.adobe.com/pt/products/download/creative-cloud?promoid=KSPDX', '_blank');">
+                                <img src="../image/list/adobecc.png">
+                                <p class="title">Adobe CC</p>
+                                <p class="subtitle">Adobe Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://atom.io/', '_blank');">
+                                <img src="../image/list/atom.png">
+                                <p class="title">Atom</p>
+                                <p class="subtitle">Gareth Flowers</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://www.audacityteam.org/download/', '_blank');">
+                                <img src="../image/list/audacity.png">
+                                <p class="title">Audacity</p>
+                                <p class="subtitle">Audacity Team</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://brackets.io/', '_blank');">
+                                <img src="../image/list/brackets.png">
+                                <p class="title">Brackets</p>
+                                <p class="subtitle">Adobe Inc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://filezilla-project.org/', '_blank');">
+                                <img src="../image/list/filezilla.png">
+                                <p class="title">Filezilla</p>
+                                <p class="subtitle">License GNU GPL</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://desktop.github.com/', '_blank');">
+                                <img src="../image/list/github.png">
+                                <p class="title">GitHub Desktop</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://inkscape.org/pt-br/release/inkscape-0.92.4/', '_blank');">
+                                <img src="../image/list/inkscape.png">
+                                <p class="title">Inkscape</p>
+                                <p class="subtitle">Nathan Hurst</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://netbeans.org/', '_blank');">
+                                <img src="../image/list/netbeans.png">
+                                <p class="title">Netbeans</p>
+                                <p class="subtitle">Apache Software</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://notepad-plus-plus.org/download/v7.5.4.html', '_blank');">
+                                <img src="../image/list/notepad++.png">
+                                <p class="title">Notepad++</p>
+                                <p class="subtitle">License GPL</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.sublimetext.com/3', '_blank');">
+                                <img src="../image/list/sublime.png">
+                                <p class="title">Sublime Text</p>
+                                <p class="subtitle">Nagware</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://code.visualstudio.com/', '_blank');">
+                                <img src="../image/list/visualstudio.png">
+                                <p class="title">Visual Studio Code</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------- ENTERTAINMENT -------------------------------->
+
+                    <div id="entertainment" class="tabcontent">
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.adobe.com/solutions/ebook/digital-editions/download.html', '_blank');">
+                                <img src="../image/list/adobereader.png">
+                                <p class="title">Adobe eReader</p>
+                                <p class="subtitle">Adobe Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.amazon.com.br/kindlepcdownload/ref=klp_win', '_blank');">
+                                <img src="../image/list/kindle.png">
+                                <p class="title">Amazon Kindle</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://github.com/JustArchiNET/ArchiSteamFarm/releases/tag/3.4.0.7', '_blank');">
+                                <img src="../image/list/steamarch.png">
+                                <p class="title">Archi Steam Farm</p>
+                                <p class="subtitle">License Apache-2.0</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://us.battle.net/pt/app/', '_blank');">
+                                <img src="../image/list/battlenet.png">
+                                <p class="title">Battle.net</p>
+                                <p class="subtitle">Blizzard Entertainment</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.bluestacks.com/pt-br/index.html', '_blank');">
+                                <img src="../image/list/bluestacks.png">
+                                <p class="title">BlueStacks</p>
+                                <p class="subtitle">Rosen Sharma</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://citra-emu.org/', '_blank');">
+                                <img src="../image/list/citra.png">
+                                <p class="title">Citra 3DS</p>
+                                <p class="subtitle">Citra Team</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://br.dolphin-emu.org/', '_blank');">
+                                <img src="../image/list/dolphin.png">
+                                <p class="title">Dolphin Gamecube</p>
+                                <p class="subtitle">Dolphin Team</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi', '_blank');">
+                                <img src="../image/list/epicgames.png">
+                                <p class="title">Epic Games</p>
+                                <p class="subtitle">Epic Games</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://www.fraps.com/free/setup.exe', '_blank');">
+                                <img src="../image/list/fraps.png">
+                                <p class="title">Fraps</p>
+                                <p class="subtitle">Beepa</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://www.steamidlemaster.com/', '_blank');">
+                                <img src="../image/list/steamarch.png">
+                                <p class="title">IdleMaster</p>
+                                <p class="subtitle">License Apache-2.0</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.apple.com/br/itunes/download/', '_blank');">
+                                <img src="../image/list/itunes.png">
+                                <p class="title">iTunes</p>
+                                <p class="subtitle">Apple Inc</p>
+                            </div>
+                        </div>
+
+												<div class="col">
+													<div class="card"
+															onclick="window.open('https://codecguide.com/download_k-lite_codec_pack_full.htm', '_blank');">
+															<img src="../image/list/klite.png">
+															<p class="title">K-Lite Codec</p>
+															<p class="subtitle">Codec Guide</p>
+													</div>
+											</div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://mgba.io/', '_blank');">
+                                <img src="../image/list/mgba.png">
+                                <p class="title">mGBA</p>
+                                <p class="subtitle">Vicki Pfau</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.microsoft.com/pt-br/p/netflix/9wzdncrfj3tj?activetab=pivot%3aoverviewtab', '_blank');">
+                                <img src="../image/list/netflix.png">
+                                <p class="title">Netflix</p>
+                                <p class="subtitle">Netflix</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.bignox.com/', '_blank');">
+                                <img src="../image/list/noxplayer.png">
+                                <p class="title">NoxPlayer</p>
+                                <p class="subtitle">Nox Community</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://obsproject.com/', '_blank');">
+                                <img src="../image/list/obs.png">
+                                <p class="title">OBS Studio</p>
+                                <p class="subtitle">OBS Project</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.origin.com/bra/en-us/store/download', '_blank');">
+                                <img src="../image/list/origin.png">
+                                <p class="title">Origin</p>
+                                <p class="subtitle">Eletronic Arts</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.mediafire.com/file/iwpl7nn6vosa3dv/Pcsx2+1.0+Update+2.6.5%21.exe', '_blank');">
+                                <img src="../image/list/pcsx2.png">
+                                <p class="title">PCSX2</p>
+                                <p class="subtitle">License GNU GPL</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://rpcs3.net/download', '_blank');">
+                                <img src="../image/list/rpcs3.png">
+                                <p class="title">RPCS3</p>
+                                <p class="subtitle">DH and Hykem</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://download.spotify.com/SpotifySetup.exe', '_blank');">
+                                <img src="../image/list/spotify.png">
+                                <p class="title">Spotify</p>
+                                <p class="subtitle">Spotify AB</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe', '_blank');">
+                                <img src="../image/list/steam.png">
+                                <p class="title">Steam</p>
+                                <p class="subtitle">Valve Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://streamlabs.com/', '_blank');">
+                                <img src="../image/list/streamlabs.png">
+                                <p class="title">Streamlabs</p>
+                                <p class="subtitle">Streamlabs</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://uplay.ubi.com/', '_blank');">
+                                <img src="../image/list/uplay.png">
+                                <p class="title">Uplay</p>
+                                <p class="subtitle">Ubisoft Entertainment</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://yuzu-emu.org/', '_blank');">
+                                <img src="../image/list/yuzu.png">
+                                <p class="title">Yuzu</p>
+                                <p class="subtitle">Yuzu Emulator</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://zsnes.br.uptodown.com/windows', '_blank');">
+                                <img src="../image/list/zsnes.png">
+                                <p class="title">zSNES</p>
+                                <p class="subtitle">zSNES Team</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------- BROWSERS -------------------------------->
+
+                    <div id="browsers" class="tabcontent">
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B402BE041-C559-22A8-07D5-00DF1B7D2DE8%7D%26lang%3Dpt-BR%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26installdataindex%3Ddefaultbrowser/update2/installers/ChromeSetup.exe', '_blank');">
+                                <img src="../image/list/chrome.png">
+                                <p class="title">Google Chrome</p>
+                                <p class="subtitle">Google Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://download-chromium.appspot.com/', '_blank');">
+                                <img src="../image/list/chromium.png">
+                                <p class="title">Google Chromium</p>
+                                <p class="subtitle">Google Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.microsoftedgeinsider.com/pt-br/', '_blank');">
+                                <img src="../image/list/edge.png">
+                                <p class="title">Microsoft Edge</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.mozilla.org/pt-BR/firefox/new/?scene=2', '_blank');">
+                                <img src="../image/list/firefox.png">
+                                <p class="title">Mozilla Firefox</p>
+                                <p class="subtitle">Mozilla Foundation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.mozilla.org/en-US/firefox/quantum/', '_blank');">
+                                <img src="../image/list/quantum.png">
+                                <p class="title">Mozilla Quantum</p>
+                                <p class="subtitle">Mozilla Foundation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://www.opera.com/pt-br', '_blank');">
+                                <img src="../image/list/opera.png">
+                                <p class="title">Opera</p>
+                                <p class="subtitle">Opera Software</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.opera.com/pt-br/gx#download', '_blank');">
+                                <img src="../image/list/operagx.png">
+                                <p class="title">Opera GX</p>
+                                <p class="subtitle">Opera Software</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.opera.com/pt-br/computer/neon', '_blank');">
+                                <img src="../image/list/operaneon.png">
+                                <p class="title">Opera Neon</p>
+                                <p class="subtitle">Opera Software</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://vivaldi.com/download/', '_blank');">
+                                <img src="../image/list/safari.png">
+                                <p class="title">Vivaldi</p>
+                                <p class="subtitle">Vivaldi Technologies</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.torproject.org/projects/torbrowser.html.en', '_blank');">
+                                <img src="../image/list/tor.png">
+                                <p class="title">Tor</p>
+                                <p class="subtitle">Tor Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------- OPERATION -------------------------------->
+
+                    <div id="operation" class="tabcontent">
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.neverware.com/freedownload/', '_blank');">
+                                <img src="../image/list/cloudready.png">
+                                <p class="title">CloudReady</p>
+                                <p class="subtitle">Neverware</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.linux.org/pages/download/', '_blank');">
+                                <img src="../image/list/linux.png">
+                                <p class="title">Linux Distros</p>
+                                <p class="subtitle">License GNU GPL</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('magnet:?xt=urn:btih:c55fb69644b12436c65564b1448c20df72e797d9&dn=Windows+7+Ultimate+SP1+PT-BR+x32+ISO&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969', '_blank');">
+                                <img src="../image/list/windows7.png">
+                                <p class="title">Windows 7 x86 (M)</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('magnet:?xt=urn:btih:56b7f5469af705045e86020573b10f874965ca05&dn=Windows+7+Ultimate+SP1+PT-BR+x64+ISO&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969', '_blank');">
+                                <img src="../image/list/windows7.png">
+                                <p class="title">Windows 7 x64 (M)</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://download.microsoft.com/download/C/F/9/CF9862F9-3D22-4811-99E7-68CE3327DAE6/MediaCreationTool.exe', '_blank');">
+                                <img src="../image/list/windows10.png">
+                                <p class="title">Windows 10 x86/x64</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso', '_blank');">
+                                <img src="../image/list/windowsxp.png">
+                                <p class="title">Windows XP x86</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://archive.org/download/WindowsXPProfessional64BitCorporateEdition/Windows%20XP%20Professional%2064-bit%20Corporate%20Edition%28CD%20Key%20VCFQD-V9FX9-46WVH-K3CD4-4J3JM%29.iso', '_blank');">
+                                <img src="../image/list/windowsxp.png">
+                                <p class="title">Windows XP x64</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-------------------------------- UTILITY -------------------------------->
+
+                    <div id="utility" class="tabcontent">
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://www.utorrent.com/intl/pt/', '_blank');">
+                                <img src="../image/list/utorrent.png">
+                                <p class="title">µTorrent</p>
+                                <p class="subtitle">BitTorrent Client</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://www.7-zip.org/', '_blank');">
+                                <img src="../image/list/7zip.png">
+                                <p class="title">7-Zip</p>
+                                <p class="subtitle">License GNU LGPL</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.computerbase.de/downloads/systemtools/all-in-one-runtimes/?url=108453', '_blank');">
+                                <img src="../image/list/windowsxp.png">
+                                <p class="title">All in One Runtimes</p>
+                                <p class="subtitle">Computer Base</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://files.dsnetwb.com/aTube_Catcher.exe', '_blank');">
+                                <img src="../image/list/atube.png">
+                                <p class="title">Atube Catcher</p>
+                                <p class="subtitle">DsNET Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://files.avast.com/iavs9x/avast_free_antivirus_setup_online.exe', '_blank');">
+                                <img src="../image/list/avast.png">
+                                <p class="title">Avast Antivirus</p>
+                                <p class="subtitle">Avast Software</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.avira.com/pt-br/downloads', '_blank');">
+                                <img src="../image/list/avira.png">
+                                <p class="title">Avira Antivirus</p>
+                                <p class="subtitle">Avira Operations</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.bittorrent.com/lang/pt_br/downloads/win', '_blank');">
+                                <img src="../image/list/bittorrent.png">
+                                <p class="title">BitTorrent</p>
+                                <p class="subtitle">BitTorrent Inc.</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://download.cnet.com/CCleaner/3001-18512_4-10315544.html?part=dl-', '_blank');">
+                                <img src="../image/list/ccleaner.png">
+                                <p class="title">CCleaner</p>
+                                <p class="subtitle">Piriform</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://download.cdburnerxp.se/cdbxp_setup_4.5.7.6452.exe', '_blank');">
+                                <img src="../image/list/cdburner.png">
+                                <p class="title">CDBurnerXP</p>
+                                <p class="subtitle">Canneverbe Limited</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://download.cpuid.com/cpu-z/cpu-z_1.77-en.exe', '_blank');">
+                                <img src="../image/list/cpuz.png">
+                                <p class="title">CPU-Z</p>
+                                <p class="subtitle">CPUID</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.nvidia.com.br/object/geforce-experience-br.html', '_blank');">
+                                <img src="../image/list/geforce.png">
+                                <p class="title">Geforce Experience</p>
+                                <p class="subtitle">Nvidia Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www8.hp.com/br/pt/campaigns/hpsupportassistant/hpsupport.html', '_blank');">
+                                <img src="../image/list/hp.png">
+                                <p class="title">HP Support Assistant</p>
+                                <p class="subtitle">Hewlett Package</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.hyperxgaming.com/br/ngenuity', '_blank');">
+                                <img src="../image/list/hyperx.png">
+                                <p class="title">HyperX NGenuity</p>
+                                <p class="subtitle">Kingston Technology</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.iobit.com/pt/advanced-systemcare-antivirus.php', '_blank');">
+                                <img src="../image/list/advanced.png">
+                                <p class="title">Advanced Systemcare</p>
+                                <p class="subtitle">IObit Software</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.iobit.com/pt/driver-booster.php', '_blank');">
+                                <img src="../image/list/driverbooster.png">
+                                <p class="title">Driver Booster</p>
+                                <p class="subtitle">IObit Software</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.iobit.com/pt/malware-fighter.php', '_blank');">
+                                <img src="../image/list/malware.png">
+                                <p class="title">Malware Fighter</p>
+                                <p class="subtitle">IObit Software</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.iobit.com/pt/advanceduninstaller.php', '_blank');">
+                                <img src="../image/list/uninstaller.png">
+                                <p class="title">Uninstaller</p>
+                                <p class="subtitle">IObit Software</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.irfanview.com', '_blank');">
+                                <img src="../image/list/irfanview.png">
+                                <p class="title">Irfanview</p>
+                                <p class="subtitle">Irfanview, Freeware</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.mediafire.com/file/71mpxskz54kazvg/file', '_blank');">
+                                <img src="../image/list/kms.png">
+                                <p class="title">KMS Tools</p>
+                                <p class="subtitle">KMS Pico</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.lastpass.com/pt', '_blank');">
+                                <img src="../image/list/lastpass.png">
+                                <p class="title">LastPass</p>
+                                <p class="subtitle">LastPass</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://pt-br.libreoffice.org/baixe-ja/', '_blank');">
+                                <img src="../image/list/libreoffice.png">
+                                <p class="title">LibreOffice</p>
+                                <p class="subtitle">Document Foundation</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://app.prntscr.com/build/setup-lightshot.exe', '_blank');">
+                                <img src="../image/list/lightshot.png">
+                                <p class="title">Lightshot</p>
+                                <p class="subtitle">Skillbrains</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://www.getmailbird.com/', '_blank');">
+                                <img src="../image/list/mailbird.png">
+                                <p class="title">Mailbird</p>
+                                <p class="subtitle">Mailbird</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://anonfiles.com/Zbe5u5a1n5/_downloadscracks.info_mailspring_1.6.1_exe', '_blank');">
+                                <img src="../image/list/mailspring.png">
+                                <p class="title">Mailspring</p>
+                                <p class="subtitle">Foundry 376, LLC</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://1password.com/downloads/windows/', '_blank');">
+                                <img src="../image/list/zsnes.png">
+                                <p class="title">OnePassword</p>
+                                <p class="subtitle">1Password</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('magnet:?xt=urn:btih:CCA124CE534CDD67A5E14613771282686A80511C&dn=Office_2010_br_BRAZIL_PT_PORTUGUES_32_64.nrg&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80&tr=udp%3a%2f%2fopen.demonii.com%3a1337&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969&tr=udp%3a%2f%2fexodus.desync.com%3a6969', '_blank');">
+                                <img src="../image/list/office.png">
+                                <p class="title">Office 2010</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('magnet:?xt=urn:btih:2b79ce29d90909b2103aa78536277068e1977219&dn=Office+2016+Professional+Plus+RTM+MSDN+x86+x64+pt-BR&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969', '_blank');">
+                                <img src="../image/list/office.png">
+                                <p class="title">Office 2016</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('magnet:?xt=urn:btih:b08c001d5a6a581605f989bb105bb4de78830822&dn=Office+Professional+Plus+2019+BR&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969', '_blank');">
+                                <img src="../image/list/office.png">
+                                <p class="title">Office 2019</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.mozilla.org/pt-BR/thunderbird/', '_blank');">
+                                <img src="../image/list/thunderbird.png">
+                                <p class="title">Mozilla Thunderbird</p>
+                                <p class="subtitle">Mozilla Foundation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip', '_blank');">
+                                <img src="../image/list/msiafterburner.png">
+                                <p class="title">MSI Afterburner</p>
+                                <p class="subtitle">Micro-Star International</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.microsoft.com/pt-br/download/details.aspx?id=17851', '_blank');">
+                                <img src="../image/list/netframework.png">
+                                <p class="title">NET Framework</p>
+                                <p class="subtitle">Microsoft Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://opera-mail.br.jaleco.com/', '_blank');">
+                                <img src="../image/list/operamail.png">
+                                <p class="title">Opera Mail</p>
+                                <p class="subtitle">Opera Software</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('http://www.razerzone.com/br-pt/cortex', '_blank');">
+                                <img src="../image/list/razercortex.png">
+                                <p class="title">Razer Cortex</p>
+                                <p class="subtitle">Razer Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('http://www.razerzone.com/br-pt/synapse', '_blank');">
+                                <img src="../image/list/razersynapse.png">
+                                <p class="title">Razer Synapse</p>
+                                <p class="subtitle">Razer Inc</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.realtek.com/en/component/zoo/category/pc-audio-codecs-high-definition-audio-codecs-software', '_blank');">
+                                <img src="../image/list/realtek.png">
+                                <p class="title">Realtek PCIe GBE</p>
+                                <p class="subtitle">Realtek Semiconductior</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://slimdrivers.br.uptodown.com/windows/download', '_blank');">
+                                <img src="../image/list/slimdrivers.png">
+                                <p class="title">SlimDrivers</p>
+                                <p class="subtitle">SlimWare</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.microsoft.com/pt-br/p/translucenttb/9pf4kz2vn4w9?activetab=pivot:overviewtab', '_blank');">
+                                <img src="../image/list/translucent.png">
+                                <p class="title">Translucent TB</p>
+                                <p class="subtitle">Charles Milette</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" onclick="window.open('https://unetbootin.github.io/', '_blank');">
+                                <img src="../image/list/unetbootin.png">
+                                <p class="title">UNetbootin</p>
+                                <p class="subtitle">HabitLab</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.virtualbox.org/wiki/Downloads', '_blank');">
+                                <img src="../image/list/virtualbox.png">
+                                <p class="title">VirtualBox Oracle VM</p>
+                                <p class="subtitle">Oracle Corporation</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.videolan.org/vlc/index.pt-BR.html', '_blank');">
+                                <img src="../image/list/vlc.png">
+                                <p class="title">VLC Media Player</p>
+                                <p class="subtitle">VideoLAN Organization</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card"
+                                onclick="window.open('https://www.win-rar.com/download.html?&L=0', '_blank');">
+                                <img src="../image/list/winrar.png">
+                                <p class="title">WinRAR</p>
+                                <p class="subtitle">Eugene Roshal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="mobile">
+			<img src="../image/Logo v2.png" width="50%"><br>
+        <div class="mensagem_container">Esse site é exclusivo para<br>
+            <div class="desktop_class">uso do Desktop</div>
         </div>
     </div>
 
-    <div class="tabs">
-        <div class="container">
-            <a href="#" onclick="openPage(this, 'backup')" class="active tablink menulist">Backup / Cloud</a>
-            <a href="#" onclick="openPage(this, 'communication')" class="tablink menulist">Communication</a>
-            <a href="#" onclick="openPage(this, 'development')" class="tablink menulist">Development</a>
-            <a href="#" onclick="openPage(this, 'entertainment')" class="tablink menulist">Entertainment</a>
-            <a href="#" onclick="openPage(this, 'browsers')" class="tablink menulist">Browsers</a>
-            <a href="#" onclick="openPage(this, 'operation')" class="tablink menulist">Operating System</a>
-            <a href="#" onclick="openPage(this, 'utility')" class="tablink menulist">Utility</a>
-
-            <p></p>
-            <a class="social" href="https://discord.gg/nyTRNSV" target="_blank">Discord</a>
-            <a class="social" href="http://www.github.com/nerv-opensource" target="_blank">Github</a>
-            <a class="social" href="http://www.twitter.com/yagasaki7k" target="_blank">Twitter</a>
-
-        </div>
-
-        <div class="content">
-            <div id="backup" class="tabcontent tabcontent--firstShow">
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <span onclick="window.open('https://www.dropbox.com/install', '_blank');">
-                    <img src="../image/list/dropbox.png">
-                    <p class="title">Dropbox</p>
-                    <p class="subtitle">Dropbox</p>
-                </span>
-
-                <span style="margin-left: 190px"
-                    onclick="window.open('https://www.google.com/intl/pt-BR_ALL/drive/download/', '_blank');">
-                    <img src="../image/list/googledrive.png">
-                    <p class="title">Google Drive</p>
-                    <p class="subtitle">Google Inc</p>
-                </span>
-
-                <span style="margin-left: 380px"
-                    onclick="window.open('https://support.apple.com/pt_BR/downloads/icloud', '_blank');">
-                    <img src="../image/list/icloud.png">
-                    <p class="title">iCloud Drive</p>
-                    <p class="subtitle">Apple Inc</p>
-                </span>
-
-                <span style="margin-left: 570px" onclick="window.open('https://mega.nz/MEGAsyncSetup.exe', '_blank');">
-                    <img src="../image/list/mega.png">
-                    <p class="title">MEGASync</p>
-                    <p class="subtitle">Kim Dotcom</p>
-                </span>
-
-                <span style="margin-left: 760px"
-                    onclick="window.open('https://onedrive.live.com/about/pt-br/', '_blank');">
-                    <img src="../image/list/onedrive.png">
-                    <p class="title">OneDrive</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-            </div>
-
-            <div id="communication" class="tabcontent">
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <span onclick="window.open('https://guacamole.apache.org/releases/', '_blank');">
-                    <img src="../image/list/apache.png">
-                    <p class="title">Apache Guacamole</p>
-                    <p class="subtitle">Apache Software</p>
-                </span>
-
-                <span style="margin-left: 190px" onclick="window.open('https://discordapp.com/download', '_blank');">
-                    <img src="../image/list/discord.png">
-                    <p class="title">Discord</p>
-                    <p class="subtitle">Discord</p>
-                </span>
-
-                <span style="margin-left: 380px" onclick="window.open('http://meetfranz.com/#download', '_blank');">
-                    <img src="../image/list/franz.png">
-                    <p class="title">Franz</p>
-                    <p class="subtitle">Stefan Malzner</p>
-                </span>
-
-                <span style="margin-left: 570px"
-                    onclick="window.open('https://secure.logmein.com/hamachi.msi', '_blank');">
-                    <img src="../image/list/hamachi.png">
-                    <p class="title">Hamachi</p>
-                    <p class="subtitle">LogMeIn</p>
-                </span>
-
-                <span style="margin-left: 760px" onclick="window.open('https://rocket.chat/', '_blank');">
-                    <img src="../image/list/rocketchat.png">
-                    <p class="title">Rocket Chat</p>
-                    <p class="subtitle">rocket.chat</p>
-                </span>
-
-                <span style="margin-top: 220px"
-                    onclick="window.open('https://www.teamspeak.com/en/downloads/', '_blank');">
-                    <img src="../image/list/teamspeak.png">
-                    <p class="title">Teamspeak</p>
-                    <p class="subtitle">TeamSpeak Systems</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 190px"
-                    onclick="window.open('http://download.teamviewer.com/download/TeamViewer_Setup_pt-tkh.exe', '_blank');">
-                    <img src="../image/list/teamviewer.png">
-                    <p class="title">Teamviewer</p>
-                    <p class="subtitle">Teamviewer</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 380px"
-                    onclick="window.open('https://telegram.org/apps', '_blank');">
-                    <img src="../image/list/telegram.png">
-                    <p class="title">Telegram</p>
-                    <p class="subtitle">Telegram Messenger</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 570px"
-                    onclick="window.open('https://www.whatsapp.com/download/?l=pt_br', '_blank');">
-                    <img src="../image/list/whatsapp.png">
-                    <p class="title">Whatsapp</p>
-                    <p class="subtitle">Facebook Inc</p>
-                </span>
-            </div>
-
-            <div id="development" class="tabcontent">
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <span
-                    onclick="window.open('https://creative.adobe.com/pt/products/download/creative-cloud?promoid=KSPDX', '_blank');">
-                    <img src="../image/list/adobecc.png">
-                    <p class="title">Adobe CC</p>
-                    <p class="subtitle">Adobe Inc</p>
-                </span>
-
-                <span style="margin-left: 190px" onclick="window.open('https://atom.io/', '_blank');">
-                    <img src="../image/list/atom.png">
-                    <p class="title">Atom</p>
-                    <p class="subtitle">Gareth Flowers</p>
-                </span>
-
-                <span style="margin-left: 380px"
-                    onclick="window.open('http://www.audacityteam.org/download/', '_blank');">
-                    <img src="../image/list/audacity.png">
-                    <p class="title">Audacity</p>
-                    <p class="subtitle">Audacity Team</p>
-                </span>
-
-                <span style="margin-left: 570px" onclick="window.open('http://brackets.io/', '_blank');">
-                    <img src="../image/list/brackets.png">
-                    <p class="title">Brackets</p>
-                    <p class="subtitle">Adobe Inc.</p>
-                </span>
-
-                <span style="margin-left: 760px" onclick="window.open('https://filezilla-project.org/', '_blank');">
-                    <img src="../image/list/filezilla.png">
-                    <p class="title">Filezilla</p>
-                    <p class="subtitle">License GNU GPL</p>
-                </span>
-
-                <span style="margin-top: 220px" onclick="window.open('https://desktop.github.com/', '_blank');">
-                    <img src="../image/list/github.png">
-                    <p class="title">GitHub Desktop</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 190px"
-                    onclick="window.open('https://inkscape.org/pt-br/release/inkscape-0.92.4/', '_blank');">
-                    <img src="../image/list/inkscape.png">
-                    <p class="title">Inkscape</p>
-                    <p class="subtitle">Nathan Hurst</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 380px"
-                    onclick="window.open('https://netbeans.org/', '_blank');">
-                    <img src="../image/list/netbeans.png">
-                    <p class="title">Netbeans</p>
-                    <p class="subtitle">Apache Software</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 570px"
-                    onclick="window.open('https://notepad-plus-plus.org/download/v7.5.4.html', '_blank');">
-                    <img src="../image/list/notepad++.png">
-                    <p class="title">Notepad++</p>
-                    <p class="subtitle">License GPL</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 760px"
-                    onclick="window.open('https://www.sublimetext.com/3', '_blank');">
-                    <img src="../image/list/sublime.png">
-                    <p class="title">Sublime Text</p>
-                    <p class="subtitle">Nagware</p>
-                </span>
-
-                <span style="margin-top: 440px;" onclick="window.open('https://code.visualstudio.com/', '_blank');">
-                    <img src="../image/list/visualstudio.png">
-                    <p class="title">Visual Studio Code</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-            </div>
-
-            <div id="entertainment" class="tabcontent">
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <span
-                    onclick="window.open('https://www.adobe.com/solutions/ebook/digital-editions/download.html', '_blank');">
-                    <img src="../image/list/adobereader.png">
-                    <p class="title">Adobe eReader</p>
-                    <p class="subtitle">Adobe Inc</p>
-                </span>
-
-                <span style="margin-left: 190px"
-                    onclick="window.open('http://www.amazon.com.br/kindlepcdownload/ref=klp_win', '_blank');">
-                    <img src="../image/list/kindle.png">
-                    <p class="title">Amazon Kindle</p>
-                    <p class="subtitle">Amazon.com, Inc</p>
-                </span>
-
-                <span style="margin-left: 380px"
-                    onclick="window.open('https://github.com/JustArchiNET/ArchiSteamFarm/releases/tag/3.4.0.7', '_blank');">
-                    <img src="../image/list/steamarch.png">
-                    <p class="title">Archi Steam Farm</p>
-                    <p class="subtitle">License Apache-2.0</p>
-                </span>
-
-                <span style="margin-left: 570px" onclick="window.open('http://us.battle.net/pt/app/', '_blank');">
-                    <img src="../image/list/battlenet.png">
-                    <p class="title">Battle.net</p>
-                    <p class="subtitle">Blizzard Entertainment</p>
-                </span>
-
-                <span style="margin-left: 760px"
-                    onclick="window.open('http://www.bluestacks.com/pt-br/index.html', '_blank');">
-                    <img src="../image/list/bluestacks.png">
-                    <p class="title">BlueStacks</p>
-                    <p class="subtitle">Rosen Sharma</p>
-                </span>
-
-                <span style="margin-top: 220px" onclick="window.open('https://citra-emu.org/', '_blank');">
-                    <img src="../image/list/citra.png">
-                    <p class="title">Citra 3DS</p>
-                    <p class="subtitle">Citra Team</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 190px"
-                    onclick="window.open('https://br.dolphin-emu.org/', '_blank');">
-                    <img src="../image/list/dolphin.png">
-                    <p class="title">Dolphin Gamecube</p>
-                    <p class="subtitle">Dolphin Team</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 380px"
-                    onclick="window.open('https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi', '_blank');">
-                    <img src="../image/list/epicgames.png">
-                    <p class="title">Epic Games</p>
-                    <p class="subtitle">Epic Games</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 570px"
-                    onclick="window.open('http://www.fraps.com/free/setup.exe', '_blank');">
-                    <img src="../image/list/fraps.png">
-                    <p class="title">Fraps</p>
-                    <p class="subtitle">Beepa</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 760px"
-                    onclick="window.open('http://www.steamidlemaster.com/', '_blank');">
-                    <img src="../image/list/steamarch.png">
-                    <p class="title">IdleMaster</p>
-                    <p class="subtitle">License Apache-2.0</p>
-                </span>
-
-                <span style="margin-top: 440px;"
-                    onclick="window.open('http://www.apple.com/br/itunes/download/', '_blank');">
-                    <img src="../image/list/itunes.png">
-                    <p class="title">iTunes</p>
-                    <p class="subtitle">Apple Inc</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 190px;"
-                    onclick="window.open('https://mgba.io/', '_blank');">
-                    <img src="../image/list/mgba.png">
-                    <p class="title">mGBA</p>
-                    <p class="subtitle">Vicki Pfau</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 380px;"
-                    onclick="window.open('https://www.microsoft.com/pt-br/p/netflix/9wzdncrfj3tj?activetab=pivot%3aoverviewtab', '_blank');">
-                    <img src="../image/list/netflix.png">
-                    <p class="title">Netflix</p>
-                    <p class="subtitle">Netflix</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 570px;"
-                    onclick="window.open('https://www.bignox.com/', '_blank');">
-                    <img src="../image/list/noxplayer.png">
-                    <p class="title">NoxPlayer</p>
-                    <p class="subtitle">Nox Community</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 760px;"
-                    onclick="window.open('https://obsproject.com/', '_blank');">
-                    <img src="../image/list/obs.png">
-                    <p class="title">OBS Studio</p>
-                    <p class="subtitle">OBS Project</p>
-                </span>
-
-                <span style="margin-top: 660px"
-                    onclick="window.open('https://www.origin.com/bra/en-us/store/download', '_blank');">
-                    <img src="../image/list/origin.png">
-                    <p class="title">Origin</p>
-                    <p class="subtitle">Eletronic Arts</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 190px;"
-                    onclick="window.open('http://www.mediafire.com/file/iwpl7nn6vosa3dv/Pcsx2+1.0+Update+2.6.5%21.exe', '_blank');">
-                    <img src="../image/list/pcsx2.png">
-                    <p class="title">PCSX2</p>
-                    <p class="subtitle">License GNU GPL</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 380px;"
-                    onclick="window.open('https://rpcs3.net/download', '_blank');">
-                    <img src="../image/list/rpcs3.png">
-                    <p class="title">RPCS3</p>
-                    <p class="subtitle">DH and Hykem</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 570px;"
-                    onclick="window.open('https://download.spotify.com/SpotifySetup.exe', '_blank');">
-                    <img src="../image/list/spotify.png">
-                    <p class="title">Spotify</p>
-                    <p class="subtitle">Spotify AB</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 760px;"
-                    onclick="window.open('https://steamcdn-a.akamaihd.net/client/installer/SteamSetup.exe', '_blank');">
-                    <img src="../image/list/steam.png">
-                    <p class="title">Steam</p>
-                    <p class="subtitle">Valve Corporation</p>
-                </span>
-
-                <span style="margin-top: 880px" onclick="window.open('https://streamlabs.com/', '_blank');">
-                    <img src="../image/list/streamlabs.png">
-                    <p class="title">Streamlabs</p>
-                    <p class="subtitle">Streamlabs</p>
-                </span>
-
-                <span style="margin-top: 880px; margin-left: 190px;"
-                    onclick="window.open('https://uplay.ubi.com/', '_blank');">
-                    <img src="../image/list/uplay.png">
-                    <p class="title">Uplay</p>
-                    <p class="subtitle">Ubisoft Entertainment</p>
-                </span>
-
-                <span style="margin-top: 880px; margin-left: 380px;"
-                    onclick="window.open('https://yuzu-emu.org/', '_blank');">
-                    <img src="../image/list/yuzu.png">
-                    <p class="title">Yuzu</p>
-                    <p class="subtitle">Yuzu Emulator</p>
-                </span>
-
-                <span style="margin-top: 880px; margin-left: 570px;"
-                    onclick="window.open('https://zsnes.br.uptodown.com/windows', '_blank');">
-                    <img src="../image/list/zsnes.png">
-                    <p class="title">zSNES</p>
-                    <p class="subtitle">zSNES Team</p>
-                </span>
-            </div>
-
-            <div id="browsers" class="tabcontent">
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <span
-                    onclick="window.open('https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B402BE041-C559-22A8-07D5-00DF1B7D2DE8%7D%26lang%3Dpt-BR%26browser%3D4%26usagestats%3D0%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26installdataindex%3Ddefaultbrowser/update2/installers/ChromeSetup.exe', '_blank');">
-                    <img src="../image/list/chrome.png">
-                    <p class="title">Google Chrome</p>
-                    <p class="subtitle">Google Inc</p>
-                </span>
-
-                <span style="margin-left: 190px"
-                    onclick="window.open('https://download-chromium.appspot.com/', '_blank');">
-                    <img src="../image/list/chromium.png">
-                    <p class="title">Google Chromium</p>
-                    <p class="subtitle">Google Inc</p>
-                </span>
-
-                <span style="margin-left: 380px"
-                    onclick="window.open('https://www.microsoftedgeinsider.com/pt-br/', '_blank');">
-                    <img src="../image/list/edge.png">
-                    <p class="title">Microsoft Edge</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-left: 570px"
-                    onclick="window.open('https://www.mozilla.org/pt-BR/firefox/new/?scene=2', '_blank');">
-                    <img src="../image/list/firefox.png">
-                    <p class="title">Mozilla Firefox</p>
-                    <p class="subtitle">Mozilla Foundation</p>
-                </span>
-
-                <span style="margin-left: 760px"
-                    onclick="window.open('https://www.mozilla.org/en-US/firefox/quantum/', '_blank');">
-                    <img src="../image/list/quantum.png">
-                    <p class="title">Mozilla Quantum</p>
-                    <p class="subtitle">Mozilla Foundation</p>
-                </span>
-
-                <span style="margin-top: 220px" onclick="window.open('http://www.opera.com/pt-br', '_blank');">
-                    <img src="../image/list/opera.png">
-                    <p class="title">Opera</p>
-                    <p class="subtitle">Opera Software</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 190px"
-                    onclick="window.open('https://www.opera.com/pt-br/gx#download', '_blank');">
-                    <img src="../image/list/operagx.png">
-                    <p class="title">Opera GX</p>
-                    <p class="subtitle">Opera Software</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 380px"
-                    onclick="window.open('https://www.opera.com/pt-br/computer/neon', '_blank');">
-                    <img src="../image/list/operaneon.png">
-                    <p class="title">Opera Neon</p>
-                    <p class="subtitle">Opera Software</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 570px"
-                    onclick="window.open('https://vivaldi.com/download/', '_blank');">
-                    <img src="../image/list/safari.png">
-                    <p class="title">Vivaldi</p>
-                    <p class="subtitle">Vivaldi Technologies</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 760px"
-                    onclick="window.open('https://www.torproject.org/projects/torbrowser.html.en', '_blank');">
-                    <img src="../image/list/tor.png">
-                    <p class="title">Tor</p>
-                    <p class="subtitle">Tor Project</p>
-                </span>
-            </div>
-
-            <div id="operation" class="tabcontent">
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <span onclick="window.open('https://www.neverware.com/freedownload/', '_blank');">
-                    <img src="../image/list/cloudready.png">
-                    <p class="title">CloudReady</p>
-                    <p class="subtitle">Neverware</p>
-                </span>
-
-                <span style="margin-left: 190px"
-                    onclick="window.open('https://www.linux.org/pages/download/', '_blank');">
-                    <img src="../image/list/linux.png">
-                    <p class="title">Linux Distros</p>
-                    <p class="subtitle">License GNU GPL</p>
-                </span>
-
-                <span style="margin-left: 380px"
-                    onclick="window.open('magnet:?xt=urn:btih:c55fb69644b12436c65564b1448c20df72e797d9&dn=Windows+7+Ultimate+SP1+PT-BR+x32+ISO&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969', '_blank');">
-                    <img src="../image/list/windows7.png">
-                    <p class="title">Windows 7 x86 (M)</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-left: 570px"
-                    onclick="window.open('magnet:?xt=urn:btih:56b7f5469af705045e86020573b10f874965ca05&dn=Windows+7+Ultimate+SP1+PT-BR+x64+ISO&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.zer0day.to%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969', '_blank');">
-                    <img src="../image/list/windows7.png">
-                    <p class="title">Windows 7 x64 (M)</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-left: 760px"
-                    onclick="window.open('http://download.microsoft.com/download/C/F/9/CF9862F9-3D22-4811-99E7-68CE3327DAE6/MediaCreationTool.exe', '_blank');">
-                    <img src="../image/list/windows10.png">
-                    <p class="title">Windows 10 x86/x64</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-top: 220px"
-                    onclick="window.open('https://archive.org/download/WinXPProSP3x86/en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso', '_blank');">
-                    <img src="../image/list/windowsxp.png">
-                    <p class="title">Windows XP x86</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 190px"
-                    onclick="window.open('https://archive.org/download/WindowsXPProfessional64BitCorporateEdition/Windows%20XP%20Professional%2064-bit%20Corporate%20Edition%28CD%20Key%20VCFQD-V9FX9-46WVH-K3CD4-4J3JM%29.iso', '_blank');">
-                    <img src="../image/list/windowsxp.png">
-                    <p class="title">Windows XP x64</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-            </div>
-
-            <div id="utility" class="tabcontent">
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <!-- 175px + 175px + 175px + 175px + 175px-->
-                <span onclick="window.open('http://www.utorrent.com/intl/pt/', '_blank');">
-                    <img src="../image/list/utorrent.png">
-                    <p class="title">µTorrent</p>
-                    <p class="subtitle">BitTorrent Client</p>
-                </span>
-
-                <span style="margin-left: 190px" onclick="window.open('http://www.7-zip.org/', '_blank');">
-                    <img src="../image/list/7zip.png">
-                    <p class="title">7-Zip</p>
-                    <p class="subtitle">License GNU LGPL</p>
-                </span>
-
-                <span style="margin-left: 380px"
-                    onclick="window.open('https://www.computerbase.de/downloads/systemtools/all-in-one-runtimes/?url=108453', '_blank');">
-                    <img src="../image/list/windowsxp.png">
-                    <p class="title">All in One Runtimes</p>
-                    <p class="subtitle">Computer Base</p>
-                </span>
-
-                <span style="margin-left: 570px"
-                    onclick="window.open('http://files.dsnetwb.com/aTube_Catcher.exe', '_blank');">
-                    <img src="../image/list/atube.png">
-                    <p class="title">Atube Catcher</p>
-                    <p class="subtitle">DsNET Corporation</p>
-                </span>
-
-                <span style="margin-left: 760px"
-                    onclick="window.open('http://files.avast.com/iavs9x/avast_free_antivirus_setup_online.exe', '_blank');">
-                    <img src="../image/list/avast.png">
-                    <p class="title">Avast Antivirus</p>
-                    <p class="subtitle">Avast Software</p>
-                </span>
-
-                <span style="margin-top: 220px"
-                    onclick="window.open('https://www.avira.com/pt-br/downloads', '_blank');">
-                    <img src="../image/list/avira.png">
-                    <p class="title">Avira Antivirus</p>
-                    <p class="subtitle">Avira Operations</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 190px"
-                    onclick="window.open('http://www.bittorrent.com/lang/pt_br/downloads/win', '_blank');">
-                    <img src="../image/list/bittorrent.png">
-                    <p class="title">BitTorrent</p>
-                    <p class="subtitle">BitTorrent Inc.</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 380px"
-                    onclick="window.open('http://download.cnet.com/CCleaner/3001-18512_4-10315544.html?part=dl-', '_blank');">
-                    <img src="../image/list/ccleaner.png">
-                    <p class="title">CCleaner</p>
-                    <p class="subtitle">Piriform</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 570px"
-                    onclick="window.open('https://download.cdburnerxp.se/cdbxp_setup_4.5.7.6452.exe', '_blank');">
-                    <img src="../image/list/cdburner.png">
-                    <p class="title">CDBurnerXP</p>
-                    <p class="subtitle">Canneverbe Limited</p>
-                </span>
-
-                <span style="margin-top: 220px; margin-left: 760px"
-                    onclick="window.open('http://download.cpuid.com/cpu-z/cpu-z_1.77-en.exe', '_blank');">
-                    <img src="../image/list/cpuz.png">
-                    <p class="title">CPU-Z</p>
-                    <p class="subtitle">CPUID</p>
-                </span>
-
-                <span style="margin-top: 440px;"
-                    onclick="window.open('http://www.nvidia.com.br/object/geforce-experience-br.html', '_blank');">
-                    <img src="../image/list/geforce.png">
-                    <p class="title">Geforce Experience</p>
-                    <p class="subtitle">Nvidia Corporation</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 190px;"
-                    onclick="window.open('http://www8.hp.com/br/pt/campaigns/hpsupportassistant/hpsupport.html', '_blank');">
-                    <img src="../image/list/hp.png">
-                    <p class="title">HP Support Assistant</p>
-                    <p class="subtitle">Hewlett Package</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 380px;"
-                    onclick="window.open('https://www.hyperxgaming.com/br/ngenuity', '_blank');">
-                    <img src="../image/list/hyperx.png">
-                    <p class="title">HyperX NGenuity</p>
-                    <p class="subtitle">Kingston Technology</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 570px;"
-                    onclick="window.open('https://www.iobit.com/pt/advanced-systemcare-antivirus.php', '_blank');">
-                    <img src="../image/list/advanced.png">
-                    <p class="title">Advanced Systemcare</p>
-                    <p class="subtitle">IObit Software</p>
-                </span>
-
-                <span style="margin-top: 440px; margin-left: 760px;"
-                    onclick="window.open('https://www.iobit.com/pt/driver-booster.php', '_blank');">
-                    <img src="../image/list/driverbooster.png">
-                    <p class="title">Driver Booster</p>
-                    <p class="subtitle">IObit Software</p>
-                </span>
-
-                <span style="margin-top: 660px"
-                    onclick="window.open('https://www.iobit.com/pt/malware-fighter.php', '_blank');">
-                    <img src="../image/list/malware.png">
-                    <p class="title">Malware Fighter</p>
-                    <p class="subtitle">IObit Software</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 190px;"
-                    onclick="window.open('https://www.iobit.com/pt/advanceduninstaller.php', '_blank');">
-                    <img src="../image/list/uninstaller.png">
-                    <p class="title">Uninstaller</p>
-                    <p class="subtitle">IObit Software</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 380px;"
-                    onclick="window.open('https://www.irfanview.com', '_blank');">
-                    <img src="../image/list/irfanview.png">
-                    <p class="title">Irfanview</p>
-                    <p class="subtitle">Irfanview, Freeware</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 570px;"
-                    onclick="window.open('http://www.mediafire.com/file/71mpxskz54kazvg/file', '_blank');">
-                    <img src="../image/list/kms.png">
-                    <p class="title">KMS Tools</p>
-                    <p class="subtitle">KMS Pico</p>
-                </span>
-
-                <span style="margin-top: 660px; margin-left: 760px;"
-                    onclick="window.open('https://www.lastpass.com/pt', '_blank');">
-                    <img src="../image/list/lastpass.png">
-                    <p class="title">LastPass</p>
-                    <p class="subtitle">LastPass</p>
-                </span>
-
-                <span style="margin-top: 880px"
-                    onclick="window.open('https://pt-br.libreoffice.org/baixe-ja/', '_blank');">
-                    <img src="../image/list/libreoffice.png">
-                    <p class="title">LibreOffice</p>
-                    <p class="subtitle">Document Foundation</p>
-                </span>
-
-                <span style="margin-top: 880px; margin-left: 190px;"
-                    onclick="window.open('https://app.prntscr.com/build/setup-lightshot.exe', '_blank');">
-                    <img src="../image/list/lightshot.png">
-                    <p class="title">Lightshot</p>
-                    <p class="subtitle">Skillbrains</p>
-                </span>
-
-                <span style="margin-top: 880px; margin-left: 380px;"
-                    onclick="window.open('https://www.getmailbird.com/', '_blank');">
-                    <img src="../image/list/mailbird.png">
-                    <p class="title">Mailbird</p>
-                    <p class="subtitle">Mailbird</p>
-                </span>
-
-                <span style="margin-top: 880px; margin-left: 570px;"
-                    onclick="window.open('https://anonfiles.com/Zbe5u5a1n5/_downloadscracks.info_mailspring_1.6.1_exe', '_blank');">
-                    <img src="../image/list/mailspring.png">
-                    <p class="title">Mailspring</p>
-                    <p class="subtitle">Foundry 376, LLC</p>
-                </span>
-
-                <span style="margin-top: 880px; margin-left: 760px"
-                    onclick="window.open('https://1password.com/downloads/windows/', '_blank');">
-                    <img src="../image/list/zsnes.png">
-                    <p class="title">OnePassword</p>
-                    <p class="subtitle">1Password</p>
-                </span>
-
-                <span style="margin-top: 1100px"
-                    onclick="window.open('magnet:?xt=urn:btih:CCA124CE534CDD67A5E14613771282686A80511C&dn=Office_2010_br_BRAZIL_PT_PORTUGUES_32_64.nrg&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80&tr=udp%3a%2f%2fopen.demonii.com%3a1337&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969&tr=udp%3a%2f%2fexodus.desync.com%3a6969', '_blank');">
-                    <img src="../image/list/office.png">
-                    <p class="title">Office 2010</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-top: 1100px; margin-left:190px"
-                    onclick="window.open('magnet:?xt=urn:btih:2b79ce29d90909b2103aa78536277068e1977219&dn=Office+2016+Professional+Plus+RTM+MSDN+x86+x64+pt-BR&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969', '_blank');">
-                    <img src="../image/list/office.png">
-                    <p class="title">Office 2016</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-top: 1100px; margin-left:380px"
-                    onclick="window.open('magnet:?xt=urn:btih:b08c001d5a6a581605f989bb105bb4de78830822&dn=Office+Professional+Plus+2019+BR&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969', '_blank');">
-                    <img src="../image/list/office.png">
-                    <p class="title">Office 2019</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-top: 1100px; margin-left:570px"
-                    onclick="window.open('https://www.mozilla.org/pt-BR/thunderbird/', '_blank');">
-                    <img src="../image/list/thunderbird.png">
-                    <p class="title">Mozilla Thunderbird</p>
-                    <p class="subtitle">Mozilla Foundation</p>
-                </span>
-
-                <span style="margin-top: 1100px; margin-left:760px"
-                    onclick="window.open('http://download.msi.com/uti_exe/vga/MSIAfterburnerSetup.zip', '_blank');">
-                    <img src="../image/list/msiafterburner.png">
-                    <p class="title">MSI Afterburner</p>
-                    <p class="subtitle">Micro-Star International</p>
-                </span>
-
-                <span style="margin-top: 1320px"
-                    onclick="window.open('https://www.microsoft.com/pt-br/download/details.aspx?id=17851', '_blank');">
-                    <img src="../image/list/netframework.png">
-                    <p class="title">NET Framework</p>
-                    <p class="subtitle">Microsoft Corporation</p>
-                </span>
-
-                <span style="margin-top: 1320px; margin-left:190px"
-                    onclick="window.open('https://opera-mail.br.jaleco.com/', '_blank');">
-                    <img src="../image/list/operamail.png">
-                    <p class="title">Opera Mail</p>
-                    <p class="subtitle">Opera Software</p>
-                </span>
-
-                <span style="margin-top: 1320px; margin-left:380px"
-                    onclick="window.open('http://www.razerzone.com/br-pt/cortex', '_blank');">
-                    <img src="../image/list/razercortex.png">
-                    <p class="title">Razer Cortex</p>
-                    <p class="subtitle">Razer Inc</p>
-                </span>
-
-                <span style="margin-top: 1320px; margin-left:570px"
-                    onclick="window.open('http://www.razerzone.com/br-pt/synapse', '_blank');">
-                    <img src="../image/list/razersynapse.png">
-                    <p class="title">Razer Synapse</p>
-                    <p class="subtitle">Razer Inc</p>
-                </span>
-
-                <span style="margin-top: 1320px; margin-left:760px"
-                    onclick="window.open('https://www.realtek.com/en/component/zoo/category/pc-audio-codecs-high-definition-audio-codecs-software', '_blank');">
-                    <img src="../image/list/realtek.png">
-                    <p class="title">Realtek PCIe GBE</p>
-                    <p class="subtitle">Realtek Semiconductior</p>
-                </span>
-
-                <span style="margin-top: 1540px"
-                    onclick="window.open('https://slimdrivers.br.uptodown.com/windows/download', '_blank');">
-                    <img src="../image/list/slimdrivers.png">
-                    <p class="title">SlimDrivers</p>
-                    <p class="subtitle">SlimWare</p>
-                </span>
-
-                <span style="margin-top: 1540px; margin-left:190px"
-                    onclick="window.open('https://www.microsoft.com/pt-br/p/translucenttb/9pf4kz2vn4w9?activetab=pivot:overviewtab', '_blank');">
-                    <img src="../image/list/translucent.png">
-                    <p class="title">Translucent TB</p>
-                    <p class="subtitle">Charles Milette</p>
-                </span>
-
-                <span style="margin-top: 1540px; margin-left:380px"
-                    onclick="window.open('https://unetbootin.github.io/', '_blank');">
-                    <img src="../image/list/unetbootin.png">
-                    <p class="title">UNetbootin</p>
-                    <p class="subtitle">HabitLab</p>
-                </span>
-
-                <span style="margin-top: 1540px; margin-left:570px"
-                    onclick="window.open('https://www.virtualbox.org/wiki/Downloads', '_blank');">
-                    <img src="../image/list/virtualbox.png">
-                    <p class="title">VirtualBox Oracle VM</p>
-                    <p class="subtitle">Oracle Corporation</p>
-                </span>
-
-                <span style="margin-top: 1540px; margin-left:760px"
-                    onclick="window.open('https://www.videolan.org/vlc/index.pt-BR.html', '_blank');">
-                    <img src="../image/list/vlc.png">
-                    <p class="title">VLC Media Player</p>
-                    <p class="subtitle">VideoLAN Organization</p>
-                </span>
-
-                <span style="margin-top: 1760px"
-                    onclick="window.open('https://www.win-rar.com/download.html?&L=0', '_blank');">
-                    <img src="../image/list/winrar.png">
-                    <p class="title">WinRAR</p>
-                    <p class="subtitle">Eugene Roshal</p>
-                </span>
-            </div>
-
-        </div>
-    </div>
+    <script src="../../src/darkmode.js"></script>
 </body>
 <script src="../../src/script.js"></script>
 
