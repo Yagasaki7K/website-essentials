@@ -1,39 +1,76 @@
+<p align="center">
+   <img src="https://github.com/Yagasaki7K/webessentials/raw/master/public/image/Logo%20v2.png?raw=true" alt="Liftoff" width="300"/>
+</p>
+
+<p align="center">
+   <a href="https://www.linkedin.com/in/andersonmarlon/">
+      <img alt="AndersonMarlon" src="https://img.shields.io/badge/-AndersonMarlon-5965e0?style=flat&logo=Linkedin&logoColor=white" />
+   </a>
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Yagasaki7K/website-essentials?color=5863d2">
+
+  <a href="https://github.com/Yagasaki7K/website-essentials/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Yagasaki7K/website-essentials?color=5863d2">
+  </a>
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-5965e0">
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Yagasaki7K/website-essentials?color=5863d2" />
+  <a href="https://github.com/Yagasaki7K/website-essentials/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/Yagasaki7K/website-essentials?color=5863d2&logo=github">
+  </a>
+</p>
+
 <div align="center">
-  <a href="https://yagasakii.github.io/webessentials/" target="_blank"><img src="https://github.com/Yagasaki7K/webessentials/blob/master/public/image/Logo%20v2.png?raw=true" alt="The Essentials Web"/></a><br><br>
-
-[![Yagasaki](https://img.shields.io/badge/Yagasaki-Web%20Essentials-7159c1)](https://github.com/Yagasaki7K/webessentials/)
-[![Version](https://img.shields.io/badge/Version-21.04-brightgreen)](https://github.com/Yagasaki7K/webessentials/)
-[![Paypal donate](https://img.shields.io/badge/Paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BGK9ZCFE6G4C8&currency_code=BRL&source=url)<br>
-[![GitHub license](https://img.shields.io/github/license/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/blob/master/LICENSE)
-[![GitHub forks](https://img.shields.io/github/forks/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/network)
-[![GitHub stars](https://img.shields.io/github/stars/Yagasaki7K/webessentials)](https://github.com/Yagasaki7K/webessentials/stargazers)
-
+  <sub>The Web Essentials. Built with ❤︎ by
+    <a href="https://github.com/Yagasaki7K">Anderson "Yagasaki" Marlon</a> and
+    <a href="https://github.com/Yagasaki7K/website-essentials/graphs/contributors">
+      contributors
+    </a>
+  </sub>
 </div>
 
----
+# :pushpin: Table of Contents
 
-## DESCRIPTION
+* [Demo Website](#eyes-demo-website)
+* [Technologies](#computer-technologies)
+* [Features](#rocket-features)
+* [Found a bug? Missing a specific feature?](#bug-issues)
+* [Contributing](#tada-contributing)
+* [License](#closed_book-license)
+
+# :eyes: Demo Website
+👉  Demo: http://webessentials.netlify.com/
+
+# :computer: Technologies
+This project was made using the follow technologies:
+
+* HTML, CSS e JS
+
+# :rocket: Features
+
 Many people after formatting the computer forget about which software they have installed, which is the best browser to use, which text editor to encode that program or even which version of the operating system they find to install on another computer. Instead of jumping from site to site in search of this information, I developed Essentials, a web tool that shows through list; Softwares that are useful for your computer and that no longer need to stay in your head, so you can worry about other things.
 
-The tool is very easy to use, when accessing the site you can check it in two languages being English and Portuguese, which greatly facilitates for others who are not aware of their local language. In addition to having the night mode installed on it - just click on the moon - which makes it much easier for people who work at night and need that software in a moment of need.
+# :construction_worker: How to run
+```bash
+# Clone Repository
+$ git clone https://github.com/Yagasaki7K/website-essentials.git
+```
 
-Any question, suggestion or tip, you can use Github, Discord, Steam, Twitter, Instagram or Facebook to communicate, some of these links are in the footer below.
+# :bug: Issues
 
-Access my tool: <a href="https://webessentials.netlify.com/" target="_blank">Web Essentials</a>
+Feel free to **file a new issue** with a respective title and description on the the [Web Essentials](https://github.com/Yagasaki7K/website-essentials/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
-And if you have arrived now, check out some changes that happened in the last update - <a href="https://github.com/Yagasaki7K/webessentials/releases">Changelog</a>
+# :tada: Contributing
+First of all, thank you for being interested in helping out, your time is always appreciated in every way. :100:
 
-## CONTRIBUTION
-Contribution to developer <a href="https://github.com/yagasaki7k" target="_blank">Anderson "Yagasaki" Marlon</a>, Founder/CTO from <a href="http://kalify.netlify.com" target="_blank">Kalify Inc</a>. for developing this idea that for many is a tremendous genius.
+Here's some tips:
 
-And thanks to <a href="https://github.com/ldantas-s" target="_blank">Luciano "Ldantas_s" Dantas</a> for building the v20.11 version wireframe, <a href="https://github.com/Nirayuki" target="_blank">Aron "Nirayuki" Felippe</a> for help to developing the 21.04 upgrades like a responsivity and dark theme.
+* Check the [issues page](https://github.com/Yagasaki7K/website-essentials/issues) for already opened issues (or maybe even closed ones) that might already address your question/bug/feature request.
+* Feature requests are welcomed! Provide some details on why it would be helpful for you and others, explain how you're using bull-board and if possible even some screenshots if you are willing to mock something!
 
-And thanks to sponsors from Discord: <a href="https://github.com/theodoro28" target="_blank">ZSnowHG</a>, <a href="https://github.com/LawliL" target="_blank">LawL</a> and <a href="https://github.com/Posseidon0110" target="_blank">Posseidon</a>.
+Check out the [contributing](./CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
 
-<i>Project has be developed by <a href="https://discord.gg/nyTRNSV" target="_blank">NERV Open Source</a>, subsidiary from <a href="http://kalify.netlify.com" target="_blank">Kalify Inc</a></i>
+# :closed_book: License
 
-## HOW TO CONTRIBUTE?
-- Check open issues, usually there we report a problem that we are unable to solve.
-- Fork the project to your computer, that way you can edit at will.
-- Make a brench for the main or an alternative version and make a Pull Request requesting this change.
-- If the change is effective for our cause, we will accept it and your contribution will already be registered in the system.
+Released in 2018
+
+Made by [Anderson Marlon](https://github.com/Yagasaki7K).
+This project is under the [MIT license](./LICENSE).
