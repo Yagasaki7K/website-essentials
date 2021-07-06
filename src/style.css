@@ -119,6 +119,11 @@ a {
 	color: var(--essentials);
 }
 
+a:hover {
+	transition: 2s;
+	color: #5e3bd1;
+}
+
 .lamp{
 	width: 40px;
 	height: 40px;
