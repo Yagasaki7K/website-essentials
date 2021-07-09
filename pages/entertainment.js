@@ -13,7 +13,7 @@ export function Entertainment(){
             <ContainerDetails>
                 {items.map((item) => (
                     <Link href={item.url} key={item}>
-                        <a>
+                        <a target="_blank">
                             <CardContent name={item.name} corporation={item.corporation} 
                             img={item.img}/>
                         </a>
