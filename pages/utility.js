@@ -1,5 +1,5 @@
 import React from 'react';
-import DefaultLayout from '../src/components/defaultLayout';
+import DefaultLayout from '../src/components/DefaultLayout';
 import items from '../src/items/utility';
 import CardContent from '../src/components/CardContent';
 import ContainerDetails from '../src/components/ContainerDetails'
