@@ -13,7 +13,7 @@ export function Header(props) {
         <HeaderDetails>
             <Link href="/">
                 <a>
-                    <img src="/Logo.png" alt="Web Essentials"/>
+                    <Image src="/Logo.png" alt="Web Essentials"/>
                 </a>
             </Link>
             <NavItems>
