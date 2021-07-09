@@ -10,8 +10,12 @@ export function Development(){
             <DefaultLayout/>
             <ContainerDetails>
                 {items.map((item) => (
-                    <CardContent key={item} name={item.name} corporation={item.corporation} 
-                    img={item.img} url={item.url}/>
+                    <Link href={item.url}>
+                        <a>
+                            <CardContent key={item} name={item.name} corporation={item.corporation} 
+                            img={item.img}/>
+                        </a>
+                    </Link>
                 ))}
             </ContainerDetails>
         </>
