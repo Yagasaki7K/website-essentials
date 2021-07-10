@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import HeaderDetails from './HeaderDetails';
+import ImgDetails from './ImgDetails';
+
 import NavItems from './NavItems';
 import Switch from 'react-switch';
 
@@ -10,11 +12,12 @@ import { ThemeContext } from 'styled-components';
 
 export function Header(props) {
     const { colors, title } = useContext(ThemeContext);
+    console.log(colors, title)
     return (
         <HeaderDetails>
             <Link href="/">
                 <a>
-                    <Image src="/Logo.png" alt="Web Essentials"/>
+                    <ImgDetails src="/Logo.png" alt="Web Essentials"/>
                 </a>
             </Link>
             <NavItems>
