@@ -12,7 +12,6 @@ import { ThemeContext } from 'styled-components';
 
 export function Header(props) {
     const { colors, title } = useContext(ThemeContext);
-    console.log(colors, title)
     return (
         <HeaderDetails>
             <Link href="/">

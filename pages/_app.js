@@ -5,11 +5,17 @@ import ThemeLight from '../styles/theme/ThemeLight';
 import ThemeDark from '../styles/theme/ThemeDark';
 import Header from '../src/components/header';
 import usePersistedState from '../src/utils/usePersistedState';
+import MobileWarning from '../src/components/MobileWarning/MobileWarning';
 
 function MyApp({ Component, pageProps }) {
 
   const [theme, setTheme] = usePersistedState('theme', ThemeLight);
   const [isMonted, setIsMonted] = useState(false);
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+
+  })
 
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? ThemeDark : ThemeLight);
@@ -17,14 +23,36 @@ function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
     setIsMonted(true);
+
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+
+
   }, []);
 
-  console.log(theme)
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      {isMonted && <Header toggleTheme={toggleTheme} />}
-      {isMonted &&  <Component {...pageProps} />}
+      {windowSize.width <= 600 ? <MobileWarning /> : (
+        <>
+          {isMonted && <Header toggleTheme={toggleTheme} />}
+          {isMonted && <Component {...pageProps} />}
+        </>
+      )}
+
     </ThemeProvider>
 
   )
