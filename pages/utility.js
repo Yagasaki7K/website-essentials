@@ -11,9 +11,9 @@ export function Utility(){
             <DefaultLayout/>
             <ContainerDetails>
                 {items.map((item) => (
-                    <Link href={item.url}>
+                    <Link href={item.url} key={item}>
                         <a target="_blank">
-                            <CardContent key={item} name={item.name} corporation={item.corporation} 
+                            <CardContent name={item.name} corporation={item.corporation} 
                             img={item.img} url={item.url}/>
                         </a>
                     </Link>    

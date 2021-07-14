@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link'
 import DefaultLayout from '../src/components/DefaultLayout';
-import items from '../src/items/development';
+import items from '../src/items/extensions';
 import CardContent from '../src/components/CardContent';
 import ContainerDetails from '../src/components/ContainerDetails'
 
-export function Development(){
+export function Extensions(){
     return(
         <>
             <DefaultLayout/>
@@ -23,4 +23,4 @@ export function Development(){
     )
 }
 
-export default Development
+export default Extensiosns;
