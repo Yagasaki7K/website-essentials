@@ -56,8 +56,8 @@ const items = [
         corporation: "Nathan Hurst"
     },
     {
-        id: "neatbeans",
-        name: "Neatbens",
+        id: "netBeans",
+        name: "NetBeans",
         img: "/list/netbeans.png",
         url: "https://netbeans.org/",
         corporation: "Apache Software"

@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://github.com/Yagasaki7K/webessentials/raw/master/public/image/Logo%20v2.png?raw=true" alt="Liftoff" width="300"/>
+   <img src="https://webessentials.vercel.app/Logo.png" width="300"/>
 </p>
 
 <p align="center">
@@ -42,7 +42,7 @@
 # :computer: Technologies
 This project was made using the follow technologies:
 
-* HTML, CSS e JS
+* NextJS
 
 # :rocket: Features
 

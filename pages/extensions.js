@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link'
 import DefaultLayout from '../src/components/DefaultLayout';
-import items from '../src/items/development';
+import items from '../src/items/extensions';
 import CardContent from '../src/components/CardContent';
 import ContainerDetails from '../src/components/ContainerDetails'
 
-export function Development(){
+export function Entertainment(){
     return(
         <>
             <DefaultLayout/>
@@ -13,7 +13,7 @@ export function Development(){
                 {items.map((item) => (
                     <Link href={item.url} key={item}>
                         <a target="_blank">
-                            <CardContent name={item.name} corporation={item.corporation} img={item.img}/>
+                        <CardContent name={item.name} corporation={item.corporation} img={item.img}/>
                         </a>
                     </Link>    
                 ))}
@@ -22,4 +22,4 @@ export function Development(){
     )
 }
 
-export default Development
+export default Entertainment

@@ -13,8 +13,7 @@ export function Communication(){
                 {items.map((item) => (
                     <Link href={item.url} key={item}>
                         <a target="_blank">
-                            <CardContent name={item.name} corporation={item.corporation} 
-                            img={item.img} url={item.url}/>
+                            <CardContent name={item.name} corporation={item.corporation} img={item.img}/>
                         </a>
                     </Link>    
                 ))}
