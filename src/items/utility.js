@@ -21,6 +21,13 @@ const items = [
         corporation: "Computer Base"
     },
     {
+        id: "anydesk",
+        name: "AnyDesk",
+        img: "/list/anydesk.png",
+        url: "https://anydesk.com/en/downloads",
+        corporation: "AnyDesk Software GmbH"
+    },
+    {
         id: "atubecatcher",
         name: "Atube Catcher",
         img: "/list/atube.png",
@@ -168,6 +175,13 @@ const items = [
         corporation: "Mailbird"
     },
     {
+        id: "notion",
+        name: "Notion",
+        img: "/list/notion.png",
+        url: "https://www.notion.so/desktop",
+        corporation: "Notion Labs, Inc."
+    },
+    {
         id: "onepassword",
         name: "1Password",
         img: "/list/onepassword.png",
@@ -292,6 +306,13 @@ const items = [
         img: "/list/unetbootin.png",
         url: "https://unetbootin.github.io/",
         corporation: "HabitLab"
+    },
+    {
+        id: "ventoy",
+        name: "Ventoy",
+        img: "/list/ventoy.png",
+        url: "https://www.ventoy.net/en/download.html",
+        corporation: "Longpanda"
     },
     {
         id: "virtualbox",
