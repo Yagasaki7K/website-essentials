@@ -39,7 +39,7 @@ const PasswordPage = () => {
 
     return (
         <Password>
-            <Link href="/"><a><Image src="/logo.png" alt="Logotipo" /></a></Link>
+            <Link href="/"><a><Image src="/logo.png" width={400} height={100} alt="Logotipo" /></a></Link>
             
             <hr />
             
@@ -75,10 +75,6 @@ const Password = styled.div`
 
     margin-top: 150px;
     width: 700px;
-    
-    img {
-        width: 400px;
-    }
 
     hr {
         margin-top: 30px;
