@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const PasswordPage = () => {
     function getPassword() {
@@ -38,7 +39,7 @@ const PasswordPage = () => {
 
     return (
         <Password>
-            <Link href="/"><a><img src="/logo.png" alt="Logotipo" /></a></Link>
+            <Link href="/"><a><Image src="/logo.png" alt="Logotipo" /></a></Link>
             
             <hr />
             
