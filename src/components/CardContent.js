@@ -10,7 +10,7 @@ export const CardContent = (props) => {
     return (
         <ColumnDetails>
             <CardDetails href={props.url} target="_blank">
-                <Image src={props.img} alt={props.name}/>
+                <Image src={props.img} width={64} height={64} alt={props.name}/>
                 <TitleDetails>{props.name}</TitleDetails>
                 <SubTitleDetails>{props.corporation}</SubTitleDetails>
             </CardDetails>
