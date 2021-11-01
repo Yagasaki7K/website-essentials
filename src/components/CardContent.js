@@ -1,5 +1,5 @@
 import React from 'react';
-/* eslint-disable @next/next/no-img-element */
+import Image from 'next/image'
 
 import ColumnDetails from './ColumnDetails'
 import CardDetails from './CardDetails'
@@ -10,7 +10,7 @@ export const CardContent = (props) => {
     return (
         <ColumnDetails>
             <CardDetails href={props.url} target="_blank">
-                <img src={props.img} alt={props.name}/>
+                <Image src={props.img} alt={props.name}/>
                 <TitleDetails>{props.name}</TitleDetails>
                 <SubTitleDetails>{props.corporation}</SubTitleDetails>
             </CardDetails>
