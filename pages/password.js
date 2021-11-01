@@ -39,7 +39,7 @@ const PasswordPage = () => {
 
     return (
         <Password>
-            <Link href="/"><a><Image src="/logo.png" width={400} height={100} alt="Logotipo" /></a></Link>
+            <Link href="/"><a><Image src="/Logo.png" width={400} height={100} alt="Logotipo" /></a></Link>
             
             <hr />
             
