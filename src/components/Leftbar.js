@@ -19,11 +19,13 @@ export function Leftbar(){
                 ))}
                 <SocialMedia>
                     <hr/>
-                    <Link href="#" alt="#"><a>Discord</a></Link>
+                    <Link href="/password"><a>Password Tool</a></Link>
+                    <hr/>
+                    <Link href="https://discord.gg/nyTRNSV"><a>Discord</a></Link>
                     <div className="break"/>
-                    <Link href="#" alt="#"><a>Github</a></Link>
+                    <Link href="https://github.com/ApertureLaboratory/webessentials"><a>Github</a></Link>
                     <div className="break"/>
-                    <Link href="#" alt="#"><a>Twitter</a></Link>
+                    <Link href="https://twitter.com/Yagasaki7K"><a>Twitter</a></Link>
                 </SocialMedia>
             </Grid>
         </>
