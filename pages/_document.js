@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
                     />
-                    <title>Web Essentials</title>
+                    <title>Web Essentials by Kalify</title>
                     <link rel="canonical" href="https://webessentials.netlify.com" />
                     <meta name="description" content="Essential applications for your computer"></meta>
                     <meta name="keywords" content="Anderson, Marlon, Design, Github, Código Aberto, Open Source, Open, Source, 
