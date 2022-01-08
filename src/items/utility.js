@@ -259,6 +259,13 @@ const items = [
         corporation: "Opera Software"
     },
     {
+        id: "pantherbar",
+        name: "Pantherbar",
+        img: "/list/pantherbar.png",
+        url: "https://pantherbar-app.com/",
+        corporation: "Johannes Tscholl"
+    },
+    {
         id: "razercortex",
         name: "Razer Cortex",
         img: "/list/razercortex.png",

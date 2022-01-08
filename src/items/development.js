@@ -56,6 +56,13 @@ const items = [
         corporation: "Nathan Hurst"
     },
     {
+        id: "insomnia",
+        name: "Insomnia",
+        img: "/list/insomnia.png",
+        url: "https://insomnia.rest/download",
+        corporation: "Kong Inc."
+    },
+    {
         id: "netBeans",
         name: "NetBeans",
         img: "/list/netbeans.png",
@@ -70,11 +77,11 @@ const items = [
         corporation: "License GPL"
     },
     {
-        id: "pantherbar",
-        name: "Pantherbar",
-        img: "/list/pantherbar.png",
-        url: "https://pantherbar-app.com/",
-        corporation: "Johannes Tscholl"
+        id: "postman",
+        name: "Postman",
+        img: "/list/postman.png",
+        url: "https://www.postman.com/downloads/",
+        corporation: "Postman, Inc."
     },
     {
         id: "responsively",
