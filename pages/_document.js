@@ -1,5 +1,6 @@
 import { ServerStyleSheet } from 'styled-components';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { useEffect } from 'react';
 
 export default class MyDocument extends Document {
 
@@ -20,15 +21,6 @@ export default class MyDocument extends Document {
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                     <meta name="language" content="English"/>
                     <meta name="author" content="Anderson 'Yagasaki' Marlon"/>
-
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-472MNS3P18"></script>
-                    <script>
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments)};
-                    gtag('js', new Date());
-
-                    gtag('config', 'G-472MNS3P18');
-                    </script>
                 </Head>
                     <body>
                         <Main />
