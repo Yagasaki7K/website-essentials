@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
                     {/* PWA primary color */}
                     <link rel="shortcut icon" href="/favicon.png" type="image/png"></link>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-                    
+                    <title>Web Essentials</title>
                     <meta name="title" content="Web Essentials"/>
                     <meta name="description" content="Essential softwares for your computer"/>
                     <meta name="keywords" content="web, essentials, formatting, software, essencial, ethernet, 
