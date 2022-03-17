@@ -7,7 +7,7 @@ import ContainerDetails from '../src/components/ContainerDetails';
 
 export function Backup(){
     return(
-        <>
+        <> 
             <DefaultLayout/>
             <ContainerDetails>
                 {items.map((item) => (
