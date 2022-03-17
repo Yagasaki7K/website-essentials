@@ -59,9 +59,9 @@ $ git clone https://github.com/Yagasaki7K/website-essentials.git
 $ Go to folder using terminal
 $ yarn (needs yarn installed)
 $ yarn dev (if you wanna change something) // yarn start (just to see running)
+```
 
 If you need change something, check using yarn build if everything is okay. And later you do a PR.
-```
 
 # 🐛 Issues
 
