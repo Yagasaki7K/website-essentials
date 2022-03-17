@@ -9,18 +9,26 @@ export default class MyDocument extends Document {
                 <Head>
                     {/* PWA primary color */}
                     <link rel="shortcut icon" href="/favicon.png" type="image/png"></link>
-                    <link
-                        rel="stylesheet"
-                        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-                    />
-                    <title>Web Essentials by Kalify</title>
-                    <link rel="canonical" href="https://webessentials.netlify.com" />
-                    <meta name="description" content="Essential applications for your computer"></meta>
-                    <meta name="keywords" content="Anderson, Marlon, Design, Github, Código Aberto, Open Source, Open, Source, 
-                    Antech, Developers, Software, Essentials, Web, Formatação, Windows, Serial, Key, Onigiri, Hardcore, Essencial, 
-                    Programas, Internet, Brasil, Linux, Ubuntu, Telegram, Whatsapp, NERV, Aperture, Laboratories, Labs"/>
-                    <meta name="author" content="Anderson Marlon"/>
-                    <meta name="robots" content="index, follow"></meta>
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+                    
+                    <meta name="title" content="Web Essentials"/>
+                    <meta name="description" content="Essential softwares for your computer"/>
+                    <meta name="keywords" content="web, essentials, formatting, software, essencial, ethernet, 
+                    internet, linux, windows, ios, apple, lost, app, desktop, open, source, iobit, dropbox, 
+                    google, drive, icloud, mega, onedrive, whatsapp, telegram, hamachi, discord"/>
+                    <meta name="robots" content="index, follow"/>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                    <meta name="language" content="English"/>
+                    <meta name="author" content="Anderson 'Yagasaki' Marlon"/>
+
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-472MNS3P18"></script>
+                    <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments)};
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-472MNS3P18');
+                    </script>
                 </Head>
                     <body>
                         <Main />
