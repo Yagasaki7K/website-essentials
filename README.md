@@ -61,7 +61,7 @@ $ yarn (needs yarn installed)
 $ yarn dev (if you wanna change something) // yarn start (just to see running)
 ```
 
-If you need change something, check using yarn build if everything is okay. And later you do a PR.
+If you want something, wait for `yarn build` to be obeyed, and after that open a little change decision!
 
 # 🐛 Issues
 
