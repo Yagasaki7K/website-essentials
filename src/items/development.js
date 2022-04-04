@@ -28,11 +28,25 @@ const items = [
         corporation: "Adobe Inc."
     },
     {
+        id: "docker",
+        name: "Docker Desktop",
+        img: "/list/docker.png",
+        url: "https://www.docker.com/products/docker-desktop/",
+        corporation: "Docker, Inc."
+    },
+    {
         id: "filezilla",
         name: "Filezilla",
         img: "/list/filezilla.png",
         url: "https://filezilla-project.org/",
         corporation: "License GNU GPL"
+    },
+    {
+        id: "git",
+        name: "Git",
+        img: "/list/git.png",
+        url: "https://git-scm.com/downloads",
+        corporation: "Junio Hamano and others"
     },
     {
         id: "github-desktop",
@@ -68,6 +82,13 @@ const items = [
         img: "/list/netbeans.png",
         url: "https://netbeans.org/",
         corporation: "Apache Software"
+    },
+    {
+        id: "nodejs",
+        name: "NodeJS",
+        img: "/list/nodejs.png",
+        url: "https://nodejs.org/en/download/",
+        corporation: "OpenJS Foundation"
     },
     {
         id: "notepad",
