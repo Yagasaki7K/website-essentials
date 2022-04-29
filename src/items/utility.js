@@ -175,13 +175,6 @@ const items = [
         corporation: "Mailbird"
     },
     {
-        id: "mailspring",
-        name: "Mailspring",
-        img: "/list/mailspring.png",
-        url: "https://getmailspring.com/",
-        corporation: "Foundry376"
-    },
-    {
         id: "notion",
         name: "Notion",
         img: "/list/notion.png",
