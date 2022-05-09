@@ -56,6 +56,13 @@ const items = [
         corporation: "BitTorrent Inc."
     },
     {
+        id: "bluemail",
+        name: "BlueMail",
+        img: "/list/bluemail.png",
+        url: "https://bluemail.me/",
+        corporation: "Blix Inc."
+    },
+    {
         id: "ccleaner",
         name: "CCleaner",
         img: "/list/ccleaner.png",
