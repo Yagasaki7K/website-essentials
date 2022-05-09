@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 import ColumnDetails from './ColumnDetails'
 import CardDetails from './CardDetails'
-import TitleDetails from './TitleDetails.js'
-import SubTitleDetails from '../components/SubTitleDetails'
+import TitleDetails from './TitleDetails.jsx'
+import SubTitleDetails from './SubTitleDetails'
 
 export const CardContent = (props) => {
     return (

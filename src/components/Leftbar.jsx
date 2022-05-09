@@ -21,11 +21,7 @@ export function Leftbar(){
                     <hr/>
                     <Link href="/password"><a>Password Tool</a></Link>
                     <hr/>
-                    <Link href="https://discord.gg/nyTRNSV"><a>Discord</a></Link>
-                    <div className="break"/>
-                    <Link href="https://github.com/ApertureLaboratory/website-essentials"><a>Github</a></Link>
-                    <div className="break"/>
-                    <Link href="https://twitter.com/KalifyInc"><a>Twitter</a></Link>
+                    <Link href="https://twitter.com/KalifyInc" target="_blank"><a>Twitter</a></Link>
                 </SocialMedia>
             </Grid>
         </>
