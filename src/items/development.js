@@ -112,6 +112,13 @@ const items = [
         corporation: "Responsively App"
     },
     {
+        id: "spring",
+        name: "Spring Tools",
+        img: "/list/spring.png",
+        url: "https://spring.io/tools",
+        corporation: "VMware, Inc."
+    },
+    {
         id: "sublime",
         name: "Sublime Text",
         img: "/list/sublime.png",
