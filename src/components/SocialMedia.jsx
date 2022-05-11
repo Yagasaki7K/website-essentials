@@ -9,7 +9,7 @@ export const SocialMedia = styled.div`
 	line-height: 25px;
     cursor: pointer;
     margin-left: 0.5rem;
-	color: #7159c1;
+	color: #8989df;
 
     hr {
         width: 8rem;
@@ -26,13 +26,13 @@ export const SocialMedia = styled.div`
     a:hover::after {
 	width: 10%;
 	height: 1px;
-	background: #7159c1;
+	background: #8989df;
 	transition: width 175ms ease-in-out;
     }
 
 	:hover {
 		transition: 0.5s;
-		color: #7159c1;
+		color: #8989df;
 	}
 
     .break {
