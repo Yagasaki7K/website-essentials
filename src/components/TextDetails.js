@@ -12,7 +12,7 @@ export const TextDetails = styled.div`
 
 	:hover {
 		transition: 0.5s;
-		color: #7159c1;
+		color: #8989df;
 	}
 `;
 
