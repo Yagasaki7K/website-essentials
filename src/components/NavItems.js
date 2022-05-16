@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const NavItems = styled.div`
     display: flex;
     position: absolute;
-    right: -70px;
+    right: 50px;
     top: -0.5rem;
-    width: 20rem;
+    width: 23rem;
     
     p {
         font-size: 2rem;

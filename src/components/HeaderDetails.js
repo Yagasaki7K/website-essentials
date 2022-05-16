@@ -13,7 +13,7 @@ export const HeaderDetails = styled.div`
 
     img {
         position: relative;
-        width: 200px;
+        width: 280px;
         left: 50px;
         top: 20px;
     }

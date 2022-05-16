@@ -18,7 +18,7 @@ const PasswordPage = () => {
 
         /* Reset the alert the copied text */
         var tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copy to clipboard";
+        tooltip.innerHTML = "Copiar!";
     }
 
     function copyPassword() {
@@ -34,32 +34,31 @@ const PasswordPage = () => {
 
         /* Alert the copied text */
         var tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copied!";
+        tooltip.innerHTML = "Copiado!";
     }
 
     return (
         <Password>
-            <Link href="/"><a><Image src="/Logo.png" width={400} height={100} alt="Logotipo" /></a></Link>
+            <Link href="/"><a><Image src="/Logo.png" width={460} height={100} alt="Logotipo" /></a></Link>
             
             <hr />
             
-            <h2>Generate a secure password</h2>
+            <h2>Gere uma senha segura</h2>
             <div className="break" />
             
-            <p>Use our online password generator to instantly
-                create a secure random password.
+            <p>Use nosso gerador de senhas para instantaneamente criar uma senha aleatória segura.
             </p>
             <div className="break" />
             
-            <input type="text" placeholder="Copy your new password" id="password" readonly="" />
+            <input type="text" placeholder="Copie sua nova senha" id="password" readonly="" />
             <div className="break" />
             
-            <button id="btnPassword" onClick={getPassword}>Generate Password</button>
+            <button id="btnPassword" onClick={getPassword}>Gere sua senha</button>
             
             <div class="tooltip">
                 <button id="btnCopy" onClick={copyPassword}>
-                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                Copy Password</button>
+                <span class="tooltiptext" id="myTooltip">Copiar!</span>
+                Copie sua senha</button>
             </div>
         </Password>
     )

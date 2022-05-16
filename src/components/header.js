@@ -20,9 +20,10 @@ export function Header(props) {
                 </a>
             </Link>
             <NavItems>
+                <p><Link href="http://blackessentials.vercel.app">☕️</Link></p>
                 <p>
                     <Link href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL">
-                        <a target="_blank">Donate!</a></Link> |
+                        <a target="_blank">Pague um café!</a></Link> |
                 </p>
                 <span>
                     <Switch onChange={props.toggleTheme} checked={title === 'dark'}

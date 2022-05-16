@@ -189,27 +189,6 @@ const items = [
         corporation: "1Password"
     },
     {
-        id: "office2010",
-        name: "Office 2010",
-        img: "/list/office.png",
-        url: "magnet:?xt=urn:btih:CCA124CE534CDD67A5E14613771282686A80511C&dn=Office_2010_br_BRAZIL_PT_PORTUGUES_32_64.nrg&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969&tr=udp%3a%2f%2ftracker.openbittorrent.com%3a80&tr=udp%3a%2f%2fopen.demonii.com%3a1337&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969&tr=udp%3a%2f%2fexodus.desync.com%3a6969",
-        corporation: "Microsoft Corporation"
-    },
-    {
-        id: "office2016",
-        name: "Office 2016",
-        img: "/list/office.png",
-        url: "magnet:?xt=urn:btih:2b79ce29d90909b2103aa78536277068e1977219&dn=Office+2016+Professional+Plus+RTM+MSDN+x86+x64+pt-BR&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969",
-        corporation: "Microsoft Corporation"
-    },
-    {
-        id: "office2019",
-        name: "Office 2019",
-        img: "/list/office.png",
-        url: "magnet:?xt=urn:btih:b08c001d5a6a581605f989bb105bb4de78830822&dn=Office+Professional+Plus+2019+BR&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Fopen.demonii.com%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fexodus.desync.com%3A6969",
-        corporation: "Microsoft Corporation"
-    },
-    {
         id: "powertoys",
         name: "Microsoft PowerToys",
         img: "/list/powertoys.png",
