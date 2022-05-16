@@ -4,7 +4,7 @@ export const ContainerDetails = styled.div`
     display: flex;
     flex-wrap: wrap;
     width: 63%;
-    margin-top: -28rem;
+    margin-top: -34.5rem;
     margin-left: 25rem;
 `;
 

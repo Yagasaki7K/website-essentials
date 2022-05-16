@@ -6,11 +6,11 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="en">
+                    <title>Web Essentials</title>
                 <Head>
                     {/* PWA primary color */}
                     <link rel="shortcut icon" href="/favicon.png" type="image/png"></link>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-                    <title>Web Essentials</title>
                     <meta name="title" content="Web Essentials"/>
                     <meta name="description" content="Essential softwares for your computer"/>
                     <meta name="keywords" content="web, essentials, formatting, software, essencial, ethernet, 
@@ -18,13 +18,12 @@ export default class MyDocument extends Document {
                     google, drive, icloud, mega, onedrive, whatsapp, telegram, hamachi, discord"/>
                     <meta name="robots" content="index, follow"/>
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-                    <meta name="language" content="English"/>
                     <meta name="author" content="Anderson 'Yagasaki' Marlon"/>
                 </Head>
-                    <body>
-                        <Main />
-                        <NextScript />
-                    </body>
+                <body>
+                    <Main />
+                    <NextScript />
+                </body>
             </Html>
                     )
     }

@@ -35,13 +35,6 @@ const items = [
         corporation: "Microsoft Corporation"
     },
     {
-        id: "windows11",
-        name: "Windows 11 Preview Insider",
-        img: "/list/windows11.png",
-        url: "https://www.mediafire.com/file/dmfixm7mzuwjsm2/W11_PRO_INSIDER_PREVIEW_22000.51_x64_28.06.2021.zip/file",
-        corporation: "Microsoft Corporation"
-    },
-    {
         id: "windowsxp86",
         name: "Windows XP x86",
         img: "/list/windowsxp.png",

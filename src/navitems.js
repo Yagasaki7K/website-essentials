@@ -1,37 +1,37 @@
 const navitems = [
     {
         id: "backup",
-        nome: "Backup / Cloud",
+        nome: "Backup / Nuvem",
         href: "/",
     },
     {
         id: "communication",
-        nome: "Communication",
+        nome: "Comunicação",
         href: "/communication",
     },
     {
         id: "development",
-        nome: "Development",
+        nome: "Desenvolvimento",
         href: "/development",
     },
     {
         id: "entertainment",
-        nome: "Entertainment",
+        nome: "Entretenimento",
         href: "/entertainment",
     },
     {
         id: "browser",
-        nome: "Browsers",
+        nome: "Navegadores",
         href: "/browser",
     },
     {
         id: "system",
-        nome: "Operating System",
+        nome: "Sistemas",
         href: "/system",
     },
     {
         id: "utility",
-        nome: "Utility",
+        nome: "Utilitários",
         href: "/utility",
     }
     
