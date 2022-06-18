@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+let black = 'rgba(0, 0, 0, 0.25)';
+
 export const HeaderDetails = styled.div`
     position: fixed;
     height: 90px;
@@ -8,7 +10,7 @@ export const HeaderDetails = styled.div`
     top: 0px;
 
     background: ${props => props.theme.colors.bgheader};
-    box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 23px ${black};
     z-index: 100;
 
     img {

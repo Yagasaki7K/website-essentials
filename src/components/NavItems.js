@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+let purple = '#5e3bd1'
+
 export const NavItems = styled.div`
     display: flex;
     position: absolute;
@@ -18,7 +20,7 @@ export const NavItems = styled.div`
 
         a:hover {
             transition: 2s;
-	        color: #5e3bd1;
+	        color: ${purple};
         }
     }
 

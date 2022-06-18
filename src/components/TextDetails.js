@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+let lightPurple = '#8989df';
+
 export const TextDetails = styled.div`
     font-family: Nunito;
 	font-style: normal;
@@ -12,7 +14,7 @@ export const TextDetails = styled.div`
 
 	:hover {
 		transition: 0.5s;
-		color: #8989df;
+		color: ${lightPurple};
 	}
 `;
 

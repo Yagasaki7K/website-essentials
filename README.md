@@ -37,9 +37,11 @@
 * [License](#closed_book-license)
 
 # 👀 Demo Website
+
 👉  Demo: https://webessentials.com.br/
 
 # 💻 Technologies
+
 This project was made using the follow technologies:
 
 * ReactJS
@@ -53,6 +55,7 @@ This project was made using the follow technologies:
 Many people after formatting the computer forget about which software they have installed, which is the best browser to use, which text editor to encode that program or even which version of the operating system they find to install on another computer. Instead of jumping from site to site in search of this information, I developed essentials, a web tool that shows through list; Softwares that are useful for your computer and that no longer need to stay in your head, so you can worry about other things.
 
 # 🚧 How to run
+
 ```bash
 # Clone Repository
 $ git clone https://github.com/Yagasaki7K/website-essentials.git
@@ -68,6 +71,7 @@ If you want something, wait for `yarn build` to be obeyed, and after that open a
 Feel free to **file a new issue** with a respective title and description on the the [Web essentials](https://github.com/Yagasaki7K/website-essentials/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
 
 # 🎉 Contributing
+
 First of all, thank you for being interested in helping out, your time is always appreciated in every way. :100:
 
 Here's some tips:

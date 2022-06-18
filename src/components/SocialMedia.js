@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+let lightPurple = '#8989df'
+
 export const SocialMedia = styled.div`
     display:block;
     font-family: Nunito;
@@ -9,7 +11,7 @@ export const SocialMedia = styled.div`
 	line-height: 25px;
     cursor: pointer;
     margin-left: 0.5rem;
-	color: #8989df;
+	color: ${lightPurple};
 
     hr {
         width: 8rem;
@@ -26,13 +28,13 @@ export const SocialMedia = styled.div`
     a:hover::after {
 	width: 10%;
 	height: 1px;
-	background: #8989df;
+	background: ${lightPurple};
 	transition: width 175ms ease-in-out;
     }
 
 	:hover {
 		transition: 0.5s;
-		color: #8989df;
+		color: ${lightPurple};
 	}
 
     .break {
