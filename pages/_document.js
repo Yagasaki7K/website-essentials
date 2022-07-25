@@ -24,13 +24,13 @@ export default class MyDocument extends Document {
                     <meta property="og:url" content="https://webessentials.com.br/"/>
                     <meta property="og:title" content="Web Essentials by Kalify Inc"/>
                     <meta property="og:description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
-                    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
+                    <meta property="og:image" content="https://i.imgur.com/PZDRcdO.png"/>
 
                     <meta property="twitter:card" content="summary_large_image"/>
                     <meta property="twitter:url" content="https://webessentials.com.br/"/>
                     <meta property="twitter:title" content="Web Essentials by Kalify Inc"/>
                     <meta property="twitter:description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
-                    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
+                    <meta property="twitter:image" content="https://i.imgur.com/PZDRcdO.png"/>
                 </Head>
                 <body>
                     <Main />
