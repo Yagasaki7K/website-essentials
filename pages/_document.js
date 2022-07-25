@@ -12,16 +12,13 @@ export default class MyDocument extends Document {
                     <link rel="shortcut icon" href="/favicon.png" type="image/png"></link>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 
-                    <meta name="title" content="Web Essentials"/>
-                    <meta name="description" content="Softwares essenciais para o seu computador"/>
+                    <meta name="title" content="Web Essentials by Kalify Inc"/>
                     <meta name="keywords" content="web, essentials, formatting, software, essencial, ethernet, 
                     internet, linux, windows, ios, apple, lost, app, desktop, open, source, iobit, dropbox, 
                     google, drive, icloud, mega, onedrive, whatsapp, telegram, hamachi, discord"/>
                     <meta name="robots" content="index, follow"/>
-                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                     <meta name="author" content="Anderson 'Yagasaki' Marlon"/>
 
-                    <meta name="title" content="Web Essentials by Kalify Inc"/>
                     <meta name="description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:url" content="https://webessentials.com.br/"/>
