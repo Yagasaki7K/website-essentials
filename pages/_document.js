@@ -21,21 +21,19 @@ export default class MyDocument extends Document {
                     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                     <meta name="author" content="Anderson 'Yagasaki' Marlon"/>
 
-                    <meta property="og:site_name" content="Web Essentials" />
-                    <meta property="og:url" content="http://www.webessentials.com.br" />
-                    <meta name="og:title" content="Web Essentials"/>
-                    <meta name="og:image" content="https://webessentials.com.br/Logo.png"/>
-                    <meta name="og:description" content="Softwares essenciais para o seu computador"/>
-                    <meta property="og:type" content="website" />
-                    <meta property="og:image:height" content="418" />
-                    <meta property="og:image:width" content="800" />
+                    <meta name="title" content="Web Essentials by Kalify Inc"/>
+                    <meta name="description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
+                    <meta property="og:type" content="website"/>
+                    <meta property="og:url" content="https://webessentials.com.br/"/>
+                    <meta property="og:title" content="Web Essentials by Kalify Inc"/>
+                    <meta property="og:description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
+                    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
 
-                    <meta name="twitter:site" content="@KalifyInc" />
-                    <meta name="twitter:creator" content="@KalifyInc" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:image:src" content="https://webessentials.com.br/Logo.png" />
-
-                    <link rel="image_src" href="https://webessentials.com.br/Logo.png" />
+                    <meta property="twitter:card" content="summary_large_image"/>
+                    <meta property="twitter:url" content="https://webessentials.com.br/"/>
+                    <meta property="twitter:title" content="Web Essentials by Kalify Inc"/>
+                    <meta property="twitter:description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
+                    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"/>
                 </Head>
                 <body>
                     <Main />
