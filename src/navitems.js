@@ -33,6 +33,11 @@ const navitems = [
         id: "utility",
         nome: "Utilitários",
         href: "/utility",
+    },
+    {
+        id: "extension",
+        nome: "Extensões",
+        href: "/extension",
     }
     
 ]

@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
                     {/* PWA primary color */}
                     <link rel="shortcut icon" href="/favicon.png" type="image/png"></link>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+                    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
 
                     <meta name="title" content="Web Essentials by Kalify Inc"/>
                     <meta name="keywords" content="web, essentials, formatting, software, essencial, ethernet, 

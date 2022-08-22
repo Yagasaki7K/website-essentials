@@ -4,6 +4,7 @@ let purple = '#5e3bd1'
 
 export const NavItems = styled.div`
     display: flex;
+    justify-content: end;
     position: absolute;
     right: 50px;
     top: -0.5rem;

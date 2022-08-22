@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import Link from 'next/link'
-import Image from 'next/image'
 
 import HeaderDetails from './HeaderDetails';
 import ImgDetails from './ImgDetails';
@@ -20,10 +19,21 @@ export function Header(props) {
                 </a>
             </Link>
             <NavItems>
-                <p><Link href="http://blackessentials.vercel.app">☕️</Link></p>
                 <p>
                     <Link href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL">
-                        <a target="_blank">Pague um café!</a></Link> |
+                    <a target="_blank"><i class="uil uil-bitcoin-circle"></i></a></Link>
+                </p>
+                <p>
+                    <Link href="https://twitter.com/KalifyInc">
+                    <a target="_blank"><i class="uil uil-twitter"></i></a></Link>
+                </p>
+                <p>
+                    <Link href="https://github.com/Yagasaki7K/website-essentials">
+                    <a target="_blank"><i class="uil uil-github"></i></a></Link>
+                </p>
+                <p>
+                    <Link href="https://discord.gg/CFhzRE6ztp">
+                    <a target="_blank"><i class="uil uil-comment-question"></i></a></Link> |
                 </p>
                 <span>
                     <Switch onChange={props.toggleTheme} checked={title === 'dark'}

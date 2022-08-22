@@ -11,7 +11,7 @@ export const Card = styled.div`
 	align-items: center;
 	justify-content: space-evenly;
 
-	background-color: ${props => props.theme.colors.bgheader};
+	background: ${props => props.theme.colors.bgheader};
 	box-shadow: 1px 3px 9px ${black};
 	border-radius: 12px;
 
@@ -19,6 +19,11 @@ export const Card = styled.div`
 
 	transition: 0.5s;
 	transition: 0.3s;
+
+    :hover {
+        transition: 1s;
+        transform: scale(1.05);
+    }
 `;
 
 export default Card

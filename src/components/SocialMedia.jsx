@@ -18,6 +18,10 @@ export const SocialMedia = styled.div`
         margin: 1rem 0 1rem 0;
     }
 
+    i {
+        color: ${props => props.theme.colors.fontcolor};
+    }
+
     a::after {
 	content: "";
 	display: block;

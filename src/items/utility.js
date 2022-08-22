@@ -273,6 +273,13 @@ const items = [
         corporation: "SlimWare"
     },
     {
+        id: "soundswitch",
+        name: "SoundSwitch",
+        img: "/list/soundswitch.png",
+        url: "https://soundswitch.aaflalo.me/",
+        corporation: "Aaflalo"
+    },
+    {
         id: "taskbarx",
         name: "Taskbar X",
         img: "/list/taskbarx.png",
