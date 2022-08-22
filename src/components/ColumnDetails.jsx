@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const ColumnDetails = styled.div`
-    width: 12.7rem;
-	height: 220px;
-    margin-top: 0rem;
+    width: 13rem;
+	height: 200px;
+    margin-top: 1.6rem;
 
 	justify-content: center;
 	display: flex;
