@@ -6,23 +6,24 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "yagasaki": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.1",
     "babel-eslint": "^10.1.0",
-    "js-cookie": "^2.2.1",
-    "next": "12.1.0",
+    "js-cookie": "^3.0.1",
+    "next": "12.2.5",
     "node-fetch": "^3.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-switch": "^6.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-switch": "^7.0.0",
     "styled-components": "^5.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.6",
+    "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.14.7",
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1"
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5"
   }
 }
