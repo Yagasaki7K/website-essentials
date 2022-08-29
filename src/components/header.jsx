@@ -32,7 +32,7 @@ export function Header(props) {
                     <a target="_blank"><i class="uil uil-github"></i></a></Link>
                 </p>
                 <p>
-                    <Link href="https://discord.gg/CFhzRE6ztp">
+                    <Link href="https://discord.gg/jhSepmE7nN">
                     <a target="_blank"><i class="uil uil-comment-question"></i></a></Link> |
                 </p>
                 <span>
