@@ -25,7 +25,7 @@ export function Leftbar(){
                     <Link href="https://twitter.com/KalifyInc" target="_blank"><a>Twitter</a></Link>
                     <div className="break"/>
                     <hr/>
-                    <i style={{fontSize: '16px'}}>v22.08</i>
+                    <i style={{fontSize: '16px'}}>v22.10</i>
                 </SocialMedia>
             </Grid>
         </>

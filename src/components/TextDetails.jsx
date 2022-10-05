@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-let lightPurple = '#8989df';
+let lightPurple = '#9580ff';
 
 export const TextDetails = styled.div`
     font-family: Nunito;

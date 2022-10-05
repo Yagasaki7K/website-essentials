@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-let purple = '#5e3bd1'
+let purple = '#9580ff'
 
 export const NavItems = styled.div`
     display: flex;
@@ -16,6 +16,9 @@ export const NavItems = styled.div`
         margin: 28px 10px 0 0;
 
         a {
+            background: -webkit-linear-gradient(90deg, rgba(149,129,255,1), rgba(130,243,236,1));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             color: ${props => props.theme.colors.essentials};
         }
 

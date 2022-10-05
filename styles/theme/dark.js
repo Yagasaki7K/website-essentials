@@ -2,12 +2,12 @@ export default {
     title: 'dark',
 
     colors: {
-        essentials: '#8989df',
-        writing: '#181818',
-        bgcolor: '#181818',
+        essentials: '#9580ff',
+        writing: '#15171b',
+        bgcolor: '#15171b',
         fontcolor: '#FFF',
-        bgheader: '#202020',
+        bgheader: '#1d1e26',
         switch: '#fff',
-        switchOn: '#8989df',
+        switchOn: '#9580ff',
     }
 }
