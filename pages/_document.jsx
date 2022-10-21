@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
                     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
 
-                    <meta name="title" content="Web Essentials | Apps, Navegadores e Extensões"/>
+                    <meta name="title" content="Essentials | Apps, Navegadores e Extensões"/>
                     <meta name="keywords" content="web, essentials, formatting, software, essencial, ethernet, 
                     internet, linux, windows, ios, apple, lost, app, desktop, open, source, iobit, dropbox, 
                     google, drive, icloud, mega, onedrive, whatsapp, telegram, hamachi, discord"/>
@@ -23,13 +23,13 @@ export default class MyDocument extends Document {
                     <meta name="description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
                     <meta property="og:type" content="website"/>
                     <meta property="og:url" content="https://webessentials.com.br/"/>
-                    <meta property="og:title" content="Web Essentials | Apps, Navegadores e Extensões"/>
+                    <meta property="og:title" content="Essentials | Apps, Navegadores e Extensões"/>
                     <meta property="og:description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
                     <meta property="og:image" content="https://i.imgur.com/Xb2cfxM.png"/>
 
                     <meta property="twitter:card" content="summary_large_image"/>
                     <meta property="twitter:url" content="https://webessentials.com.br/"/>
-                    <meta property="twitter:title" content="Web Essentials | Apps, Navegadores e Extensões"/>
+                    <meta property="twitter:title" content="Essentials | Apps, Navegadores e Extensões"/>
                     <meta property="twitter:description" content="Lista de softwares essenciais para ter instalado em seu computador. Especialmente se você acabou de formatar ou não lembra de quais softwares são importantes para você."/>
                     <meta property="twitter:image" content="https://i.imgur.com/Xb2cfxM.png"/>
                 </Head>
