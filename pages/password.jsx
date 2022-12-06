@@ -64,7 +64,7 @@ const PasswordPage = () => {
 
             <input type="range" min="8" max="64" value={passLength} onChange={callTwoFunctions} id="myRange" className="slider" />
 
-            <h3 style={{ color: '#555' }}>Tamanho: {passLength} caracteres</h3>
+            <h3 style={{ color: '#777' }}>Tamanho: {passLength} caracteres</h3>
 
             <input type="text" placeholder="Copie sua nova senha" id="password" readonly="" />
             <div className="break" />
@@ -209,7 +209,7 @@ const Password = styled.div`
     .slider {
         -webkit-appearance: none;
         width: 100%;
-        height: 25px;
+        height: 15px;
         border: none;
         background: #333;
         outline: none;

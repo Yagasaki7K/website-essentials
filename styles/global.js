@@ -13,11 +13,11 @@ export default createGlobalStyle`
     }
 
     a {
-    color: inherit;
-    text-decoration: none;
+        color: inherit;
+        text-decoration: none;
     }
 
     * {
-    box-sizing: border-box;
+        box-sizing: border-box;
     }
 `;
