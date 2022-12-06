@@ -3,12 +3,13 @@ import { Grid } from '@material-ui/core';
 import Link from 'next/link';
 import navitems from '../navitems';
 import SocialMedia from './SocialMedia'
+import styled from 'styled-components';
 
 import TextDetails from './TextDetails'
 
 export function Leftbar() {
     return (
-        <>
+        <LeftBar>
             <Grid container spacing={2} direction="column" style={{ marginTop: '80px' }}>
                 {navitems.map((item) => (
                     <Grid item key={item.id}>
@@ -28,8 +29,12 @@ export function Leftbar() {
                     <i style={{ fontSize: '16px' }}>v22.12</i>
                 </SocialMedia>
             </Grid>
-        </>
+        </LeftBar>
     )
 }
+
+const LeftBar = styled.div`
+    font-family: 'Poppins', sans-serif;
+`
 
 export default Leftbar

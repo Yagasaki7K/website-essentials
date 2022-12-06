@@ -5,6 +5,8 @@
 - Atualizado módulos para última versão
 - Adicionamos o `CHANGELOG.md` para todos saberem das novidades com mais detalhes e em ordem cronológica, sem depender do releases do Github.
 - Adicionamos a aba de "Para desenvolvedores" no `CHANGELOG.md`
+- Adicionado a fonte `Poppins` na barra lateral do site
+- Adicionado estilização na barra de rolagem do browser
 
 #### Para desenvolvedores
 - Removido `<a>` devido a nova versão do NextJS (13)
