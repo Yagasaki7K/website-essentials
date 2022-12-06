@@ -1,12 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const PasswordPage = () => {
+    const [passLength, setPassLength] = useState(16);
+
+    function callTwoFunctions() {
+        slider();
+        getPassword();
+    }
+
+    function slider() {
+        let myRange = document.getElementById('myRange');
+        setPassLength(myRange.value);
+    }
+
     function getPassword() {
         var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
-        var passwordLength = 12;
+        var passwordLength = passLength;
         var password = "";
 
         for (var i = 0; i < passwordLength; i++) {
@@ -39,26 +51,30 @@ const PasswordPage = () => {
 
     return (
         <Password>
-            <Link href="/"><a><Image src="/Logo.png" width={460} height={100} alt="Logotipo" /></a></Link>
-            
+            <Link href="/"><Image src="/Logo.png" width={460} height={100} alt="Logotipo" /></Link>
+
             <hr />
-            
+
             <h2>Gere uma senha segura</h2>
             <div className="break" />
-            
+
             <p>Use nosso gerador de senhas para instantaneamente criar uma senha aleatória segura.
             </p>
             <div className="break" />
-            
+
+            <input type="range" min="8" max="64" value={passLength} onChange={callTwoFunctions} id="myRange" className="slider" />
+
+            <h3 style={{ color: '#555' }}>Tamanho: {passLength} caracteres</h3>
+
             <input type="text" placeholder="Copie sua nova senha" id="password" readonly="" />
             <div className="break" />
-            
+
             <button id="btnPassword" onClick={getPassword}>Gere sua senha</button>
-            
-            <div class="tooltip">
+
+            <div className="tooltip">
                 <button id="btnCopy" onClick={copyPassword}>
-                <span class="tooltiptext" id="myTooltip">Copiar!</span>
-                Copie sua senha</button>
+                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
+                    Copie sua senha</button>
             </div>
         </Password>
     )
@@ -117,7 +133,7 @@ const Password = styled.div`
 
     #btnPassword {
         position: relative;
-        background: #333;
+        background: #7159c1;
         color: #fff;
         cursor: pointer;
         font-size: 24px;
@@ -129,12 +145,12 @@ const Password = styled.div`
 
     #btnPassword:hover {
         transition: 2s;
-        background: #7159c1;
+        background: #333;
     }
 
     #btnCopy {
         position: relative;
-        background: #7159c1;
+        background: #333;
         color: #fff;
         cursor: pointer;
         font-size: 24px;
@@ -148,7 +164,7 @@ const Password = styled.div`
 
     #btnCopy:hover {
         transition: 2s;
-        background: #333;
+        background: #7159c1;
     }
 
     .tooltip {
@@ -188,5 +204,36 @@ const Password = styled.div`
     .tooltip:hover .tooltiptext {
         visibility: visible;
         opacity: 1;
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 25px;
+        border: none;
+        background: #333;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        border-radius: 50px;
+        transition: opacity .2s;
+        margin-bottom: -1rem;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        border-radius: 50px;
+        height: 25px;
+        background: #9278ec;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #9278ec;
+        cursor: pointer;
     }
 `

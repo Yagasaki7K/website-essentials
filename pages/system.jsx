@@ -5,18 +5,16 @@ import items from '../src/items/system';
 import CardContent from '../src/components/CardContent';
 import ContainerDetails from '../src/components/ContainerDetails'
 
-export function System(){
-    return(
+export function System() {
+    return (
         <>
-            <DefaultLayout/>
+            <DefaultLayout />
             <ContainerDetails>
                 {items.map((item) => (
-                    <Link href={item.url} key={item}>
-                        <a target="_blank">
-                            <CardContent name={item.name} corporation={item.corporation} 
-                            img={item.img}/>
-                        </a>
-                    </Link>    
+                    <Link href={item.url} key={item} target="_blank">
+                        <CardContent name={item.name} corporation={item.corporation}
+                            img={item.img} />
+                    </Link>
                 ))}
             </ContainerDetails>
         </>

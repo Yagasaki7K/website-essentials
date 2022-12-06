@@ -5,17 +5,15 @@ import items from '../src/items/extension';
 import CardContent from '../src/components/CardContent';
 import ContainerDetails from '../src/components/ContainerDetails'
 
-export function Extension(){
-    return(
+export function Extension() {
+    return (
         <>
-            <DefaultLayout/>
+            <DefaultLayout />
             <ContainerDetails>
                 {items.map((item) => (
-                    <Link href={item.url} key={item}>
-                        <a target="_blank">
-                            <CardContent name={item.name} corporation={item.corporation} 
-                            img={item.img} browser={item.browser}/>
-                        </a>
+                    <Link href={item.url} key={item} target="_blank">
+                        <CardContent name={item.name} corporation={item.corporation}
+                            img={item.img} browser={item.browser} />
                     </Link>
                 ))}
             </ContainerDetails>
