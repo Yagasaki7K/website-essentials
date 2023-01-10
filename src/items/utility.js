@@ -77,6 +77,13 @@ const items = [
         corporation: "CPUID"
     },
     {
+        id: "emclient",
+        name: "eM Client",
+        img: "/list/emclient.png",
+        url: "https://www.emclient.com/",
+        corporation: "eM Client"
+    },
+    {
         id: "files",
         name: "Files",
         img: "/list/files.png",

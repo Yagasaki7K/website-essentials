@@ -4,7 +4,7 @@ const items = [
         name: "Apache Guacamole",
         img: "/list/apache.png",
         url: "https://guacamole.apache.org/releases/",
-        corporation: "Apache Software" 
+        corporation: "Apache Software"
     },
     {
         id: "discord",
@@ -57,13 +57,18 @@ const items = [
     },
     {
         id: "whatsapp",
-        name: "Whatsapp Desktop",
+        name: "Whatsapp Desktop x64",
         img: "/list/whatsapp.png",
-        url: "https://www.whatsapp.com/download/",
+        url: "https://www.mediafire.com/file/clp2tmszdgejvkm/WhatsAppSetup.exe/file",
+        corporation: "Facebook Inc"
+    },
+    {
+        id: "whatsapp",
+        name: "Whatsapp Desktop x86",
+        img: "/list/whatsapp.png",
+        url: "https://www.mediafire.com/file/tzkioucel5gqy0l/WhatsAppSetup_x86.exe/file",
         corporation: "Facebook Inc"
     }
-
 ]
-
 
 export default items;

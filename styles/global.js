@@ -9,7 +9,7 @@ export default createGlobalStyle`
         padding: 0;
         margin: 0;
         font-family: 'Poppins', sans-serif;
-        background-color: ${(props) => props.theme.colors.bgcolor}
+        background: ${(props) => props.theme.colors.bgcolor}
     }
 
     body::-webkit-scrollbar {
@@ -18,16 +18,16 @@ export default createGlobalStyle`
     }
 
     body::-webkit-scrollbar-track {
-        background: #15171b;
+        background: #282a36;
         /* color of the tracking area */
     }
 
     body::-webkit-scrollbar-thumb {
-        background-color: #9278ec;
+        background-color: #bd93f9;
         /* color of the scroll thumb */
         border-radius: 20px;
         /* roundness of the scroll thumb */
-        border: 3px solid #15171b;
+        border: 2px solid #282a36;
         /* creates padding around scroll thumb */
     }
 

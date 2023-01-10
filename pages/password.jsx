@@ -58,7 +58,7 @@ const PasswordPage = () => {
             <h2>Gere uma senha segura</h2>
             <div className="break" />
 
-            <p>Use nosso gerador de senhas para instantaneamente criar uma senha aleatória segura.
+            <p>Use nosso gerador de senhas para instantaneamente criar uma senha aleatória, segura e para seu uso diário, é recomendável utilizar um aplicativo secundário como BitWarden ou 1Password para armazenar suas senhas.
             </p>
             <div className="break" />
 
@@ -103,7 +103,7 @@ const Password = styled.div`
 
     h2 {
         font-size: 2rem;
-        color: #9278EC;
+        color: #bd93f9;
     }
 
     p {
@@ -133,7 +133,7 @@ const Password = styled.div`
 
     #btnPassword {
         position: relative;
-        background: #7159c1;
+        background: #bd93f9;
         color: #fff;
         cursor: pointer;
         font-size: 24px;
@@ -141,6 +141,7 @@ const Password = styled.div`
         padding: 10px 15px;
         border-radius: 8px;
         border: none;
+        margin-bottom: 2rem;
     }
 
     #btnPassword:hover {
@@ -164,7 +165,7 @@ const Password = styled.div`
 
     #btnCopy:hover {
         transition: 2s;
-        background: #7159c1;
+        background: #bd93f9;
     }
 
     .tooltip {
@@ -175,7 +176,7 @@ const Password = styled.div`
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 150px;
-        background-color: #0A8C66;
+        background-color: #50fa7b;
         color: #fff;
         text-align: center;
         border-radius: 6px;
@@ -198,7 +199,7 @@ const Password = styled.div`
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
-        border-color: #0A8C66 transparent transparent transparent;
+        border-color: #50fa7b transparent transparent transparent;
     }
 
     .tooltip:hover .tooltiptext {
@@ -226,14 +227,14 @@ const Password = styled.div`
         width: 25px;
         border-radius: 50px;
         height: 25px;
-        background: #9278ec;
+        background: #bd93f9;
         cursor: pointer;
     }
 
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
-        background: #9278ec;
+        background: #bd93f9;
         cursor: pointer;
     }
 `

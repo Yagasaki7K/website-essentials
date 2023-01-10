@@ -39,7 +39,7 @@ const navitems = [
         nome: "Extensões",
         href: "/extension",
     }
-    
+
 ]
 
 export default navitems;

@@ -1,3 +1,14 @@
+# Janeiro | v23.01
+
+- Adicionado Whatsapp Desktop x64 e x86 em Comunicação
+- Adicionado eM Client em Utilitários
+- Adicioando tema do Dracula UI no Web Essentials - mais fiél do que já era
+- Mudamos a cor do nosso roxo de #9580ff para #bd93f9
+- Mudamos a cor do nosso fundo de #15171b para #282a36
+- Mudamos a cor do cabeçalho de #15171b para #282a33
+- Mudamos o degradê dos botões das redes para #7159c1 e #bd93f9
+- 
+
 # Dezembro | v22.12
 
 - Adicionado slide no /password
