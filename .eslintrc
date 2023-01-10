@@ -1,7 +1,0 @@
-{
-    "parser": "@babel/eslint-parser",
-    "rules": {
-        // Other rules
-        "@next/next/no-img-element": "off"
-    }
-}
