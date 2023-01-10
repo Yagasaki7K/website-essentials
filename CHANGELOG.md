@@ -7,7 +7,6 @@
 - Mudamos a cor do nosso fundo de #15171b para #282a36
 - Mudamos a cor do cabeçalho de #15171b para #282a33
 - Mudamos o degradê dos botões das redes para #7159c1 e #bd93f9
-- 
 
 # Dezembro | v22.12
 
