@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://github.com/Yagasaki7K/website-essentials/blob/master/public/Logo.png" width="300"/>
+   <img src="https://raw.githubusercontent.com/Yagasaki7K/website-essentials/main/public/Logo.png" width="300"/>
 </p>
 
 <p align="center">
