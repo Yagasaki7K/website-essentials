@@ -1,11 +1,27 @@
 const items = [
     {
+        id: "1password",
+        name: "1Password",
+        img: "/list/1password.png",
+        browser: "/list/all.png",
+        url: "https://1password.com/pt/downloads/browser-extension/",
+        corporation: "AgileBits Inc.",
+    },
+    {
         id: "adblock",
         name: "Adblock",
         img: "/list/adblock.png",
         browser: "/list/all.png",
         url: "https://adblockplus.org/en/download",
-        corporation: "Eyeo GmbH"
+        corporation: "Eyeo GmbH",
+    },
+    {
+        id: "bitwarden",
+        name: "Bitwarden",
+        img: "/list/bitwarden.png",
+        browser: "/list/all.png",
+        url: "https://bitwarden.com/download/",
+        corporation: "Bitwarden",
     },
     {
         id: "bonjourr",
@@ -13,7 +29,7 @@ const items = [
         img: "/list/bonjourr.png",
         browser: "/list/all.png",
         url: "https://bonjourr.fr/use-bonjourr",
-        corporation: "Victor & Tahoe"
+        corporation: "Victor & Tahoe",
     },
     {
         id: "darkreader",
@@ -21,7 +37,7 @@ const items = [
         img: "/list/darkreader.png",
         browser: "/list/all.png",
         url: "https://darkreader.org/",
-        corporation: "Dark Reader"
+        corporation: "Dark Reader",
     },
     {
         id: "gamersclub",
@@ -29,7 +45,7 @@ const items = [
         browser: "/list/chrome.png",
         img: "/list/gamersclub.png",
         url: "https://chrome.google.com/webstore/detail/gamersclub-booster/dahnmmlhchpmmlgebpkpaofbefjdlpin",
-        corporation: "Gamers Club"
+        corporation: "Gamers Club",
     },
     {
         id: "gamersclub",
@@ -37,7 +53,7 @@ const items = [
         browser: "/list/firefox.png",
         img: "/list/gamersclub.png",
         url: "https://addons.mozilla.org/pt-BR/firefox/addon/gamersclub-booster/",
-        corporation: "Gamers Club"
+        corporation: "Gamers Club",
     },
     {
         id: "gumboc",
@@ -45,7 +61,7 @@ const items = [
         browser: "/list/chrome.png",
         img: "/list/gumbo.png",
         url: "https://chrome.google.com/webstore/detail/gumbo-twitch-companion/aalmjfpohaedoddkobnibokclgeefamn",
-        corporation: "Seldszar"
+        corporation: "Seldszar",
     },
     {
         id: "gumbof",
@@ -53,7 +69,7 @@ const items = [
         browser: "/list/firefox.png",
         img: "/list/gumbo.png",
         url: "https://addons.mozilla.org/en-US/firefox/addon/gumbo-twitch-companion/",
-        corporation: "Seldszar"
+        corporation: "Seldszar",
     },
     {
         id: "soundbooster",
@@ -61,7 +77,7 @@ const items = [
         img: "/list/soundbooster.png",
         browser: "/list/chrome.png",
         url: "https://chrome.google.com/webstore/detail/sound-booster-increase-yo/njcpapmgiimlmlelomamnobmdmhpbfhd",
-        corporation: "ExtBooster"
+        corporation: "ExtBooster",
     },
     {
         id: "tabmuter",
@@ -69,8 +85,8 @@ const items = [
         img: "/list/tabmuter.png",
         browser: "/list/chrome.png",
         url: "https://chrome.google.com/webstore/detail/tab-muter/bnclejfcblondkjliiblkojdeloomadd",
-        corporation: "tab.muter.computer"
-    }
-]
+        corporation: "tab.muter.computer",
+    },
+];
 
-export default items
+export default items;
