@@ -19,7 +19,7 @@ export default createGlobalStyle`
     }
 
     body::-webkit-scrollbar-track {
-        background: #282a36;
+        background: ${(props) => props.theme.colors.bgcolor};
         /* color of the tracking area */
     }
 
@@ -28,7 +28,7 @@ export default createGlobalStyle`
         /* color of the scroll thumb */
         border-radius: 20px;
         /* roundness of the scroll thumb */
-        border: 2px solid #282a36;
+        border: 2px solid ${(props) => props.theme.colors.bgcolor};
         /* creates padding around scroll thumb */
     }
 

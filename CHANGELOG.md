@@ -7,6 +7,7 @@
 - Adicionamos o ícone de download para o PWA (Progressive Web App)
 - Mudamos todos os ícones para seu formato alternativo
 - Adicionamos a página de download do PWA no /download
+- Adicionamos estilização dinâmica na barra de rolagem do navegador
 
 # Janeiro | v23.01
 
