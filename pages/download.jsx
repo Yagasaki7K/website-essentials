@@ -33,7 +33,7 @@ const app = () => {
                         <p>É só clicar nele, em seguida clicar no botão de Instalar e aguardar alguns segundos, ele automaticamente irá ser instalado no seu computador e aberto na barra de tarefas como um aplicativo. É só favoritar e deixar ele sempre próximo de você.</p>
 
                         <h2>Instalação Manual</h2>
-                        <p>A instalação manual é mais avançada, porém, deixa você mais livre em fazer certas escolhas com o seu atalho. <b>Antes de iniciar qualquer procedimento, verifique se seu navegador é compatível</b>, você poderá estar buscando suporte diretamente no site oficial dos seguintes navegadores suportados: <a href="" target="_blank" rel="noreferrer">Chrome</a>, <a href="" target="_blank" rel="noreferrer">Firefox</a> e <a href="" target="_blank" rel="noreferrer">Safari</a></p>
+                        <p>A instalação manual é mais avançada, porém, deixa você mais livre em fazer certas escolhas com o seu atalho. <b>Antes de iniciar qualquer procedimento, verifique se seu navegador é compatível</b>, você poderá estar buscando suporte diretamente no site oficial dos seguintes navegadores suportados: <a href="https://support.google.com/chrome_webstore/answer/3060053?hl=en" target="_blank" rel="noreferrer">Chrome</a>, <a href="https://support.mozilla.org/en-US/kb/create-desktop-shortcut-website" target="_blank" rel="noreferrer">Firefox</a> e <a href="https://support.apple.com/guide/shortcuts-mac/create-a-custom-shortcut-apd84c576f8c/mac" target="_blank" rel="noreferrer">Safari</a></p>
                     </div>
 
                     <div className="blogContent">
