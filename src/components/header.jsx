@@ -33,7 +33,7 @@ export function Header(props) {
                     </Link>
                 </p>
                 <p>
-                    <Link href="https://discord.gg/jhSepmE7nN" target="_blank">
+                    <Link href="/download">
                         <i className="uil uil-download-alt"></i>
                     </Link> |
                 </p>
