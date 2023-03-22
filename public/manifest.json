@@ -1,0 +1,36 @@
+{
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "display": "kalifyinc",
+    "name": "web essentials",
+    "scope": "/",
+    "start_url": "/",
+    "short_name": "essentials",
+    "description": "softwares essenciais para ter instalado em seu computador",
+    "icons": [
+      {
+        "src": "/favicon.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/favicon.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/favicon.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ]
+  }
