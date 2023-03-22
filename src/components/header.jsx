@@ -18,23 +18,23 @@ export function Header(props) {
             </Link>
             <NavItems>
                 <p>
-                    <Link href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank">
-                        <i className="uil uil-bitcoin-circle"></i>
-                    </Link>
-                </p>
-                <p>
                     <Link href="https://twitter.com/KalifyInc" target="_blank">
-                        <i className="uil uil-twitter"></i>
+                        <i className="uil uil-twitter-alt"></i>
                     </Link>
                 </p>
                 <p>
                     <Link href="https://github.com/Yagasaki7K/website-essentials" target="_blank">
-                        <i className="uil uil-github"></i>
+                        <i className="uil uil-github-alt"></i>
+                    </Link>
+                </p>
+                <p>
+                    <Link href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank">
+                        <i className="uil uil-paypal"></i>
                     </Link>
                 </p>
                 <p>
                     <Link href="https://discord.gg/jhSepmE7nN" target="_blank">
-                        <i className="uil uil-comment-question"></i>
+                        <i className="uil uil-download-alt"></i>
                     </Link> |
                 </p>
                 <span>

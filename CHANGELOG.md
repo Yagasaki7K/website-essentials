@@ -1,3 +1,13 @@
+# Março | v23.03
+- Adicionado: 1Password e Bitwarden
+- Adicionada Extensões: 1Password e Bitwarden
+- Padrão ESLint no projeto (Para os Desenvolvedores)
+- Mudamos o ícone de Bitcoin para Paypal
+- Retiramos o ícone de balão para o Discord
+- Adicionamos o ícone de download para o PWA (Progressive Web App)
+- Mudamos todos os ícones para seu formato alternativo
+- Adicionamos a página de download do PWA no /download
+
 # Janeiro | v23.01
 
 - Adicionado Whatsapp Desktop x64 e x86 em Comunicação

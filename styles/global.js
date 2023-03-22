@@ -9,7 +9,8 @@ export default createGlobalStyle`
         padding: 0;
         margin: 0;
         font-family: 'Poppins', sans-serif;
-        background: ${(props) => props.theme.colors.bgcolor}
+        background: ${(props) => props.theme.colors.bgcolor};
+        scroll-behavior: smooth;
     }
 
     body::-webkit-scrollbar {
