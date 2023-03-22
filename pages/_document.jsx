@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
                 <Head>
                     {/* PWA primary color */}
                     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-                    <link rel="apple-touch-icon" href="/favicon.png" />
+                    <link rel="apple-touch-icon" href="/favicon-512.png" />
                     <meta name="application-name" content="Essentials" />
                     <meta name="apple-mobile-web-app-capable" content="yes" />
                     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
