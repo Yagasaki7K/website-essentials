@@ -37,8 +37,8 @@ const app = () => {
                     </div>
 
                     <div className="blogContent">
-                        <h3>Confira o comunicado do Essentials no <a href="https://twitter.com/Yagasaki7K" target='_blank' rel="noreferrer">Twitter</a> ou <a href="https://kalify.vercel.app/blog" target='_blank' rel="noreferrer">Blog</a></h3>
-                        <a href="https://kalify.vercel.app/blog" target='_blank' rel="noreferrer"><p>Leia o blog do Ignite {'>'}</p></a>
+                        <h3>Confira o comunicado do Essentials no <a href="https://twitter.com/Yagasaki7K" target='_blank' rel="noreferrer">Twitter</a></h3>
+                        <a href="https://kalify.vercel.app/blog" target='_blank' rel="noreferrer"><p>Leia o blog {'>'}</p></a>
                     </div>
                 </DownloadDetails>
             </ContainerDetails>
