@@ -1,3 +1,6 @@
+# Abril | v23.04
+- Adicionado: Unhook e Minimal Theme for Twitter nas Extenções
+
 # Março | v23.03
 - Adicionado: 1Password e Bitwarden
 - Adicionada Extensões: 1Password e Bitwarden

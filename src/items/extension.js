@@ -80,12 +80,36 @@ const items = [
         corporation: "ExtBooster",
     },
     {
+        id: "minimaltwitter",
+        name: "Minimal Theme for Twitter",
+        img: "/list/minimaltwitter.png",
+        browser: "/list/chrome.png",
+        url: "https://chrome.google.com/webstore/detail/minimal-theme-for-twitter/pobhoodpcipjmedfenaigbeloiidbflp/related",
+        corporation: "typefully.com",
+    },
+    {
+        id: "minimaltwitter",
+        name: "Minimal Theme for Twitter",
+        img: "/list/minimaltwitter.png",
+        browser: "/list/firefox.png",
+        url: "https://addons.mozilla.org/en-US/firefox/addon/minimaltwitter/",
+        corporation: "typefully.com",
+    },
+    {
         id: "tabmuter",
         name: "Tab Muter",
         img: "/list/tabmuter.png",
         browser: "/list/chrome.png",
         url: "https://chrome.google.com/webstore/detail/tab-muter/bnclejfcblondkjliiblkojdeloomadd",
         corporation: "tab.muter.computer",
+    },
+    {
+        id: "unhook",
+        name: "Unhook",
+        img: "/list/unhook.png",
+        browser: "/list/all.png",
+        url: "https://unhook.app/",
+        corporation: "unhook.app",
     },
 ];
 
