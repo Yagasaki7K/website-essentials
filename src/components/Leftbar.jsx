@@ -32,4 +32,8 @@ export function Leftbar() {
     )
 }
 
+const LeftBar = styled.div`
+    font-family: 'Poppins', sans-serif;
+`
+
 export default Leftbar
