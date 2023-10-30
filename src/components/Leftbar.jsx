@@ -4,7 +4,6 @@ import Link from 'next/link';
 import navitems from '../navitems';
 import SocialMedia from './SocialMedia'
 import styled from 'styled-components';
-
 import TextDetails from './TextDetails'
 
 export function Leftbar() {
@@ -32,9 +31,5 @@ export function Leftbar() {
         </LeftBar>
     )
 }
-
-const LeftBar = styled.div`
-    font-family: 'Poppins', sans-serif;
-`
 
 export default Leftbar

@@ -35,6 +35,13 @@ const items = [
         corporation: "rocket.chat"
     },
     {
+        id: "slack",
+        name: "Slack",
+        img: "/list/slack.png",
+        url: "https://slack.com/intl/pt-br/downloads/",
+        corporation: "Slack Technologies, LLC"
+    },
+    {
         id: "teamspeak",
         name: "Teamspeak",
         img: "/list/teamspeak.png",
