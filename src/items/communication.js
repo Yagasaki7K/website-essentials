@@ -39,7 +39,7 @@ const items = [
         name: "Slack",
         img: "/list/slack.png",
         url: "https://slack.com/intl/pt-br/downloads/",
-        corporation: "Slack Technologies, LLC"
+        corporation: "Slack Technologies"
     },
     {
         id: "teamspeak",
