@@ -1,14 +1,5 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "./index.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "rewrites": [
-        { "source": "/(.*)", "destination": "src/app.js" }
-    ],
     "headers": [
         {
           "source": "/(.*)",
