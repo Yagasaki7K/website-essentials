@@ -10,8 +10,8 @@ const items = [
         id: "amazon-kindle",
         name: "Amazon Kindle",
         img: "/list/kindle.png",
-        url: "http://www.amazon.com.br/kindlepcdownload/ref=klp_win",
-        corporation: "Amazon Kindle" 
+        url: "https://www.amazon.com.br/b?ie=UTF8&node=17877530011",
+        corporation: "Amazon Kindle"
     },
     {
         id: "archisteamfarm",
