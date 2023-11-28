@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html lang="pt-br">
-                <title>Web Essentials | Apps, Navegadores e Extensões</title>
+                <title>Essentials | Apps, Navegadores e Extensões</title>
                 <Head>
                     {/* PWA primary color */}
                     <link rel="shortcut icon" type="image/png" href="/favicon.png" />
