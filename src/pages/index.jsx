@@ -7,6 +7,7 @@ import Head from "next/head";
 
 export default function Home() {
     const [categories, setCategories] = useState('');
+    const [search, setSearch] = useState('')
 
     const firstRender = itemsImported
     const [items, setItems] = useState(sortItemsById(firstRender))
@@ -28,6 +29,16 @@ export default function Home() {
             });
     }
 
+    function handleSearch(event) {
+        const query = event.target.value;
+        console.log(query)
+
+        setSearch(query);
+    }
+
+    const filteredItems = search !== "" ? items.filter((item) => item.name && item.name.toLowerCase().includes(search.toLowerCase())) : items;
+
+
     return (
         <HomeDetails>
             <NavigationDetails>
@@ -36,7 +47,7 @@ export default function Home() {
                 </a>
 
                 <div className="search">
-                    <input type="text" name="" id="" placeholder='Qual software está buscando?' />
+                    <input type="text" name="" id="" placeholder='Qual software está buscando?' onChange={handleSearch} />
                 </div>
 
                 <div className="navItems">
@@ -97,7 +108,7 @@ export default function Home() {
                     </div>
 
                     <div className="content-cards">
-                        {items
+                        {filteredItems
                             .filter(item => item.categories && item.categories.includes(categories))
                             .map((item) => (
                                 <a href={item.url} key={item} target="_blank">
