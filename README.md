@@ -19,7 +19,7 @@
 </p>
 
 <div align="center">
-  <sub>Web Essentials. Built with 💜 by
+  <sub>Essentials. Built with 💜 by
     <a href="https://github.com/Yagasaki7K">Anderson "Yagasaki" Marlon</a> and
     <a href="https://github.com/Yagasaki7K/website-essentials/graphs/contributors">
       contributors
