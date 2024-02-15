@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import Image from 'next/image'
+import NavigationAlt from '@/components/NavigationAlt'
 
 const PasswordPage = () => {
     const [passLength, setPassLength] = useState(16);
+    const [message, setMessage] = useState('Copie sua senha!');
 
     function callTwoFunctions() {
         slider();
@@ -15,6 +17,14 @@ const PasswordPage = () => {
         let myRange = document.getElementById('myRange');
         setPassLength(myRange.value);
     }
+
+    const toggleMessage = () => {
+        setMessage('Copiado!');
+
+        setTimeout(() => {
+            setMessage('Copie sua senha!')
+        }, 2000);
+    };
 
     function getPassword() {
         var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
@@ -50,33 +60,50 @@ const PasswordPage = () => {
     }
 
     return (
-        <Password>
-            <Link href="/"><Image src="/Logo.png" width={460} height={100} alt="Logotipo" /></Link>
+        <>
+            <NavigationAlt />
+            <Password>
+                <Link href="/"><Image src="/Logo.png" width={460} height={100} alt="Logotipo" /></Link>
 
-            <hr />
+                <hr />
 
-            <h2>Gere uma senha segura</h2>
-            <div className="break" />
+                <h2>Gere uma senha segura</h2>
+                <div className="break" />
 
-            <p>Use nosso gerador de senhas para instantaneamente criar uma senha aleatória, segura e para seu uso diário, é recomendável utilizar um aplicativo secundário como BitWarden ou 1Password para armazenar suas senhas.
-            </p>
-            <div className="break" />
+                <p>Use nosso gerador de senhas para instantaneamente criar uma senha aleatória, segura e para seu uso diário, é recomendável utilizar um aplicativo secundário como BitWarden ou 1Password para armazenar suas senhas.
+                </p>
+                <div className="break" />
 
-            <input type="range" min="8" max="64" value={passLength} onChange={callTwoFunctions} id="myRange" className="slider" />
+                <input type="range" min="8" max="64" value={passLength} onChange={callTwoFunctions} id="myRange" className="slider" />
 
-            <h3 style={{ color: '#777' }}>Tamanho: {passLength} caracteres</h3>
+                <h3>Tamanho: {passLength} caracteres</h3>
 
-            <input type="text" placeholder="Copie sua nova senha" id="password" readonly="" />
-            <div className="break" />
+                <input type="text" placeholder="Copie sua nova senha" id="password" readonly="" />
+                <div className="break" />
 
-            <button id="btnPassword" onClick={getPassword}>Gere sua senha</button>
+                <button id="btnPassword" onClick={getPassword}>Gere sua senha</button>
 
-            <div className="tooltip">
-                <button id="btnCopy" onClick={copyPassword}>
-                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
-                    Copie sua senha</button>
-            </div>
-        </Password>
+                {
+                    message === 'Copie sua senha!' ?
+                        (
+                            <div className="tooltip">
+                                <button id="btnCopy" className="btnCopy" onClick={() => { copyPassword(), toggleMessage() }}>
+                                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
+                                    {message}
+                                </button>
+                            </div>
+                        ) : (
+                            <div className="tooltip">
+                                <button id="btnCopy" className="copied" onClick={() => { copyPassword(), toggleMessage() }}>
+                                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
+                                    {message}
+                                </button>
+                            </div>
+                        )
+                }
+
+            </Password>
+        </>
     )
 }
 
@@ -88,7 +115,7 @@ const Password = styled.div`
     margin-right: auto;
     text-align: center;
 
-    margin-top: 150px;
+    margin-top: 120px;
     width: 700px;
 
     hr {
@@ -103,22 +130,27 @@ const Password = styled.div`
 
     h2 {
         font-size: 2rem;
-        color: #bd93f9;
+        color: var(--purple);
+        margin: 2rem 0;
+    }
+
+    h3 {
+        color: var(--gray-alt);
     }
 
     p {
         font-size: 18px;
         margin-top: -20px;
-        color: #555;
+        color: var(--gray-alt);
     }
 
     input {
         height: 60px;
         width: 80%;
         background: transparent;
-        border: 1px solid #333;
+        border: 1px solid var(--gray);
         border-radius: 8px;
-        color: #777;
+        color: var(--purple);
         margin: 15px 0 20px;
         outline: none;
         font-size: 24px;
@@ -128,13 +160,13 @@ const Password = styled.div`
 
     input::placeholder {
         letter-spacing: 0;
-        color: #777;
+        color: var(--gray-alt);
     }
 
     #btnPassword {
         position: relative;
-        background: #bd93f9;
-        color: #fff;
+        background: var(--purple);
+        color: var(--white);
         cursor: pointer;
         font-size: 24px;
         display: inline-block;
@@ -146,13 +178,17 @@ const Password = styled.div`
 
     #btnPassword:hover {
         transition: 2s;
-        background: #333;
+        filter: brightness(110%);
+        transform: scale(1.04);
+    }
+
+    .btnCopy {
+        background: var(--gray-alt);
     }
 
     #btnCopy {
         position: relative;
-        background: #333;
-        color: #fff;
+        color: var(--white);
         cursor: pointer;
         font-size: 24px;
         display: inline-block;
@@ -165,7 +201,7 @@ const Password = styled.div`
 
     #btnCopy:hover {
         transition: 2s;
-        background: #bd93f9;
+        background: var(--green);
     }
 
     .tooltip {
@@ -173,11 +209,15 @@ const Password = styled.div`
         display: inline-block;
     }
 
+    .copied {
+        background: var(--green);
+    }
+
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 150px;
-        background-color: #50fa7b;
-        color: #fff;
+        background: var(--green);
+        color: var(--font);
         text-align: center;
         border-radius: 6px;
         padding: 5px;
@@ -199,7 +239,7 @@ const Password = styled.div`
         margin-left: -5px;
         border-width: 5px;
         border-style: solid;
-        border-color: #50fa7b transparent transparent transparent;
+        border-color: var(--green) transparent transparent transparent;
     }
 
     .tooltip:hover .tooltiptext {
@@ -208,11 +248,11 @@ const Password = styled.div`
     }
 
     .slider {
-        -webkit-appearance: none;
+        appearance: none;
         width: 100%;
         height: 15px;
         border: none;
-        background: #333;
+        background: var(--gray);
         outline: none;
         opacity: 0.7;
         -webkit-transition: .2s;
@@ -222,19 +262,18 @@ const Password = styled.div`
     }
 
     .slider::-webkit-slider-thumb {
-        -webkit-appearance: none;
         appearance: none;
         width: 25px;
         border-radius: 50px;
         height: 25px;
-        background: #bd93f9;
+        background: var(--purple);
         cursor: pointer;
     }
 
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
-        background: #bd93f9;
+        background: var(--purple);
         cursor: pointer;
     }
 `

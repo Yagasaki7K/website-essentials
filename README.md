@@ -29,12 +29,14 @@
 
 # 📌 Table of Contents
 
-* [Demo Website](#eyes-demo-website)
-* [Technologies](#computer-technologies)
-* [Features](#rocket-features)
-* [Found a bug? Missing a specific feature?](#bug-issues)
-* [Contributing](#tada-contributing)
-* [License](#closed_book-license)
+- [📌 Table of Contents](#-table-of-contents)
+- [👀 Demo Website](#-demo-website)
+- [💻 Technologies](#-technologies)
+- [🚀 Features](#-features)
+- [🚧 How to run](#-how-to-run)
+- [🐛 Issues](#-issues)
+- [🎉 Contributing](#-contributing)
+- [📕 License](#-license)
 
 # 👀 Demo Website
 

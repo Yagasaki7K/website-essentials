@@ -1,3 +1,20 @@
+# Fevereiro | v24.02
+- Módulos atualizados (Fins de Desenvolvedores)
+- Alterado o estilo do banco de dados (Fins para Desenvolvedores)
+- Adicionado Barra de Pesquisa
+- Mudanças visuais: Melhoria na paleta de cores, espaçamento, melhor visualização na barra lateral e nos cartões de cada programa
+- Mudanças visuais: Melhorado tamanho das fontes
+- Removido páginas para cada categoria, você irá acessar tudo sem sair da mesma página
+- Adicionado tema branco de acordo com as configurações do navegador
+- Removido botão de alternar tema, caso queira trocar, altere as configurações de seu navegador
+- Adicionado gradiente nos icones de acordo com as cores do logo
+- Adicionado: WhatsUp+ for Whatsapp Web e Mobile Simulator
+- Quando não selecionar nenhuma categoria ou apagar a barra de pesquisa, você conseguirá ver todos os programas
+
+# Dezembro | v23.12
+- Arrumado o link da Amazon Kindle
+- Adicionado: Slack
+
 # Abril | v23.04
 - Adicionado: Unhook e Minimal Theme for Twitter nas Extenções
 
