@@ -6,36 +6,40 @@ import itemsImported from '@/pages/api/items'
 
 export default function Home() {
     const [categories, setCategories] = useState('');
-    const [search, setSearch] = useState('')
-
-    const firstRender = itemsImported
-    const [items, setItems] = useState(sortItemsById(firstRender))
-
-    function getItemsFromSpecificArray(selectedCategories) {
-        setCategories(selectedCategories);
-    }
+    const firstRender = itemsImported;
+    const [items, setItems] = useState(sortItemsById(firstRender));
+    const [filteredItems, setFilteredItems] = useState(firstRender);
 
     function sortItemsById(items) {
-        return items
-            .sort((a, b) => {
-                if (a.id < b.id) {
-                    return -1;
-                }
-                if (a.id > b.id) {
-                    return 1;
-                }
-                return 0;
-            });
+        return items.sort((a, b) => {
+            if (a.id < b.id) {
+                return -1;
+            }
+            if (a.id > b.id) {
+                return 1;
+            }
+            return 0;
+        });
     }
 
     function handleSearch(event) {
         const query = event.target.value;
-        console.log(query)
 
-        setSearch(query);
+        const filteredItemsBySearch = query !== "" ?
+            items.filter(item => item.name && item.name.toLowerCase().includes(query.toLowerCase())) :
+            firstRender;
+
+        setFilteredItems(filteredItemsBySearch);
     }
 
-    const filteredItems = search !== "" ? items.filter((item) => item.name && item.name.toLowerCase().includes(search.toLowerCase())) : items;
+    function getItemsFromSpecificArray(selectedCategories) {
+        setCategories(selectedCategories);
+        const itemsFilteredByCategory = selectedCategories !== "" ?
+            firstRender.filter(item => item.categories && item.categories.includes(selectedCategories)) :
+            firstRender;
+
+        setFilteredItems(itemsFilteredByCategory);
+    }
 
 
     return (
@@ -90,7 +94,6 @@ export default function Home() {
                 <div className="content">
                     <div className="content-cards">
                         {filteredItems
-                            .filter(item => item.categories && item.categories.includes(categories))
                             .map((item) => (
                                 <a href={item.url} key={item} target="_blank">
                                     <div className="columnDetails">
