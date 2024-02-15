@@ -24,6 +24,26 @@ const NavigationDetails = styled.div`
         color: var(--font);
         font-size: 15px;
         font-family: 'Poppins', sans-serif;
+
+        @media (max-width: 1560px) {
+            width: 55rem;
+        }
+
+        @media (max-width: 1550px) {
+            width: 50rem;
+        }
+
+        @media (max-width: 1400px) {
+            width: 40rem;
+        }
+
+        @media (max-width: 1230px) {
+            width: 30rem;
+        }
+
+        @media (max-width: 1080px) {
+            width: 20rem;
+        }
     }
 
     input:focus {

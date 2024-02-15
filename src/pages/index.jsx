@@ -3,7 +3,6 @@ import SidebarMenuDetails from "@/components/SidebarMenuDetails";
 import HomeDetails from "@/components/HomeDetails";
 import { useState } from "react";
 import itemsImported from '@/pages/api/items'
-import Head from "next/head";
 
 export default function Home() {
     const [categories, setCategories] = useState('');
@@ -89,24 +88,6 @@ export default function Home() {
                 </SidebarMenuDetails>
 
                 <div className="content">
-                    <div className="title">
-                        <Head>
-                            <title>
-                                {
-                                    categories === 'backup' ? 'Backup / Nuvem' :
-                                        categories === 'communication' ? 'Comunicação' :
-                                            categories === 'development' ? 'Desenvolvimento' :
-                                                categories === 'entertainment' ? 'Entretenimento' :
-                                                    categories === 'browser' ? 'Navegadores' :
-                                                        categories === 'system' ? 'Sistemas' :
-                                                            categories === 'utilities' ? 'Utilitários' :
-                                                                categories === 'extension' ? 'Extensões' :
-                                                                    null
-                                } | Essentials by Kalify
-                            </title>
-                        </Head>
-                    </div>
-
                     <div className="content-cards">
                         {filteredItems
                             .filter(item => item.categories && item.categories.includes(categories))
