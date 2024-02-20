@@ -6,8 +6,9 @@
    <a href="https://www.linkedin.com/in/andersonmarlon/">
       <img alt="AndersonMarlon" src="https://img.shields.io/badge/-AndersonMarlon-5965e0?style=flat&logo=Linkedin&logoColor=white" />
    </a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Yagasaki7K/website-essentials?color=5965e0">
-
+  <a href="https://twitter.com/yagasaki7k">
+    <img src="https://img.shields.io/twitter/follow/medusajs.svg?label=Contact%20me%20at%20@Yagasaki7K" alt="Contact me at @Yagasaki7K" />
+  </a>
   <a href="https://github.com/Yagasaki7K/website-essentials/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Yagasaki7K/website-essentials?color=5965e0">
   </a>
