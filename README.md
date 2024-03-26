@@ -25,6 +25,10 @@
   </sub>
 </div>
 
+<p align="center">
+  <img src="https://github.com/Yagasaki7K/website-cafecomleite/assets/23272064/febb5104-0741-481a-9171-44ff1b2b3e26" alt="café com leite palette" width="400" />
+</p>
+
 # 📌 Table of Contents
 
 - [📌 Table of Contents](#-table-of-contents)
