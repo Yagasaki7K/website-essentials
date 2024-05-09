@@ -1,3 +1,8 @@
+# Maio | V24.05
+- Adicionado `bun` ao invés do `yarn` (mais rápido de instalação e atualização)
+- Todos os commits terão data e hora
+- Adicionado: uwu // Para ativar o uwu, escreva `?uwu=true` na barra de endereço do seu navegador
+
 # Fevereiro | v24.02
 - Módulos atualizados (Fins de Desenvolvedores)
 - Alterado o estilo do banco de dados (Fins para Desenvolvedores)

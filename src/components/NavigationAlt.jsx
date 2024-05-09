@@ -1,11 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import NavigationDetails from './NavigationDetails'
+import { useRouter } from 'next/router';
 
 const NavigationAlt = () => {
+    const router = useRouter();
+    const uwuUrl = router.asPath;
+    const [uwu, setUwu] = useState(false);
+
+    useEffect(() => {
+        if (uwuUrl !== undefined && uwuUrl !== null) {
+            if (uwuUrl.includes('uwu=true')) {
+                setUwu(true);
+            } else {
+                setUwu(false);
+            }
+        }
+    }, [uwuUrl]);
+
     return (
         <NavigationDetails>
             <a href="/">
-                <img src="/Logo.png" alt="Web Essentials" />
+                {
+                    uwu ? (
+                        <img src="/uwu.png" alt="Web Essentials" />
+                    ) : (<img src="/Logo.png" alt="Web Essentials" />)
+                }
             </a>
 
             <div className="navItems">

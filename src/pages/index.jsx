@@ -1,8 +1,9 @@
 import NavigationDetails from "@/components/NavigationDetails";
 import SidebarMenuDetails from "@/components/SidebarMenuDetails";
 import HomeDetails from "@/components/HomeDetails";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import itemsImported from '@/pages/api/items'
+import { useRouter } from "next/router";
 
 export default function Home() {
     const [categories, setCategories] = useState('');
@@ -41,12 +42,32 @@ export default function Home() {
         setFilteredItems(itemsFilteredByCategory);
     }
 
+    const router = useRouter();
+    const uwuUrl = router.asPath;
+    const [uwu, setUwu] = useState(false);
+
+    useEffect(() => {
+        if (uwuUrl !== undefined && uwuUrl !== null) {
+            if (uwuUrl.includes('uwu=true')) {
+                setUwu(true);
+            } else {
+                setUwu(false);
+            }
+        }
+    }, [uwuUrl]);
+
 
     return (
         <HomeDetails>
             <NavigationDetails>
                 <a href="/">
-                    <img src="/Logo.png" alt="Web Essentials" />
+                    {
+                        uwu ? (
+                            <img src="/uwu.png" alt="Uwueb Essentials" />
+                        ) : (
+                            <img src="/Logo.png" alt="Web Essentials" />
+                        )
+                    }
                 </a>
 
                 <div className="search">

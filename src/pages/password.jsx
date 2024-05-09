@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import Image from 'next/image'
 import NavigationAlt from '@/components/NavigationAlt'
+import { useRouter } from 'next/router'
 
 const PasswordPage = () => {
     const [passLength, setPassLength] = useState(16);
@@ -59,11 +60,29 @@ const PasswordPage = () => {
         tooltip.innerHTML = "Copiado!";
     }
 
+    const router = useRouter();
+    const uwuUrl = router.asPath;
+    const [uwu, setUwu] = useState(false);
+
+    useEffect(() => {
+        if (uwuUrl !== undefined && uwuUrl !== null) {
+            if (uwuUrl.includes('uwu=true')) {
+                setUwu(true);
+            } else {
+                setUwu(false);
+            }
+        }
+    }, [uwuUrl]);
+
     return (
         <>
             <NavigationAlt />
             <Password>
-                <Link href="/"><Image src="/Logo.png" width={460} height={100} alt="Logotipo" /></Link>
+                <Link href="/">
+                    {
+                        uwu ? (<Image src="/uwu.png" width={460} height={130} alt="Logotipo" />) : (
+                            <Image src="/Logo.png" width={460} height={100} alt="Logotipo" />)
+                    }</Link>
 
                 <hr />
 
