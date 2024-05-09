@@ -107,7 +107,7 @@ export default function Home() {
                         <hr />
                         <li className="page"><a href="/password">Gerador de Password</a></li>
                         <hr />
-                        <p>v24.02</p>
+                        <p>v24.05</p>
                         <p>Powered by Kalify Inc.</p>
                     </ul>
                 </SidebarMenuDetails>
