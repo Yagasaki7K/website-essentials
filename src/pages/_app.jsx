@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { useState, useEffect } from "react";
 import MobileWarning from "@/components/MobileWarning";
+import { Toaster } from "sonner";
 
 export default function App({ Component, pageProps }) {
   const [isMounted, setIsMounted] = useState(false);
@@ -34,7 +35,10 @@ export default function App({ Component, pageProps }) {
       {windowSize.width <= 1024 ? (
         <MobileWarning />
       ) : (
-        isMounted && <Component {...pageProps} />
+        isMounted && <>
+          <Component {...pageProps} />
+          <Toaster richColors position="top-right" />
+        </>
       )}
     </>
   );

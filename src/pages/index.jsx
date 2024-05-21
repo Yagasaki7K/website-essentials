@@ -105,9 +105,10 @@ export default function Home() {
                         <li onClick={() => { getItemsFromSpecificArray('utility') }}>Utilitários</li>
                         <li onClick={() => { getItemsFromSpecificArray('extension') }}>Extensões</li>
                         <hr />
+                        <li className="page"><a href="/shortenurl">Encurtador de URL</a></li>
                         <li className="page"><a href="/password">Gerador de Password</a></li>
                         <hr />
-                        <p>v24.05</p>
+                        <p>v24.05.21</p>
                         <p>Powered by Kalify Inc.</p>
                     </ul>
                 </SidebarMenuDetails>

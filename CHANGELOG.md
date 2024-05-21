@@ -4,6 +4,9 @@
 - Adicionado: uwu // Para ativar o uwu, escreva `?uwu=true` na barra de endereço do seu navegador
 - Atualizada versão da aplicação
 
+## Maio | v24.05.21
+- Adicionado encurtador de URL
+
 # Fevereiro | v24.02
 - Módulos atualizados (Fins de Desenvolvedores)
 - Alterado o estilo do banco de dados (Fins para Desenvolvedores)

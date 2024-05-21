@@ -34,9 +34,11 @@ const SidebarMenuDetails = styled.div`
     }
 
     .page {
+        margin: 1rem 0;
+
         a {
             color: var(--purple);
-        text-decoration: none;
+            text-decoration: none;
         }
     }
 `
