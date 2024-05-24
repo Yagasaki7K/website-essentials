@@ -10,8 +10,6 @@
 ## Maio | v24.05.21
 - Adicionado encurtador de URL
 
-
-
 # Fevereiro | v24.02
 - Módulos atualizados (Fins de Desenvolvedores)
 - Alterado o estilo do banco de dados (Fins para Desenvolvedores)
