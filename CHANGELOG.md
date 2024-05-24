@@ -4,8 +4,13 @@
 - Adicionado: uwu // Para ativar o uwu, escreva `?uwu=true` na barra de endereço do seu navegador
 - Atualizada versão da aplicação
 
+## Maio | v24.05.24
+- Adicionado Electron com Windows e Linux
+
 ## Maio | v24.05.21
 - Adicionado encurtador de URL
+
+
 
 # Fevereiro | v24.02
 - Módulos atualizados (Fins de Desenvolvedores)

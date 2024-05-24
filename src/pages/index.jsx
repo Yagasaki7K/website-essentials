@@ -108,7 +108,7 @@ export default function Home() {
                         <li className="page"><a href="/shortenurl">Encurtador de URL</a></li>
                         <li className="page"><a href="/password">Gerador de Password</a></li>
                         <hr />
-                        <p>v24.05.21</p>
+                        <p>v24.05.24</p>
                         <p>Powered by Kalify Inc.</p>
                     </ul>
                 </SidebarMenuDetails>

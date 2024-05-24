@@ -1,19 +1,52 @@
 {
-  "name": "essentials",
-  "version": "24.05.0",
+  "name": "Essentials",
+  "description": "Essentials softwares for your computer",
+  "version": "24.05.24",
   "private": true,
+  "main": "electron/main.js",
+  "homepage": "https://github.com/Yagasaki7K/website-essentials",
+  "author": {
+    "name": "Anderson Marlon",
+    "email": "anderson18.marlon@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Yagasaki7K/website-essentials/issues",
+    "email": "anderson18.marlon@gmail.com"
+  },
   "scripts": {
     "dev": "next dev",
     "vercel": "next build",
     "start": "next start",
     "lint": "next lint",
-    "commit": "bun update && bun run vercel && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push"
+    "commit": "bun update && bun run vercel && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
+    "electron-dev": "concurrently \"bun run dev\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "next build && electron-builder"
+  },
+  "build": {
+    "appId": "com.essentials.2406",
+    "icon": "./public/favicon.png",
+    "win": {
+      "target": ["nsis", "portable", "msi"]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "maintainer": "Anderson Marlon <anderson18.marlon@gmail.com>"
+    }
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18",
     "sonner": "^1.4.41",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "wait-on": "^7.2.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3"
   }
 }
