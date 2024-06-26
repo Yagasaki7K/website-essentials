@@ -39,10 +39,6 @@ const NavigationAlt = () => {
                 <a href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank">
                     <i className="uil uil-paypal"></i>
                 </a>
-
-                <a href="/download">
-                    <i className="uil uil-download-alt"></i>
-                </a>
             </div>
         </NavigationDetails>
     )

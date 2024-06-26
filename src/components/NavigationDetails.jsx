@@ -10,7 +10,7 @@ const NavigationDetails = styled.div`
     height: 90px;
     width: 100%;
 
-    background: var(--background-alt);
+    background: transparent;
     box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.25);
     z-index: 100;
 
@@ -67,7 +67,7 @@ const NavigationDetails = styled.div`
             font-size: 2rem;
             font-weight: 400;
             margin: 0 20px 0 0;
-            background: -webkit-linear-gradient(90deg, #b1a6fe, #9ee3f3);
+            background: -webkit-linear-gradient(90deg, var(--purple), var(--blue));
             background-clip: text;
             -webkit-text-fill-color: transparent;
             color: var(--purple);

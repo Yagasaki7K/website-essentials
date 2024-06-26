@@ -7,16 +7,16 @@ import { useRouter } from 'next/router'
 import { toast } from 'sonner'
 
 const ShortenPage = () => {
-    const [message, setMessage] = useState('Copie seu link encurtado!');
+    const [message, setMessage] = useState('Copy your shortened link!');
     const [newUrl, setNewUrl] = useState('');
     const [shortenUrl, setShortenUrl] = useState('');
     const [backupUrl, setBackupUrl] = useState('');
 
     const toggleMessage = () => {
-        setMessage('Copiado!');
+        setMessage('Copied!');
 
         setTimeout(() => {
-            setMessage('Copie seu link encurtado!')
+            setMessage('Copy your shortened link!')
         }, 2000);
     };
 
@@ -30,11 +30,11 @@ const ShortenPage = () => {
         }
 
         if (newUrl === '' || newUrl === null) {
-            toast.error('Insira uma URL para ser encurtada!');
+            toast.error('Enter a URL to be shortened!');
         }
 
         if (backupUrl === shortenUrl) {
-            toast.warning('URL já encurtada. Copiado para a área de transferência!');
+            toast.warning('URL is already shortened! Your link is copied to your clipboard.');
             navigator.clipboard.writeText(backupUrl);
         } else {
             const data = new URLSearchParams({
@@ -58,7 +58,7 @@ const ShortenPage = () => {
                     setBackupUrl(data.short_url);
 
                     if (shortenUrl) {
-                        toast.success('URL encurtada com sucesso!');
+                        toast.success('URL is shortened!');
                         navigator.clipboard.writeText(shortenUrl);
                     }
                 })
@@ -67,7 +67,7 @@ const ShortenPage = () => {
                 });
 
             if (backupUrl === '') {
-                console.log('Geração de URL falhou!');
+                console.log('Generated URL is failed');
             }
 
             copyUrl(shortenUrl)
@@ -76,7 +76,7 @@ const ShortenPage = () => {
 
     function copyUrl(url) {
         if (!url) {
-            toast.error('Insira uma URL para ser encurtada!');
+            toast.error('Enter a URL to be shortened');
         } else {
             navigator.clipboard.writeText(url);
 
@@ -109,39 +109,38 @@ const ShortenPage = () => {
 
                 <hr />
 
-                <h2>Gere um link mais curto!</h2>
+                <h2>Generate a shorter link!</h2>
                 <div className="break" />
 
-                <p>Use nosso encurtador de links para facilitar seu cotidiano e evitar mandar um link de ecommerce ou até mesmo de um site de referência gigantesco.
+                <p>Use our link shortener to make your daily life easier and avoid sending long e-commerce or even massive reference site links.
                 </p>
 
                 <div className="break" />
 
-                <input type="text" name="" id="" placeholder="Insira uma URL para ser encurtada" onChange={(e) => setNewUrl(e.target.value)} />
+                <input type="text" name="" id="" placeholder="Enter a URL to be shortened" onChange={(e) => setNewUrl(e.target.value)} />
 
                 <div className="break" />
 
-                <button id="btnPassword" onClick={getNewUrlShorten}>Gerar URL</button>
+                <button id="btnPassword" onClick={getNewUrlShorten}>Generate URL</button>
 
                 {
-                    message === 'Copie seu link encurtado!' ?
+                    message === 'Copy your shortened link!' ?
                         (
                             <div className="tooltip">
                                 <button id="btnCopy" className="btnCopy" onClick={() => { copyUrl(backupUrl); toggleMessage(); }}>
-                                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
+                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
                                     {message}
                                 </button>
                             </div>
                         ) : (
                             <div className="tooltip">
                                 <button id="btnCopy" className="copied" onClick={() => { copyUrl(backupUrl); toggleMessage(); }}>
-                                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
+                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
                                     {message}
                                 </button>
                             </div>
                         )
                 }
-
             </Password>
         </>
     )

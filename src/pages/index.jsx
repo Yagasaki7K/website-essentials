@@ -59,6 +59,29 @@ export default function Home() {
 
     return (
         <HomeDetails>
+            <div className="ball"></div>
+            <div
+                className="ball"
+                style={
+                    {
+                        "--delay": "-12s",
+                        "--size": "0.35",
+                        "--speed": "25s",
+                    }
+                }
+            ></div>
+
+            <div
+                className="ball"
+                style={
+                    {
+                        "--delay": "-10s",
+                        "--size": "0.3",
+                        "--speed": "15s",
+                    }
+                }
+            ></div>
+
             <NavigationDetails>
                 <a href="/">
                     {
@@ -71,7 +94,7 @@ export default function Home() {
                 </a>
 
                 <div className="search">
-                    <input type="text" name="" id="" placeholder='Qual software está buscando?' onChange={handleSearch} />
+                    <input type="text" name="" id="" placeholder='Which software are you looking for?' onChange={handleSearch} />
                 </div>
 
                 <div className="navItems">
@@ -86,29 +109,25 @@ export default function Home() {
                     <a href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank">
                         <i className="uil uil-paypal"></i>
                     </a>
-
-                    <a href="/download">
-                        <i className="uil uil-download-alt"></i>
-                    </a>
                 </div>
             </NavigationDetails>
 
             <div className="container">
                 <SidebarMenuDetails>
                     <ul>
-                        <li onClick={() => { getItemsFromSpecificArray('backup') }}>Backup / Nuvem</li>
-                        <li onClick={() => { getItemsFromSpecificArray('communication') }}>Comunicação</li>
-                        <li onClick={() => { getItemsFromSpecificArray('development') }}>Desenvolvimento</li>
-                        <li onClick={() => { getItemsFromSpecificArray('entertainment') }}>Entretenimento</li>
-                        <li onClick={() => { getItemsFromSpecificArray('browser') }}>Navegadores</li>
-                        <li onClick={() => { getItemsFromSpecificArray('system') }}>Sistemas</li>
-                        <li onClick={() => { getItemsFromSpecificArray('utility') }}>Utilitários</li>
-                        <li onClick={() => { getItemsFromSpecificArray('extension') }}>Extensões</li>
+                        <li onClick={() => { getItemsFromSpecificArray('backup') }}><i className="uil uil-cloud"></i> Backup / Cloud</li>
+                        <li onClick={() => { getItemsFromSpecificArray('communication') }}><i className="uil uil-comments"></i> Communication</li>
+                        <li onClick={() => { getItemsFromSpecificArray('development') }}><i className="uil uil-brackets-curly"></i> Development</li>
+                        <li onClick={() => { getItemsFromSpecificArray('entertainment') }}><i className="uil uil-film"></i> Entertainment</li>
+                        <li onClick={() => { getItemsFromSpecificArray('browser') }}><i className="uil uil-browser"></i> Browsers</li>
+                        <li onClick={() => { getItemsFromSpecificArray('system') }}><i className="uil uil-desktop"></i> Operational Systems</li>
+                        <li onClick={() => { getItemsFromSpecificArray('utility') }}><i className="uil uil-illustration"></i> Utilities</li>
+                        <li onClick={() => { getItemsFromSpecificArray('extension') }}><i className="uil uil-flask"></i> Extensions</li>
                         <hr />
-                        <li className="page"><a href="/shortenurl">Encurtador de URL</a></li>
-                        <li className="page"><a href="/password">Gerador de Password</a></li>
+                        <li className="page"><a href="/shortenurl">Shorten URL</a></li>
+                        <li className="page"><a href="/password">Password Generator</a></li>
                         <hr />
-                        <p>v24.05.24</p>
+                        <p>v24.06.26</p>
                         <p>Powered by Kalify Inc.</p>
                     </ul>
                 </SidebarMenuDetails>

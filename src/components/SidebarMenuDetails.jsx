@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 const SidebarMenuDetails = styled.div`
-    padding: 2.5rem 6rem 0rem 3rem;
-    border-right: 1px solid var(--gray);
+    padding: 2.5rem 4rem 0rem 3rem;
+    background: transparent;
+    box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.25);
 
     p {
         font-size: 0.9rem;
@@ -12,6 +13,10 @@ const SidebarMenuDetails = styled.div`
 
     ul {
         margin: 9rem 0;
+
+        p {
+            color: var(--font);
+        }
     }
     
     li {
@@ -24,7 +29,9 @@ const SidebarMenuDetails = styled.div`
     }
 
     li:hover {
-        color: var(--purple)
+        background: -webkit-linear-gradient(90deg, var(--purple), var(--blue));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     hr {
@@ -37,7 +44,9 @@ const SidebarMenuDetails = styled.div`
         margin: 1rem 0;
 
         a {
-            color: var(--purple);
+            background: -webkit-linear-gradient(90deg, var(--purple), var(--blue));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
             text-decoration: none;
         }
     }

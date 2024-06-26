@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 const PasswordPage = () => {
     const [passLength, setPassLength] = useState(16);
-    const [message, setMessage] = useState('Copie sua senha!');
+    const [message, setMessage] = useState('Copy your new password');
 
     function callTwoFunctions() {
         slider();
@@ -20,10 +20,10 @@ const PasswordPage = () => {
     }
 
     const toggleMessage = () => {
-        setMessage('Copiado!');
+        setMessage('Copied!');
 
         setTimeout(() => {
-            setMessage('Copie sua senha!')
+            setMessage('Copy your new password')
         }, 2000);
     };
 
@@ -76,6 +76,7 @@ const PasswordPage = () => {
 
     return (
         <>
+
             <NavigationAlt />
             <Password>
                 <Link href="/">
@@ -86,35 +87,36 @@ const PasswordPage = () => {
 
                 <hr />
 
-                <h2>Gere uma senha segura</h2>
+                <h2>Generate a secure password</h2>
                 <div className="break" />
 
-                <p>Use nosso gerador de senhas para instantaneamente criar uma senha aleatória, segura e para seu uso diário, é recomendável utilizar um aplicativo secundário como BitWarden ou 1Password para armazenar suas senhas.
+                <p>
+                    Use our password generator to instantly create a random, secure password for your daily use. We recommend using a secondary application like BitWarden or 1Password to store your passwords.
                 </p>
                 <div className="break" />
 
                 <input type="range" min="8" max="64" value={passLength} onChange={callTwoFunctions} id="myRange" className="slider" />
 
-                <h3>Tamanho: {passLength} caracteres</h3>
+                <h3>Size: {passLength} caracteres</h3>
 
-                <input type="text" placeholder="Copie sua nova senha" id="password" readonly="" />
+                <input type="text" placeholder="Copy your new password" id="password" readonly="" />
                 <div className="break" />
 
-                <button id="btnPassword" onClick={getPassword}>Gere sua senha</button>
+                <button id="btnPassword" onClick={getPassword}>Generate your password</button>
 
                 {
-                    message === 'Copie sua senha!' ?
+                    message === 'Copy your new password' ?
                         (
                             <div className="tooltip">
                                 <button id="btnCopy" className="btnCopy" onClick={() => { copyPassword(), toggleMessage() }}>
-                                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
+                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
                                     {message}
                                 </button>
                             </div>
                         ) : (
                             <div className="tooltip">
                                 <button id="btnCopy" className="copied" onClick={() => { copyPassword(), toggleMessage() }}>
-                                    <span className="tooltiptext" id="myTooltip">Copiar!</span>
+                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
                                     {message}
                                 </button>
                             </div>
@@ -169,7 +171,9 @@ const Password = styled.div`
         background: transparent;
         border: 1px solid var(--gray);
         border-radius: 8px;
-        color: var(--purple);
+        background: -webkit-linear-gradient(90deg, var(--purple), var(--blue));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         margin: 15px 0 20px;
         outline: none;
         font-size: 24px;

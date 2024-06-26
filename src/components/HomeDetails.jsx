@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const HomeDetails = styled.div`
+    opacity: 0.8;
+    z-index: 1;
+
     .container {
         display: flex;
 
@@ -43,9 +46,8 @@ const HomeDetails = styled.div`
                 background: var(--background);
                 box-shadow: 1px 3px 9px 0px rgba(0, 0, 0, 0.25);
                 border-radius: 12px;
-                border: 1px solid rgba(0, 0, 0, 0.25);
                 text-decoration: none;
-                color: var(--font)
+                color: var(--font);
             }
 
             .columnDetails {
