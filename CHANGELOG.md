@@ -1,3 +1,12 @@
+# Junho | V24.06
+- Removido página de downloads
+- Adicionado efeito circulas no fundo da página
+- Adicionado icones na navegação
+- Adicionado transparência em ambas abas de navegação
+- Projeto foi alterado para o inglês. Changelogs irão se manter em português - por enquanto.
+- Página de gerador de senhas e encurtador de links em inglês
+- Adicionado efeito gradiente nos links e nos inputs de senha.
+
 # Maio | V24.05
 - Adicionado `bun` ao invés do `yarn` (mais rápido de instalação e atualização)
 - Todos os commits terão data e hora
