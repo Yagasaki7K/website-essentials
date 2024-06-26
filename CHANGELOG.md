@@ -1,5 +1,6 @@
 # Junho | V24.06
 - Removido página de downloads
+- Removido tema claro
 - Adicionado efeito circulas no fundo da página
 - Adicionado icones na navegação
 - Adicionado transparência em ambas abas de navegação
