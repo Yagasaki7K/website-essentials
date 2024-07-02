@@ -1,4 +1,7 @@
-# Junho | V24.06
+# Julho | V24.07.02
+- Adicionado: XIVLauncher - Launcher de Final Fantasy XIV
+
+# Junho | V24.06.02
 - Removido página de downloads
 - Removido tema claro
 - Adicionado efeito circulas no fundo da página

@@ -456,6 +456,14 @@ const items = [
         categories: "entertainment"
     },
     {
+        id: "xivlauncher",
+        name: "XIVLauncher",
+        img: "/list/xivlauncher.png",
+        url: "https://github.com/goatcorp/FFXIVQuickLauncher/releases",
+        corporation: "goatcorp",
+        categories: "entertainment"
+    },
+    {
         id: "yuzu",
         name: "Yuzu",
         img: "/list/yuzu.png",

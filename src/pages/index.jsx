@@ -127,7 +127,7 @@ export default function Home() {
                         <li className="page"><a href="/shortenurl">Shorten URL</a></li>
                         <li className="page"><a href="/password">Password Generator</a></li>
                         <hr />
-                        <p>v24.06.26</p>
+                        <p>v24.07.02</p>
                         <p>Powered by Kalify Inc.</p>
                     </ul>
                 </SidebarMenuDetails>
