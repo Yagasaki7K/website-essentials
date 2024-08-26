@@ -59,7 +59,7 @@ export default function Home() {
 
     return (
         <HomeDetails>
-            <div className="ball"></div>
+            {/* <div className="ball"></div>
             <div
                 className="ball"
                 style={
@@ -80,7 +80,7 @@ export default function Home() {
                         "--speed": "15s",
                     }
                 }
-            ></div>
+            ></div> */}
 
             <NavigationDetails>
                 <a href="/">
