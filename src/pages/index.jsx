@@ -59,7 +59,7 @@ export default function Home() {
 
     return (
         <HomeDetails>
-            {/* <div className="ball"></div>
+            <div className="ball"></div>
             <div
                 className="ball"
                 style={
@@ -80,7 +80,7 @@ export default function Home() {
                         "--speed": "15s",
                     }
                 }
-            ></div> */}
+            ></div>
 
             <NavigationDetails>
                 <a href="/">
@@ -139,7 +139,7 @@ export default function Home() {
                                 <a href={item.url} key={item} target="_blank">
                                     <div className="columnDetails">
                                         <div className="cardDetails">
-                                            <img src={item.img} width={64} height={64} alt={item.name} />
+                                            <img src={item.img} className="item-image" width={64} height={64} alt={item.name} />
                                             <h3>{item.name}</h3>
                                             <h4>{item.corporation}</h4>
                                             {item?.browser ? <img src={item?.browser} width={20} height={20} alt={item.name} /> : null}

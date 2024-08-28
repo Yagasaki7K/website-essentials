@@ -1,3 +1,8 @@
+# Agosto | V24.08
+- Adicionado: Visual C++ Reditributable, Arc Browser e Zen Browser
+- Adicionado: Modo Claro - Apenas para navegadores com essa configuração
+- Arrumado: Tor no Browser - Estava no backup
+
 # Julho | V24.07.02
 - Adicionado: XIVLauncher - Launcher de Final Fantasy XIV
 

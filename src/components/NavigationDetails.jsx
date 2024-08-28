@@ -16,7 +16,7 @@ const NavigationDetails = styled.div`
 
     input {
         border-radius: 25px;
-        border: 1px solid var(--gray);
+        border: 1px solid var(--border);
         width: 60rem;
         height: 40px;
         padding: 0 15px;

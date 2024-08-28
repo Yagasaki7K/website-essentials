@@ -1,5 +1,13 @@
 const items = [
     {
+        id: "arc",
+        name: "Arc Browser",
+        img: "/list/arc.png",
+        url: "https://arc.net/",
+        corporation: "The Browser Company",
+        categories: "browser"
+    },
+    {
         id: "chrome",
         name: "Google Chrome",
         img: "/list/chrome.png",
@@ -77,7 +85,15 @@ const items = [
         img: "/list/tor.png",
         url: "https://www.torproject.org/download/",
         corporation: "Tor Project",
-        categories: "backup"
+        categories: "browser"
+    },
+    {
+        id: "zen",
+        name: "Zen",
+        img: "/list/zen.png",
+        url: "https://www.zen-browser.app/",
+        corporation: "zen-browser",
+        categories: "browser"
     },
     {
         id: "dropbox",
@@ -704,6 +720,14 @@ const items = [
         categories: "utility"
     },
     {
+        id: "advancedsystemcare",
+        name: "Advanced Systemcare",
+        img: "/list/advanced.png",
+        url: "https://www.iobit.com/pt/advanced-systemcare-antivirus.php",
+        corporation: "IObit Software",
+        categories: "utility"
+    },
+    {
         id: "allruntimes",
         name: "All in One Runtimes",
         img: "/list/windowsxp.png",
@@ -784,6 +808,22 @@ const items = [
         categories: "utility"
     },
     {
+        id: "driverbooster",
+        name: "Driver Booster",
+        img: "/list/driverbooster.png",
+        url: "https://www.iobit.com/pt/driver-booster.php",
+        corporation: "IObit Software",
+        categories: "utility"
+    },
+    {
+        id: "eartrumpet",
+        name: "EarTrumpet",
+        img: "/list/eartrumpet.png",
+        url: "https://eartrumpet.app/",
+        corporation: "File-New-Project",
+        categories: "utility"
+    },
+    {
         id: "emclient",
         name: "eM Client",
         img: "/list/emclient.png",
@@ -824,27 +864,11 @@ const items = [
         categories: "utility"
     },
     {
-        id: "advancedsystemcare",
-        name: "Advanced Systemcare",
-        img: "/list/advanced.png",
-        url: "https://www.iobit.com/pt/advanced-systemcare-antivirus.php",
-        corporation: "IObit Software",
-        categories: "utility"
-    },
-    {
-        id: "driverbooster",
-        name: "Driver Booster",
-        img: "/list/driverbooster.png",
-        url: "https://www.iobit.com/pt/driver-booster.php",
-        corporation: "IObit Software",
-        categories: "utility"
-    },
-    {
-        id: "eartrumpet",
-        name: "EarTrumpet",
-        img: "/list/eartrumpet.png",
-        url: "https://eartrumpet.app/",
-        corporation: "File-New-Project",
+        id: "irfanview",
+        name: "Irfanview",
+        img: "/list/irfanview.png",
+        url: "https://www.irfanview.com",
+        corporation: "Irfanview, Freeware",
         categories: "utility"
     },
     {
@@ -853,22 +877,6 @@ const items = [
         img: "/list/malware.png",
         url: "https://www.iobit.com/pt/malware-fighter.php",
         corporation: "IObit Software",
-        categories: "utility"
-    },
-    {
-        id: "uninstaller",
-        name: "Uninstaller",
-        img: "/list/uninstaller.png",
-        url: "https://www.iobit.com/pt/advanceduninstaller.php",
-        corporation: "IObit Software",
-        categories: "utility"
-    },
-    {
-        id: "irfanview",
-        name: "Irfanview",
-        img: "/list/irfanview.png",
-        url: "https://www.irfanview.com",
-        corporation: "Irfanview, Freeware",
         categories: "utility"
     },
     {
@@ -909,14 +917,6 @@ const items = [
         img: "/list/notion.png",
         url: "https://www.notion.so/desktop",
         corporation: "Notion Labs, Inc.",
-        categories: "utility"
-    },
-    {
-        id: "onepassword",
-        name: "1Password",
-        img: "/list/onepassword.png",
-        url: "https://1password.com/downloads/",
-        corporation: "1Password",
         categories: "utility"
     },
     {
@@ -1056,6 +1056,15 @@ const items = [
         categories: "utility"
     },
     {
+        id: "visualc",
+        name: "Visual C++ Redistributable",
+        img: "/list/windowsxp.png",
+        url: "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170",
+        corporation: "Microsoft",
+        categories: "utility"
+    },
+
+    {
         id: "virtualbox",
         name: "VirtualBox Oracle VM",
         img: "/list/virtualbox.png",
@@ -1069,6 +1078,14 @@ const items = [
         img: "/list/winrar.png",
         url: "https://www.win-rar.com/download.html",
         corporation: "Eugene Roshal",
+        categories: "utility"
+    },
+    {
+        id: "uninstaller",
+        name: "Uninstaller",
+        img: "/list/uninstaller.png",
+        url: "https://www.iobit.com/pt/advanceduninstaller.php",
+        corporation: "IObit Software",
         categories: "utility"
     },
     {

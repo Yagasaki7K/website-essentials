@@ -73,6 +73,16 @@ const HomeDetails = styled.div`
 
                     cursor: pointer;
 
+                    .item-image {
+                        object-fit: cover;
+                        width: 64px;
+                        height: 64px;
+
+                        &:hover {
+                            transform: scale(1);
+                        }
+                    }
+
                     h3, h4 {
                         font-family: Roboto;
                         font-weight: normal;
