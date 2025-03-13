@@ -56,31 +56,75 @@ export default function Home() {
         }
     }, [uwuUrl]);
 
+    // Função para obter informações de CPU
+    function getCPUInfo() {
+        return navigator.hardwareConcurrency || null;
+    }
+
+    // Função para obter informações de memória (apenas Chrome/Edge)
+    function getMemoryInfo() {
+        if ('memory' in performance) {
+            const memory = performance.memory;
+            const totalHeapMB = Number((memory.totalJSHeapSize / 1024 / 1024).toFixed(2));
+            const usedHeapMB = Number((memory.usedJSHeapSize / 1024 / 1024).toFixed(2));
+            const heapLimitMB = Number((memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2));
+            return { totalHeapMB, usedHeapMB, heapLimitMB };
+        }
+        return null;
+    }
+
+    // Função principal para estimar a memória do dispositivo
+    function estimateDeviceMemory() {
+        const cores = getCPUInfo();
+        const memoryInfo = getMemoryInfo();
+        let estimatedRAM
+
+        if (memoryInfo) {
+            const { heapLimitMB } = memoryInfo;
+            if (heapLimitMB < 1500) {
+                estimatedRAM = 'Provavelmente menos de 4 GB';
+            } else if (heapLimitMB < 3000) {
+                estimatedRAM = 'Provavelmente entre 4 e 8 GB';
+            } else {
+                estimatedRAM = 'Provavelmente 16 GB ou mais';
+            }
+        } else {
+            estimatedRAM = 'Informação de memória não disponível neste navegador';
+        }
+
+        return { cores, memoryInfo, estimatedRAM };
+    }
+
+    // Exemplo de uso
+    const deviceInfo = estimateDeviceMemory();
 
     return (
         <HomeDetails>
-            <div className="ball"></div>
-            <div
-                className="ball"
-                style={
-                    {
-                        "--delay": "-12s",
-                        "--size": "0.35",
-                        "--speed": "25s",
+            {deviceInfo.estimatedRAM === 'Provavelmente 16 GB ou mais' ? 
+            <>
+                <div className="ball"></div>
+                <div
+                    className="ball"
+                    style={
+                        {
+                            "--delay": "-12s",
+                            "--size": "0.35",
+                            "--speed": "25s",
+                        }
                     }
-                }
-            ></div>
+                ></div>
 
-            <div
-                className="ball"
-                style={
-                    {
-                        "--delay": "-10s",
-                        "--size": "0.3",
-                        "--speed": "15s",
+                <div
+                    className="ball"
+                    style={
+                        {
+                            "--delay": "-10s",
+                            "--size": "0.3",
+                            "--speed": "15s",
+                        }
                     }
-                }
-            ></div>
+                ></div>
+            </> : null}
 
             <NavigationDetails>
                 <a href="/">
@@ -127,7 +171,7 @@ export default function Home() {
                         <li className="page"><a href="/shortenurl">Shorten URL</a></li>
                         <li className="page"><a href="/password">Password Generator</a></li>
                         <hr />
-                        <p>v24.07.02</p>
+                        <p>v25.03</p>
                         <p>Powered by Kalify Inc.</p>
                     </ul>
                 </SidebarMenuDetails>
