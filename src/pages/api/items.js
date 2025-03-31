@@ -160,6 +160,14 @@ const items = [
         categories: "development"
     },
     {
+        id: "cursor",
+        name: "Cursor",
+        img: "/list/cursor.png",
+        url: "http://cursor.com/",
+        corporation: "Anysphere",
+        categories: "development"
+    },
+    {
         id: "brackets",
         name: "Brackets",
         img: "/list/brackets.png",
@@ -269,6 +277,14 @@ const items = [
         img: "/list/sublime.png",
         url: "https://www.sublimetext.com/download",
         corporation: "Nagware",
+        categories: "development"
+    },
+    {
+        id: "trae",
+        name: "Trae IDE",
+        img: "/list/trae.png",
+        url: "https://www.trae.ai/",
+        corporation: "Trae.AI",
         categories: "development"
     },
     {

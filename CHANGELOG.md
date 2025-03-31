@@ -1,5 +1,6 @@
 # Março | V25.03
 - Adicionado: Sistema de identificação de usabilidade do computador, dessa maneira, o efeito de animação só estará disponível para quem possuí 16GB de RAM ou superior, com essa técnica, evita gargalos e possíveis travamentos em computadores com baixo desempenho gráfico ou com baixo desempenho de processamento.
+- Adicionado: Cursor e Trae como IDEs em Desenvolvimento
 
 # Agosto | V24.08
 - Adicionado: Visual C++ Reditributable, Arc Browser e Zen Browser
