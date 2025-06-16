@@ -61,7 +61,7 @@ export default function Home() {
         return navigator.hardwareConcurrency || null;
     }
 
-    // Função para obter informações de memória (apenas Chrome/Edge)
+
     function getMemoryInfo() {
         if ('memory' in performance) {
             const memory = performance.memory;
@@ -73,58 +73,56 @@ export default function Home() {
         return null;
     }
 
-    // Função principal para estimar a memória do dispositivo
+
     function estimateDeviceMemory() {
         const cores = getCPUInfo();
-        const memoryInfo = getMemoryInfo();
-        let estimatedRAM
+        let estimatedRAM;
 
-        if (memoryInfo) {
-            const { heapLimitMB } = memoryInfo;
-            if (heapLimitMB < 1500) {
-                estimatedRAM = 'Provavelmente menos de 4 GB';
-            } else if (heapLimitMB < 3000) {
-                estimatedRAM = 'Provavelmente entre 4 e 8 GB';
-            } else {
-                estimatedRAM = 'Provavelmente 16 GB ou mais';
-            }
+        if (typeof navigator.deviceMemory === 'number') {
+            estimatedRAM = Math.floor(navigator.deviceMemory);
+        } else if (navigator.deviceMemory) {
+            estimatedRAM = Math.floor(Number(navigator.deviceMemory));
         } else {
-            estimatedRAM = 'Informação de memória não disponível neste navegador';
+            const memoryInfo = getMemoryInfo();
+            if (memoryInfo) {
+                const { heapLimitMB } = memoryInfo;
+                estimatedRAM = Math.floor(heapLimitMB / 1024);
+            } else {
+                estimatedRAM = null;
+            }
         }
-
-        return { cores, memoryInfo, estimatedRAM };
+        return { cores, estimatedRAM };
     }
 
-    // Exemplo de uso
+
     const deviceInfo = estimateDeviceMemory();
+
+    const showBallAnimation =
+        typeof deviceInfo.estimatedRAM === 'number' && deviceInfo.estimatedRAM > 12;
 
     return (
         <HomeDetails>
-            {deviceInfo.estimatedRAM === 'Provavelmente 16 GB ou mais' ? 
-            <>
-                <div className="ball"></div>
-                <div
-                    className="ball"
-                    style={
-                        {
+            {showBallAnimation ? (
+                <>
+                    <div className="ball"></div>
+                    <div
+                        className="ball"
+                        style={{
                             "--delay": "-12s",
                             "--size": "0.35",
                             "--speed": "25s",
-                        }
-                    }
-                ></div>
-
-                <div
-                    className="ball"
-                    style={
-                        {
+                        }}
+                    ></div>
+                    <div
+                        className="ball"
+                        style={{
                             "--delay": "-10s",
                             "--size": "0.3",
                             "--speed": "15s",
-                        }
-                    }
-                ></div>
-            </> : null}
+                        }}
+                    ></div>
+                </>
+            ) : null}
 
             <NavigationDetails>
                 <a href="/">
@@ -197,3 +195,6 @@ export default function Home() {
         </HomeDetails>
     );
 }
+
+
+
