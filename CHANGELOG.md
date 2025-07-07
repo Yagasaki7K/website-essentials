@@ -1,3 +1,11 @@
+# Julho | V25.07
+- Removido: Twitter na navegação - não estamos utilizando mais (mais informações pelo @Yagasaki7K ou Discord)
+- Adicionado: Spicetify
+- Adicionado: JetBrains IDE
+- Adicionado: Proton Mail
+- Adicionado: WPS Office
+- Adicionado: Vesktop - Uma alternativa mais rápida e leve do que o Discord original
+
 # Março | V25.03
 - Adicionado: Sistema de identificação de usabilidade do computador, dessa maneira, o efeito de animação só estará disponível para quem possuí 16GB de RAM ou superior, com essa técnica, evita gargalos e possíveis travamentos em computadores com baixo desempenho gráfico ou com baixo desempenho de processamento.
 - Adicionado: Cursor e Trae como IDEs em Desenvolvimento
