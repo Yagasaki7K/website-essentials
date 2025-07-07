@@ -140,10 +140,6 @@ export default function Home() {
                 </div>
 
                 <div className="navItems">
-                    <a href="https://twitter.com/KalifyInc" target="_blank">
-                        <i className="uil uil-twitter-alt"></i>
-                    </a>
-
                     <a href="https://github.com/Yagasaki7K/website-essentials" target="_blank">
                         <i className="uil uil-github-alt"></i>
                     </a>
@@ -169,7 +165,7 @@ export default function Home() {
                         <li className="page"><a href="/shortenurl">Shorten URL</a></li>
                         <li className="page"><a href="/password">Password Generator</a></li>
                         <hr />
-                        <p>v25.03</p>
+                        <p>v25.07</p>
                         <p>Powered by Kalify Inc.</p>
                     </ul>
                 </SidebarMenuDetails>

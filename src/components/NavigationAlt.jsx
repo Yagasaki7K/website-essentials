@@ -28,10 +28,6 @@ const NavigationAlt = () => {
             </a>
 
             <div className="navItems">
-                <a href="https://twitter.com/KalifyInc" target="_blank">
-                    <i className="uil uil-twitter-alt"></i>
-                </a>
-
                 <a href="https://github.com/Yagasaki7K/website-essentials" target="_blank">
                     <i className="uil uil-github-alt"></i>
                 </a>

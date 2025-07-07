@@ -232,6 +232,14 @@ const items = [
         categories: "development"
     },
     {
+        id: "jetbrains",
+        name: "JetBrains",
+        img: "/list/jetbrains.png",
+        url: "https://www.jetbrains.com/ides/#choose-your-ide",
+        corporation: "JetBrains s.r.o.",
+        categories: "development"
+    },
+    {
         id: "netBeans",
         name: "NetBeans",
         img: "/list/netbeans.png",
@@ -445,6 +453,14 @@ const items = [
         img: "/list/rpcs3.png",
         url: "https://rpcs3.net/download",
         corporation: "DH and Hykem",
+        categories: "entertainment"
+    },
+    {
+        id: "spicetify",
+        name: "Spicetify",
+        img: "/list/spicetify.png",
+        url: "https://spicetify.app/docs/getting-started/",
+        corporation: "Spicetify",
         categories: "entertainment"
     },
     {
@@ -928,22 +944,6 @@ const items = [
         categories: "utility"
     },
     {
-        id: "notion",
-        name: "Notion",
-        img: "/list/notion.png",
-        url: "https://www.notion.so/desktop",
-        corporation: "Notion Labs, Inc.",
-        categories: "utility"
-    },
-    {
-        id: "powertoys",
-        name: "Microsoft PowerToys",
-        img: "/list/powertoys.png",
-        url: "https://github.com/microsoft/PowerToys/releases",
-        corporation: "Microsoft Corporation",
-        categories: "utility"
-    },
-    {
         id: "modernflyouts",
         name: "ModernFlyouts",
         img: "/list/modernflyouts.png",
@@ -952,19 +952,19 @@ const items = [
         categories: "utility"
     },
     {
-        id: "thunderbird",
-        name: "Mozilla Thurderbird",
-        img: "/list/thunderbird.png",
-        url: "https://www.mozilla.org/pt-BR/thunderbird/",
-        corporation: "Mozilla Foundation",
-        categories: "utility"
-    },
-    {
         id: "msiafterburner",
         name: "MSI Afterburner",
         img: "/list/msiafterburner.png",
         url: "https://www.msi.com/Landing/afterburner/graphics-cards",
         corporation: "Micro-Star International",
+        categories: "utility"
+    },
+    {
+        id: "notion",
+        name: "Notion",
+        img: "/list/notion.png",
+        url: "https://www.notion.so/desktop",
+        corporation: "Notion Labs, Inc.",
         categories: "utility"
     },
     {
@@ -997,6 +997,22 @@ const items = [
         img: "/list/pantherbar.png",
         url: "https://pantherbar-app.com/",
         corporation: "Johannes Tscholl",
+        categories: "utility"
+    },
+    {
+        id: "powertoys",
+        name: "Microsoft PowerToys",
+        img: "/list/powertoys.png",
+        url: "https://github.com/microsoft/PowerToys/releases",
+        corporation: "Microsoft Corporation",
+        categories: "utility"
+    },
+    {
+        id: "protonmail",
+        name: "Proton Mail",
+        img: "/list/protonmail.png",
+        url: "https://proton.me/mail/download",
+        corporation: "Proton AG",
         categories: "utility"
     },
     {
@@ -1056,6 +1072,14 @@ const items = [
         categories: "utility"
     },
     {
+        id: "thunderbird",
+        name: "Mozilla Thurderbird",
+        img: "/list/thunderbird.png",
+        url: "https://www.mozilla.org/pt-BR/thunderbird/",
+        corporation: "Mozilla Foundation",
+        categories: "utility"
+    },
+    {
         id: "unetbootin",
         name: "Unetbootin",
         img: "/list/unetbootin.png",
@@ -1086,6 +1110,14 @@ const items = [
         img: "/list/virtualbox.png",
         url: "https://www.virtualbox.org/wiki/Downloads",
         corporation: "Oracle Corporation",
+        categories: "utility"
+    },
+    {
+        id: "wps",
+        name: "WPS Office",
+        img: "/list/wpsoffice.png",
+        url: "https://www.wps.com/download/",
+        corporation: "Kingsoft",
         categories: "utility"
     },
     {
@@ -1174,6 +1206,14 @@ const items = [
         img: "/list/telegram.png",
         url: "https://telegram.org/apps",
         corporation: "Telegram Messenger",
+        categories: 'communication'
+    },
+    {
+        id: "vesktop",
+        name: "Vesktop",
+        img: "/list/vesktop.png",
+        url: "https://github.com/Vencord/Vesktop",
+        corporation: "Vencord",
         categories: 'communication'
     },
     {
