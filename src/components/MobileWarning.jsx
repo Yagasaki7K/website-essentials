@@ -1,19 +1,16 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const MobileWarning = () => {
-    return (
-        <ContainerDetails>
-            <img src="/Logo.png" width={350} />
-            <p>
-                Desculpe, mas o uso é exclusivo para Desktop!
-            </p>
+	return (
+		<ContainerDetails>
+			<img src="/Logo.png" width={350} />
+			<p>Desculpe, mas o uso é exclusivo para Desktop!</p>
+		</ContainerDetails>
+	);
+};
 
-        </ContainerDetails>
-    )
-}
-
-export default MobileWarning
+export default MobileWarning;
 
 export const ContainerDetails = styled.div`
     display: flex;

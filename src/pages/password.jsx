@@ -1,134 +1,165 @@
-import React, { useEffect, useState } from 'react'
-import styled from 'styled-components'
-import Link from 'next/link'
-import Image from 'next/image'
-import NavigationAlt from '@/components/NavigationAlt'
-import { useRouter } from 'next/router'
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import Link from "next/link";
+import Image from "next/image";
+import NavigationAlt from "@/components/NavigationAlt";
+import { useRouter } from "next/router";
 
 const PasswordPage = () => {
-    const [passLength, setPassLength] = useState(16);
-    const [message, setMessage] = useState('Copy your new password');
+	const [passLength, setPassLength] = useState(16);
+	const [message, setMessage] = useState("Copy your new password");
 
-    function callTwoFunctions() {
-        slider();
-        getPassword();
-    }
+	function callTwoFunctions() {
+		slider();
+		getPassword();
+	}
 
-    function slider() {
-        let myRange = document.getElementById('myRange');
-        setPassLength(myRange.value);
-    }
+	function slider() {
+		let myRange = document.getElementById("myRange");
+		setPassLength(myRange.value);
+	}
 
-    const toggleMessage = () => {
-        setMessage('Copied!');
+	const toggleMessage = () => {
+		setMessage("Copied!");
 
-        setTimeout(() => {
-            setMessage('Copy your new password')
-        }, 2000);
-    };
+		setTimeout(() => {
+			setMessage("Copy your new password");
+		}, 2000);
+	};
 
-    function getPassword() {
-        var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
-        var passwordLength = passLength;
-        var password = "";
+	function getPassword() {
+		var chars =
+			"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
+		var passwordLength = passLength;
+		var password = "";
 
-        for (var i = 0; i < passwordLength; i++) {
-            var randomNumber = Math.floor(Math.random() * chars.length);
-            password += chars.substring(randomNumber, randomNumber + 1);
-        }
+		for (var i = 0; i < passwordLength; i++) {
+			var randomNumber = Math.floor(Math.random() * chars.length);
+			password += chars.substring(randomNumber, randomNumber + 1);
+		}
 
-        document.getElementById('password').value = password
+		document.getElementById("password").value = password;
 
-        /* Reset the alert the copied text */
-        var tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copiar!";
-    }
+		/* Reset the alert the copied text */
+		var tooltip = document.getElementById("myTooltip");
+		tooltip.innerHTML = "Copiar!";
+	}
 
-    function copyPassword() {
-        /* Get the text field */
-        var copyText = document.getElementById("password");
+	function copyPassword() {
+		/* Get the text field */
+		var copyText = document.getElementById("password");
 
-        /* Select the text field */
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+		/* Select the text field */
+		copyText.select();
+		copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
-        /* Copy the text inside the text field */
-        navigator.clipboard.writeText(copyText.value);
+		/* Copy the text inside the text field */
+		navigator.clipboard.writeText(copyText.value);
 
-        /* Alert the copied text */
-        var tooltip = document.getElementById("myTooltip");
-        tooltip.innerHTML = "Copiado!";
-    }
+		/* Alert the copied text */
+		var tooltip = document.getElementById("myTooltip");
+		tooltip.innerHTML = "Copiado!";
+	}
 
-    const router = useRouter();
-    const uwuUrl = router.asPath;
-    const [uwu, setUwu] = useState(false);
+	const router = useRouter();
+	const uwuUrl = router.asPath;
+	const [uwu, setUwu] = useState(false);
 
-    useEffect(() => {
-        if (uwuUrl !== undefined && uwuUrl !== null) {
-            if (uwuUrl.includes('uwu=true')) {
-                setUwu(true);
-            } else {
-                setUwu(false);
-            }
-        }
-    }, [uwuUrl]);
+	useEffect(() => {
+		if (uwuUrl !== undefined && uwuUrl !== null) {
+			if (uwuUrl.includes("uwu=true")) {
+				setUwu(true);
+			} else {
+				setUwu(false);
+			}
+		}
+	}, [uwuUrl]);
 
-    return (
-        <>
+	return (
+		<>
+			<NavigationAlt />
+			<Password>
+				<Link href="/">
+					{uwu ? (
+						<Image src="/uwu.png" width={460} height={130} alt="Logotipo" />
+					) : (
+						<Image src="/Logo.png" width={460} height={100} alt="Logotipo" />
+					)}
+				</Link>
 
-            <NavigationAlt />
-            <Password>
-                <Link href="/">
-                    {
-                        uwu ? (<Image src="/uwu.png" width={460} height={130} alt="Logotipo" />) : (
-                            <Image src="/Logo.png" width={460} height={100} alt="Logotipo" />)
-                    }</Link>
+				<hr />
 
-                <hr />
+				<h2>Generate a secure password</h2>
+				<div className="break" />
 
-                <h2>Generate a secure password</h2>
-                <div className="break" />
+				<p>
+					Use our password generator to instantly create a random, secure
+					password for your daily use. We recommend using a secondary
+					application like BitWarden or 1Password to store your passwords.
+				</p>
+				<div className="break" />
 
-                <p>
-                    Use our password generator to instantly create a random, secure password for your daily use. We recommend using a secondary application like BitWarden or 1Password to store your passwords.
-                </p>
-                <div className="break" />
+				<input
+					type="range"
+					min="8"
+					max="64"
+					value={passLength}
+					onChange={callTwoFunctions}
+					id="myRange"
+					className="slider"
+				/>
 
-                <input type="range" min="8" max="64" value={passLength} onChange={callTwoFunctions} id="myRange" className="slider" />
+				<h3>Size: {passLength} caracteres</h3>
 
-                <h3>Size: {passLength} caracteres</h3>
+				<input
+					type="text"
+					placeholder="Copy your new password"
+					id="password"
+					readonly=""
+				/>
+				<div className="break" />
 
-                <input type="text" placeholder="Copy your new password" id="password" readonly="" />
-                <div className="break" />
+				<button id="btnPassword" onClick={getPassword}>
+					Generate your password
+				</button>
 
-                <button id="btnPassword" onClick={getPassword}>Generate your password</button>
+				{message === "Copy your new password" ? (
+					<div className="tooltip">
+						<button
+							id="btnCopy"
+							className="btnCopy"
+							onClick={() => {
+								copyPassword(), toggleMessage();
+							}}
+						>
+							<span className="tooltiptext" id="myTooltip">
+								Copy!
+							</span>
+							{message}
+						</button>
+					</div>
+				) : (
+					<div className="tooltip">
+						<button
+							id="btnCopy"
+							className="copied"
+							onClick={() => {
+								copyPassword(), toggleMessage();
+							}}
+						>
+							<span className="tooltiptext" id="myTooltip">
+								Copy!
+							</span>
+							{message}
+						</button>
+					</div>
+				)}
+			</Password>
+		</>
+	);
+};
 
-                {
-                    message === 'Copy your new password' ?
-                        (
-                            <div className="tooltip">
-                                <button id="btnCopy" className="btnCopy" onClick={() => { copyPassword(), toggleMessage() }}>
-                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
-                                    {message}
-                                </button>
-                            </div>
-                        ) : (
-                            <div className="tooltip">
-                                <button id="btnCopy" className="copied" onClick={() => { copyPassword(), toggleMessage() }}>
-                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
-                                    {message}
-                                </button>
-                            </div>
-                        )
-                }
-
-            </Password>
-        </>
-    )
-}
-
-export default PasswordPage
+export default PasswordPage;
 
 const Password = styled.div`
     display: block;
@@ -299,4 +330,4 @@ const Password = styled.div`
         background: var(--purple);
         cursor: pointer;
     }
-`
+`;

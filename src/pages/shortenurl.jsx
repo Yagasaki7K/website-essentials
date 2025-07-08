@@ -1,152 +1,180 @@
-import React, { useEffect, useState } from 'react'
-import styled from 'styled-components'
-import Link from 'next/link'
-import Image from 'next/image'
-import NavigationAlt from '@/components/NavigationAlt'
-import { useRouter } from 'next/router'
-import { toast } from 'sonner'
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import Link from "next/link";
+import Image from "next/image";
+import NavigationAlt from "@/components/NavigationAlt";
+import { useRouter } from "next/router";
+import { toast } from "sonner";
 
 const ShortenPage = () => {
-    const [message, setMessage] = useState('Copy your shortened link!');
-    const [newUrl, setNewUrl] = useState('');
-    const [shortenUrl, setShortenUrl] = useState('');
-    const [backupUrl, setBackupUrl] = useState('');
+	const [message, setMessage] = useState("Copy your shortened link!");
+	const [newUrl, setNewUrl] = useState("");
+	const [shortenUrl, setShortenUrl] = useState("");
+	const [backupUrl, setBackupUrl] = useState("");
 
-    const toggleMessage = () => {
-        setMessage('Copied!');
+	const toggleMessage = () => {
+		setMessage("Copied!");
 
-        setTimeout(() => {
-            setMessage('Copy your shortened link!')
-        }, 2000);
-    };
+		setTimeout(() => {
+			setMessage("Copy your shortened link!");
+		}, 2000);
+	};
 
-    function getNewUrlShorten() {
-        var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ";
-        var url = "";
+	function getNewUrlShorten() {
+		var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ";
+		var url = "";
 
-        for (var i = 0; i < 8; i++) {
-            var randomNumber = Math.floor(Math.random() * chars.length);
-            url += chars.substring(randomNumber, randomNumber + 1);
-        }
+		for (var i = 0; i < 8; i++) {
+			var randomNumber = Math.floor(Math.random() * chars.length);
+			url += chars.substring(randomNumber, randomNumber + 1);
+		}
 
-        if (newUrl === '' || newUrl === null) {
-            toast.error('Enter a URL to be shortened!');
-        }
+		if (newUrl === "" || newUrl === null) {
+			toast.error("Enter a URL to be shortened!");
+		}
 
-        if (backupUrl === shortenUrl) {
-            toast.warning('URL is already shortened! Your link is copied to your clipboard.');
-            navigator.clipboard.writeText(backupUrl);
-        } else {
-            const data = new URLSearchParams({
-                url: newUrl,
-                alias: url,
-                'max-clicks': '200'
-            });
+		if (backupUrl === shortenUrl) {
+			toast.warning(
+				"URL is already shortened! Your link is copied to your clipboard.",
+			);
+			navigator.clipboard.writeText(backupUrl);
+		} else {
+			const data = new URLSearchParams({
+				url: newUrl,
+				alias: url,
+				"max-clicks": "200",
+			});
 
-            fetch('https://spoo.me/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'Accept': 'application/json',
-                },
-                body: data
-            })
-                .then(response => response.json())
-                .then(data => {
-                    console.log(data);
-                    setShortenUrl(data.short_url);
-                    setBackupUrl(data.short_url);
+			fetch("https://spoo.me/", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/x-www-form-urlencoded",
+					Accept: "application/json",
+				},
+				body: data,
+			})
+				.then((response) => response.json())
+				.then((data) => {
+					console.log(data);
+					setShortenUrl(data.short_url);
+					setBackupUrl(data.short_url);
 
-                    if (shortenUrl) {
-                        toast.success('URL is shortened!');
-                        navigator.clipboard.writeText(shortenUrl);
-                    }
-                })
-                .catch(error => {
-                    console.error(error);
-                });
+					if (shortenUrl) {
+						toast.success("URL is shortened!");
+						navigator.clipboard.writeText(shortenUrl);
+					}
+				})
+				.catch((error) => {
+					console.error(error);
+				});
 
-            if (backupUrl === '') {
-                console.log('Generated URL is failed');
-            }
+			if (backupUrl === "") {
+				console.log("Generated URL is failed");
+			}
 
-            copyUrl(shortenUrl)
-        }
-    }
+			copyUrl(shortenUrl);
+		}
+	}
 
-    function copyUrl(url) {
-        if (!url) {
-            toast.error('Enter a URL to be shortened');
-        } else {
-            navigator.clipboard.writeText(url);
+	function copyUrl(url) {
+		if (!url) {
+			toast.error("Enter a URL to be shortened");
+		} else {
+			navigator.clipboard.writeText(url);
 
-            /* Alert the copied text */
-            var tooltip = document.getElementById("myTooltip");
-            tooltip.innerHTML = "Copiado!";
-        }
-    }
+			/* Alert the copied text */
+			var tooltip = document.getElementById("myTooltip");
+			tooltip.innerHTML = "Copiado!";
+		}
+	}
 
-    const router = useRouter();
-    const uwuUrl = router.asPath;
-    const [uwu, setUwu] = useState(false);
+	const router = useRouter();
+	const uwuUrl = router.asPath;
+	const [uwu, setUwu] = useState(false);
 
-    useEffect(() => {
-        if (uwuUrl) {
-            setUwu(uwuUrl.includes('uwu=true'));
-        }
-    }, [uwuUrl]);
+	useEffect(() => {
+		if (uwuUrl) {
+			setUwu(uwuUrl.includes("uwu=true"));
+		}
+	}, [uwuUrl]);
 
-    return (
-        <>
-            <NavigationAlt />
-            <Password>
-                <Link href="/">
-                    {
-                        uwu ? (<Image src="/uwu.png" width={460} height={130} alt="Logotipo" />) : (
-                            <Image src="/Logo.png" width={460} height={100} alt="Logotipo" />)
-                    }
-                </Link>
+	return (
+		<>
+			<NavigationAlt />
+			<Password>
+				<Link href="/">
+					{uwu ? (
+						<Image src="/uwu.png" width={460} height={130} alt="Logotipo" />
+					) : (
+						<Image src="/Logo.png" width={460} height={100} alt="Logotipo" />
+					)}
+				</Link>
 
-                <hr />
+				<hr />
 
-                <h2>Generate a shorter link!</h2>
-                <div className="break" />
+				<h2>Generate a shorter link!</h2>
+				<div className="break" />
 
-                <p>Use our link shortener to make your daily life easier and avoid sending long e-commerce or even massive reference site links.
-                </p>
+				<p>
+					Use our link shortener to make your daily life easier and avoid
+					sending long e-commerce or even massive reference site links.
+				</p>
 
-                <div className="break" />
+				<div className="break" />
 
-                <input type="text" name="" id="" placeholder="Enter a URL to be shortened" onChange={(e) => setNewUrl(e.target.value)} />
+				<input
+					type="text"
+					name=""
+					id=""
+					placeholder="Enter a URL to be shortened"
+					onChange={(e) => setNewUrl(e.target.value)}
+				/>
 
-                <div className="break" />
+				<div className="break" />
 
-                <button id="btnPassword" onClick={getNewUrlShorten}>Generate URL</button>
+				<button id="btnPassword" onClick={getNewUrlShorten}>
+					Generate URL
+				</button>
 
-                {
-                    message === 'Copy your shortened link!' ?
-                        (
-                            <div className="tooltip">
-                                <button id="btnCopy" className="btnCopy" onClick={() => { copyUrl(backupUrl); toggleMessage(); }}>
-                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
-                                    {message}
-                                </button>
-                            </div>
-                        ) : (
-                            <div className="tooltip">
-                                <button id="btnCopy" className="copied" onClick={() => { copyUrl(backupUrl); toggleMessage(); }}>
-                                    <span className="tooltiptext" id="myTooltip">Copy!</span>
-                                    {message}
-                                </button>
-                            </div>
-                        )
-                }
-            </Password>
-        </>
-    )
-}
+				{message === "Copy your shortened link!" ? (
+					<div className="tooltip">
+						<button
+							id="btnCopy"
+							className="btnCopy"
+							onClick={() => {
+								copyUrl(backupUrl);
+								toggleMessage();
+							}}
+						>
+							<span className="tooltiptext" id="myTooltip">
+								Copy!
+							</span>
+							{message}
+						</button>
+					</div>
+				) : (
+					<div className="tooltip">
+						<button
+							id="btnCopy"
+							className="copied"
+							onClick={() => {
+								copyUrl(backupUrl);
+								toggleMessage();
+							}}
+						>
+							<span className="tooltiptext" id="myTooltip">
+								Copy!
+							</span>
+							{message}
+						</button>
+					</div>
+				)}
+			</Password>
+		</>
+	);
+};
 
-export default ShortenPage
+export default ShortenPage;
 
 const Password = styled.div`
     display: block;
@@ -315,4 +343,4 @@ const Password = styled.div`
         background: var(--purple);
         cursor: pointer;
     }
-`
+`;

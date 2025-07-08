@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const NavigationDetails = styled.div`
     display: flex;
@@ -83,6 +83,6 @@ const NavigationDetails = styled.div`
             margin-top: 40px;
         }
     }
-`
+`;
 
-export default NavigationDetails
+export default NavigationDetails;

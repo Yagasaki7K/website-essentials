@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const SidebarMenuDetails = styled.div`
     padding: 2.5rem 4rem 0rem 3rem;
@@ -50,6 +50,6 @@ const SidebarMenuDetails = styled.div`
             text-decoration: none;
         }
     }
-`
+`;
 
-export default SidebarMenuDetails
+export default SidebarMenuDetails;
