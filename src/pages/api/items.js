@@ -752,6 +752,14 @@ const items = [
 		categories: "utility",
 	},
 	{
+		id: "8bitdo",
+		name: "8BitDo Ultimate Software X",
+		img: "/list/8bitdo.png",
+		url: "https://apps.microsoft.com/detail/9pmc9mn3zz85?hl=en-GB&gl=BR",
+		corporation: "Shenzhen 8BitDo",
+		categories: "utility",
+	},
+	{
 		id: "advancedsystemcare",
 		name: "Advanced Systemcare",
 		img: "/list/advanced.png",

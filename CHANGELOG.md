@@ -1,3 +1,6 @@
+# Agosto | V25.08
+- Adicionado: 8BitDo Ultimate Software X
+
 # Julho | V25.07
 - Removido: Twitter na navegação - não estamos utilizando mais (mais informações pelo @Yagasaki7K ou Discord)
 - Adicionado: Spicetify
