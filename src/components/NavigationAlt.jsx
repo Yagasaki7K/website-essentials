@@ -19,26 +19,14 @@ const NavigationAlt = () => {
 
 	return (
 		<NavigationDetails>
-			<a href="/">
-				{uwu ? (
-					<img src="/uwu.png" alt="Web Essentials" />
-				) : (
-					<img src="/Logo.png" alt="Web Essentials" />
-				)}
-			</a>
+			<a href="/">{uwu ? <img src="/uwu.png" alt="Web Essentials" /> : <img src="/Logo.png" alt="Web Essentials" />}</a>
 
 			<div className="navItems">
-				<a
-					href="https://github.com/Yagasaki7K/website-essentials"
-					target="_blank"
-				>
+				<a href="https://github.com/Yagasaki7K/website-essentials" target="_blank">
 					<i className="uil uil-github-alt"></i>
 				</a>
 
-				<a
-					href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL"
-					target="_blank"
-				>
+				<a href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank">
 					<i className="uil uil-paypal"></i>
 				</a>
 			</div>

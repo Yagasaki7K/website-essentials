@@ -34,9 +34,7 @@ const ShortenPage = () => {
 		}
 
 		if (backupUrl === shortenUrl) {
-			toast.warning(
-				"URL is already shortened! Your link is copied to your clipboard.",
-			);
+			toast.warning("URL is already shortened! Your link is copied to your clipboard.");
 			navigator.clipboard.writeText(backupUrl);
 		} else {
 			const data = new URLSearchParams({
@@ -102,33 +100,18 @@ const ShortenPage = () => {
 		<>
 			<NavigationAlt />
 			<Password>
-				<Link href="/">
-					{uwu ? (
-						<Image src="/uwu.png" width={460} height={130} alt="Logotipo" />
-					) : (
-						<Image src="/Logo.png" width={460} height={100} alt="Logotipo" />
-					)}
-				</Link>
+				<Link href="/">{uwu ? <Image src="/uwu.png" width={460} height={130} alt="Logotipo" /> : <Image src="/Logo.png" width={460} height={100} alt="Logotipo" />}</Link>
 
 				<hr />
 
 				<h2>Generate a shorter link!</h2>
 				<div className="break" />
 
-				<p>
-					Use our link shortener to make your daily life easier and avoid
-					sending long e-commerce or even massive reference site links.
-				</p>
+				<p>Use our link shortener to make your daily life easier and avoid sending long e-commerce or even massive reference site links.</p>
 
 				<div className="break" />
 
-				<input
-					type="text"
-					name=""
-					id=""
-					placeholder="Enter a URL to be shortened"
-					onChange={(e) => setNewUrl(e.target.value)}
-				/>
+				<input type="text" name="" id="" placeholder="Enter a URL to be shortened" onChange={(e) => setNewUrl(e.target.value)} />
 
 				<div className="break" />
 

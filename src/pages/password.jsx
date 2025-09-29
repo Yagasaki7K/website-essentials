@@ -28,8 +28,7 @@ const PasswordPage = () => {
 	};
 
 	function getPassword() {
-		var chars =
-			"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
+		var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
 		var passwordLength = passLength;
 		var password = "";
 
@@ -79,13 +78,7 @@ const PasswordPage = () => {
 		<>
 			<NavigationAlt />
 			<Password>
-				<Link href="/">
-					{uwu ? (
-						<Image src="/uwu.png" width={460} height={130} alt="Logotipo" />
-					) : (
-						<Image src="/Logo.png" width={460} height={100} alt="Logotipo" />
-					)}
-				</Link>
+				<Link href="/">{uwu ? <Image src="/uwu.png" width={460} height={130} alt="Logotipo" /> : <Image src="/Logo.png" width={460} height={100} alt="Logotipo" />}</Link>
 
 				<hr />
 
@@ -93,30 +86,16 @@ const PasswordPage = () => {
 				<div className="break" />
 
 				<p>
-					Use our password generator to instantly create a random, secure
-					password for your daily use. We recommend using a secondary
-					application like BitWarden or 1Password to store your passwords.
+					Use our password generator to instantly create a random, secure password for your daily use. We recommend using a secondary application like BitWarden or 1Password to
+					store your passwords.
 				</p>
 				<div className="break" />
 
-				<input
-					type="range"
-					min="8"
-					max="64"
-					value={passLength}
-					onChange={callTwoFunctions}
-					id="myRange"
-					className="slider"
-				/>
+				<input type="range" min="8" max="64" value={passLength} onChange={callTwoFunctions} id="myRange" className="slider" />
 
 				<h3>Size: {passLength} caracteres</h3>
 
-				<input
-					type="text"
-					placeholder="Copy your new password"
-					id="password"
-					readonly=""
-				/>
+				<input type="text" placeholder="Copy your new password" id="password" readonly="" />
 				<div className="break" />
 
 				<button id="btnPassword" onClick={getPassword}>

@@ -26,27 +26,14 @@ export default function Home() {
 	function handleSearch(event) {
 		const query = event.target.value;
 
-		const filteredItemsBySearch =
-			query !== ""
-				? items.filter(
-						(item) =>
-							item.name &&
-							item.name.toLowerCase().includes(query.toLowerCase()),
-					)
-				: firstRender;
+		const filteredItemsBySearch = query !== "" ? items.filter((item) => item.name && item.name.toLowerCase().includes(query.toLowerCase())) : firstRender;
 
 		setFilteredItems(filteredItemsBySearch);
 	}
 
 	function getItemsFromSpecificArray(selectedCategories) {
 		setCategories(selectedCategories);
-		const itemsFilteredByCategory =
-			selectedCategories !== ""
-				? firstRender.filter(
-						(item) =>
-							item.categories && item.categories.includes(selectedCategories),
-					)
-				: firstRender;
+		const itemsFilteredByCategory = selectedCategories !== "" ? firstRender.filter((item) => item.categories && item.categories.includes(selectedCategories)) : firstRender;
 
 		setFilteredItems(itemsFilteredByCategory);
 	}
@@ -73,15 +60,9 @@ export default function Home() {
 	function getMemoryInfo() {
 		if ("memory" in performance) {
 			const memory = performance.memory;
-			const totalHeapMB = Number(
-				(memory.totalJSHeapSize / 1024 / 1024).toFixed(2),
-			);
-			const usedHeapMB = Number(
-				(memory.usedJSHeapSize / 1024 / 1024).toFixed(2),
-			);
-			const heapLimitMB = Number(
-				(memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2),
-			);
+			const totalHeapMB = Number((memory.totalJSHeapSize / 1024 / 1024).toFixed(2));
+			const usedHeapMB = Number((memory.usedJSHeapSize / 1024 / 1024).toFixed(2));
+			const heapLimitMB = Number((memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2));
 			return { totalHeapMB, usedHeapMB, heapLimitMB };
 		}
 		return null;
@@ -109,8 +90,7 @@ export default function Home() {
 
 	const deviceInfo = estimateDeviceMemory();
 
-	const showBallAnimation =
-		typeof deviceInfo.estimatedRAM === "number" && deviceInfo.estimatedRAM > 12;
+	const showBallAnimation = typeof deviceInfo.estimatedRAM === "number" && deviceInfo.estimatedRAM > 12;
 
 	return (
 		<HomeDetails>
@@ -137,36 +117,18 @@ export default function Home() {
 			) : null}
 
 			<NavigationDetails>
-				<a href="/">
-					{uwu ? (
-						<img src="/uwu.png" alt="Uwueb Essentials" />
-					) : (
-						<img src="/Logo.png" alt="Web Essentials" />
-					)}
-				</a>
+				<a href="/">{uwu ? <img src="/uwu.png" alt="Uwueb Essentials" /> : <img src="/Logo.png" alt="Web Essentials" />}</a>
 
 				<div className="search">
-					<input
-						type="text"
-						name=""
-						id=""
-						placeholder="Which software are you looking for?"
-						onChange={handleSearch}
-					/>
+					<input type="text" name="" id="" placeholder="Which software are you looking for?" onChange={handleSearch} />
 				</div>
 
 				<div className="navItems">
-					<a
-						href="https://github.com/Yagasaki7K/website-essentials"
-						target="_blank"
-					>
+					<a href="https://github.com/Yagasaki7K/website-essentials" target="_blank">
 						<i className="uil uil-github-alt"></i>
 					</a>
 
-					<a
-						href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL"
-						target="_blank"
-					>
+					<a href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank">
 						<i className="uil uil-paypal"></i>
 					</a>
 				</div>
@@ -250,23 +212,10 @@ export default function Home() {
 							<a href={item.url} key={item} target="_blank">
 								<div className="columnDetails">
 									<div className="cardDetails">
-										<img
-											src={item.img}
-											className="item-image"
-											width={64}
-											height={64}
-											alt={item.name}
-										/>
+										<img src={item.img} className="item-image" width={64} height={64} alt={item.name} />
 										<h3>{item.name}</h3>
 										<h4>{item.corporation}</h4>
-										{item?.browser ? (
-											<img
-												src={item?.browser}
-												width={20}
-												height={20}
-												alt={item.name}
-											/>
-										) : null}
+										{item?.browser ? <img src={item?.browser} width={20} height={20} alt={item.name} /> : null}
 									</div>
 								</div>
 							</a>

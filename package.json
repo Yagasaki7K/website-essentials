@@ -20,11 +20,11 @@
 		"lint": "next lint",
 		"create:mylint": "bunx --bun biome init && bun mylint",
 		"mylint": "bunx biome format --write",
-		"commit": "git pull && bun run vercel && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
+		"commit": "git pull && bun update && bun run vercel && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
 		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001727",
+		"caniuse-lite": "^1.0.30001745",
 		"concurrently": "^8.2.2",
 		"next": "14.2.32",
 		"react": "^18.3.1",
@@ -34,6 +34,6 @@
 		"wait-on": "^7.2.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.1.1"
+		"@biomejs/biome": "^2.2.4"
 	}
 }
