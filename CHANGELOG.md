@@ -1,3 +1,20 @@
+# Outubro | V25.10
+- Corrigido: Link do PCSX2
+- Adicionado: Logitech G HUB
+- Adicionado: Riot Client
+- Alterado: Imagens dos programas são redondas - todas
+- Oculto: Shorten URL ficará oculto até voltar a funcionar - e corrigirmos.
+- Adicionado: GPU-Z
+- Adicionado: Zoom
+- Adicionado: Microsoft Teams
+- Corrigido: Mozilla Thurderbird para Mozilla Thunderbird
+- Adicionado: Signal
+- Adicionado: GIMP
+- Adicionado: Bun.js
+- Adicionado: MalwareBytes
+- Adicionado: GoG
+- Alterado: Ubisoft Connect para UPlay
+
 # Agosto | V25.08
 - Adicionado: 8BitDo Ultimate Software X
 
@@ -120,5 +137,3 @@ E nas atualizações de Outubro mudamos algumas coisas visuais:
 As atualizações foram mais visuais nesse mês de Outubro, mas tudo graças ao DraculaUI que agora está open source e amamos esse tema, deixa tudo bem melhor de se visualizar, não agride os olhos e tem uma boa harmonia.
 
 Agradecemos a todos que continuam usando nosso serviço gratuitamente, nos apoiam e faz nossa plataforma melhorar e melhorar, claro, pretendemos melhorar mais ainda no futuro e dar uma experiência sem igual para o Essentials, incluindo sistema premium, contas e de favoritos, o que facilitará e muito para quem já está acostumado a usar nosso serviço, mas isso ainda está nos papéis.
-
-#

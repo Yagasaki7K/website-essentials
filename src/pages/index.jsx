@@ -194,9 +194,7 @@ export default function Home() {
 							<i className="uil uil-flask"></i> Extensions
 						</li>
 						<hr />
-						<li className="page">
-							<a href="/shortenurl">Shorten URL</a>
-						</li>
+						<li className="page">{/* <a href="/shortenurl">Shorten URL</a> */}</li>
 						<li className="page">
 							<a href="/password">Password Generator</a>
 						</li>

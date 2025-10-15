@@ -83,6 +83,10 @@ const HomeDetails = styled.div`
                         }
                     }
 
+                    img {
+                        border-radius: 50px;
+                    }
+
                     h3, h4 {
                         font-family: Roboto;
                         font-weight: normal;
