@@ -36,7 +36,6 @@
 - [💻 Technologies](#-technologies)
 - [🚀 Features](#-features)
 - [🚧 How to run](#-how-to-run)
-- [🚧 How to get my .exe or .deb file](#-how-to-get-my-exe-or-deb-file)
 - [🐛 Issues](#-issues)
 - [🎉 Contributing](#-contributing)
 - [📕 License](#-license)
@@ -70,17 +69,6 @@ $ bun dev (if you wanna change something) // bun start (just to see running)
 ```
 
 If you want something, wait for `yarn build` to be obeyed, and after that open a little change decision!
-
-# 🚧 How to get my .exe or .deb file
-```bash
-$ git clone https://github.com/Yagasaki7K/website-essentials.git
-$ Go to folder using terminal
-$ bun install (needs bun installed)
-$ bun electron-dev (check if everything is fine)
-$ bun electron-pack (wait to generate a .exe and .deb file)
-$ Go to dist folder
-$ Acesse os arquivos ou executáveis dele e inicie
-```
 
 # 🐛 Issues
 
