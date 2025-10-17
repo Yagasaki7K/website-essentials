@@ -1,12 +1,13 @@
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import HomeDetails from "@/components/HomeDetails";
 import NavigationDetails from "@/components/NavigationDetails";
 import SidebarMenuDetails from "@/components/SidebarMenuDetails";
-import HomeDetails from "@/components/HomeDetails";
-import { useEffect, useState } from "react";
 import itemsImported from "@/pages/api/items";
-import { useRouter } from "next/router";
 
 export default function Home() {
 	const [categories, setCategories] = useState("");
+	const [activeCategory, setActiveCategory] = useState("home");
 	const firstRender = itemsImported;
 	const [items, setItems] = useState(sortItemsById(firstRender));
 	const [filteredItems, setFilteredItems] = useState(firstRender);
@@ -26,16 +27,23 @@ export default function Home() {
 	function handleSearch(event) {
 		const query = event.target.value;
 
-		const filteredItemsBySearch = query !== "" ? items.filter((item) => item.name && item.name.toLowerCase().includes(query.toLowerCase())) : firstRender;
+		const filteredItemsBySearch = query !== "" ? items.filter((item) => item.name?.toLowerCase().includes(query.toLowerCase())) : firstRender;
 
 		setFilteredItems(filteredItemsBySearch);
 	}
 
 	function getItemsFromSpecificArray(selectedCategories) {
 		setCategories(selectedCategories);
-		const itemsFilteredByCategory = selectedCategories !== "" ? firstRender.filter((item) => item.categories && item.categories.includes(selectedCategories)) : firstRender;
+		setActiveCategory(selectedCategories);
+		const itemsFilteredByCategory = selectedCategories !== "" ? firstRender.filter((item) => item.categories?.includes(selectedCategories)) : firstRender;
 
 		setFilteredItems(itemsFilteredByCategory);
+	}
+
+	function resetToHome() {
+		setCategories("");
+		setActiveCategory("home");
+		setFilteredItems(firstRender);
 	}
 
 	const router = useRouter();
@@ -70,27 +78,23 @@ export default function Home() {
 
 	function estimateDeviceMemory() {
 		const cores = getCPUInfo();
-		let estimatedRAM;
 
-		if (typeof navigator.deviceMemory === "number") {
-			estimatedRAM = Math.floor(navigator.deviceMemory);
-		} else if (navigator.deviceMemory) {
-			estimatedRAM = Math.floor(Number(navigator.deviceMemory));
-		} else {
-			const memoryInfo = getMemoryInfo();
-			if (memoryInfo) {
-				const { heapLimitMB } = memoryInfo;
-				estimatedRAM = Math.floor(heapLimitMB / 1024);
-			} else {
-				estimatedRAM = null;
-			}
+		if (navigator.deviceMemory) {
+			return { cores, estimatedRAM: Math.floor(navigator.deviceMemory) };
 		}
-		return { cores, estimatedRAM };
+
+		const memoryInfo = getMemoryInfo();
+		const { heapLimitMB } = memoryInfo;
+
+		if (memoryInfo) {
+			return { cores, estimatedRAM: Math.floor(heapLimitMB / 1024) };
+		}
+
+		return { cores, estimatedRAM: null };
 	}
 
 	const deviceInfo = estimateDeviceMemory();
-
-	const showBallAnimation = typeof deviceInfo.estimatedRAM === "number" && deviceInfo.estimatedRAM > 12;
+	const showBallAnimation = deviceInfo?.estimatedRAM > 12;
 
 	return (
 		<HomeDetails>
@@ -117,18 +121,26 @@ export default function Home() {
 			) : null}
 
 			<NavigationDetails>
-				<a href="/">{uwu ? <img src="/uwu.png" alt="Uwueb Essentials" /> : <img src="/Logo.png" alt="Web Essentials" />}</a>
+				<a
+					href="/"
+					onClick={(e) => {
+						e.preventDefault();
+						resetToHome();
+					}}
+				>
+					{uwu ? <img src="/uwu.png" alt="Uwueb Essentials" /> : <img src="/Logo.png" alt="Web Essentials" />}
+				</a>
 
 				<div className="search">
 					<input type="text" name="" id="" placeholder="Which software are you looking for?" onChange={handleSearch} />
 				</div>
 
 				<div className="navItems">
-					<a href="https://github.com/Yagasaki7K/website-essentials" target="_blank">
+					<a href="https://github.com/Yagasaki7K/website-essentials" target="_blank" rel="noopener">
 						<i className="uil uil-github-alt"></i>
 					</a>
 
-					<a href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank">
+					<a href="https://www.paypal.com/donate?business=BGK9ZCFE6G4C8&no_recurring=0&currency_code=BRL" target="_blank" rel="noopener">
 						<i className="uil uil-paypal"></i>
 					</a>
 				</div>
@@ -137,7 +149,11 @@ export default function Home() {
 			<div className="container">
 				<SidebarMenuDetails>
 					<ul>
+						<li className={activeCategory === "home" ? "active" : ""} onClick={() => resetToHome()}>
+							<i className="uil uil-estate"></i> Home
+						</li>
 						<li
+							className={activeCategory === "backup" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("backup");
 							}}
@@ -145,6 +161,7 @@ export default function Home() {
 							<i className="uil uil-cloud"></i> Backup / Cloud
 						</li>
 						<li
+							className={activeCategory === "communication" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("communication");
 							}}
@@ -152,6 +169,7 @@ export default function Home() {
 							<i className="uil uil-comments"></i> Communication
 						</li>
 						<li
+							className={activeCategory === "development" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("development");
 							}}
@@ -159,6 +177,7 @@ export default function Home() {
 							<i className="uil uil-brackets-curly"></i> Development
 						</li>
 						<li
+							className={activeCategory === "entertainment" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("entertainment");
 							}}
@@ -166,6 +185,7 @@ export default function Home() {
 							<i className="uil uil-film"></i> Entertainment
 						</li>
 						<li
+							className={activeCategory === "browser" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("browser");
 							}}
@@ -173,6 +193,7 @@ export default function Home() {
 							<i className="uil uil-browser"></i> Browsers
 						</li>
 						<li
+							className={activeCategory === "system" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("system");
 							}}
@@ -180,6 +201,7 @@ export default function Home() {
 							<i className="uil uil-desktop"></i> Operational Systems
 						</li>
 						<li
+							className={activeCategory === "utility" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("utility");
 							}}
@@ -187,6 +209,7 @@ export default function Home() {
 							<i className="uil uil-illustration"></i> Utilities
 						</li>
 						<li
+							className={activeCategory === "extension" ? "active" : ""}
 							onClick={() => {
 								getItemsFromSpecificArray("extension");
 							}}

@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 const HomeDetails = styled.div`
-    opacity: 0.8;
     z-index: 1;
 
     .container {
         display: flex;
+        min-height: calc(100vh - 90px); // minus navbar height
 
         .content {
             display: flex;
             flex-direction: column;
+            flex: 1;
+            align-items: center;
 
             .title {
                 display: flex;
@@ -18,25 +20,21 @@ const HomeDetails = styled.div`
                 h4 {
                     font-size: 1.3rem;
                 }
+            }
         }
 
         .content-cards {
-            padding: 0rem 6rem 2rem 10rem;
+            padding: 2rem 4rem;
             max-width: 90rem;
 
             display: flex;
             flex-wrap: wrap;
-
-            :hover {
-                transition: 1s;
-                transform: scale(1.03);
-            }
+            justify-content: flex-start;
+            gap: 3rem 5rem;
 
             a {
                 width: 150px;
                 height: 200px;
-                margin-right: 5rem;
-                margin-top: 2rem;
 
                 display: flex;
                 flex-direction: column;
@@ -48,6 +46,13 @@ const HomeDetails = styled.div`
                 border-radius: 12px;
                 text-decoration: none;
                 color: var(--font);
+                
+                transition: all 0.3s ease;
+            }
+            
+            a:hover {
+                transform: scale(1.03);
+                box-shadow: 2px 6px 18px 0px rgba(0, 0, 0, 0.35);
             }
 
             .columnDetails {
@@ -73,18 +78,19 @@ const HomeDetails = styled.div`
 
                     cursor: pointer;
 
+                    img {
+                        border-radius: 50px;
+                    }
+
                     .item-image {
                         object-fit: cover;
                         width: 64px;
                         height: 64px;
+                        border-radius: 12px;
 
                         &:hover {
                             transform: scale(1);
                         }
-                    }
-
-                    img {
-                        border-radius: 50px;
                     }
 
                     h3, h4 {

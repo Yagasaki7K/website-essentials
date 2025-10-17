@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 const SidebarMenuDetails = styled.div`
-    padding: 2.5rem 4rem 0rem 3rem;
+    min-width: 280px;
+    max-width: 280px;
+    
+    padding: 3.5rem 2rem 2rem 2.5rem;
     background: transparent;
     box-shadow: 0px 2px 23px rgba(0, 0, 0, 0.25);
 
@@ -12,7 +15,7 @@ const SidebarMenuDetails = styled.div`
     }
 
     ul {
-        margin: 9rem 0;
+        margin: 2rem 0;
 
         p {
             color: var(--font);
@@ -32,6 +35,13 @@ const SidebarMenuDetails = styled.div`
         background: -webkit-linear-gradient(90deg, var(--purple), var(--blue));
         background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+
+    li.active {
+        background: -webkit-linear-gradient(90deg, var(--purple), var(--blue));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
     }
 
     hr {
