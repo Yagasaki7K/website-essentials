@@ -222,7 +222,7 @@ export default function Home() {
 							<a href="/password">Password Generator</a>
 						</li>
 						<hr />
-						<p>v25.07</p>
+						<p>v25.10.01</p>
 						<p>Powered by Kalify Inc.</p>
 					</ul>
 				</SidebarMenuDetails>
