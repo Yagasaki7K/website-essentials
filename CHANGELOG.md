@@ -14,6 +14,13 @@
 - Adicionado: MalwareBytes
 - Adicionado: GoG
 - Alterado: Ubisoft Connect para UPlay
+- Largura da barra lateral corrigida, cujo tamanho estava mudando by @CristianMB2255
+- Adicionado destaque de estado ativo para itens do menu da barra lateral (padrão "Início") by @CristianMB2255
+- Layout de grade de cartão aprimorado com alinhamento adequado do flexbox by @CristianMB2255
+- Efeitos de foco em cartões aprimorados com transições suaves by @CristianMB2255
+- Preenchimento aprimorado para vários elementos by @CristianMB2255
+- Pequenas alterações na estrutura e formatação do código by @CristianMB2255
+- Ícone de átomo atualizado para melhor visibilidade by @CristianMB2255
 
 # Agosto | V25.08
 - Adicionado: 8BitDo Ultimate Software X
