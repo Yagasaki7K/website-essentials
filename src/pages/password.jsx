@@ -1,9 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
 import NavigationAlt from "@/components/NavigationAlt";
-import { useRouter } from "next/router";
 
 const PasswordPage = () => {
 	const [passLength, setPassLength] = useState(16);
@@ -15,37 +15,35 @@ const PasswordPage = () => {
 	}
 
 	function slider() {
-		let myRange = document.getElementById("myRange");
+		const myRange = document.getElementById("myRange");
 		setPassLength(myRange.value);
 	}
 
 	const toggleMessage = () => {
+		var tooltip = document.getElementById("myTooltip");
 		setMessage("Copied!");
+		tooltip.innerHTML = "Copied!";
 
 		setTimeout(() => {
 			setMessage("Copy your new password");
+			tooltip.innerHTML = "Copy!";
 		}, 2000);
 	};
 
 	function getPassword() {
-		var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
-		var passwordLength = passLength;
-		var password = "";
+		const chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ!@#$%^&*()+?><:{}[]";
+		const passwordLength = passLength;
+		let password = "";
 
-		for (var i = 0; i < passwordLength; i++) {
-			var randomNumber = Math.floor(Math.random() * chars.length);
+		for (let i = 0; i < passwordLength; i++) {
+			const randomNumber = Math.floor(Math.random() * chars.length);
 			password += chars.substring(randomNumber, randomNumber + 1);
 		}
 
 		document.getElementById("password").value = password;
-
-		/* Reset the alert the copied text */
-		var tooltip = document.getElementById("myTooltip");
-		tooltip.innerHTML = "Copiar!";
 	}
 
 	function copyPassword() {
-		/* Get the text field */
 		var copyText = document.getElementById("password");
 
 		/* Select the text field */
@@ -54,10 +52,6 @@ const PasswordPage = () => {
 
 		/* Copy the text inside the text field */
 		navigator.clipboard.writeText(copyText.value);
-
-		/* Alert the copied text */
-		var tooltip = document.getElementById("myTooltip");
-		tooltip.innerHTML = "Copiado!";
 	}
 
 	const router = useRouter();
@@ -98,41 +92,43 @@ const PasswordPage = () => {
 				<input type="text" placeholder="Copy your new password" id="password" readonly="" />
 				<div className="break" />
 
-				<button id="btnPassword" onClick={getPassword}>
-					Generate your password
-				</button>
+				<div id="buttonWrapper">
+					<button id="btnPassword" onClick={getPassword}>
+						Generate your password
+					</button>
 
-				{message === "Copy your new password" ? (
-					<div className="tooltip">
-						<button
-							id="btnCopy"
-							className="btnCopy"
-							onClick={() => {
-								copyPassword(), toggleMessage();
-							}}
-						>
-							<span className="tooltiptext" id="myTooltip">
-								Copy!
-							</span>
-							{message}
-						</button>
-					</div>
-				) : (
-					<div className="tooltip">
-						<button
-							id="btnCopy"
-							className="copied"
-							onClick={() => {
-								copyPassword(), toggleMessage();
-							}}
-						>
-							<span className="tooltiptext" id="myTooltip">
-								Copy!
-							</span>
-							{message}
-						</button>
-					</div>
-				)}
+					{message === "Copy your new password" ? (
+						<div className="tooltip">
+							<button
+								id="btnCopy"
+								className="btnCopy"
+								onClick={() => {
+									copyPassword(), toggleMessage();
+								}}
+							>
+								<span className="tooltiptext" id="myTooltip">
+									Copy!
+								</span>
+								{message}
+							</button>
+						</div>
+					) : (
+						<div className="tooltip">
+							<button
+								id="btnCopy"
+								className="copied"
+								onClick={() => {
+									copyPassword(), toggleMessage();
+								}}
+							>
+								<span className="tooltiptext" id="myTooltip">
+									Copy!
+								</span>
+								{message}
+							</button>
+						</div>
+					)}
+				</div>
 			</Password>
 		</>
 	);
@@ -146,7 +142,7 @@ const Password = styled.div`
     margin-right: auto;
     text-align: center;
 
-    margin-top: 120px;
+    margin-top: 60px;
     width: 700px;
 
     hr {
@@ -196,6 +192,11 @@ const Password = styled.div`
         color: var(--gray-alt);
     }
 
+    #buttonWrapper {
+        display: flex;
+        gap: 10px;
+    }
+
     #btnPassword {
         position: relative;
         background: var(--purple);
@@ -205,14 +206,21 @@ const Password = styled.div`
         display: inline-block;
         padding: 10px 15px;
         border-radius: 8px;
+        margin-left: 10px;
+        margin-top: 20px;
         border: none;
         margin-bottom: 2rem;
     }
 
     #btnPassword:hover {
-        transition: 2s;
+        transition: 0.7s;
         filter: brightness(110%);
-        transform: scale(1.04);
+        transform: scale(1.03);
+    }
+
+    #btnPassword:active {
+        transition: 0.2s;
+        transform: scale(1);
     }
 
     .btnCopy {
@@ -233,8 +241,15 @@ const Password = styled.div`
     }
 
     #btnCopy:hover {
-        transition: 2s;
+        transition: 0.7s;
+        filter: brightness(110%);
+        transform: scale(1.03);
         background: var(--green);
+    }
+
+    #btnCopy:active {
+        transition: 0.2s;
+        transform: scale(1);
     }
 
     .tooltip {
