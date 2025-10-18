@@ -320,6 +320,14 @@ const items = [
 		categories: "development",
 	},
 	{
+		id: "zed-dev",
+		name: "Zed",
+		img: "/list/zed.png",
+		url: "https://zed.dev/",
+		corporation: "Zed Industries",
+		categories: "development",
+	},
+	{
 		id: "adobe",
 		name: "Adobe eReader",
 		img: "/list/adobereader.png",
