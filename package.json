@@ -20,20 +20,22 @@
 		"lint": "next lint",
 		"create:mylint": "bunx --bun biome init && bun mylint",
 		"mylint": "bunx biome format --write",
+		"next:update": "bun add next@latest react@latest react-dom@latest eslint-config-next@latest",
 		"commit": "git pull && bun update && bun run vercel && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
 		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
 		"caniuse-lite": "^1.0.30001751",
 		"concurrently": "^8.2.2",
-		"next": "14.2.32",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
+		"eslint-config-next": "^16.0.0",
+		"next": "^16.0.0",
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0",
 		"sonner": "^1.7.4",
 		"styled-components": "^6.1.19",
 		"wait-on": "^7.2.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.2.6"
+		"@biomejs/biome": "^2.2.7"
 	}
 }
