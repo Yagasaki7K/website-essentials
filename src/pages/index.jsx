@@ -61,40 +61,94 @@ export default function Home() {
 	}, [uwuUrl]);
 
 	// Função para obter informações de CPU
-	function getCPUInfo() {
-		return navigator.hardwareConcurrency || null;
-	}
+        function getCPUInfo() {
+                if (typeof navigator === "undefined") return null;
+                return navigator.hardwareConcurrency || null;
+        }
 
-	function getMemoryInfo() {
-		if ("memory" in performance) {
-			const memory = performance.memory;
-			const totalHeapMB = Number((memory.totalJSHeapSize / 1024 / 1024).toFixed(2));
-			const usedHeapMB = Number((memory.usedJSHeapSize / 1024 / 1024).toFixed(2));
-			const heapLimitMB = Number((memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2));
-			return { totalHeapMB, usedHeapMB, heapLimitMB };
-		}
-		return null;
-	}
+        function getMemoryInfo() {
+                if (typeof performance === "undefined" || !("memory" in performance)) return null;
 
-	function estimateDeviceMemory() {
-		const cores = getCPUInfo();
+                const memory = performance.memory;
+                const totalHeapMB = Number((memory.totalJSHeapSize / 1024 / 1024).toFixed(2));
+                const usedHeapMB = Number((memory.usedJSHeapSize / 1024 / 1024).toFixed(2));
+                const heapLimitMB = Number((memory.jsHeapSizeLimit / 1024 / 1024).toFixed(2));
 
-		if (navigator.deviceMemory) {
-			return { cores, estimatedRAM: Math.floor(navigator.deviceMemory) };
-		}
+                return { totalHeapMB, usedHeapMB, heapLimitMB };
+        }
 
-		const memoryInfo = getMemoryInfo();
-		const { heapLimitMB } = memoryInfo;
+        function estimateDeviceMemory() {
+                if (typeof navigator === "undefined") return { cores: null, estimatedRAM: null };
 
-		if (memoryInfo) {
-			return { cores, estimatedRAM: Math.floor(heapLimitMB / 1024) };
-		}
+                const cores = getCPUInfo();
 
-		return { cores, estimatedRAM: null };
-	}
+                if (navigator.deviceMemory) {
+                        return { cores, estimatedRAM: Math.floor(navigator.deviceMemory) };
+                }
 
-	const deviceInfo = estimateDeviceMemory();
-	const showBallAnimation = deviceInfo?.estimatedRAM > 12;
+                const memoryInfo = getMemoryInfo();
+
+                if (memoryInfo) {
+                        const { heapLimitMB } = memoryInfo;
+                        return { cores, estimatedRAM: Math.floor(heapLimitMB / 1024) };
+                }
+
+                return { cores, estimatedRAM: null };
+        }
+
+        function hasHardwareAcceleration() {
+                if (typeof document === "undefined") return true;
+
+                try {
+                        const canvas = document.createElement("canvas");
+                        const gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
+                        return !!gl;
+                } catch (error) {
+                        return false;
+                }
+        }
+
+        function shouldDisableCardAnimation(info) {
+                if (typeof window === "undefined") return false;
+
+                const prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                const hasLowMemory = typeof info?.estimatedRAM === "number" ? info.estimatedRAM <= 8 : false;
+                const hardwareDisabled = !hasHardwareAcceleration();
+
+                return prefersReducedMotion || hasLowMemory || hardwareDisabled;
+        }
+
+        const [deviceInfo, setDeviceInfo] = useState({ cores: null, estimatedRAM: null });
+        const [enableAnimatedHover, setEnableAnimatedHover] = useState(false);
+
+        useEffect(() => {
+                const info = estimateDeviceMemory();
+                setDeviceInfo(info);
+
+                const disableAnimations = shouldDisableCardAnimation(info);
+                setEnableAnimatedHover(!disableAnimations);
+        }, []);
+
+        const showBallAnimation = deviceInfo?.estimatedRAM > 12;
+
+        function handleCardPointerMove(event) {
+                const card = event.currentTarget;
+                const rect = card.getBoundingClientRect();
+
+                const x = (event.clientX - rect.left) / rect.width - 0.5;
+                const y = (event.clientY - rect.top) / rect.height - 0.5;
+
+                card.style.setProperty("--pointer-x", x.toFixed(3));
+                card.style.setProperty("--pointer-y", y.toFixed(3));
+                card.style.setProperty("--glow-opacity", "0.75");
+        }
+
+        function resetCardPointer(event) {
+                const card = event.currentTarget;
+                card.style.setProperty("--pointer-x", 0);
+                card.style.setProperty("--pointer-y", 0);
+                card.style.setProperty("--glow-opacity", "0");
+        }
 
 	return (
 		<HomeDetails>
@@ -228,22 +282,37 @@ export default function Home() {
 				</SidebarMenuDetails>
 
 				<div className="content">
-					<div className="content-cards">
-						{filteredItems.map((item) => (
-							<a href={item.url} key={item} target="_blank">
-								<div className="columnDetails">
-									<div className="cardDetails">
-										<img src={item.img} className="item-image" width={64} height={64} alt={item.name} />
-										<h3>{item.name}</h3>
-										<h4>{item.corporation}</h4>
-										{item?.browser ? <img src={item?.browser} width={20} height={20} alt={item.name} /> : null}
-									</div>
-								</div>
-							</a>
-						))}
-					</div>
-				</div>
-			</div>
-		</HomeDetails>
-	);
+                                        <div className="content-cards">
+                                                {filteredItems.map((item) => (
+                                                        <a href={item.url} key={item.id} target="_blank">
+                                                                <div className="columnDetails">
+                                                                        <div
+                                                                                className={`cardDetails ${
+                                                                                        enableAnimatedHover ? "animated-hover" : "static-hover"
+                                                                                }`}
+                                                                                onMouseMove={enableAnimatedHover ? handleCardPointerMove : undefined}
+                                                                                onMouseLeave={enableAnimatedHover ? resetCardPointer : undefined}
+                                                                        >
+                                                                                <div className="cardGlow" aria-hidden="true">
+                                                                                        <img src={item.img} alt="" />
+                                                                                </div>
+                                                                                <img
+                                                                                        src={item.img}
+                                                                                        className="item-image"
+                                                                                        width={64}
+                                                                                        height={64}
+                                                                                        alt={item.name}
+                                                                                />
+                                                                                <h3>{item.name}</h3>
+                                                                                <h4>{item.corporation}</h4>
+                                                                                {item?.browser ? <img src={item?.browser} width={20} height={20} alt={item.name} /> : null}
+                                                                        </div>
+                                                                </div>
+                                                        </a>
+                                                ))}
+                                        </div>
+                                </div>
+                        </div>
+                </HomeDetails>
+        );
 }
