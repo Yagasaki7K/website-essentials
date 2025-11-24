@@ -43,7 +43,7 @@ body {
 	overflow-x: hidden;
 }
 
-.ball {
+/*.ball {
 	--delay: 0s;
 	--size: 0.4;
 	--speed: 20s;
@@ -142,4 +142,4 @@ body {
 	100% {
 		transform: translate3D(0%, 51%, 0) rotate(360deg);
 	}
-}
+}*/

@@ -5,7 +5,7 @@ const MobileWarning = () => {
 	return (
 		<ContainerDetails>
 			<img src="/Logo.png" width={350} />
-			<p>Desculpe, mas o uso é exclusivo para Desktop!</p>
+			<p>Desculpe, mas o uso do Essentials é exclusivo para Desktop!</p>
 		</ContainerDetails>
 	);
 };

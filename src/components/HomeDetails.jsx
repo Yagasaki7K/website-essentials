@@ -5,7 +5,7 @@ const HomeDetails = styled.div`
 
     .container {
         display: flex;
-        min-height: calc(100vh - 90px); // minus navbar height
+        min-height: calc(100vh - 90px);
 
         .content {
             display: flex;
@@ -46,10 +46,10 @@ const HomeDetails = styled.div`
                 border-radius: 12px;
                 text-decoration: none;
                 color: var(--font);
-                
+
                 transition: all 0.3s ease;
             }
-            
+
             a:hover {
                 transform: scale(1.03);
                 box-shadow: 2px 6px 18px 0px rgba(0, 0, 0, 0.35);
