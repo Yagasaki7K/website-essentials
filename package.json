@@ -25,10 +25,10 @@
 		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001753",
+		"caniuse-lite": "^1.0.30001756",
 		"concurrently": "^8.2.2",
-		"eslint-config-next": "^16.0.1",
-		"next": "^16.0.1",
+		"eslint-config-next": "^16.0.3",
+		"next": "^16.0.3",
 		"react": "^19.2.0",
 		"react-dom": "^19.2.0",
 		"sonner": "^1.7.4",
@@ -36,6 +36,6 @@
 		"wait-on": "^7.2.0"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "^2.3.3"
+		"@biomejs/biome": "^2.3.7"
 	}
 }

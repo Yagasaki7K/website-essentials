@@ -1,3 +1,7 @@
+# Novembro | V25.11
+- Adicionado: Filtro de Performance com base no dispositivo
+- Adicionado: Hover com base na coloração do software
+
 # Outubro | V25.10
 - Corrigido: Link do PCSX2
 - Adicionado: Logitech G HUB
