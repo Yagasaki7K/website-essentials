@@ -65,6 +65,13 @@ const HomeDetails = styled.div`
                 color: var(--font);
 
                 .cardDetails {
+                    position: relative;
+                    overflow: hidden;
+                    isolation: isolate;
+                    --pointer-x: 0;
+                    --pointer-y: 0;
+                    --glow-opacity: 0;
+                    --glow-scale: 3.4;
                     width: 150px;
                     height: 200px;
 
@@ -73,13 +80,62 @@ const HomeDetails = styled.div`
                     align-items: center;
                     justify-content: space-evenly;
 
+                    & > :not(.cardGlow) {
+                        position: relative;
+                        z-index: 2;
+                    }
+
                     background: var(--background-alt);
                     border-radius: 12px;
+                    box-shadow: 1px 3px 9px 0px rgba(0, 0, 0, 0.25);
 
                     cursor: pointer;
+                    transition: transform 0.25s ease, box-shadow 0.25s ease;
+                    transform-style: preserve-3d;
 
                     img {
                         border-radius: 50px;
+                    }
+
+                    .cardGlow {
+                        position: absolute;
+                        inset: -8px;
+                        z-index: 0;
+                        display: grid;
+                        place-items: center;
+                        filter: blur(28px) saturate(2) brightness(1.25);
+                        opacity: var(--glow-opacity);
+                        transform: translate(
+                                        calc(var(--pointer-x) * 32px),
+                                        calc(var(--pointer-y) * 32px)
+                                )
+                                scale(var(--glow-scale));
+                        transition: opacity 0.22s ease, transform 0.18s ease;
+                        pointer-events: none;
+
+                        img {
+                            width: 120px;
+                            height: 120px;
+                            object-fit: contain;
+                            border-radius: 999px;
+                            filter: saturate(2.2);
+                        }
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        border-radius: 12px;
+                        background: radial-gradient(
+                                        circle at calc(50% + var(--pointer-x) * 40%)
+                                                calc(50% + var(--pointer-y) * 40%),
+                                        color-mix(in srgb, var(--background-alt), transparent 20%),
+                                        color-mix(in srgb, var(--font), transparent 90%)
+                                );
+                        opacity: 0.08;
+                        pointer-events: none;
+                        z-index: 1;
                     }
 
                     .item-image {
@@ -88,9 +144,7 @@ const HomeDetails = styled.div`
                         height: 64px;
                         border-radius: 12px;
 
-                        &:hover {
-                            transform: scale(1);
-                        }
+                        transition: transform 0.2s ease, filter 0.2s ease;
                     }
 
                     h3, h4 {
@@ -111,6 +165,34 @@ const HomeDetails = styled.div`
                         font-style: italic;
                         font-size: 14px;
                         line-height: 16px;
+                    }
+
+                    &.animated-hover:hover {
+                        transform: translateY(-4px) scale(1.02);
+                        box-shadow: 2px 6px 18px 0px rgba(0, 0, 0, 0.35);
+                        --glow-opacity: 0.7;
+
+                        .item-image {
+                            transform: translateY(-2px) scale(1.02);
+                            filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
+                        }
+                    }
+
+                    &.static-hover {
+                        --glow-scale: 2.5;
+
+                        &:hover {
+                            transform: translateY(-3px) scale(1.01);
+                            box-shadow: 2px 6px 18px 0px rgba(0, 0, 0, 0.35);
+                            --glow-opacity: 0.5;
+                            --pointer-x: 0;
+                            --pointer-y: 0;
+
+                            .item-image {
+                                transform: translateY(-1px) scale(1.01);
+                                filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
+                            }
+                        }
                     }
                 }
             }
