@@ -2,29 +2,20 @@
 
 import { useEffect, useRef, useState } from "react";
 
-// --- Configurações do efeito ---
-const FLAKES = 280; // quantidade de flocos
-const MIN_SIZE = 1.2; // tamanho mínimo (px)
-const MAX_SIZE = 4; // tamanho máximo (px)
-const MIN_SPEED = 50; // velocidade mínima base (px/seg)
-const MAX_SPEED = 100; // velocidade máxima base (px/seg)
-const WIND_X = 8; // amplitude máxima do vento global (px/seg) — varia suavemente
-const PER_FLAKE_DRIFT = 0.6; // desvio horizontal constante por floco (px/seg)
-const OPACITY_MIN = 0.35; // opacidade mínima
-const OPACITY_MAX = 0.9; // opacidade máxima
+const FLAKES = 280;
+const MIN_SIZE = 1.2;
+const MAX_SIZE = 4;
+const MIN_SPEED = 50;
+const MAX_SPEED = 100;
+const WIND_X = 8;
+const PER_FLAKE_DRIFT = 0.6;
+const OPACITY_MIN = 0.35;
+const OPACITY_MAX = 0.9;
 
-// Função utilitária: retorna true se estamos entre 01/12 e 02/01 (inclusive).
-function isHolidayWindow(d) {
-	// Meses no JS são 0-baseados: Jan=0, Dez=11
-	const m = d.getMonth();
-	const day = d.getDate();
-	// Dezembro (>= 1) OU Janeiro (<= 2)
-	return (m === 11 && day >= 1) || (m === 0 && day <= 2);
-}
+const FORCE_SNOW = process.env.NEXT_PUBLIC_FORCE_SNOW === "true";
 
-// Respeitar `prefers-reduced-motion`
-function prefersReducedMotion() {
-	if (typeof window === "undefined" || typeof window.matchMedia === "undefined") return false;
+function prefersMotionReduced() {
+	if (typeof window === "undefined") return false;
 	return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
@@ -33,41 +24,94 @@ export default function SnowOverlay() {
 	const rafRef = useRef(null);
 	const flakesRef = useRef([]);
 	const lastTsRef = useRef(0);
-	const [enabled, setEnabled] = useState(false);
 
-	// Ativar apenas de 01/12 a 02/01 (descomente para usar a janela sazonal)
+	const [enabled, setEnabled] = useState(false);
+	const [isDecember, setIsDecember] = useState(false);
+	const [prefersReduced, setPrefersReduced] = useState(false);
+
 	useEffect(() => {
 		if (typeof window === "undefined") return;
-		const now = new Date();
-		const active = isHolidayWindow(now) && !prefersReducedMotion();
-		setEnabled(active);
+
+		const checkMonth = () => {
+			const now = new Date();
+			const month = now.getMonth();
+			const december = month === 11;
+			setIsDecember(december);
+
+			console.log(`[SnowOverlay] Month check => month=${month + 1}, december=${december}. Next check in 60 minutes.`);
+		};
+
+		checkMonth();
+		const interval = window.setInterval(checkMonth, 1000 * 60 * 60);
+
+		return () => window.clearInterval(interval);
 	}, []);
 
 	useEffect(() => {
-		if (!enabled) return; // fora da janela de datas ou usuário prefere menos movimento
+		if (typeof window === "undefined") return;
+
+		const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+		const updateEnabled = () => {
+			const reduced = media.matches;
+			const shouldEnable = FORCE_SNOW || isDecember;
+
+			setPrefersReduced(reduced);
+			setEnabled(shouldEnable);
+
+			console.log(`[SnowOverlay] Update enabled => reducedMotion=${reduced}, isDecember=${isDecember}, enabled=${shouldEnable}`);
+
+			if (reduced && isDecember && !FORCE_SNOW) {
+				console.info("[SnowOverlay] Reduced motion detected; using gentle snow animation. Set NEXT_PUBLIC_FORCE_SNOW=true to use full animation.");
+			}
+		};
+
+		updateEnabled();
+		media.addEventListener("change", updateEnabled);
+
+		return () => {
+			media.removeEventListener("change", updateEnabled);
+		};
+	}, [isDecember]);
+
+	useEffect(() => {
+		if (!enabled) {
+			console.log("[SnowOverlay] Animation skipped because overlay is disabled.");
+			return;
+		}
 
 		const canvas = canvasRef.current;
-		if (!canvas) return;
-		const ctx = canvas.getContext("2d");
-		if (!ctx) return;
+		if (!canvas) {
+			console.warn("[SnowOverlay] Canvas ref missing; snow overlay cannot start.");
+			return;
+		}
 
-		// Ajusta o tamanho do canvas para viewport
+		const ctx = canvas.getContext("2d");
+		if (!ctx) {
+			console.warn("[SnowOverlay] 2D context unavailable; snow overlay cannot start.");
+			return;
+		}
+
 		const resize = () => {
 			const dpr = window.devicePixelRatio || 1;
-			canvas.width = Math.floor(window.innerWidth * dpr);
-			canvas.height = Math.floor(window.innerHeight * dpr);
-			canvas.style.width = window.innerWidth + "px";
-			canvas.style.height = window.innerHeight + "px";
+			const width = window.innerWidth;
+			const height = window.innerHeight;
+
+			canvas.width = Math.floor(width * dpr);
+			canvas.height = Math.floor(height * dpr);
+
+			canvas.style.width = `${width}px`;
+			canvas.style.height = `${height}px`;
+
 			ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 		};
 
-		// Inicializa flocos
 		const rand = (min, max) => Math.random() * (max - min) + min;
 
 		const spawnFlake = (yRand = true) => {
 			const r = rand(MIN_SIZE, MAX_SIZE);
-			// velocidade base + componente proporcional ao tamanho (maiores caem um pouco mais rápido)
 			const speed = rand(MIN_SPEED, MAX_SPEED) + r * 2.2;
+
 			return {
 				x: rand(0, window.innerWidth),
 				y: yRand ? rand(-window.innerHeight, 0) : -10,
@@ -80,51 +124,53 @@ export default function SnowOverlay() {
 
 		const init = () => {
 			resize();
-			flakesRef.current = Array.from({ length: FLAKES }, () => spawnFlake(true));
+
+			const flakeTarget = prefersReduced && !FORCE_SNOW ? Math.floor(FLAKES * 0.35) : FLAKES;
+
+			flakesRef.current = Array.from({ length: flakeTarget }, () => spawnFlake());
+
 			lastTsRef.current = performance.now();
+
+			console.log(`[SnowOverlay] Initialized with ${flakesRef.current.length} flakes at ${canvas.width}x${canvas.height} (device pixels).`);
 		};
 
 		init();
 		window.addEventListener("resize", resize);
 
-		// Vento global suave: varia lentamente com o tempo (sem zig-zag por floco)
-		// Dois senos de baixa frequência para dar sensação de rajadas ocasionais.
-		const globalWind = (tSec) => Math.sin(tSec * 0.12) * (WIND_X * 1) + Math.sin((tSec + 7.13) * 0.04) * (WIND_X * 0.4);
+		const globalWind = (tSec) => Math.sin(tSec * 0.12) * WIND_X + Math.sin((tSec + 7.13) * 0.04) * (WIND_X * 0.4);
 
 		const step = (ts) => {
-			const dt = Math.min(0.05, (ts - lastTsRef.current) / 1000); // delta time (s), cap para estabilidade
+			const dt = Math.min(0.05, (ts - lastTsRef.current) / 1000);
 			lastTsRef.current = ts;
 
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 			const tSec = ts / 1000;
-			const wind = globalWind(tSec);
+			const windScale = prefersReduced && !FORCE_SNOW ? 0.35 : 1;
+			const wind = windScale * globalWind(tSec);
 
 			for (let i = 0; i < flakesRef.current.length; i++) {
 				const f = flakesRef.current[i];
+				const speedScale = windScale;
 
-				// Atualiza posição: queda vertical + vento global + drift leve e constante do floco
-				f.y += f.speed * dt;
-				f.x += (wind + f.drift) * dt;
+				f.y += f.speed * dt * speedScale;
+				f.x += (wind + f.drift) * dt * speedScale;
 
-				// Reaparece no topo se sair da tela inferior
 				if (f.y - f.r > window.innerHeight) {
 					flakesRef.current[i] = spawnFlake(false);
 					continue;
 				}
-				// Teleporta para o outro lado se sair lateralmente (efeito wrap sutil)
+
 				if (f.x < -10) f.x = window.innerWidth + 10;
 				if (f.x > window.innerWidth + 10) f.x = -10;
 
-				// Desenha floco
 				ctx.globalAlpha = f.alpha;
 				ctx.beginPath();
 				ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
 				ctx.fillStyle = "#ffffff";
 				ctx.fill();
 
-				// brilho suave
-				ctx.globalAlpha = Math.min(1, f.alpha * 0.5);
+				ctx.globalAlpha = f.alpha * 0.5;
 				ctx.beginPath();
 				ctx.arc(f.x + f.r * 0.35, f.y + f.r * 0.35, f.r * 0.6, 0, Math.PI * 2);
 				ctx.fill();
@@ -138,23 +184,23 @@ export default function SnowOverlay() {
 		return () => {
 			window.removeEventListener("resize", resize);
 			if (rafRef.current) cancelAnimationFrame(rafRef.current);
+			console.log("[SnowOverlay] Animation stopped and listeners removed.");
 		};
-	}, [enabled]);
+	}, [enabled, prefersReduced]);
 
 	if (!enabled) return null;
 
-	// Canvas overlay em tela cheia, sem bloquear cliques
 	return (
 		<div
-			aria-hidden
+			aria-hidden="true"
 			style={{
 				position: "fixed",
 				inset: 0,
 				pointerEvents: "none",
-				zIndex: 9999, // acima de tudo, mas sem interatividade
+				zIndex: 9999,
 			}}
 		>
-			<canvas ref={canvasRef} />
+			<canvas ref={canvasRef} width={300} height={150} />
 		</div>
 	);
 }
