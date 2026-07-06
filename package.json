@@ -18,24 +18,21 @@
 		"vercel": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"create:mylint": "bunx --bun biome init && bun mylint",
 		"mylint": "bunx biome format --write",
 		"next:update": "bun add next@latest react@latest react-dom@latest eslint-config-next@latest",
-		"commit": "git pull && bun update && bun run vercel && bun mylint && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
+		"commit": "git pull && bun update && bun run vercel && read -p 'Descriptions Commit: ' message && git add . && echo -n \"$message - \" && node getTime.js | xargs -I {} git commit -m \"$message - {}\" && git push",
 		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001759",
+		"caniuse-lite": "^1.0.30001802",
 		"concurrently": "^8.2.2",
-		"eslint-config-next": "^16.0.7",
-		"next": "^16.0.7",
-		"react": "^19.2.1",
-		"react-dom": "^19.2.1",
+		"eslint-config-next": "^16.2.10",
+		"next": "^16.2.10",
+		"react": "^19.2.7",
+		"react-dom": "^19.2.7",
 		"sonner": "^1.7.4",
-		"styled-components": "^6.1.19",
+		"styled-components": "^6.4.3",
 		"wait-on": "^7.2.0"
 	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.3.8"
-	}
+	"devDependencies": {}
 }

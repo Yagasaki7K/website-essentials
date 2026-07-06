@@ -1,3 +1,18 @@
+# Julho | V26.07
+- Adicionado: Simple Sticky Notes
+- Adicionado: Discord Windows (Pake) e Discord Linux (Pake)
+- Adicionado: Telegram Windows (Pake) e Telegram Linux (Pake)
+- Adicionado: Proton Mail Windows (Pake) e Proton Mail Linux (Pake)
+- Adicionado: Notion Windows (Pake) e Notion Linux (Pake)
+- Adicionado: Spotify Windows (Pake) e Spotify Linux (Pake)
+- Adicionado: Slack Windows (Pake) e Slack Linux (Pake)
+
+O que é o Pake? O Pake é um gerador de instaladores para Windows e Linux, que permite que você baixe programas diretamente do site oficial, sem precisar baixar o instalador manualmente. Ele é uma ferramenta útil para quem quer economizar tempo, uso de memória e evitar problemas com instaladores desatualizados ou maliciosos.
+
+A versão Linux é compatível (.deb) com as distribuições Debian, Ubuntu, Linux Mint e Pop!_OS. A versão Windows (.msi) é compatível com o Windows 10 e 11.
+
+Você pode encontrar mais aplicativos como Facebook, Instagram, ChatGPT e Youtube no repositório oficial (https://github.com/Yagasaki7K/app-pakehub)
+
 # Novembro | V25.11
 - Adicionado: Filtro de Performance com base no dispositivo
 - Adicionado: Hover com base na coloração do software
