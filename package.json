@@ -24,7 +24,7 @@
 		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001802",
+		"caniuse-lite": "^1.0.30001805",
 		"concurrently": "^8.2.2",
 		"eslint-config-next": "^16.2.10",
 		"next": "^16.2.10",
