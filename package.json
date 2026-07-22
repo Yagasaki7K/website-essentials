@@ -26,10 +26,10 @@
 	"dependencies": {
 		"caniuse-lite": "^1.0.30001806",
 		"concurrently": "^8.2.2",
-		"eslint-config-next": "^16.2.10",
-		"next": "^16.2.10",
-		"react": "^19.2.7",
-		"react-dom": "^19.2.7",
+		"eslint-config-next": "^16.2.11",
+		"next": "^16.2.11",
+		"react": "^19.2.8",
+		"react-dom": "^19.2.8",
 		"sonner": "^1.7.4",
 		"styled-components": "^6.4.4",
 		"wait-on": "^7.2.0"
