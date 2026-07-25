@@ -216,7 +216,7 @@ const items = [
 		categories: "development",
 	},
 	{
-		id: "github-desktop",
+        id: "github-desktop-windows",
 		name: "Github Desktop (Windows)",
 		img: "/list/github.png",
 		url: "https://desktop.github.com/",
@@ -224,7 +224,7 @@ const items = [
 		categories: "development",
 	},
 	{
-		id: "github-desktop",
+        id: "github-desktop-linux",
 		name: "Github Desktop (Linux)",
 		img: "/list/github.png",
 		url: "https://www.mediafire.com/file/2bkkhdvp2vtrhx9/github-desktop.deb/file",
@@ -520,7 +520,7 @@ const items = [
 		categories: "entertainment",
 	},
 	{
-		id: "spotify",
+        id: "spotify-pakewindows",
 		name: "Spotify Windows (Pake)",
 		img: "/list/spotify.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/spotify.msi",
@@ -528,7 +528,7 @@ const items = [
 		categories: "entertainment",
 	},
 	{
-		id: "spotify",
+        id: "spotify-pakelinux",
 		name: "Spotify Linux (Pake)",
 		img: "/list/spotify.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/spotify.deb",
@@ -637,7 +637,7 @@ const items = [
 		categories: "extension",
 	},
 	{
-		id: "gamersclub",
+        id: "gamersclub-chrome",
 		name: "GamersClub Booster",
 		browser: "/list/chrome.png",
 		img: "/list/gamersclub.png",
@@ -646,7 +646,7 @@ const items = [
 		categories: "extension",
 	},
 	{
-		id: "gamersclub",
+        id: "gamersclub-firefox",
 		name: "GamersClub Booster",
 		browser: "/list/firefox.png",
 		img: "/list/gamersclub.png",
@@ -682,7 +682,7 @@ const items = [
 		categories: "extension",
 	},
 	{
-		id: "minimaltwitter",
+        id: "minimaltwitter-chrome",
 		name: "Minimal Theme for Twitter",
 		img: "/list/minimaltwitter.png",
 		browser: "/list/chrome.png",
@@ -691,7 +691,7 @@ const items = [
 		categories: "extension",
 	},
 	{
-		id: "minimaltwitter",
+        id: "minimaltwitter-firefox",
 		name: "Minimal Theme for Twitter",
 		img: "/list/minimaltwitter.png",
 		browser: "/list/firefox.png",
@@ -718,6 +718,15 @@ const items = [
 		categories: "extension",
 	},
 	{
+        id: "ublock",
+        name: "uBlock Origin",
+        img: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-dhri6XOv3GA%2FV3izMUp9qaI%2FAAAAAAAAM9A%2FzSXnm5CQVWwGXVoPbzzKq_5bp-9XuV3TACLcB%2Fs1600%2FUBlock_Origin.png&f=1&nofb=1&ipt=7ee89b300cab277508a67349bf4227a21db8641f128b5ded12625b56c83c34f6",
+        browser: "/list/all.png",
+        url: "https://ublockorigin.com/",
+        corporation: "Raymond Hill",
+        categories: "extension",
+    },
+    {
 		id: "unhook",
 		name: "Unhook",
 		img: "/list/unhook.png",
@@ -800,7 +809,7 @@ const items = [
 		categories: "utility",
 	},
 	{
-		id: "1password",
+        id: "1password-windows",
 		name: "1Password",
 		img: "/list/1password.png",
 		url: "https://1password.com/pt/downloads/windows/",
@@ -880,7 +889,7 @@ const items = [
 		categories: "utility",
 	},
 	{
-		id: "bitwarden",
+        id: "bitwarden-download",
 		name: "Bitwarden",
 		img: "/list/bitwarden.png",
 		url: "https://bitwarden.com/download/",
@@ -980,7 +989,7 @@ const items = [
 		name: "Irfanview",
 		img: "/list/irfanview.png",
 		url: "https://www.irfanview.com",
-		corporation: "Irfanview, Freeware",
+        corporation: "Irfanview Freeware",
 		categories: "utility",
 	},
 	{
@@ -1000,6 +1009,14 @@ const items = [
 		categories: "utility",
 	},
 	{
+        id: "optimizerduck",
+        name: "optimizerDuck",
+        img: "https://optimizerduck.vercel.app/icon.webp",
+        url: "https://optimizerduck.vercel.app/docs/download",
+        corporation: "itsfatduck",
+        categories: "utility",
+    },
+    {
 		id: "lastpass",
 		name: "Lastpass",
 		img: "/list/lastpass.png",
@@ -1056,7 +1073,7 @@ const items = [
 		categories: "utility",
 	},
 	{
-		id: "notion",
+        id: "notion-pakewindows",
 		name: "Notion Windows (Pake)",
 		img: "/list/notion.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/notion.msi",
@@ -1064,7 +1081,7 @@ const items = [
 		categories: "utility",
 	},
 	{
-		id: "notion",
+        id: "notion-pakelinux",
 		name: "Notion Linux (Pake)",
 		img: "/list/notion.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/notion.deb",
@@ -1120,7 +1137,7 @@ const items = [
 		categories: "utility",
 	},
 	{
-		id: "protonmail",
+        id: "protonmail-pakewindows",
 		name: "Proton Windows (Pake)",
 		img: "/list/protonmail.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/protonmail.msi",
@@ -1128,7 +1145,7 @@ const items = [
 		categories: "utility",
 	},
 	{
-		id: "protonmail",
+        id: "protonmail-pakelinux",
 		name: "Proton Linux (Pake)",
 		img: "/list/protonmail.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/protonmail.deb",
@@ -1288,7 +1305,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "discord",
+        id: "discord-pakewindows",
 		name: "Discord Windows (Pake)",
 		img: "/list/discord.png",
 		url: "https://discordapp.com/download",
@@ -1296,7 +1313,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "discord",
+        id: "discord-pakelinux",
 		name: "Discord Linux (Pake)",
 		img: "/list/discord.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/discord.deb",
@@ -1352,7 +1369,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "slack",
+        id: "slack-pakewindows",
 		name: "Slack Windows (Pake)",
 		img: "/list/slack.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/slack.msi",
@@ -1360,7 +1377,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "slack",
+        id: "slack-pakelinux",
 		name: "Slack Linux (Pake)",
 		img: "/list/slack.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/slack.deb",
@@ -1392,7 +1409,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "telegram",
+        id: "telegram-pakewindows",
 		name: "Telegram Windows (Pake)",
 		img: "/list/telegram.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/telegram.msi",
@@ -1400,7 +1417,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "telegram",
+        id: "telegram-pakelinux",
 		name: "Telegram Linux (Pake)",
 		img: "/list/telegram.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/telegram.deb",
@@ -1416,7 +1433,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "whatsapp",
+        id: "whatsappdeskx64",
 		name: "Whatsapp Desktop x64",
 		img: "/list/whatsapp.png",
 		url: "https://www.mediafire.com/file/clp2tmszdgejvkm/WhatsAppSetup.exe/file",
@@ -1424,7 +1441,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "whatsapp",
+        id: "whatsappdeskx86",
 		name: "Whatsapp Desktop x86",
 		img: "/list/whatsapp.png",
 		url: "https://www.mediafire.com/file/tzkioucel5gqy0l/WhatsAppSetup_x86.exe/file",
@@ -1432,7 +1449,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "whatsapp",
+        id: "whatsapp-pakewindows",
 		name: "Whatsapp Windows (Pake)",
 		img: "/list/whatsapp.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/whatsapp-web.msi",
@@ -1440,7 +1457,7 @@ const items = [
 		categories: "communication",
 	},
 	{
-		id: "whatsapp",
+        id: "whatsapp-pakelinux",
 		name: "Whatsapp Linux (Pake)",
 		img: "/list/whatsapp.png",
 		url: "https://github.com/Yagasaki7K/app-pakebuilder/raw/refs/heads/main/projects/whatsapp-web.deb",
@@ -1454,7 +1471,7 @@ const items = [
 		url: "https://zoom.us/download",
 		corporation: "Zoom Communnications",
 		categories: "communication",
-	},
+    }
 ];
 
 export default items;
