@@ -7,6 +7,7 @@
 - Adicionado: Spotify Windows (Pake) e Spotify Linux (Pake)
 - Adicionado: Slack Windows (Pake) e Slack Linux (Pake)
 - Adicionado: uBlock
+- Adicionado: Bananas Screen Sharing (mistweaverco)
 - Corrigido: IDs atrapalhando no sistema de busca
 
 O que é o Pake? O Pake é um gerador de instaladores para Windows e Linux, que permite que você baixe programas diretamente do site oficial, sem precisar baixar o instalador manualmente. Ele é uma ferramenta útil para quem quer economizar tempo, uso de memória e evitar problemas com instaladores desatualizados ou maliciosos.

@@ -881,6 +881,14 @@ const items = [
 		categories: "utility",
 	},
 	{
+        id: "bananas",
+        name: "Bananas Screen Sharing",
+        img: "https://github.com/mistweaverco/bananas/raw/main/logo.svg",
+        url: "https://github.com/mistweaverco/bananas/releases/tag/v0.0.22",
+        corporation: "mistweaverco",
+        categories: "utility",
+    },
+    {
 		id: "bittorrent",
 		name: "BitTorrent",
 		img: "/list/bittorrent.png",
