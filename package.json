@@ -31,7 +31,7 @@
 		"react": "^19.2.8",
 		"react-dom": "^19.2.8",
 		"sonner": "^1.7.4",
-		"styled-components": "^6.5.2",
+		"styled-components": "^6.5.3",
 		"wait-on": "^7.2.0"
 	},
 	"devDependencies": {}
