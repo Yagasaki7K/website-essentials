@@ -26,8 +26,8 @@
 	"dependencies": {
 		"caniuse-lite": "^1.0.30001810",
 		"concurrently": "^8.2.2",
-		"eslint-config-next": "^16.3.3",
-		"next": "^16.3.3",
+		"eslint-config-next": "^16.3.4",
+		"next": "^16.3.4",
 		"react": "^19.2.8",
 		"react-dom": "^19.2.8",
 		"sonner": "^1.7.4",
