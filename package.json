@@ -24,10 +24,10 @@
 		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001814",
+		"caniuse-lite": "^1.0.30001815",
 		"concurrently": "^8.2.2",
-		"eslint-config-next": "^16.3.8",
-		"next": "^16.3.8",
+		"eslint-config-next": "^16.4.0",
+		"next": "^16.4.0",
 		"react": "^19.3.0",
 		"react-dom": "^19.3.0",
 		"sonner": "^1.7.4",
