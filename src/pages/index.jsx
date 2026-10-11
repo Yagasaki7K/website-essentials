@@ -271,12 +271,11 @@ export default function Home() {
 							<i className="uil uil-flask"></i> Extensions
 						</li>
 						<hr />
-						<li className="page">{/* <a href="/shortenurl">Shorten URL</a> */}</li>
 						<li className="page">
 							<a href="/password">Password Generator</a>
 						</li>
 						<hr />
-						<p>v25.11</p>
+						<p>v26.10</p>
 						<p>Powered by Kalify Inc.</p>
 					</ul>
 				</SidebarMenuDetails>
