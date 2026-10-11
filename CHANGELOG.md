@@ -1,3 +1,21 @@
+# Outubro | V26.10
+- Corrigido: Adobe CC de Development para Utility
+- Adicionado: PhotoCraft by GetArtCraft
+- Adicionado: VectorCraft by GetArtCraft
+- Adicionado: FilmCraft by GetArtCraft
+- Adicionado: LightCraft by GetArtCraft
+- Adicionado: PdfCraft by GetArtCraft
+- Adicionado: EffectCraft by GetArtCraft
+- Adicionado: DesignCraft by GetArtCraft
+- Adicionado: WordCraft by GetArtCraft
+- Adicionado: SoundCraft by GetArtCraft
+- Adicionado: DeckCraft by GetArtCraft
+- Adicionado: CADCraft by GetArtCraft
+- Adicionado: GridCraft by GetArtCraft
+- Adicionado: Kudu — Free System Maintenance Suite
+- Adicionado: Ambient Light for Youtube (Firefox Extension) by Wezelkrozum
+- Adicionado: Ambient Light for Youtube (Chrome Extension) by Wezelkrozum
+
 # Julho | V26.07
 - Adicionado: Simple Sticky Notes
 - Adicionado: Discord Windows (Pake) e Discord Linux (Pake)
