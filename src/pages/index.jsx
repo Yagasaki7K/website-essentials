@@ -276,7 +276,7 @@ export default function Home() {
 						</li>
 						<hr />
 						<p>v26.10</p>
-						<p>Powered by Kalify Inc.</p>
+						<p>Developed by Yagasaki7K.</p>
 					</ul>
 				</SidebarMenuDetails>
 

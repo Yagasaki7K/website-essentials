@@ -15,6 +15,8 @@
 - Adicionado: Kudu — Free System Maintenance Suite
 - Adicionado: Ambient Light for Youtube (Firefox Extension) by Wezelkrozum
 - Adicionado: Ambient Light for Youtube (Chrome Extension) by Wezelkrozum
+- Corrigido: Link do Discord
+- Corrigido: Link do OBS
 
 # Julho | V26.07
 - Adicionado: Simple Sticky Notes
