@@ -24,14 +24,14 @@
 		"clean": "rm -rf node_modules && bun install"
 	},
 	"dependencies": {
-		"caniuse-lite": "^1.0.30001827",
+		"caniuse-lite": "^1.0.30001828",
 		"concurrently": "^8.2.2",
 		"eslint-config-next": "^16.4.6",
 		"next": "^16.4.6",
 		"react": "^19.3.1",
 		"react-dom": "^19.3.1",
 		"sonner": "^1.7.4",
-		"styled-components": "^6.6.0",
+		"styled-components": "^6.7.0",
 		"wait-on": "^7.2.0"
 	},
 	"devDependencies": {}
